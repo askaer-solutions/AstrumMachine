@@ -33,8 +33,8 @@ CHANGE_WRONG_TWITTER_TOKEN = true           # менять ли Twitter токе
 
 CHANGE_TWITTER_TOKEN = true                 # разрешено ли софту менять Twitter токен при любых ошибках
 
-CHANGE_TWITTER_TOKEN_DAILY_LIMITS = false   # менять Twitter токен при ошибке с максимальным кол-вом постов в день
-CHANGE_TWITTER_TOKEN_RATE_LIMITS = false    # менять Twitter токен при достижении лимита запросов
+CHANGE_TWITTER_TOKEN_DAILY_LIMITS = true    # менять Twitter токен при ошибке с максимальным кол-вом постов в день
+CHANGE_TWITTER_TOKEN_RATE_LIMITS = true     # менять Twitter токен при достижении лимита запросов
 CHANGE_TWITTER_TOKEN_MANUAL_VERIFY = true   # менять Twitter токен при требовании ручной верификации через почту или капчу
 
 PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = false # будет проходить кампании до конца, пока не заклеймит все награды
