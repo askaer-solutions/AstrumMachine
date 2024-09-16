@@ -1,0 +1,40 @@
+#---------------------------------------------------MODULES SETTINGS----------------------------------------------------
+
+# Все настройки пояснены в коментарии при положении frue(включить), false(выключить)
+
+SHUFFLE_CAMPAIGNS = true                    # перемешать ветку, перед выполнением
+
+SOLVE_TWITTER_TASKS = true                  # решать задания с Twitter
+SOLVE_DISCORD_TASKS = false                 # решать задания с Discord
+
+FAKE_TWITTER_LIKE = false                   # делать квесты без лайков в Twitter (протыкивать)
+FAKE_TWITTER_RETWEET = false                # делать квесты без ретвитов в Twitter (протыкивать)
+FAKE_TWITTER_QUOTE = false                  # делать квесты без постов в Twitter (протыкивать)
+
+DELETE_TWEET_AFTER = true                   # удаляет твит, после выполения действий
+DELETE_RETWEET_AFTER = true                 # удаляет ретвит, после выполения действий
+
+TRY_TO_LINK_TWITTER = true                  # пытаться привязать Twitter к Galxe
+TRY_TO_LINK_DISCORD = false                 # пытаться привязать Discord к Galxe
+
+COOLDOWN_TWITTER_LIKE = [80400, 86400]      # [мин., макс.] количество секунд для следующего лайка
+COOLDOWN_TWITTER_RETWEET = [80400, 86400]   # [мин., макс.] количество секунд для следующего ретвита
+COOLDOWN_TWITTER_FOLLOW = [80400, 86400]    # [мин., макс.] количество секунд для следующей подписки
+COOLDOWN_TWITTER_QUOTE = [80400, 86400]     # [мин., макс.] количество секунд для следующей поста
+
+MAX_COUNT_TWITTER_LIKE = [50, 100]          # [мин., макс.] количество лайков в период COOLDOWN_TWITTER_LIKE
+MAX_COUNT_TWITTER_RETWEET = [50, 100]       # [мин., макс.] количество ретвитов в период COOLDOWN_TWITTER_RETWEET
+MAX_COUNT_TWITTER_FOLLOW = [50, 100]        # [мин., макс.] количество подписок в период COOLDOWN_TWITTER_FOLLOW
+MAX_COUNT_TWITTER_QUOTE = [50, 100]         # [мин., макс.] количество постов в период COOLDOWN_TWITTER_QUOTE
+
+CHANGE_EMAIL_LOGPASS = true                 # разрешено ли софту менять почту если при проблемах с привязкой к Galxe
+
+CHANGE_WRONG_TWITTER_TOKEN = true           # менять ли Twitter токен при несоответствии привязанного Twitter аккаунта к Galxe
+
+CHANGE_TWITTER_TOKEN = true                 # разрешено ли софту менять Twitter токен при любых ошибках
+
+CHANGE_TWITTER_TOKEN_DAILY_LIMITS = false   # менять Twitter токен при ошибке с максимальным кол-вом постов в день
+CHANGE_TWITTER_TOKEN_RATE_LIMITS = false    # менять Twitter токен при достижении лимита запросов
+CHANGE_TWITTER_TOKEN_MANUAL_VERIFY = true   # менять Twitter токен при требовании ручной верификации через почту или капчу
+
+PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = false # будет проходить кампании до конца, пока не заклеймит все награды
