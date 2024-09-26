@@ -22,7 +22,7 @@
 LICENSE_KEY = ""
 
 SOFTWARE_MODE = 0               # 0 - последовательный запуск / 1 - параллельный запуск
-ACCOUNTS_IN_STREAM = 10          # Количество аккаунтов в потоке при SOFTWARE_MODE = 1
+ACCOUNTS_IN_STREAM = 10         # Количество аккаунтов в потоке при SOFTWARE_MODE = 1
 WALLETS_TO_WORK = 0             # 0 / 3 / [3, 20] / [[3, 20]]
 WALLETS_TO_EXCLUDE = 0          # 0 / 3 / [3, 20] / [[3, 20]]
 SHUFFLE_WALLETS = false         # Перемешивает кошельки перед запуском
@@ -63,7 +63,8 @@ SSL_CLIENT = true               # включение SSL сертификата 
 SSL_IMAP = true                 # включение SSL сертификата для работы с почтами
 
 #------------------------------------------------SECURE DATA------------------------------------------------------------
-CAPTCHA_SOLVER = 'capmonster'     # Сервис, через который будет решаться капча (2captcha или capmonster)
+STATIC_W_TOKEN = false          # Использовать один и тот же принцип нахождения W токена для решетеля капчи на Galxe (экономит трафик прокси, но в теории может быть палевно)
+CAPTCHA_SOLVER = 'capmonster'   # Сервис, через который будет решаться капча (2captcha или capmonster)
 # https://2captcha.com/enterpage
 TWO_CAPTCHA_API_KEY = ""
 # https://capmonster.cloud
