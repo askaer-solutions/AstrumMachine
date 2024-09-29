@@ -56,4 +56,4 @@ PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = false  # будет проходить к�
 #-------------------------------------------------------ONCHAIN---------------------------------------------------------
 
 UNLINK_APTOS_WALLETS = false                 # отвязывать уже привязанные Aptos адреса к Galxe
-SEPOLIA_BRIDGE_AMOUNT = [0.000003, 0.000004] # сумма для бриджа ETH в сеть Sepolia и Arbitrum / Optimism
+SEPOLIA_BRIDGE_AMOUNT = [0.000004, 0.000005] # сумма для бриджа ETH в сеть Sepolia и Arbitrum / Optimism
