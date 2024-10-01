@@ -39,6 +39,7 @@ CHANGE_TWITTER_TOKEN_RATE_LIMITS = true     # менять Twitter токен п
 CHANGE_TWITTER_TOKEN_MANUAL_VERIFY = true   # менять Twitter токен при требовании ручной верификации через почту или капчу
 CHANGE_TWITTER_TOKEN_DENIED_ACCESS = true   # менять Twitter токен при получении ошибки 'Denied by access control'
 CHANGE_TWITTER_TOKEN_TIMEOUT_ERROR = true   # менять Twitter токен при получении ошибки 'TimeoutError'
+CHANGE_TWITTER_TOKEN_WRITE_ACTION = true    # менять Twitter токен при получении ошибки 'User is not graduated'
 
 #-------------------------------------------------------DISCORD---------------------------------------------------------
 
