@@ -2,7 +2,12 @@
 
 # Все настройки пояснены в коментарии при положении frue(включить), false(выключить)
 
+CLAIM_NFT_REWARDS = false                   # выполнять задания для получения NFT и клеймить её
+CLAIM_DISCORD_ROLE_REWARDS = false          # выполнять задания для получения Discord Role и клеймить её
+
 SHUFFLE_CAMPAIGNS = true                    # перемешать ветку, перед выполнением
+
+PROCESS_MANUAL_VERIFY_QUEST = false         # делать квесты с ручной проверкой, некоторые квесты засчитывает без проверок
 
 CHANGE_WRONG_SOCIAL_ACCOUNT = true          # отвязывать ли Twitter/Discord при несоответствии привязанного аккаунта к Galxe и текущего
 CHANGE_PROXY_WITH_SOCIAL = true             # менять прокси при смене Twitter | Discord токена
