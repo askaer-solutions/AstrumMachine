@@ -53,6 +53,9 @@ SLEEP_TIME_ACTION = [10, 20]                 # [мин., макс.] количе
 SOLVE_DISCORD_TASKS = false                  # решать задания с Discord
 TRY_TO_LINK_DISCORD = true                   # пытаться привязать Discord к Galxe
 
+TRY_TO_ACCEPT_INVITE = false                 # пытаться принять инвайт на Discord сервер
+JOIN_RANDOM_GUILD = false                    # входить на радномный сервер из предложенных в разделе "Путешествие", перед заходом на основной
+
 CHANGE_DISCORD_TOKEN = true                  # разрешено ли софту менять Discord токен при любых ошибках
 CHANGE_DISCORD_TOKEN_MANUAL_VERIFY = true    # менять Discord токен при требовании ручной верификации через почту или капчу
 
