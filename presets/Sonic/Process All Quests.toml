@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["process_sonic_series"],
+    ["deposit_okx_sonic"],
+]
