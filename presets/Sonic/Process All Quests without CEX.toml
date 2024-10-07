@@ -1,0 +1,6 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["process_sonic_series"],
+]
+
+PROCESS_WORMHOLE_BRIDGE = false
+CONVER_FTM_AFTER_DEPOSIT = false

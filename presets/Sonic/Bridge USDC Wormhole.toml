@@ -1,7 +1,6 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ["process_sonic_series"],
+    ["bridge_usdc_wormhole_sonic"],
     ["deposit_okx_sonic"],
 ]
 
-PROCESS_WORMHOLE_BRIDGE = true
 CONVER_FTM_AFTER_DEPOSIT = true

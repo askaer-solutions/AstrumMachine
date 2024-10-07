@@ -1,0 +1,8 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["withdraw_okx_sonic_ftm"],
+    ["process_sonic_series"],
+    ["deposit_okx_sonic"],
+]
+
+PROCESS_WORMHOLE_BRIDGE = false
+CONVER_FTM_AFTER_DEPOSIT = false
