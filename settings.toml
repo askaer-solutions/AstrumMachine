@@ -18,6 +18,7 @@ CHANGE_EMAIL_LOGPASS = true                 # разрешено ли софту
 SOLVE_TWITTER_TASKS = true                  # решать задания с Twitter
 TRY_TO_LINK_TWITTER = true                  # пытаться привязать Twitter к Galxe
 
+FAKE_TWITTER_FOLLOW = true                 # делать квесты без подписок в Twitter (протыкивать)
 FAKE_TWITTER_LIKE = true                    # делать квесты без лайков в Twitter (протыкивать)
 FAKE_TWITTER_RETWEET = false                # делать квесты без ретвитов в Twitter (протыкивать)
 FAKE_TWITTER_QUOTE = false                  # делать квесты без постов в Twitter (протыкивать)
