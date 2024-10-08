@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["deposit_okx_sonic"]
+]
+
+CONVER_FTM_AFTER_DEPOSIT = true
