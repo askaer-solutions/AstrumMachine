@@ -55,6 +55,7 @@ SLEEP_TIME_DISCORD_ACTION = [10, 20]         # [мин., макс.] количе
 
 SOLVE_DISCORD_TASKS = false                  # решать задания с Discord
 TRY_TO_LINK_DISCORD = true                   # пытаться привязать Discord к Galxe
+SKIP_DISCORD_ACTION = true                   # не выполнять действий через Discord, софт просто попробует заклеймить поинты
 
 TRY_TO_ACCEPT_INVITE = false                 # пытаться принять инвайт на Discord сервер
 JOIN_RANDOM_GUILD = false                    # входить на радномный сервер из предложенных в разделе "Путешествие", перед заходом на основной
