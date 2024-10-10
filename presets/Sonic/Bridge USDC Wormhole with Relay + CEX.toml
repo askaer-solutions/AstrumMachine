@@ -1,0 +1,10 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['withdraw_okx_sonic_eth'],
+    ['bridge_relay_sonic'],
+    ["bridge_usdc_wormhole_sonic"],
+    ["withdraw_okx_sonic_ftm"],
+    ["swap_usdc_ftm_sonic"],
+    ["deposit_okx_sonic"],
+]
+
+CONVER_FTM_AFTER_DEPOSIT = true
