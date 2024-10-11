@@ -1,4 +1,6 @@
 CLASSIC_ROUTES_MODULES_USING = [
+    ["withdraw_okx_sonic_eth"],
+    ["bridge_relay_sonic"],
     ["process_sonic_series"],
     ["deposit_okx_sonic"],
 ]
