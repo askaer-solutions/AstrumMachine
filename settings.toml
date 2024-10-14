@@ -79,7 +79,7 @@ WAIT_FOR_RECEIPT_CEX = true                    # ожидать подтверж
 SONIC_FTM_DEPOSIT_AMOUNT = ['100', '100']      # сумма депозита (% или фиксированное значение)
 SONIC_FTM_DEPOSIT_FEE = [0.2, 0.3]             # сколько оставить на комиссию в $
 
-SONIC_FTM_WITHDRAW_AMOUNT = [250, 260]         # сумма FTM для вывода в Fantom сеть
+SONIC_FTM_WITHDRAW_AMOUNT = [270, 280]         # сумма FTM для вывода в Fantom сеть
 SONIC_USDC_WITHDRAW_AMOUNT = [160, 165]        # сумма USDC для вывода в Ethreum сеть под бридж Wormhole
 SONIC_ETH_WITHDRAW_AMOUNT = [0.0055, 0.0058]   # сумма ETH для вывода из биржи
 
