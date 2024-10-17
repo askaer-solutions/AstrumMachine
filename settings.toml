@@ -81,8 +81,7 @@ SONIC_DEPOSIT_AMOUNT = ['100', '100']          # сумма депозита (% 
 SONIC_DEPOSIT_FEE = [0.01, 0.02]               # сколько оставить на комиссию в $
 
 SONIC_FTM_WITHDRAW_AMOUNT = [31, 35]           # сумма FTM для вывода в Fantom сеть
-SONIC_USDC_WITHDRAW_AMOUNT = [160, 165]        # сумма USDC для вывода в Ethreum сеть под бридж Wormhole
-SONIC_ETH_WITHDRAW_AMOUNT = [0.0055, 0.0058]   # сумма ETH для вывода из биржи
 
-SONIC_MATRIX_TIMEOUT = 1800                    # кол-во секунд для проверки задания Matrix
-SONIC_MATRIX_DEPOSIT_AMOUNT = [90, 100]        # сумма FTM для депозита на Matrix
+SONIC_BEETS_DEPOSIT_AMOUNT = [10, 20]         # сумма sFTMx для депозита на Beets (wFTM/sFTMx pool)
+SONIC_MABEETS_DEPOSIT_AMOUNT = [10, 20]       # сумма wFTM для депозита на maBeets
+SONIC_MATRIX_DEPOSIT_AMOUNT = [10, 20]        # сумма FTM для депозита на Matrix
