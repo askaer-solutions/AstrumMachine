@@ -1,0 +1,20 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [4, 5]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["unichain_bridge_bridgg_out"]
+    ],
+    [
+        ["unichain_bridge_superbridge_out"]
+    ],
+    [
+        ["unichain_uniswap_swap_eth_to_usdc"],
+        ["unichain_uniswap_swap_usdc_to_eth"],
+    ],
+    [
+        ["unichain_owlto_deploy_erc20"]
+    ],
+    [
+        ["unichain_owlto_deploy_basic"]
+    ],
+]

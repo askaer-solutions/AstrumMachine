@@ -1,0 +1,14 @@
+STORYHUNT_USDC_TO_USDT_SWAP_AMOUNT = ["100", "100"]
+STORYHUNT_USDT_TO_USDC_SWAP_AMOUNT = ["100", "100"]
+PIPERX_USDC_TO_USDT_SWAP_AMOUNT = ["100", "100"]
+PIPERX_USDT_TO_USDC_SWAP_AMOUNT = ["100", "100"]
+
+CLASSIC_ROUTES_BLOCKS_COUNT = [2, 2]
+
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ["unleash_faucet_usdt"],
+    ["unleash_faucet_usdc"],
+    [["storyhunt_swap_usdc_to_usdt", "piperx_swap_usdc_to_usdt"]],
+    [["storyhunt_swap_usdt_to_usdc", "piperx_swap_usdt_to_usdc"]],
+]

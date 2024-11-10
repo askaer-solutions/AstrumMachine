@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [3, 3]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [["arcade_play_mines"]],
+    [["arcade_play_plinko"]],
+    [["arcade_play_wheel"]],
+]

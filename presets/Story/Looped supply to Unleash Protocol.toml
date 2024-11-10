@@ -1,0 +1,15 @@
+UNLEASH_LOOP_SUPPLY_USDT_AMOUNT = ["100", "100"]
+UNLEASH_LOOP_SUPPLY_USDC_AMOUNT = ["100", "100"]
+
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["unleash_faucet_usdc"],
+        ["unleash_loop_supply_usdc"],
+    ],
+    [
+        ["unleash_faucet_usdt"],
+        ["unleash_loop_supply_usdt"],
+    ],
+]

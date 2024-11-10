@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['withdraw_eth_to_l2'],
+    ['bridge_eth_to_sol_jumper'],
+    ['pumpfun_buy_sell'],
+    ['bridge_sol_to_eth_jumper'],
+    ['deposit_eth_from_l2'],
+]

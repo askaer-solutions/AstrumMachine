@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ["unichain_withdraw_eth_to_l2"],
+]

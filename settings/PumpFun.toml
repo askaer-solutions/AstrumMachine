@@ -1,0 +1,12 @@
+PUMPFUN_CEX_USING = 1                         # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
+PUMPFUN_CEX_AMOUNT = ['100', '100']           # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
+PUMPFUN_CEX_SOL_LIMITER = [0.3, 0.4]          # количество SOL в $, которое нужно оставить на аккаунте
+
+PUMPFUN_SWAP_AMOUNT = ['10', '20']            # сумма SOL для свапов SOL -> SHITCOIN (обратно 100%)
+PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки
+#    'CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump',
+#    'EtJcUdtVsDFQYhitUELnBE8PR3JvG1DPkYMT2xuZpump',
+#    'A8C3xuqscfmyLrte3VmTqrAq8kgMASius9AFNANwpump',
+#    'FcSpWbjW9qLispGkjTEKSAem9uwbaPY9GcvA6Pjspump',
+    'GiUdn8DGPzejD8KnK1RJKSZo4jUsN4UN4gYJAYHSpump'
+]

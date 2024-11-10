@@ -1,0 +1,16 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [2, 2]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["color_mint"],
+        ["color_register_nft"],
+    ],
+#    [
+#        ["nerzo_mint_story_iliad"],
+#        ["color_register_nft"],
+#    ],
+    [
+        ["nerzo_mint_ghost_story"],
+        ["color_register_nft"],
+    ],
+]

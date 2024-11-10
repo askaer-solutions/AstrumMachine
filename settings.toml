@@ -1,0 +1,86 @@
+#---------------------------------------------------MODULES SETTINGS----------------------------------------------------
+
+# Все настройки пояснены в коментарии при положении frue(включить), false(выключить)
+
+CLAIM_NFT_REWARDS = true                    # выполнять задания для получения NFT и клеймить её
+CLAIM_DISCORD_ROLE_REWARDS = true           # выполнять задания для получения Discord Role и клеймить её
+
+SHUFFLE_CAMPAIGNS = true                    # перемешать ветку, перед выполнением
+
+PROCESS_MANUAL_VERIFY_QUEST = true         # делать квесты с ручной проверкой, некоторые квесты засчитывает без проверок
+
+CLEAR_RESERVES_IF_OVER = true               # чистит файлов резервов до первоначального состояния, чтобы раскодники брались по кругу
+CHANGE_WRONG_SOCIAL_ACCOUNT = true          # отвязывать ли Twitter/Discord при несоответствии привязанного аккаунта к Galxe и текущего
+CHANGE_PROXY_WITH_SOCIAL = true             # менять прокси при смене Twitter | Discord токена
+CHANGE_EMAIL_LOGPASS = true                 # разрешено ли софту менять почту если при проблемах с привязкой к Galxe
+UNLINK_APTOS_WALLETS = false                 # отвязывать уже привязанные Aptos адреса к Galxe
+
+#-------------------------------------------------------TWITTER---------------------------------------------------------
+
+SLEEP_TIME_TWITTER_ACTION = [120, 180]      # [мин., макс.] количество секунд для запуска действия после авторизации, в теории повысит живучесть
+
+SOLVE_TWITTER_TASKS = true                  # решать задания с Twitter
+TRY_TO_LINK_TWITTER = true                  # пытаться привязать Twitter к Galxe
+
+FAKE_TWITTER_FOLLOW = false                 # делать квесты без подписок в Twitter (протыкивать)
+FAKE_TWITTER_LIKE = true                    # делать квесты без лайков в Twitter (протыкивать)
+FAKE_TWITTER_RETWEET = false                # делать квесты без ретвитов в Twitter (протыкивать)
+FAKE_TWITTER_QUOTE = false                  # делать квесты без постов в Twitter (протыкивать)
+
+DELETE_TWEET_AFTER = false                   # удаляет твит, после выполения действий
+DELETE_RETWEET_AFTER = false                 # удаляет ретвит, после выполения действий
+
+COOLDOWN_TWITTER_LIKE = [80400, 86400]      # [мин., макс.] количество секунд для следующего лайка
+COOLDOWN_TWITTER_RETWEET = [80400, 86400]   # [мин., макс.] количество секунд для следующего ретвита
+COOLDOWN_TWITTER_FOLLOW = [80400, 86400]    # [мин., макс.] количество секунд для следующей подписки
+COOLDOWN_TWITTER_QUOTE = [80400, 86400]     # [мин., макс.] количество секунд для следующей поста
+
+MAX_COUNT_TWITTER_LIKE = [50, 100]          # [мин., макс.] количество лайков в период COOLDOWN_TWITTER_LIKE
+MAX_COUNT_TWITTER_RETWEET = [50, 100]       # [мин., макс.] количество ретвитов в период COOLDOWN_TWITTER_RETWEET
+MAX_COUNT_TWITTER_FOLLOW = [50, 100]        # [мин., макс.] количество подписок в период COOLDOWN_TWITTER_FOLLOW
+MAX_COUNT_TWITTER_QUOTE = [50, 100]         # [мин., макс.] количество постов в период COOLDOWN_TWITTER_QUOTE
+
+CHANGE_TWITTER_TOKEN = true                 # разрешено ли софту менять Twitter токен при ошибках.
+
+# Все настройки по смене токенов Twitter придставленные ниже, будут работать, если CHANGE_TWITTER_TOKEN = true
+CHANGE_TWITTER_TOKEN_TASK_NOT_READY = true  # менять Twitter токен при ошибке верификации таска на Galxe (Task is not Ready)
+CHANGE_TWITTER_TOKEN_DAILY_LIMITS = true    # менять Twitter токен при ошибке с максимальным кол-вом постов в день
+CHANGE_TWITTER_TOKEN_RATE_LIMITS = true     # менять Twitter токен при достижении лимита запросов
+CHANGE_TWITTER_TOKEN_MANUAL_VERIFY = true   # менять Twitter токен при требовании ручной верификации через почту или капчу
+CHANGE_TWITTER_TOKEN_DENIED_ACCESS = true   # менять Twitter токен при получении ошибки 'Denied by access control'
+CHANGE_TWITTER_TOKEN_TIMEOUT_ERROR = true   # менять Twitter токен при получении ошибки 'TimeoutError'
+CHANGE_TWITTER_TOKEN_WRITE_ACTION = true    # менять Twitter токен при получении ошибки 'User is not graduated'
+CHANGE_TWITTER_TOKEN_CLAIM_FAIL = true      # менять Twitter токен при получении ошибки 'already claimed'
+
+#-------------------------------------------------------DISCORD---------------------------------------------------------
+
+SLEEP_TIME_DISCORD_ACTION = [10, 20]         # [мин., макс.] количество секунд для запуска действия после авторизации, в теории повысит живучесть
+
+SOLVE_DISCORD_TASKS = false                  # решать задания с Discord
+TRY_TO_LINK_DISCORD = true                   # пытаться привязать Discord к Galxe
+SKIP_DISCORD_ACTION = false                  # не выполнять действий через Discord, софт просто попробует заклеймить поинты
+
+SOLVE_DISCORD_INVITE_CAPTCHA = false         # решать капчу для активации инвайта на Discord сервер (95% токен слетает)
+TRY_TO_ACCEPT_INVITE = true                  # пытаться принять инвайт на Discord сервер
+JOIN_RANDOM_GUILD = false                    # входить на радномный сервер из предложенных в разделе "Путешествие", перед заходом на основной
+
+CHANGE_DISCORD_TOKEN = true                  # разрешено ли софту менять Discord токен при любых ошибках
+CHANGE_DISCORD_TOKEN_MANUAL_VERIFY = true    # менять Discord токен при требовании ручной верификации через почту или капчу
+
+PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = false  # будет проходить кампании до конца, пока не заклеймит все награды
+
+#-------------------------------------------------------ONCHAIN---------------------------------------------------------
+
+BRIDGE_WAIT_FOR_RECEIPT = true               # ожидать поступления средств после бриджа
+BRIDGE_JUMPER_ROUTE_TYPES = [11, 12, 13]     # какие роуты использовать при работе бриджах: 11-Mayan, 12-Mayan MCTP, 13-Mayan Wormhole
+BRIDGE_JUMPER_AMOUNT = ['100', '100']
+
+CEX_USE_API = true                           # проверять доступность, минимальную сумму, проверку для депозита на биржи
+CEX_USING = 1                                # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
+
+CEX_NETWORKS = [2, 3]                        # какие сети использовать для вывода с биржи (2 - Arbitrum, 3 - Optimism)
+CEX_WITHDRAW_AMOUNT = ['80', '90']           # сумма вывода ETH в сеть Arbitrum или Optimism. Можно указывать % или кол-во
+CEX_DEPOST_LIMITER = [0.3, 0.4]              # количество SOL в $, которое нужно оставить на аккаунте
+
+CEX_COLLECT_FROM_SUB = true                  # собирать средства с суб-аккаунтов
+CEX_WAIT_FOR_RECEIPT = true                  # ожидать подтверждения депозита на биржу

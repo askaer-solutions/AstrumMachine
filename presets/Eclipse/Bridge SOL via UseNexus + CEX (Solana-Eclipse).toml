@@ -1,0 +1,9 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['eclipse_cex_withdraw_sol'],
+    ['eclipse_refuel_gazzip'],
+    ['eclipse_bridge_sol_usenexus'],
+    ['eclipse_bridge_sol_usenexus'],
+    ['eclipse_bridge_sol_usenexus'],
+    ['eclipse_bridge_sol_usenexus'],
+    ['eclipse_cex_deposit_sol'],
+]

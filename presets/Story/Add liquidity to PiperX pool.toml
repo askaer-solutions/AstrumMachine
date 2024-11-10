@@ -1,0 +1,10 @@
+PIPERX_USDC_USDT_LIQUIDITY_AMOUNT = ["100", "100"]
+
+CLASSIC_ROUTES_BLOCKS_COUNT = [2, 2]
+
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [["unleash_faucet_usdt"]],
+    [["unleash_faucet_usdc"]],
+    ["piperx_add_usdc_usdt_liquidity"],
+]

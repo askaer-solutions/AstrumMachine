@@ -1,0 +1,3 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['galxe_process_custom_campaigns_evm'],
+]

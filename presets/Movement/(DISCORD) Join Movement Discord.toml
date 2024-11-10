@@ -1,0 +1,6 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["join_movement_discord"],
+]
+
+SKIP_DISCORD_ACTION = false                  # не выполнять действий через Discord, софт просто попробует заклеймить поинты
+TRY_TO_ACCEPT_INVITE = true                  # пытаться принять инвайт на Discord сервер
