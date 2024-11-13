@@ -1,0 +1,96 @@
+#-------------------------------------------------------GENERAL---------------------------------------------------------
+
+UNISAT_BITCOIN_MNEMONIC = false              # Работа с мнемоническими фразами для сети BRC/Fractal
+UNISAT_TAPROOT_ADDRESS = true               # True - работа с Taproot (P2TR) адресами | False - работа с Native Segwit (P2WPKH) адресами
+UNISAT_HEX_PRIVATE_KEY = false              # True - работа с приватными ключами в формате hex
+
+UNISAT_FEE_PRICE = 3                        # Выбор предлагаемого газа (1 - Дешево, но долго, 2 - Оптимально, 3 - Дорого, но быстро)
+UNISAT_MAXIMUM_FEE = 5                      # Максимальный sats/vB для работы запуска модуля в сети BRC
+UNISAT_MAXIMUM_FEE_FRACTAL = 35             # Максимальный sats/vB для работы запуска модуля в сети Fractal
+UNISAT_SATS_IN_ITEM_PRICE = 330             # Цена покупки, по дефолту на сайте стоит 546, но можно снизить до 330 (экономит ±0.15$)
+UNISAT_FEE_PRICE_CUSTOM = [0, 0]            # [min, max] Если отлично от 0, то газ будет считаться в транзакциях по этой настройке.
+UNISAT_FEE_PRICE_CUSTOM_FRACTAL = [0, 0]    # Аналогично FEE_PRICE_CUSTOM, но для работы в сети Fractal
+
+UNISAT_FF_REF_CODE = 'pp832nmb'             # Рефка при использовании https://ff.io/user/affiliate. Если пустая, то выключена
+
+UNISAT_NEED_BRC_BALANCE = true              # Если True, то проверяет баланс на кошельке в сети BRC. Нужен для получения адреса
+UNISAT_NEED_BRC_POINTS = true               # Если True, то проверяет поинты на кошельке в сети BRC
+UNISAT_NEED_BRC_LISTINGS = true             # Если True, то проверяет ордеры на продажу инскрипций\рун
+UNISAT_NEED_FRACTAL_BALANCE = true          # Если True, то проверяет баланс на кошельке в сети Fractal
+UNISAT_NEED_FRACTAL_TESTNET_POINTS = false  # Если True, то проверяет поинты на кошельке в сети Fractal Testnet
+UNISAT_NEED_FRACTAL_MAINNET_POINTS = false  # Если True, то проверяет поинты на кошельке в сети Fractal Mainnet
+UNISAT_NEED_FRACTAL_DROP = false            # Если True, то проверяет дроп $FB
+UNISAT_NEED_FRACTAL_LISTINGS = true         # Если True, то проверяет ордеры на продажу инскрипций\рун Fractal
+
+#---------------------------------------------------MODULES SETTINGS----------------------------------------------------
+
+UNISAT_FF_TOKEN_FROM = ['BNB']             # токен для отправки в обменник. Доступны ETH/USDT/USDC/BNB, можно указать несколько
+UNISAT_FF_CHAIN_FROM = ['BEP20']           # название сети для отправки в обменник. OPTIMISM/ARBITRUM/BEP20/ERC20
+UNISAT_FF_AMOUNT_FROM = [0.03, 0.037]     # сумма в токене для отравки в обменник
+
+UNISAT_MINT_INSCRIPTIONS_REQUIRED = [              # Случайная инскрипция будет сминчена в обязательном порядке. Можно оставить пустым, тогда будут сминчена рандомная.
+    # "doda"                                # Длина 4 символа!!!
+]
+
+UNISAT_MINT_INSCRIPTIONS_REQUIRED_5BYTE = [        # Аналогично MINT_INSCRIPTIONS_REQUIRED
+    # "dodad"                               # Длина 5 символов!!!
+]
+
+UNISAT_MINT_INSCRIPTIONS_REQUIRED_FRACTAL = [      # Аналогично MINT_INSCRIPTIONS_REQUIRED, только для сети Fractal
+     "MakerDAO",                             # Длина 6-12 символов для !!!
+    # "Solana",
+]
+
+UNISAT_LIST_INSCRIPTIONS = [                       # Инскрипции для которых будет создан ордер на продажу (софт возьмет случайную)
+    ["baha", "5000", "5000"],                   # ["название инскрипции", "цена мин", "цена макс"]
+]
+
+UNISAT_LIST_INSCRIPTIONS_FRACTAL = [               # Инскрипции для которых будет создан ордер на продажу Fractal (софт возьмет случайную)
+    ["MoonCats", "300", "320"],
+    ["cookies", "300", "320"],
+    ["sandwich", "15000000", "15000000"],
+]
+
+UNISAT_DELIST_INSCRIPTIONS = [                     # Инскрипции для которых будет удален ордер на продажу (софт возьмет случайную)
+    "baha",
+]
+
+UNISAT_DELIST_INSCRIPTIONS_FRACTAL = [             # Аналогично DELIST_INSCRIPTIONS, только для сети Fractal
+    "MoonCats",
+    "cookies",
+    "sandwich",
+]
+
+UNISAT_MINT_INSCRIPTIONS_POINTS_FRACTAL = 2        # Количество получаемых поинтов при минте инскрипций: 1 - минтит 50 раз (±1.7$) | 2 - минтит 100 раз (±3.4$)
+
+UNISAT_WAIT_FOR_INSCRIPTION_TRANSFERABLE = true   # Если True, будет ждать пока инскрипция получит подтверждения и станет продаваемой
+
+UNISAT_MINT_RUNES_REQUIRED = [             # Случайная руна будет сминчена в обязательном порядке. Можно оставить пустым, тогда будут сминчена рандомная.
+   # "UNCOMMON•GOODIES",            # Длина 12-26 символов!!!
+]
+
+UNISAT_MINT_RUNES_REQUIRED_FRACTAL = [     # Аналогично MINT_RUNES_REQUIRED, только для сети Fractal
+    "fractal•bitcoin•runes",
+]
+
+UNISAT_LIST_RUNES = [                      # Руны для которых будет создан ордер на продажу (софт возьмет случайную)
+    ["WLW•RUNES•BOOSTER", "50000", "51000"],                   # ["название руны", цена мин, цена макс]
+]
+
+UNISAT_LIST_RUNES_FRACTAL = [              # Аналогично LIST_RUNES, только для сети Fractal
+    ["fractal•bitcoin•runes", "50000", "51000"],             # ["название руны", цена мин, цена макс]
+]
+
+UNISAT_DELIST_RUNES = [                    # Руны для которых будет удален ордер на продажу (софт возьмет случайную)
+    "SHORT•THE•WORLD",
+]
+
+UNISAT_DELIST_RUNES_FRACTAL = [            # Аналогично DELIST_RUNES, только для сети Fractal
+    "fractal•bitcoin•runes",
+]
+
+UNISAT_MINT_RUNES_POINTS_FRACTAL = 2      # Количество получаемых поинтов при минте рун: 1 - минтит 50 раз | 2 - минтит 100 раз
+
+UNISAT_FB_SFB_BRIDGE_AMOUNT = [1, 2]
+UNISAT_BTC_SBTC_BRIDGE_AMOUNT = [0.001, 0.002]
+UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true

@@ -1,7 +1,3 @@
-USE_CEX_API = true                            # проверять доступность, минимальную сумму, проверку для депозита на биржи
-COLLECT_FROM_SUB_CEX = true                   # собирать средства с суб-аккаунтов
-WAIT_FOR_RECEIPT_CEX = true                   # ожидать подтверждения депозита на биржу
-
 SONIC_DEPOSIT_AMOUNT = ['100', '100']         # сумма депозита (% или фиксированное значение)
 SONIC_DEPOSIT_FEE = [0.01, 0.02]              # сколько оставить на комиссию в $
 
@@ -10,3 +6,10 @@ SONIC_FTM_WITHDRAW_AMOUNT = [31, 35]          # сумма FTM для вывод
 SONIC_BEETS_DEPOSIT_AMOUNT = [10, 20]         # сумма sFTMx для депозита на Beets (wFTM/sFTMx pool)
 SONIC_MABEETS_DEPOSIT_AMOUNT = [10, 20]       # сумма wFTM для депозита на maBeets
 SONIC_MATRIX_DEPOSIT_AMOUNT = [10, 20]        # сумма FTM для депозита на Matrix
+
+SONIC_NFTS2ME_CONTRACTS = [
+    "0x1e7Cf7fB1f84254F2a09bAF6470D87fD92deD4a6",
+    "0xD69136255D32c57D22146d664d4E818f04b2E6E7",
+    "0x984F362bde6EeC0E25a9Fc52760cddCff21817c9",
+    "0xA3Ff8553796CDF377d2A9541Ff4121Db926f1978",
+]
