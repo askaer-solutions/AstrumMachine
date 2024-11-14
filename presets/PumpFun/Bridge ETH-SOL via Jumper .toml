@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['withdraw_eth_to_l2'],
+    ['bridge_eth_to_sol_jumper'],
+]
