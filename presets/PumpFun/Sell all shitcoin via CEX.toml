@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['pumpfun_sell_all'],
+    ['pumpfun_cex_deposit_sol'],
+]
