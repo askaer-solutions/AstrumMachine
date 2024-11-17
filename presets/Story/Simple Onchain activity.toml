@@ -1,7 +1,8 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [6, 12]
 WITHOUT_GALXY_UNLINKING = true
+CLASSIC_ROUTES_BLOCKS_COUNT = [3, 5]
 
 CLASSIC_ROUTES_MODULES_USING = [
+    ["unleash_faucet_usdt"],
     [
         ["deploy_erc20_contract"],
     ],
@@ -10,51 +11,15 @@ CLASSIC_ROUTES_MODULES_USING = [
     ],
     [
         ["piperx_swap_ip_to_usdc"],
-    ],
-    [
         ["piperx_swap_ip_to_usdt"],
-    ],
-    [
-        ["unleash_faucet_usdt"],
-        ["piperx_swap_usdt_to_usdc"],
-    ],
-    [
-        ["unleash_faucet_usdc"],
-        ["piperx_swap_usdc_to_usdt"],
-    ],
-#     [
-#         ["verio_stake"],
-#         ["verio_unstake"],
-#     ],
-    [
-        ["color_mint"],
-        ["color_register_nft"],
-    ],
-        [
-            ["nerzo_mint_story_iliad"],
-            ["color_register_nft"],
-        ],
-    [
-        ["nerzo_mint_ghost_story"],
-        ["color_register_nft"],
-    ],
-    [
-        ["unleash_faucet_usdt"],
-        ["unleash_faucet_usdc"],
         ["piperx_add_usdc_usdt_liquidity"],
     ],
     [
-        ["storyhunt_swap_ip_to_usdt"],
+        ["verio_stake"],
+        ["verio_unstake"],
     ],
     [
-        ["storyhunt_swap_ip_to_usdc"],
-    ],
-    [
-        ["unleash_faucet_usdc"],
-        ["storyhunt_swap_usdc_to_usdt"],
-    ],
-    [
-        ["unleash_faucet_usdt"],
-        ["storyhunt_swap_usdt_to_usdc"],
+        ["piperx_swap_ip_to_usdt"],
+        ["unleash_loop_supply_usdt"],
     ],
 ]

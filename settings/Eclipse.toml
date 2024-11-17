@@ -1,8 +1,6 @@
 ECLIPSE_CEX_USING = 1                        # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
 ECLIPSE_CEX_NETWORKS = [2, 3]                # какие сети использовать для вывода с биржи под рефьюел (2 - Arbitrum, 3 - Optimism)
-ECLIPSE_CEX_AMOUNT = ['100', '100']          # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
-
-ECLIPSE_SOL_JUMPER_LIMITER = [0.002, 0.003]  # количество в SOL, которое нужно оставить при бридже из Solana (работает и для учета комиссии)
+ECLIPSE_CEX_AMOUNT = [1, 1]          # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
 ECLIPSE_USENEXUS_AMOUNT = ['100', '100']     # сумма SOL для бриджей между Solana и Eclipse. Можно указывать % или кол-во
 
 ECLIPSE_CEX_ETH_L2_WITHDRAW = true           # включает предварительный вывод с биржи перед рефьюлом

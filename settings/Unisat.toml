@@ -1,6 +1,6 @@
 #-------------------------------------------------------GENERAL---------------------------------------------------------
 
-UNISAT_BITCOIN_MNEMONIC = false              # Работа с мнемоническими фразами для сети BRC/Fractal
+UNISAT_BITCOIN_MNEMONIC = true              # Работа с мнемоническими фразами для сети BRC/Fractal
 UNISAT_TAPROOT_ADDRESS = true               # True - работа с Taproot (P2TR) адресами | False - работа с Native Segwit (P2WPKH) адресами
 UNISAT_HEX_PRIVATE_KEY = false              # True - работа с приватными ключами в формате hex
 
@@ -24,25 +24,72 @@ UNISAT_NEED_FRACTAL_LISTINGS = true         # Если True, то проверя
 
 #---------------------------------------------------MODULES SETTINGS----------------------------------------------------
 
-UNISAT_FF_TOKEN_FROM = ['BNB']             # токен для отправки в обменник. Доступны ETH/USDT/USDC/BNB, можно указать несколько
-UNISAT_FF_CHAIN_FROM = ['BEP20']           # название сети для отправки в обменник. OPTIMISM/ARBITRUM/BEP20/ERC20
-UNISAT_FF_AMOUNT_FROM = [0.03, 0.037]     # сумма в токене для отравки в обменник
+#-----------------------------------------------------SWAP CONTROL------------------------------------------------------
+#    Свапы, депозит и вывод токенов, работа с ликвидностью на https://fractal.unisat.io/swap.
+#    Модуль при необходимости сам делает токен передаваемым и депозитит его в автоматическом режиме.
+#    Так же модуль умеет ждать получения необходимых подтверждений после каждой успешной транзакции.
+#
+#    Модули свапов и добавления ликвидности не учитывают комиссию - транзакция зафейлится если кладете 100% ликвидности в пул и один из
+#    токенов является токеном для оплаты комиссий (аналогично для свапов).
+#    Для таких случаев UNISAT_PIZZA_SWAP_LIQUIDITY_AMOUNT и UNISAT_PIZZA_SWAP_AMOUNT указывайте ["98", "98"].
+#    Вывод ликвидности всегда на 100% баланса пула.
+#
+#    Сумма в количестве  - (0.01, 0.02)
+#    Сумма в процентах   - ("10", "20") ⚠️ Значения в кавычках.
+#
+#  ⚠️ Перед свапом нужно иметь transferable токен для оплаты комиссий за свапы (bFB, sFB, bSATS, sSATS). ⚠️
+#     Проще всего получить sFB, для этого необходимо вызвать модули:
+#       ['bridge_fb_to_sfb_fractal'],              # с параметром FB_SFB_BRIDGE_AMOUNT = [1, 1] (минимальная сумма бриджа 1 FB)
+#       ['custom_sleep3'],                         # с параметром CUSTOM_SLEEP_3 = [100, 200]
+#       ['make_inscription_transferable_fractal']  # с параметром TRANSFERABLE_INSCRIPTIONS_FRACTAL = ['sFB']
+#
+
+UNISAT_PIZZA_SWAP_TOKENS_FROM = ["sFB"]                   # Токены из которых будет сделан свап (будет выбран случайный)
+UNISAT_PIZZA_SWAP_TOKENS_TO = ["sBTC"]                # Токены в которые будет сделан свап (будет выбран случайный)
+UNISAT_PIZZA_SWAP_AMOUNT = ["50", "50"]                   # Сумма свапа в количестве или в процентах
+
+UNISAT_PIZZA_SWAP_LIQUIDITY_TOKENS = ["sFB", "sBTC"]  # Токены для добавления/вывода ликвидности (будут взяты по очереди).
+UNISAT_PIZZA_SWAP_LIQUIDITY_AMOUNT = ["98", "98"]         # Сумма для добавления ликвидности в количестве или в процентах
+
+UNISAT_PIZZA_SWAP_SLIPPAGE = 5                            # Максимальное проскальзывание в процентах
+
+UNISAT_PIZZA_SWAP_DEPOSIT_TOKENS = ["sFB"]             # Токены для которых будет сделан депозит (будет выбран случайный)
+UNISAT_PIZZA_SWAP_WITHDRAW_TOKENS = ["sBTC"]           # Токены для которых будет сделан вывод (будет выбран случайный)
+
+UNISAT_PIZZA_SWAP_FEE_TOKEN = "sFB"                    # Токен в котором будет происходить оплата комиссий (поддерживаются bFB, sFB, bSATS, sSATS)
+
+
+#------------------------------------------------------FIXEDFLOAT-------------------------------------------------------
+
+UNISAT_FF_TOKEN_FROM = ['ETH']       # токен для отправки в обменник. Доступны ETH/BNB/USDT/USDC, можно указать несколько
+UNISAT_FF_CHAIN_FROM = ['OPTIMISM']  # название сети для отправки в обменник. OPTIMISM/ARBITRUM/BEP20/ERC20
+UNISAT_FF_AMOUNT_FROM = [25, 30]     # сумма в токене для отравки в обменник
+
+#-----------------------------------------------------INSCRIPTIONS-----------------------------------------------------
 
 UNISAT_MINT_INSCRIPTIONS_REQUIRED = [              # Случайная инскрипция будет сминчена в обязательном порядке. Можно оставить пустым, тогда будут сминчена рандомная.
-    # "doda"                                # Длина 4 символа!!!
+     "doda"                                # Длина 4 символа!!!
 ]
 
 UNISAT_MINT_INSCRIPTIONS_REQUIRED_5BYTE = [        # Аналогично MINT_INSCRIPTIONS_REQUIRED
-    # "dodad"                               # Длина 5 символов!!!
+     "dodad"                               # Длина 5 символов!!!
 ]
 
 UNISAT_MINT_INSCRIPTIONS_REQUIRED_FRACTAL = [      # Аналогично MINT_INSCRIPTIONS_REQUIRED, только для сети Fractal
-     "MakerDAO",                             # Длина 6-12 символов для !!!
-    # "Solana",
+    "MakerDAO",                             # Длина 6-12 символов для !!!
+    "Solana",
+]
+
+UNISAT_TRANSFERABLE_INSCRIPTIONS = [               # Инскрипции которые нужно сделать продаваемыми (софт возьмет случайную)
+    "sFB",
+]
+
+UNISAT_TRANSFERABLE_INSCRIPTIONS_FRACTAL = [       # Аналогично TRANSFERABLE_INSCRIPTIONS, только для сети Fractal
+    "sFB",
 ]
 
 UNISAT_LIST_INSCRIPTIONS = [                       # Инскрипции для которых будет создан ордер на продажу (софт возьмет случайную)
-    ["baha", "5000", "5000"],                   # ["название инскрипции", "цена мин", "цена макс"]
+    ["baha", "5000", "5000"],                   # ["название инскрипции", цена мин, цена макс]
 ]
 
 UNISAT_LIST_INSCRIPTIONS_FRACTAL = [               # Инскрипции для которых будет создан ордер на продажу Fractal (софт возьмет случайную)
@@ -63,18 +110,21 @@ UNISAT_DELIST_INSCRIPTIONS_FRACTAL = [             # Аналогично DELIST
 
 UNISAT_MINT_INSCRIPTIONS_POINTS_FRACTAL = 2        # Количество получаемых поинтов при минте инскрипций: 1 - минтит 50 раз (±1.7$) | 2 - минтит 100 раз (±3.4$)
 
-UNISAT_WAIT_FOR_INSCRIPTION_TRANSFERABLE = true   # Если True, будет ждать пока инскрипция получит подтверждения и станет продаваемой
+UNISAT_WAIT_FOR_INSCRIPTION_TRANSFERABLE = true    # Если True, будет ждать пока инскрипция получит подтверждения и станет продаваемой
+
+#--------------------------------------------------------RUNES----------------------------------------------------------
 
 UNISAT_MINT_RUNES_REQUIRED = [             # Случайная руна будет сминчена в обязательном порядке. Можно оставить пустым, тогда будут сминчена рандомная.
-   # "UNCOMMON•GOODIES",            # Длина 12-26 символов!!!
+    "UNCOMMON•GOODS",            # Длина 12-26 символов!!!
 ]
+
 
 UNISAT_MINT_RUNES_REQUIRED_FRACTAL = [     # Аналогично MINT_RUNES_REQUIRED, только для сети Fractal
     "fractal•bitcoin•runes",
 ]
 
 UNISAT_LIST_RUNES = [                      # Руны для которых будет создан ордер на продажу (софт возьмет случайную)
-    ["WLW•RUNES•BOOSTER", "50000", "51000"],                   # ["название руны", цена мин, цена макс]
+    ["SHORT•THE•WORLD", "50000", "51000"],                   # ["название руны", цена мин, цена макс]
 ]
 
 UNISAT_LIST_RUNES_FRACTAL = [              # Аналогично LIST_RUNES, только для сети Fractal
@@ -91,6 +141,70 @@ UNISAT_DELIST_RUNES_FRACTAL = [            # Аналогично DELIST_RUNES, 
 
 UNISAT_MINT_RUNES_POINTS_FRACTAL = 2      # Количество получаемых поинтов при минте рун: 1 - минтит 50 раз | 2 - минтит 100 раз
 
-UNISAT_FB_SFB_BRIDGE_AMOUNT = [1, 2]
-UNISAT_BTC_SBTC_BRIDGE_AMOUNT = [0.001, 0.002]
-UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true
+UNISAT_FB_SFB_BRIDGE_AMOUNT = [1, 2]            # бридж BTC <-> sBTC в сети BRC
+UNISAT_BTC_SBTC_BRIDGE_AMOUNT = [0.001, 0.002]  # бридж FB <-> sFB в сети Fractal
+UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true           # Если True, будет ждать получения средств во входящей сети после бриджа
+
+#-------------------------------------------------CLASSIC-ROUTES CONTROL-------------------------------------------------
+
+#   Используйте данные модули для работы с пресетом Custom Route.toml в папке presets/Unisat
+
+#--------------------------------------------------------HELPERS---------------------------------------------------------
+
+#    unisat_create_order_on_ff        # создание ордера на https://ff.io/. см. FIXEDFLOAT
+
+#--------------------------------------------------------UNISAT----------------------------------------------------------
+
+#    unisat_inscribe_brc_20                  # минт инскрипции на https://unisat.io/inscribe. см. INSCRIPTIONS
+#    unisat_make_inscription_transferable    # делает инскрипцию продаваемой см. TRANSFERABLE_INSCRIPTIONS
+#    unisat_list_inscription                 # создание ордера на продажу инскрипции см. LIST_INSCRIPTIONS
+#    unisat_delist_inscription               # удаление ордера на продажу инскрипции см. DELIST_INSCRIPTIONS
+#    unisat_deploy_brc_20                    # деплой инскрипции на https://unisat.io/inscribe. см. INSCRIPTIONS
+#    unisat_mint_rune                        # минт рун на https://unisat.io/runes/inscribe. см. RUNES
+#    unisat_list_rune                        # создание ордера на продажу руны см. LIST_RUNES
+#    unisat_delist_rune                      # удаление ордера на продажу руны см. DELIST_RUNES
+#    unisat_deploy_rune                      # деплой рун на https://unisat.io/runes/inscribe. см. RUNES
+#    unisat_deploy_and_inscribe_brc20_5byte  # деплой и минт 5 байтной инскрипции. см. INSCRIPTIONS
+#    unisat_bridge_btc_to_sbtc               # бридж BTC -> sBTC в сети BRC. см. BTC_SBTC_BRIDGE_AMOUNT
+#    unisat_bridge_sbtc_to_btc               # бридж sBTC -> BTC в сети BRC. см. BTC_SBTC_BRIDGE_AMOUNT
+#
+#--------------------------------------------------------FRACTAL---------------------------------------------------------
+#    unisat_custom_transfer                  # трансфер токенов на адрес, указанный в поле 'OKX BTC address'. см. CUSTOM_TRANSFER_DATA
+#    unisat_faucet_infinity_fractal          # клейм $FB на сайте https://app.infinityai.network/
+#    unisat_faucet_opnet_fractal             # клейм $FB на сайте https://fractal-faucet.opnet.org/
+#    unisat_faucet_fractal                   # клейм $FB на сайте https://explorer.fractalbitcoin.io/faucet
+#    unisat_check_in_infinity                # checkIn на сайте https://app.infinityai.network/
+#    unisat_inscribe_brc_20_fractal_testnet  # минт инскрипции на https://fractal-testnet.unisat.io/inscribe. см. INSCRIPTIONS
+#    unisat_inscribe_brc_20_fractal          # минт инскрипции на https://fractal.unisat.io/inscribe. см. INSCRIPTIONS
+#    unisat_deploy_brc_20_fractal_testnet    # деплой инскрипции на https://fractal-testnet.unisat.io/inscribe. см. INSCRIPTIONS
+#    unisat_deploy_brc_20_fractal            # деплой инскрипции на https://fractal.unisat.io/inscribe. см. INSCRIPTIONS
+#    unisat_mint_rune_fractal                # минт рун на https://fractal.unisat.io/runes. см. RUNES
+#    unisat_deploy_rune_fractal              # деплой руны Fractal на https://fractal.unisat.io/inscribe.
+#    unisat_make_inscription_transferable_fractal  # делает инскрипцию продаваемой Fractal см. TRANSFERABLE_INSCRIPTIONS_FRACTAL
+#    unisat_list_inscription_fractal         # создание ордера на продажу инскрипции Fractal см. LIST_INSCRIPTIONS_FRACTAL
+#    unisat_delist_inscription_fractal       # удаление ордера на продажу инскрипции см. DELIST_INSCRIPTIONS_FRACTAL
+#    unisat_list_rune_fractal                # создание ордера на продажу руны Fractal см. LIST_RUNES_FRACTAL
+#    unisat_delist_rune_fractal              # удаление ордера на продажу руны Fractal см. DELIST_RUNES_FRACTAL
+#    unisat_bridge_fb_to_sfb_fractal         # бридж FB -> sFB в сети Fractal. см. FB_SFB_BRIDGE_AMOUNT
+#    unisat_bridge_sfb_to_fb_fractal         # бридж sFB -> FB в сети Fractal. см. FB_SFB_BRIDGE_AMOUNT
+#    unisat_pizzaswap_swap                   # свап токенов на https://fractal.unisat.io/swap см. SWAP CONTROL
+#    unisat_pizzaswap_deposit                # депозит токенов на https://fractal.unisat.io/swap см. SWAP CONTROL
+#    unisat_pizzaswap_withdraw               # вывод токенов на https://fractal.unisat.io/swap см. SWAP CONTROL
+#    unisat_pizzaswap_add_liquidity          # добавление ликвидности на https://fractal.unisat.io/swap/pools см. SWAP CONTROL
+#    unisat_pizzaswap_remove_liquidity       # вывод ликвидности на https://fractal.unisat.io/swap/pools см. SWAP CONTROL
+#    unisat_pizzaswap_stake_liquidity        # стейкинг ликвидности на https://fractal.unisat.io/swap/lp_rewards
+#    unisat_pizzaswap_unstake_liquidity      # анстейкинг ликвидности на https://fractal.unisat.io/swap/lp_rewards
+#    unisat_pizzaswap_claim_stake_rewards    # клейм ревардов за предоставление ликвидности на https://fractal.unisat.io/swap/lp_rewards
+#------------------------------------------------------------------------------------------------------------------------
+#
+#    Выберите необходимые модули для взаимодействия
+#    Вы можете создать любой маршрут, софт отработает строго по нему. Для каждого списка будет выбран один модуль в
+#    маршрут, если софт выберет None, то он пропустит данный список модулей.
+#    Список модулей сверху.
+
+#    CLASSIC_ROUTES_MODULES_USING = [
+#        ['okx_withdraw'],
+#        ['inscribe_brc_20', 'deploy_brc_20'],
+#        ['mint_rune', 'deploy_rune'],
+#        ...
+#    ]

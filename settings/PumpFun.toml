@@ -2,12 +2,23 @@ PUMPFUN_CEX_USING = 1                         # какую биржу испол
 PUMPFUN_CEX_AMOUNT = ['100', '100']           # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
 PUMPFUN_CEX_SOL_LIMITER = [0.3, 0.4]          # количество SOL в $, которое нужно оставить на аккаунте
 
-PUMPFUN_SWAP_AMOUNT = ['10', '20']            # сумма SOL для свапов SOL -> SHITCOIN (обратно 100%)
-PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки
-#    'CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump',
-#    'EtJcUdtVsDFQYhitUELnBE8PR3JvG1DPkYMT2xuZpump',
-#    'A8C3xuqscfmyLrte3VmTqrAq8kgMASius9AFNANwpump',
-#    'FcSpWbjW9qLispGkjTEKSAem9uwbaPY9GcvA6Pjspump',
-    'GiUdn8DGPzejD8KnK1RJKSZo4jUsN4UN4gYJAYHSpump'
-#    'B7nYbg1WGzFa1tz6S8o7pH1DUazdjEDozFzbLCy1pump'
+PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки на обычной панели pump.fun
+    'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
+    'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
+    'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
 ]
+
+PUMPFUN_ADVANCE_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки на Advance панели pump.fun
+    '2QawhA8q9qrye4JZwSRTYcMngaTgWfbUdTqYTVYhpump',
+    '2QawhA8q9qrye4JZwSRTYcMngaTgWfbUdTqYTVYhpump',
+    '2QawhA8q9qrye4JZwSRTYcMngaTgWfbUdTqYTVYhpump',
+]
+
+PUMPFUN_SWAP_AMOUNT = ['10', '20']            # сумма SOL для свапов SOL -> SHITCOIN (обратно 100%)
+PUMPFUN_SLEEP_TIME_SELL = [0, 0]              # время сна между покупкой и продажей токенов (мин, макс)
+
+# работает только для Auto-trading
+PUMPFUN_MARKET_CAP_FILTER = [0, 0]            # фильтр поиска токенов по Market Cap
+PUMPFUN_VOLUME_FILTER = [0, 0]                # фильтр поиска токенов по Volume
+PUMPFUN_NUM_HOLDERS_FILER = [0, 0]            # фильтр поиска токенов по Holders Count
+PUMPFUN_MAX_SNIPERS_COUNT = 20                # максимальное количество снайперов в токене
