@@ -1,0 +1,18 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['unisat_inscribe_brc_20', "None"],
+    ['unisat_deploy_brc_20', 'unisat_mint_rune', "None"],
+    ['unisat_deploy_and_inscribe_brc20_5byte', 'unisat_deploy_rune'],
+    ['unisat_inscribe_brc_20', "None"],
+    ['unisat_mint_rune', 'unisat_deploy_rune', "None"],
+    ['unisat_deploy_and_inscribe_brc20_5byte'],
+    ['unisat_deploy_brc_20', 'unisat_mint_rune'],
+    ['unisat_deploy_rune', 'unisat_deploy_and_inscribe_brc20_5byte', "None", "None"],
+    ['unisat_inscribe_brc_20', 'unisat_mint_rune', "None"],
+    ['unisat_deploy_and_inscribe_brc20_5byte', 'unisat_inscribe_brc_20'],
+    ['unisat_mint_rune', "None", "None"],
+    ['unisat_inscribe_brc_20', 'unisat_deploy_rune', 'unisat_deploy_brc_20', "None"],
+    ['unisat_deploy_brc_20', 'unisat_deploy_rune', "None"],
+    ['unisat_deploy_and_inscribe_brc20_5byte', 'unisat_mint_rune', "None"],
+    ['unisat_deploy_brc_20', 'unisat_inscribe_brc_20', "None"],
+    ['unisat_deploy_rune', "None", "None"],
+]

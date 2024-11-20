@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["story_wrap_native"],
+    ["story_storyhunt_swap_wip_to_vip"],
+    ["story_storyhunt_swap_wip_to_fate"],
+    ["story_storyhunt_add_ip_fate_liquidity"],
+    ["story_storyhunt_add_ip_vip_liquidity"],
+]

@@ -1,0 +1,10 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]  # Количество блоков к работе для одного аккаунта.
+
+CLASSIC_ROUTES_MODULES_USING = [
+    # при наличии блоков (круглые скобки для маршрута), софт будет их мешать для каждого аккаунта
+    ['deploy_rune'],
+    ['inscribe_brc_20'],
+    ['deploy_brc_20'],
+    ['mint_rune'],
+    ['deploy_rune'],
+]

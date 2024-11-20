@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['unisat_bridge_fb_to_sfb_fractal'],
+    ['unisat_bridge_sfb_to_fb_fractal'],
+    ['unisat_transfer_fractal']
+]
