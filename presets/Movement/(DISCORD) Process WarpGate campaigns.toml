@@ -1,7 +1,8 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ["join_movement_discord"],
+    ["process_warpgate_campaigns"],
 ]
 
-DISCORD_VERIFY_BOT_WANT = ['Wick']
+SOLVE_DISCORD_TASKS = true                   # решать задания с Discord
+TRY_TO_LINK_DISCORD = true                   # пытаться привязать Discord к Galxe
 SKIP_DISCORD_ACTION = false                  # не выполнять действий через Discord, софт просто попробует заклеймить поинты
 TRY_TO_ACCEPT_INVITE = true                  # пытаться принять инвайт на Discord сервер

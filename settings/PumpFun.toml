@@ -5,7 +5,7 @@ PUMPFUN_CEX_SOL_LIMITER = [0.3, 0.4]          # количество SOL в $, �
 PUMPFUN_SLEEP_TIME_SELL = [0, 0]              # время сна между покупкой и продажей токенов (мин, макс)
 PUMPFUN_SWAP_AMOUNT = ['10', '20']            # сумма SOL для свапов SOL -> SHITCOIN (обратно 100%)
 
-PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки на обычной панели pump.fun
+PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки на pump.fun
     'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
     'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
     'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
@@ -16,16 +16,13 @@ PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткой�
 # Адрес валидатора, который будет проталкивать вашу транзакцию. По умолчанию стоит сервис https://bloxroute.com/
 PUMPFUN_PRIORITY_FEE_RECIPENT = "HWEoBxYs7ssKuudEjzjmpfJVX7Dvi7wescFsVx2L5yoY"
 PUMPFUN_PRIORITY_FEE = [0.0001, 0.0002]           # приоритетная комсиссия для оправки транзакции (мин, макс). Минимум 0.0001, если не нужно ставте [0, 0]
-PUPMFUN_ADVANCED_USE_JITO = true                  # доплата комиссии сервису Jito, чтобы транзакция прошла быстрее/вообще прошла
-PUPMFUN_ADVANCED_USE_FRONTRUN_PROTECTION = false  # включение защиты от MEV ботов, если включаете, то PUMPFUN_PRIORITY_FEE должно быть хотя бы 0.01 SOL
+PUPMFUN_USE_PUMPFUN_RPC = true           # использование RPC pump.fun, требуется решение капчи для каждой транзакции
+PUPMFUN_USE_FRONTRUN_PROTECTION = false  # включение защиты от MEV ботов, если включаете, то PUMPFUN_PRIORITY_FEE должно быть хотя бы 0.01 SOL
+PUPMFUN_SLIPPAGE = 25                    # указывайте слипадж в %, чем меньше - тем больше шанс, что транзакция зафейлится
 
 #---------------------------------------------------PUMPFUN ADVANCED----------------------------------------------------
 
-PUMPFUN_ADVANCE_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки на Advance панели pump.fun
-    '2QawhA8q9qrye4JZwSRTYcMngaTgWfbUdTqYTVYhpump',
-    '2QawhA8q9qrye4JZwSRTYcMngaTgWfbUdTqYTVYhpump',
-    '2QawhA8q9qrye4JZwSRTYcMngaTgWfbUdTqYTVYhpump',
-]
+PUMPFUN_ADVANCED_LOGIN_VIA_MAIL = false           # входить в аккаун через почту, используя кошелек Privy
 
 # работает только для Auto-trading
 PUMPFUN_MARKET_CAP_FILTER = [0, 0]            # фильтр поиска токенов по Market Cap
