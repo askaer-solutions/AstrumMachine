@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["storybadge_wand_deposit_to_vault"],
+    ["storybadge_wand_mint_badge"],
+]

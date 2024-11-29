@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["storybadge_impossible_finance_mint_tidia_token"],
+    ["storybadge_impossible_finance_stake_tidia_token"],
+    ["storybadge_impossible_finance_mint_badge"],
+]

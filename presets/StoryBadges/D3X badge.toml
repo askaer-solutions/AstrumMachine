@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["storybadge_d3x_claim_test_usdt"],
+    ["storybadge_d3x_open_trade"],
+    ["storybadge_d3x_deposit_test_usdt"],
+    ["storybadge_d3x_subscribe"],
+    ["storybadge_d3x_mint_badge"],
+]
