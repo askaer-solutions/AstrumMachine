@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["storybadge_satori_execute_deposit"],
+    ["storybadge_satori_execute_open_trade"],
+    ["storybadge_satori_deposit_to_vault"],
+]
