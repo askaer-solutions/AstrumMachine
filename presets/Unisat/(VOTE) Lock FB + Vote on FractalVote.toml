@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['unisat_lock_fb_vote'],
+    ['unisat_vote_on_first_voting'],
+]
