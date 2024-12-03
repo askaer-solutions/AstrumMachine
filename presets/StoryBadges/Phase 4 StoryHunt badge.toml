@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["storybadge_wrap_native"],
-    ["storybadge_storyhunt_swap_wip_to_jutsu"],
-    ["storybadge_storyhunt_add_ip_jutsu_liquidity"],
-]

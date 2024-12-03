@@ -22,9 +22,9 @@
 LICENSE_KEY = ""
 
 SOFTWARE_MODE = 0               # 0 - последовательный запуск / 1 - параллельный запуск
-ACCOUNTS_IN_STREAM = 100        # Количество аккаунтов в потоке при SOFTWARE_MODE = 1
+ACCOUNTS_IN_STREAM = 10         # Количество аккаунтов в потоке при SOFTWARE_MODE = 1
 
-WALLETS_TO_WORK = 1             # 0 / 3 / [3, 20] / [[3, 20]]
+WALLETS_TO_WORK = 0             # 0 / 3 / [3, 20] / [[3, 20]]
 WALLETS_TO_EXCLUDE = 0          # 0 / 3 / [3, 20] / [[3, 20]]
 SHUFFLE_WALLETS = false         # Перемешивает кошельки перед запуском
 SHUFFLE_ROUTE = false           # Перемешивает маршрут перед запуском
@@ -56,7 +56,8 @@ GAS_CONTROL = true              # Включает контроль газа
 GAS_CHAIN_NAME = 'Ethereum'     # Название блокчейна в котором нужно проверять газ. Используйте официальные полные названия чейнов
 GAS_MAXIMUM_GWEI = 30           # Максимальный GWEI для работы софта, изменять во время работы софта в maximum_gwei.json
 GAS_SLEEP_TIME = 100            # Время ожидания для очередной проверки газа
-GAS_PRICE_MULTIPLIER = 1.2      # Множитель цены газа для транзакций. Повышайте, если транзакции стоят
+GAS_PRICE_MULTIPLIER = 1.2      # Множитель цены газа для транзакций. Повышайте, если транзакции не проходят
+GAS_LIMIT_MULTIPLIER = 1.5      # Множитель газ лимита для транзакций. Понижайте, если транзакции стоят дорого
 
 #----------------------------------------------------PROXY CONTROL------------------------------------------------------
 
@@ -79,13 +80,13 @@ TELEGRAM_USER_ID = ""    # https://t.me/getmyid_bot
 
 #----------------------------------------------------CAPTCHA CONTROL----------------------------------------------------
 
-USE_FREE_GALXE_SOLVER = true    # Использовать решение капчи через данный софт, что является бесплатным
+USE_FREE_GALXE_SOLVER = false   # Использовать решение капчи через данный софт, что является бесплатным
 CAPTCHA_SOLVER_TYPE = 1         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha
 
 # https://2captcha.com/enterpage
 TWO_CAPTCHA_API_KEY = ""
 # https://dashboard.capsolver.com/dashboard/overview
-CAPSOLVER_API_KEY = "" #
+CAPSOLVER_API_KEY = ""
 # https://capmonster.cloud
 CAPMONSTER_API_KEY = ""
 
