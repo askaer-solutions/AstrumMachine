@@ -1,9 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["storybadge_verio_stake"],
-    ["storybadge_verio_restake_ippy"],
-    ["storybadge_verio_restake_freg"],
-    ["storybadge_verio_restake_benny"],
-    ["storybadge_verio_restake_geter"],
-    ["storybadge_verio_restake_punka"],
-    ["storybadge_verio_mint_badge"],
-]
