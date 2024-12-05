@@ -1,8 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["storybadge_color_mint"],
-    ["storybadge_color_register_nft"],
-    ["storybadge_color_buy_nft"],
-    ["storybadge_color_list_nft_for_sale"],
-    ["storybadge_color_mint_license"],
-    ["storybadge_color_buy_license"],
-]
