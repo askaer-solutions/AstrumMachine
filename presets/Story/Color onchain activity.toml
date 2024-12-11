@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["story_color_mint"],
+    ["story_color_mint_license"],
+    ["story_color_list_nft_for_sale"],
+    ["story_color_buy_license"],
+    ["story_color_buy_nft"],
+]

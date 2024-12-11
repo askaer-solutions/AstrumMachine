@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["story_mint_faucet"],
+]
+
+WITHOUT_GALXY_UNLINKING = true

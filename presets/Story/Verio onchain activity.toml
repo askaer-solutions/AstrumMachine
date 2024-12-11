@@ -1,0 +1,10 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [5, 5]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ["story_verio_stake"],
+    [["story_verio_restake_ippy"]],
+    [["story_verio_restake_freg"]],
+    [["story_verio_restake_benny"]],
+    [["story_verio_restake_geter"]],
+    [["story_verio_restake_punka"]],
+]

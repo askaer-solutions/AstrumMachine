@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["storybadge_color_mint_badge"],
-]
-
-CHANGE_EMAIL_LOGPASS = false

@@ -1,0 +1,6 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["story_d3x_claim_test_usdt"],
+    ["story_d3x_deposit_test_usdt"],
+    ["story_d3x_subscribe"],
+    ["story_d3x_open_trade"],
+]

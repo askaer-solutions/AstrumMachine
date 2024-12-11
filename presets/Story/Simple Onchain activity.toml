@@ -2,24 +2,24 @@ WITHOUT_GALXY_UNLINKING = true
 CLASSIC_ROUTES_BLOCKS_COUNT = [3, 5]
 
 CLASSIC_ROUTES_MODULES_USING = [
-    ["unleash_faucet_usdt"],
+    ["story_unleash_faucet_usdt"],
     [
-        ["deploy_erc20_contract"],
+        ["story_deploy_erc20_contract"],
     ],
     [
-        ["deploy_basic_contract"],
+        ["story_deploy_basic_contract"],
     ],
     [
-        ["piperx_swap_ip_to_usdc"],
-        ["piperx_swap_ip_to_usdt"],
-        ["piperx_add_usdc_usdt_liquidity"],
+        ["story_piperx_swap_ip_to_usdc"],
+        ["story_piperx_swap_ip_to_usdt"],
+        ["story_piperx_add_usdc_usdt_liquidity"],
     ],
     [
-        ["verio_stake"],
-        ["verio_unstake"],
+        ["story_verio_stake"],
+        ["story_verio_unstake"],
     ],
     [
-        ["piperx_swap_ip_to_usdt"],
-        ["unleash_loop_supply_usdt"],
+        ["story_piperx_swap_ip_to_usdt"],
+        ["story_unleash_loop_supply_usdt"],
     ],
 ]

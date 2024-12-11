@@ -5,4 +5,4 @@ UNICHAIN_CEX_AMOUNT = [0.0011, 0.0012]       # сумма вывода ETH в с
 UNICHAIN_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2(Arbitrum или Optimism) в Sepolia (минимум, максимум) (% или кол-во)
 UNICHAIN_BRIDGG_AMOUNT = ["4", "5"]          # сумма бриджа на Bridgg из Unichain в Sepolia (минимум, максимум) (% или кол-во)
 UNICHAIN_SUPER_BRIDGE_AMOUNT = ["4", "5"]    # сумма бриджа на SuperBridge Unichain в Sepolia (минимум, максимум) (% или кол-во)
-UNICHAIN_UNISWAP_AMOUNT = ["50", "55"]       # сумма свапов на Uniswap (минимум, максимум) (% или кол-во)
+UNICHAIN_UNISWAP_AMOUNT = ["7", "10"]       # сумма свапов на Uniswap (минимум, максимум) (% или кол-во)
