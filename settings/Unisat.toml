@@ -118,7 +118,7 @@ UNISAT_WAIT_FOR_INSCRIPTION_TRANSFERABLE = true    # Если True, будет �
 #--------------------------------------------------------RUNES----------------------------------------------------------
 
 UNISAT_MINT_RUNES_REQUIRED = [             # Случайная руна будет сминчена в обязательном порядке. Можно оставить пустым, тогда будут сминчена рандомная.
-    "UNCOMMON•GOODS",            # Длина 12-26 символов!!!
+    "BITCOIN•DOGE",            # Длина 12-26 символов!!!
 ]
 
 
@@ -207,7 +207,7 @@ UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true           # Если True, будет жд
 
 #    CLASSIC_ROUTES_MODULES_USING = [
 #        ['okx_withdraw'],
-#        ['inscribe_brc_20', 'deploy_brc_20'],
-#        ['mint_rune', 'deploy_rune'],
+#        ['unisat_inscribe_brc_20', 'unisat_deploy_brc_20'],
+#        ['unisat_mint_rune', 'unisat_deploy_rune'],
 #        ...
 #    ]
