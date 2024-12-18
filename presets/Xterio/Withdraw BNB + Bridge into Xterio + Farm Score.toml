@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['withdraw_binance_bnb'],
+    ['xterio_bridge'],
+    ['xterio_farm_score'],
+]

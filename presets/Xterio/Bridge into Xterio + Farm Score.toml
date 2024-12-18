@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['xterio_bridge'],
+    ['xterio_farm_score'],
+]
