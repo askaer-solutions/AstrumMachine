@@ -102,6 +102,7 @@ EXCEL_FILE_PATH = "./data/accounts_data.xlsx"  # Можете не изменя�
 
 # https://platform.openai.com/account/api-keys
 GPT_API_KEY = ""
+GPT_API_MODEL = 1               # 1: gpt-3.5-turbo, 2: gpt-4o-mini, 3: gpt-4-turbo, 4: o1-mini, 5: o1-preview
 
 # https://www.okx.com/ru/account/my-api
 OKX_API_KEY = ""
