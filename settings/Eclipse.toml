@@ -6,5 +6,9 @@ ECLIPSE_CEX_AMOUNT = ['100', '100']          # сумма вывода SOL в с
 ECLIPSE_USENEXUS_AMOUNT = ['100', '100']     # сумма SOL для бриджей между Solana и Eclipse. Можно указывать % или кол-во
 
 ECLIPSE_CEX_ETH_L2_WITHDRAW = true           # включает предварительный вывод с биржи перед рефьюлом
+ECLIPSE_GAZZIP_NETWORKS = ['Arbirum', 'Optimism', 'Base'] # сети, в которых искать ETH для рефьюла через Gazzip
 ECLIPSE_GAZZIP_AMOUNT = [0.0013, 0.0014]     # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через Gazzip.
 ECLIPSE_WETH_BRIDGE_AMOUNT = [0.001, 0.002]  # сумма WETH для бриджа через https://app.eclipse.xyz/mint-teth
+
+ECLIPSE_SOLAR_SWAP_AMOUNT = ['50', '55']  # сумма для свапов на платформе https://eclipse.solarstudios.co/
+ECLIPSE_ORCA_SWAP_AMOUNT = ['50', '55']  # сумма для свапов на платформе https://www.orca.so/
