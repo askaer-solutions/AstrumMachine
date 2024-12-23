@@ -56,8 +56,8 @@ GAS_CONTROL = true              # Включает контроль газа
 GAS_CHAIN_NAME = 'Ethereum'     # Название блокчейна в котором нужно проверять газ. Используйте официальные полные названия чейнов
 GAS_MAXIMUM_GWEI = 30           # Максимальный GWEI для работы софта, изменять во время работы софта в maximum_gwei.json
 GAS_SLEEP_TIME = 100            # Время ожидания для очередной проверки газа
-GAS_PRICE_MULTIPLIER = 1.1      # Множитель цены газа для транзакций. Повышайте, если транзакции не проходят
-GAS_LIMIT_MULTIPLIER = 1.05     # Множитель газ лимита для транзакций. Понижайте, если транзакции стоят дорого
+GAS_PRICE_MULTIPLIER = 1.2      # Множитель цены газа для транзакций. Повышайте, если транзакции не проходят
+GAS_LIMIT_MULTIPLIER = 1.25     # Множитель газ лимита для транзакций. Понижайте, если транзакции стоят дорого
 
 #----------------------------------------------------PROXY CONTROL------------------------------------------------------
 
@@ -81,8 +81,10 @@ TELEGRAM_USER_ID = ""    # https://t.me/getmyid_bot
 #----------------------------------------------------CAPTCHA CONTROL----------------------------------------------------
 
 USE_FREE_GALXE_SOLVER = false   # Использовать решение капчи через данный софт, что является бесплатным
-CAPTCHA_SOLVER_TYPE = 4         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha, 4-captcha24
+CAPTCHA_SOLVER_TYPE = 5         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha, 4-captcha24, 5-bestcaptcha
 
+# https://bestcaptchasolver.com/account
+BESTCAPTCHA_API_KEY = ""
 # https://24captcha.online/dashboard/
 CAPTCHA24_API_KEY = ""
 # https://2captcha.com/enterpage
@@ -115,6 +117,6 @@ BITGET_API_KEY = ""
 BITGET_API_SECRET = ""
 BITGET_API_PASSPHRAS = ""
 
-# https://www.binance.com/ru/my/settings/api-management
+# BINANCE API KEYS https://www.binance.com/ru/my/settings/api-management
 BINANCE_API_KEY = ""
 BINANCE_API_SECRET = ""
