@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["movement_claim_faucet_earlymover"],
-    ["movement_mint_earlymover"],
-]

@@ -74,10 +74,6 @@ UNISAT_MINT_INSCRIPTIONS_REQUIRED = [              # Случайная инск
      "doda"                                # Длина 4 символа!!!
 ]
 
-UNISAT_MINT_INSCRIPTIONS_REQUIRED_5BYTE = [        # Аналогично MINT_INSCRIPTIONS_REQUIRED
-     "dodad"                               # Длина 5 символов!!!
-]
-
 UNISAT_MINT_INSCRIPTIONS_REQUIRED_FRACTAL = [      # Аналогично MINT_INSCRIPTIONS_REQUIRED, только для сети Fractal
     "MakerDAO",                             # Длина 6-12 символов для !!!
     "Solana",
@@ -144,7 +140,7 @@ UNISAT_DELIST_RUNES_FRACTAL = [            # Аналогично DELIST_RUNES, 
 
 UNISAT_MINT_RUNES_POINTS_FRACTAL = 2      # Количество получаемых поинтов при минте рун: 1 - минтит 50 раз | 2 - минтит 100 раз
 
-UNISAT_FB_SFB_BRIDGE_AMOUNT = [1, 2]            # бридж BTC <-> sBTC в сети BRC
+UNISAT_FB_SFB_BRIDGE_AMOUNT = [1.1, 1.1]            # бридж BTC <-> sBTC в сети BRC
 UNISAT_BTC_SBTC_BRIDGE_AMOUNT = [0.001, 0.002]  # бридж FB <-> sFB в сети Fractal
 UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true           # Если True, будет ждать получения средств во входящей сети после бриджа
 

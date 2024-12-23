@@ -1,4 +1,5 @@
 CLASSIC_ROUTES_MODULES_USING = [
+    ['unisat_deploy_brc_20_fractal', "None"],
     ['unisat_inscribe_brc_20_fractal', "None"],
     ['unisat_deploy_brc_20_fractal', 'unisat_mint_rune_fractal', "None"],
     ['unisat_deploy_rune_fractal', 'unisat_inscribe_brc_20_fractal', "None"],

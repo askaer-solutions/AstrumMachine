@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['unisat_bridge_fb_to_sfb_fractal'],
-    ['custom_sleep3'],
-    ['unisat_make_inscription_transferable_fractal']
-]
