@@ -13,3 +13,8 @@ GALXE_QUIZ_ANSWERS_BY_CREDENTIAL_ID = [
     [433653260763623426, 1, 2, 3, 0],  # [QUIZ CREDITANTIONAL ID, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER]
     [433653260763623427, 1, 2, 2, 3],  # [QUIZ CREDITANTIONAL ID, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER]
 ]
+
+GALXE_AUTO_REFUEL = true # при нехватки $G токенов в Gravity чейне, во время клейма поинтов, софт автоматически запустит рефьюл по настройкам ниже
+GALXE_REFUEL_NETWORKS = ['Arbitrum', 'Optimism', 'Base'] # сети в которых софт будет искать нативку для рефьюла через GazZip
+GALXE_REFUEL_AMOUNT = [0.0001, 0.0002] # сумма ETH для рефьюла Gravity
+GALXE_MIN_G_BALANCE = 10 # минимальный баланс, ниже которого софт запусти рефьюл через GazZip
