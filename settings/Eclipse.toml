@@ -8,7 +8,11 @@ ECLIPSE_USENEXUS_AMOUNT = ['100', '100']     # сумма SOL для бридж�
 ECLIPSE_CEX_ETH_L2_WITHDRAW = true           # включает предварительный вывод с биржи перед рефьюлом
 ECLIPSE_GAZZIP_NETWORKS = ['Arbitrum', 'Optimism', 'Base'] # сети, в которых искать ETH для рефьюла через Gazzip
 ECLIPSE_GAZZIP_AMOUNT = [0.0013, 0.0014]     # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через Gazzip.
-ECLIPSE_WETH_BRIDGE_AMOUNT = [0.001, 0.002]  # сумма WETH для бриджа через https://app.eclipse.xyz/mint-teth
+
+ECLIPSE_WETH_BRIDGE_AMOUNT = ['100', '100'] # сумма WETH для бриджа через https://app.eclipse.xyz/mint-teth
+ECLIPSE_WETH_FEE_LIMITER = [0.005, 0.005]   # сумма ETH для использования под комиссию на бридж. Софт будет вычитать ее из суммы под врап  ETH
+ECLIPSE_WETH_SKIP_WRAP = false              # пропускать ли врап ETH, включайте, если у вас уже есть балансы в WETH
 
 ECLIPSE_SOLAR_SWAP_AMOUNT = ['100', '100']  # сумма для свапов на платформе https://eclipse.solarstudios.co/
-ECLIPSE_ORCA_SWAP_AMOUNT = ['100', '100']  # сумма для свапов на платформе https://www.orca.so/
+ECLIPSE_ORCA_SWAP_AMOUNT = ['100', '100']   # сумма для свапов на платформе https://www.orca.so/
+ECLIPSE_SWAP_FEE_SUPPORT = [0.0005, 0.0005] # сколько оставлять ETH под комиссию для свапов
