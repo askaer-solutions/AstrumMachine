@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['eclipse_bridge_relay_into'],
+    ['eclipse_bridge_relay_from'],
+]

@@ -1,0 +1,16 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
+
+ECLIPSE_SWAP_FEE_SUPPORT = [0.00005, 0.00005] # сколько оставлять ETH под комиссию для свапов
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ['eclipse_bridge_relay_into'],
+    ['eclipse_bridge_relay_from', 'eclipse_deploy_contract_owlto'],
+    [
+        ['eclipse_swap_eth_to_sol_orca'],
+        ['eclipse_swap_sol_to_eth_orca']
+    ],
+    [
+        ['eclipse_swap_eth_to_usdc_orca'],
+        ['eclipse_swap_usdc_to_eth_orca']
+    ],
+]
