@@ -11,6 +11,12 @@ ECLIPSE_GAZZIP_NETWORKS = ['Arbitrum', 'Optimism'] # сети, в которых
 ECLIPSE_GAZZIP_AMOUNT = [0.0013, 0.0014]     # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через Gazzip.
 
 ECLIPSE_TAP_SLEEP_TIME = [0.1, 0.2]            # [от, до] время сна между каждым кликом
-ECLIPSE_TAP_SLEEP_TIME2 = [60, 120]         # [от, до] время сна между каждыми 500 кликами
-ECLIPSE_TAP_SLEEP_TIME3 = [250, 400]         # [от, до] время сна между каждой 1000 кликов
+
+ECLIPSE_TAP_SLEEP_AMOUNT2 = [400, 500]      # [от, до] количество тапов для сна ECLIPSE_TAP_SLEEP_TIME2
+ECLIPSE_TAP_SLEEP_TIME2 = [60, 120]         # [от, до] время сна между каждыми ECLIPSE_TAP_SLEEP_AMOUNT2 кликами
+
+ECLIPSE_TAP_SLEEP_AMOUNT3 = [400, 500]      # [от, до] количество тапов для сна ECLIPSE_TAP_SLEEP_TIME3
+ECLIPSE_TAP_SLEEP_TIME3 = [250, 400]        # [от, до] время сна между каждой ECLIPSE_TAP_SLEEP_AMOUNT3 кликов
+
 ECLIPSE_TAPS_AMOUNT = [9500, 10000]          # [от, до] максимальное количество кликов на аккаунте
+ECLIPSE_TAPS_SESSION_AMOUNT = [9500, 10000]  # [от, до] максимальное количество кликов на аккаунте за сессию запуска софта
