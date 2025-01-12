@@ -1,5 +1,5 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ['withdraw_eth_to_l2'],
+    ['withdraw_cex'],
     ['bridge_eth_to_sol_jumper'],
     ['eclipse_refuel_gazzip'],
     ['eclipse_bridge_sol_usenexus'],
@@ -7,5 +7,5 @@ CLASSIC_ROUTES_MODULES_USING = [
     ['eclipse_bridge_sol_usenexus'],
     ['eclipse_bridge_sol_usenexus'],
     ['bridge_sol_to_eth_jumper'],
-    ['deposit_eth_from_l2'],
+    ['deposit_cex'],
 ]

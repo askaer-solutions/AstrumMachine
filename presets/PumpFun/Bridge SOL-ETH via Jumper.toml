@@ -1,4 +1,4 @@
 CLASSIC_ROUTES_MODULES_USING = [
     ['bridge_sol_to_eth_jumper'],
-    ['deposit_eth_from_l2'],
+    ['deposit_cex'],
 ]
