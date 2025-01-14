@@ -1,7 +1,7 @@
 CLASSIC_ROUTES_MODULES_USING = [
     ['withdraw_cex'],
     ['bridge_eth_to_sol_jumper'],
-    ['eclipse_refuel_gazzip'],
+    ['eclipse_refuel_gaszip'],
     ['eclipse_bridge_sol_usenexus'],
     ['eclipse_bridge_sol_usenexus'],
     ['eclipse_bridge_sol_usenexus'],
