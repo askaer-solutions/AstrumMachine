@@ -16,6 +16,6 @@ ECLIPSE_WETH_SKIP_WRAP = false              # пропускать ли врап
 
 ECLIPSE_SOLAR_SWAP_AMOUNT = ['100', '100']  # сумма для свапов на платформе https://eclipse.solarstudios.co/
 ECLIPSE_ORCA_SWAP_AMOUNT = ['100', '100']   # сумма для свапов на платформе https://www.orca.so/
-ECLIPSE_SWAP_FEE_SUPPORT = [0.00052, 0.00055] # сколько оставлять ETH под комиссию для свапов
+ECLIPSE_SWAP_FEE_SUPPORT = [0.00082, 0.00095] # сколько оставлять ETH под комиссию для свапов
 
 ECLIPSE_RANDOM_SEND_AMOUNT = [0.0000001, 0.0000002] # сумма ETH для трансферов на рандомные адреса
