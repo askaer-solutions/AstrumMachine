@@ -1,4 +1,5 @@
 ECLIPSE_CEX_USING = 1                        # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
+ECLIPSE_AUTO_REFUEL = true                    # делать автоматический рефьюл для пополнения сети Eclipse
 
 # При работе с Bitget, лимит на вывод из Arbitrum 0.01, поэтому удалите Arbitrum из ECLIPSE_CEX_NETWORKS
 ECLIPSE_CEX_AMOUNT = ['100', '100']          # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
