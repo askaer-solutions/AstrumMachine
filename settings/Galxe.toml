@@ -1,9 +1,9 @@
 GALXE_CUSTOM_CAMPAIGNS_EVM = [
-    'GCZkTtx9hF',
+    'GC5L4tpdmN',
 ]
 
 GALXE_CUSTOM_CAMPAIGNS_APTOS = [
-    'GCZkTtx9hF',
+    'GC5L4tpdmN',
 ]
 
 # A-1, B-2, C-3, D-4, E-5, F-6 и так далее. Ответы словами не поддерживаются.
@@ -18,4 +18,7 @@ GALXE_AUTO_REFUEL = true # при нехватки $G токенов в Gravity 
 GALXE_REFUEL_NETWORKS = ['Arbitrum', 'Optimism', 'Base'] # сети в которых софт будет искать нативку для рефьюла через GazZip
 GALXE_REFUEL_AMOUNT = [0.0001, 0.0002] # сумма ETH для рефьюла Gravity
 GALXE_MIN_G_BALANCE = 10 # минимальный баланс, ниже которого софт запусти рефьюл через GazZip
+
 GALXE_BREAK_PROCESS_FAILED = false          # прекращает выполнение кампании, если группа заданий будет не выполнена
+GALXE_PROCESS_PASSPORT_CRED = false          # проходить задание на проверку наличия Galxe паспорта
+GALXE_PROCESS_SUBSCRIPTION_CRED = false     # проходить задание на проверку наличия Galxe подписки
