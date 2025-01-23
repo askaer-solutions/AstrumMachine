@@ -12,8 +12,6 @@ ECLIPSE_GASZIP_NETWORKS = ['Arbitrum', 'Optimism'] # сети, в которых
 ECLIPSE_GASZIP_AMOUNT = [0.0008, 0.0009]     # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через GasZip
 ECLIPSE_GASZIP_FEE_SUPPORT = [0.00005, 0.00005] # сумма нативки удержания нативки под комиссию для реьюла через GasZip
 
-ECLIPSE_TAP_PRIORITY_FEE = false             # поставьте true, если транзакции будут не проходить из-за газа. Далее повышайте GAS_PRICE_MULTIPLIER
-
 ECLIPSE_TAP_SLEEP_TIME = [0.1, 0.2]          # [от, до] время сна между каждым кликом
 
 ECLIPSE_TAP_SLEEP_AMOUNT2 = [400, 500]      # [от, до] количество тапов для сна ECLIPSE_TAP_SLEEP_TIME2
