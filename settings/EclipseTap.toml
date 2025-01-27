@@ -1,4 +1,4 @@
-ECLIPSE_TAP_NEW_DEPOSITS = true             # делать депозиты на новые/старые игровые кошельки после первого депозита
+ECLIPSE_TAP_NEW_DEPOSITS = false             # делать депозиты на новые/старые игровые кошельки после первого депозита
 ECLIPSE_TAP_GEN_NEW_WALLETS = false          # создавать каждый раз новый кошелек при депозите для тапов
 
 ECLIPSE_CEX_USING = 1                        # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
@@ -9,15 +9,15 @@ ECLIPSE_CEX_ETH_L2_WITHDRAW = true           # включает предвари
 
 ECLIPSE_TAP_AUTO_REFUEL = true               # делать автоматический рефьюл для пополнения сети Eclipse
 ECLIPSE_GASZIP_NETWORKS = ['Arbitrum', 'Optimism'] # сети, в которых искать ETH для рефьюла через GasZip (Arbitrum, Optimism, Base)
-ECLIPSE_GASZIP_AMOUNT = [0.0008, 0.0009]     # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через GasZip
-ECLIPSE_GASZIP_FEE_SUPPORT = [0.00005, 0.00005] # сумма нативки удержания нативки под комиссию для реьюла через GasZip
+ECLIPSE_GASZIP_AMOUNT = [0.00075, 0.00085]     # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через GasZip
+ECLIPSE_GASZIP_FEE_SUPPORT = [0.000025, 0.000025] # сумма нативки удержания нативки под комиссию для реьюла через GasZip
 
-ECLIPSE_TAP_SLEEP_TIME = [0.1, 0.2]          # [от, до] время сна между каждым кликом
+ECLIPSE_TAP_SLEEP_TIME = [0.1, 0.2]         # [от, до] время сна между каждым кликом
 
 ECLIPSE_TAP_SLEEP_AMOUNT2 = [400, 500]      # [от, до] количество тапов для сна ECLIPSE_TAP_SLEEP_TIME2
 ECLIPSE_TAP_SLEEP_TIME2 = [60, 120]         # [от, до] время сна между каждыми ECLIPSE_TAP_SLEEP_AMOUNT2 кликами
 
-ECLIPSE_TAP_SLEEP_AMOUNT3 = [1000, 1200]      # [от, до] количество тапов для сна ECLIPSE_TAP_SLEEP_TIME3
+ECLIPSE_TAP_SLEEP_AMOUNT3 = [1000, 1200]    # [от, до] количество тапов для сна ECLIPSE_TAP_SLEEP_TIME3
 ECLIPSE_TAP_SLEEP_TIME3 = [250, 400]        # [от, до] время сна между каждой ECLIPSE_TAP_SLEEP_AMOUNT3 кликов
 
 ECLIPSE_TAPS_AMOUNT = [9500, 10000]          # [от, до] максимальное количество кликов на аккаунте
