@@ -1,0 +1,7 @@
+INK_RESERVOIR_SWAP_AMOUNT = ['80', '90']    # % ETH, которое будет использовано для свапов на swap.reservoir.tools
+
+INK_VELODROME_SWAP_AMOUNT = ['80', '90']    # % ETH, которое будет использовано для свапов на velodrome.finance
+
+INK_ETH_WRAP_AMOUNT = ['80', '90']          # % ETH, которое будет использовано для врапа в WETH 
+
+INK_BRIDGE_LIMITER = [0.0005, 0.0006]       # количество в ETH, которое нужно оставить при бридже из Ink (работает и для учета комиссии)

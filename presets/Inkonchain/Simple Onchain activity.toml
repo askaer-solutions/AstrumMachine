@@ -1,0 +1,43 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [6, 10]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["ink_say_gm"],
+    ],
+    [
+        ["ink_reservoir_swap_eth_to_usdc"],
+        ["ink_velodrome_swap_usdc_to_eth"],
+    ],
+    [
+        ["ink_velodrome_swap_eth_to_usdc"],
+        ["ink_velodrome_swap_usdc_to_eth"],
+    ],
+    [
+        ["ink_wrap_native"],
+        ["ink_ionic_supply"],
+        ["ink_ionic_redeem"],
+        ["ink_unwrap_native"],
+    ],
+    [
+        ["ink_owlto_deploy_basic"],
+    ],
+    [
+        ["ink_owlto_deploy_erc20"],
+    ],
+    [
+        ["ink_inkyswap_swap_eth_to_ak47"],
+        ["ink_inkyswap_swap_ak47_to_eth"],
+    ],
+    [
+        ["ink_inkyswap_swap_eth_to_cat"],
+        ["ink_inkyswap_swap_cat_to_eth"],
+    ],
+    [
+        ["ink_inkyswap_swap_eth_to_purple"],
+        ["ink_inkyswap_swap_purple_to_eth"],
+    ],
+    [
+        ["ink_inkyswap_swap_eth_to_prl"],
+        ["ink_inkyswap_swap_prl_to_eth"],
+    ],
+]
