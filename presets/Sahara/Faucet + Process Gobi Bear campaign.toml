@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["sahara_claim_faucet"],
+    ["sahara_gobi_bear_campaign"],
+]

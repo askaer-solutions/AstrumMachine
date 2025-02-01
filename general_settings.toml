@@ -81,12 +81,8 @@ TELEGRAM_USER_ID = ""    # https://t.me/getmyid_bot
 #----------------------------------------------------CAPTCHA CONTROL----------------------------------------------------
 
 USE_FREE_GALXE_SOLVER = false   # Использовать решение капчи через данный софт, что является бесплатным
-CAPTCHA_SOLVER_TYPE = 5         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha, 4-captcha24, 5-bestcaptcha
+CAPTCHA_SOLVER_TYPE = 5         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha
 
-# https://bestcaptchasolver.com/account
-BESTCAPTCHA_API_KEY = ""
-# https://24captcha.online/dashboard/
-CAPTCHA24_API_KEY = ""
 # https://2captcha.com/enterpage
 TWO_CAPTCHA_API_KEY = ""
 # https://dashboard.capsolver.com/dashboard/overview
