@@ -1,6 +1,7 @@
 SAHARA_TRANSFER_AMOUNT = [0.0001, 0.0002] # сумма SAH для трансфера на рандомный кошелек
 SAHARA_LOGIN_VIA_REF_CODE = false # поставьте true, чтобы использовать реферральный код для авторизации на сайте
 SAHARA_PROCESS_ONCHAIN = false # поставьте true, чтобы проходить ончейн задания
+SAHARA_CAPTCHA_SOLVER_TYPE = 4 # Сервис, через который будет решаться капча: 4-capthca24, 5-bestcaptcha
 
 GALXE_AUTO_REFUEL = true # при нехватке $G токенов в Gravity чейне, во время клейма поинтов, софт автоматически запустит рефьюл по настройкам ниже
 GALXE_REFUEL_AMOUNT = [0.0001, 0.0002] # сумма ETH для рефьюла Gravity
