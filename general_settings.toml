@@ -89,6 +89,8 @@ TWO_CAPTCHA_API_KEY = ""
 CAPSOLVER_API_KEY = ""
 # https://capmonster.cloud
 CAPMONSTER_API_KEY = ""
+# https://24captcha.online/dashboard/
+CAPTCHA24_API_KEY = "" # используется только для hCaptcha
 
 #----------------------------------------------------EXCEL CONTROL------------------------------------------------------
 

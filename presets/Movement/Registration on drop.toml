@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['registration_on_movedrop'],
+]
+
+WITHOUT_GALXY_UNLINKING = true
