@@ -1,8 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["withdraw_cex"],
-    ["abstract_bridge_eth_relay_in", "abstract_bridge_eth_jumper_in"],
-    ["abstract_link_social"],
-    ["abstract_vote_random_app"],
-    ["abstract_smart_swaps"],
-    ["abstract_claim_badges"],
-]

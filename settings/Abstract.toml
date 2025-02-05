@@ -1,5 +1,8 @@
 ABSTRACT_SWAP_COUNT = [1, 5] # количество свапов на https://www.abs.xyz/trade
 ABSTRACT_SWAP_AMOUNT = ['10', '20'] # сумма свапов на https://www.abs.xyz/trade. Применяется только к ETH, обратно 100%
 
+ABSTRACT_WANT_BALANCE = [0.007, 0.008] # сумма ETH на балансе в Abstract, при не хватке, софт запустит процесс вывода + бриджа в сеть
+ABSTRACT_BRIDGE_OUT_AMOUNT = ['100', '100'] # сумма ETH для бриджа из Abstract
+
 ABSTRACT_LINK_DISCORD = true # привязывать аккаунт Discord к профилю Abstract
 ABSTRACT_LINK_TWITTER = true # привязывать аккаунт Twitter к профилю Abstract

@@ -1,0 +1,3 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["story_mint_stability_badge"],
+]
