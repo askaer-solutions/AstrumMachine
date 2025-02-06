@@ -1,3 +1,4 @@
 CLASSIC_ROUTES_MODULES_USING = [
+    ["withdraw_cex"],
     ["abstract_bridge_eth_relay_in", "abstract_bridge_eth_jumper_in"]
 ]
