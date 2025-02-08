@@ -1,4 +1,4 @@
-SAHARA_TRANSFER_AMOUNT = [0.0001, 0.0002] # сумма SAH для трансфера на рандомный кошелек
+SAHARA_TRANSFER_AMOUNT = [0.00001, 0.00002] # сумма SAH для трансфера на рандомный кошелек
 SAHARA_LOGIN_VIA_REF_CODE = true # поставьте true, чтобы использовать реферральный код для авторизации на сайте
 SAHARA_PROCESS_ONCHAIN = true # поставьте true, чтобы проходить ончейн задания
 SAHARA_FAUCET_UNLIMITED = false # использовать кран при любом балансе на аккаунте, не забудьте вставить ключ CAPTCHA24_API_KEY
