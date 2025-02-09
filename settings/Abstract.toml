@@ -5,3 +5,26 @@ ABSTRACT_WANT_BALANCE = [0.007, 0.008] # сумма ETH на балансе в A
 
 ABSTRACT_LINK_DISCORD = true # привязывать аккаунт Discord к профилю Abstract
 ABSTRACT_LINK_TWITTER = true # привязывать аккаунт Twitter к профилю Abstract
+
+ABSTRACT_NFTS2ME_CONTRACTS = [ # контракты NFT с Nfts2me для рандомного минта
+    "0x2597EB04120A9bE05d8552e1B1122189C83F350c",
+    "0x924C1eCEd0F7667A56eafD3bFEce1B5d08BE2934",
+    "0xE12D7f82Fa77b11cd72292c5Dfa681Acf5bcf50f",
+    "0xdee880A0aF889945Dda8C9E451C2C9243a5bddf8",
+    "0x9c093577A3B65EDd6E0BF54eFbbb4c2A55181e5E",
+    "0xd0C0a3Cda42819134A7480D28C2181C8347B4E8E",
+]
+
+ABSTRACT_LANDING_AMOUNT = ['80', '90']  # Применяется для депозитов на лендинг, вывод на 100%
+
+ABSTRACT_ZOOFUN_TOKENS = [ # контракты токенов с https://www.zoo.fun для рандомного свапа
+    "0x06b230f356cec701f1b636fe2f6d173c89b29ffc",
+    "0x183eca9e7cf4fcab0ad8a5bec0c9b7c9741c2edd",
+    "0x2e17bcd6cc0f67401d736d1dd8284fda1e0d9168",
+    "0x10e6e5f4efd605e2037d80976fc330bdc04f4c86",
+    "0x133f086a628d366a1f91c347af366d142552d03b",
+
+]
+ABSTRACT_ZOOFUN_COUNT = [1, 5] # количество полных свапов на https://www.zoo.fun (1 свап - свап туда-обратно)
+ABSTRACT_ZOOFUN_AMOUNT = ['1', '2'] # сумма свапов на https://www.zoo.fun. Применяется только к ETH, обратно 100%
+ABSTRACT_ZOOFUN_SLEEP = [20, 30] # задержка между каждым свапом на https://www.zoo.fun
