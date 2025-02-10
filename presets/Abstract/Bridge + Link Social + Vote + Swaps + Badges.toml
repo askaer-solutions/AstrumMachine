@@ -1,4 +1,5 @@
 CLASSIC_ROUTES_MODULES_USING = [
+    ["witdraw_cex"],
     ["abstract_bridge_eth_relay_in", "abstract_bridge_eth_jumper_in"],
     ["abstract_link_social"],
     ["abstract_vote_random_app"],
