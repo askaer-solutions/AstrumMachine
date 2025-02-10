@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["abstract_bridge_eth_jumper_out"],
+    ["deposit_cex"]
+]
