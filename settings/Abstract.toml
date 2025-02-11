@@ -1,7 +1,7 @@
-ABSTRACT_SWAP_COUNT = [1, 5] # количество свапов на https://www.abs.xyz/trade
-ABSTRACT_SWAP_AMOUNT = ['10', '20'] # сумма свапов на https://www.abs.xyz/trade. Применяется только к ETH, обратно 100%
+ABSTRACT_SWAP_COUNT = [4, 8] # количество свапов на https://www.abs.xyz/trade
+ABSTRACT_SWAP_AMOUNT = ['50', '60'] # сумма свапов на https://www.abs.xyz/trade. Применяется только к ETH, обратно 100%
 
-ABSTRACT_WANT_BALANCE = [0.007, 0.008] # сумма ETH на балансе в Abstract, при не хватке, софт запустит процесс вывода + бриджа в сеть
+ABSTRACT_WANT_BALANCE = [0.004, 0.005] # сумма ETH на балансе в Abstract, при не хватке, софт запустит процесс вывода + бриджа в сеть
 ABSTRACT_MIN_TO_BRIDGE = 0.001 # минимальная разница между желаемой и фактической суммой для запуска умного бриджа
 
 ABSTRACT_LINK_DISCORD = true # привязывать аккаунт Discord к профилю Abstract
@@ -16,7 +16,7 @@ ABSTRACT_NFTS2ME_CONTRACTS = [ # контракты NFT с Nfts2me для ран
     "0xd0C0a3Cda42819134A7480D28C2181C8347B4E8E",
 ]
 
-ABSTRACT_LANDING_AMOUNT = ['80', '90']  # Применяется для депозитов на лендинг, вывод на 100%
+ABSTRACT_LANDING_AMOUNT = ['55', '60']  # Применяется для депозитов на лендинг, вывод на 100%
 
 ABSTRACT_ZOOFUN_TOKENS = [ # контракты токенов с https://www.zoo.fun для рандомного свапа
     "0x06b230f356cec701f1b636fe2f6d173c89b29ffc",
@@ -26,6 +26,6 @@ ABSTRACT_ZOOFUN_TOKENS = [ # контракты токенов с https://www.zo
     "0x133f086a628d366a1f91c347af366d142552d03b",
 
 ]
-ABSTRACT_ZOOFUN_COUNT = [1, 5] # количество полных свапов на https://www.zoo.fun (1 свап - свап туда-обратно)
+ABSTRACT_ZOOFUN_COUNT = [1, 3] # количество полных свапов на https://www.zoo.fun (1 свап - свап туда-обратно)
 ABSTRACT_ZOOFUN_AMOUNT = ['1', '2'] # сумма свапов на https://www.zoo.fun. Применяется только к ETH, обратно 100%
 ABSTRACT_ZOOFUN_SLEEP = [20, 30] # задержка между каждым свапом на https://www.zoo.fun
