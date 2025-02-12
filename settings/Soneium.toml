@@ -1,0 +1,5 @@
+SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
+
+SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']
+
+SONEIUM_BRIDGE_LIMITER = [0.0005, 0.0006]       # количество в ETH, которое нужно оставить при бридже из Ink (работает и для учета комиссии)

@@ -1,10 +1,16 @@
 SAHARA_TRANSFER_AMOUNT = [0.00001, 0.00002] # сумма SAH для трансфера на рандомный кошелек
 SAHARA_LOGIN_VIA_REF_CODE = true # поставьте true, чтобы использовать реферральный код для авторизации на сайте
 SAHARA_PROCESS_ONCHAIN = true # поставьте true, чтобы проходить ончейн задания
-SAHARA_FAUCET_UNLIMITED = false # использовать кран при любом балансе на аккаунте, не забудьте вставить ключ CAPTCHA24_API_KEY
+SAHARA_FAUCET_UNLIMITED = true # использовать кран при любом балансе на аккаунте, не забудьте вставить ключ CAPTCHA24_API_KEY
 SAHARA_CAPTCHA_SOLVER_TYPE = 4 # Сервис, через который будет решаться капча: 4-capthca24, 5-bestcaptcha
 
 GALXE_AUTO_REFUEL = true # при нехватке $G токенов в Gravity чейне, во время клейма поинтов, софт автоматически запустит рефьюл по настройкам ниже
 CLAIM_ONCHAIN_POINTS_REWARDS = false # клеймить ончейн G поинты за выполненные задания на Galxe
 GALXE_G_WITHDRAW_AMOUNT = [5, 10] # сумма G для вывода в сеть Gravity из биржи. CEX_USING в settings.toml для указания с какой биржи воркать
 GALXE_MIN_G_BALANCE = 5 # минимальный баланс, ниже которого софт запусти вывод из биржи
+
+#-------------------------------------------------------GASZIP----------------------------------------------------------
+
+REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
+REFUEL_GASZIP_L2_NETWORK = ['Arbitrum', 'Optimism'] # сети, которые используются для бриджа через рефьюла через Gas.Zip
+REFUEL_GASZIP_AMOUNT = [0.0001, 0.0002]        # сумма рефьюла через Gas.Zip

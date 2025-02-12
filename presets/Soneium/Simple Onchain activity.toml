@@ -1,0 +1,33 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [4, 7]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+      ["soneium_wrap_native"],
+      ["soneium_ionic_supply"],
+      ["soneium_ionic_redeem"],
+      ["soneium_unwrap_native"],
+    ],
+    [
+      ["soneium_owlto_deploy_basic"],
+    ],
+    [
+      ["soneium_owlto_deploy_erc20"],
+    ],
+    [
+      ["soneium_sake_deposit"],
+      ["soneium_sake_withdraw"],
+      ["soneium_unwrap_native"],
+    ],
+    [
+      ["soneium_sonefi_swap_eth_to_usdc", "soneium_sonus_swap_eth_to_usdc", "soneium_velodrome_swap_eth_to_usdc"],
+      ["soneium_sonefi_swap_usdc_to_eth", "soneium_sonus_swap_usdc_to_eth", "soneium_velodrome_swap_usdc_to_eth"],
+    ],
+    [
+      ["soneium_sonefi_swap_eth_to_usdc", "soneium_sonus_swap_eth_to_usdc", "soneium_velodrome_swap_eth_to_usdc"],
+      ["soneium_sonefi_swap_usdc_to_eth", "soneium_sonus_swap_usdc_to_eth", "soneium_velodrome_swap_usdc_to_eth"],
+    ],
+    [
+      ["soneium_sonefi_swap_eth_to_usdc", "soneium_sonus_swap_eth_to_usdc", "soneium_velodrome_swap_eth_to_usdc"],
+      ["soneium_sonefi_swap_usdc_to_eth", "soneium_sonus_swap_usdc_to_eth", "soneium_velodrome_swap_usdc_to_eth"],
+    ],
+]
