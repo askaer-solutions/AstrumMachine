@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["abstract_deposit_zerolend"],
-    ["abstract_withdraw_zerolend"],
-]

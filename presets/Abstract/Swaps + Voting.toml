@@ -1,0 +1,19 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [3, 5]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["abstract_smart_swaps"],
+    ],
+    [
+        ["abstract_vote_random_app"]
+    ],
+    [
+        ["abstract_vote_random_app"]
+    ],
+    [
+        ["abstract_vote_random_app"]
+    ],
+    [
+        ["abstract_vote_random_app"]
+    ],
+]
