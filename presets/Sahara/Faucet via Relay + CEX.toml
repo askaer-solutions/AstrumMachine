@@ -1,0 +1,6 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["withdraw_cex"],
+    ["sahara_bridge_eth_relay"],
+    ["sahara_claim_faucet"],
+    ["sahara_transfer_eth_to_address"]
+]

@@ -1,8 +1,10 @@
 SAHARA_TRANSFER_AMOUNT = [0.00001, 0.00002] # сумма SAH для трансфера на рандомный кошелек
 SAHARA_LOGIN_VIA_REF_CODE = true # поставьте true, чтобы использовать реферральный код для авторизации на сайте
 SAHARA_PROCESS_ONCHAIN = true # поставьте true, чтобы проходить ончейн задания
-SAHARA_FAUCET_UNLIMITED = true # использовать кран при любом балансе на аккаунте, не забудьте вставить ключ CAPTCHA24_API_KEY
-SAHARA_CAPTCHA_SOLVER_TYPE = 4 # Сервис, через который будет решаться капча: 4-capthca24, 5-bestcaptcha
+SAHARA_FAUCET_UNLIMITED = true # использовать кран при любом балансе на аккаунте, не забудьте вставить ключ в генеральные настройки
+
+SAHARA_TRANSFER_SAH_AMOUNT = [0.005, 0.006] # сумма для транфера SAH в сети Sahara на кошелек из EVM Deposit Address
+SAHARA_TRANSFER_ETH_AMOUNT = ['100', '100'] # сумма для транфера ETH в сети Ethereum на кошелек из EVM Deposit Address
 
 GALXE_AUTO_REFUEL = true # при нехватке $G токенов в Gravity чейне, во время клейма поинтов, софт автоматически запустит рефьюл по настройкам ниже
 CLAIM_ONCHAIN_POINTS_REWARDS = false # клеймить ончейн G поинты за выполненные задания на Galxe
