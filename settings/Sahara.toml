@@ -15,4 +15,5 @@ GALXE_MIN_G_BALANCE = 5 # минимальный баланс, ниже кото
 
 REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
 REFUEL_GASZIP_L2_NETWORK = ['Arbitrum', 'Optimism'] # сети, которые используются для бриджа через рефьюла через Gas.Zip
-REFUEL_GASZIP_AMOUNT = [0.0001, 0.0002]        # сумма рефьюла через Gas.Zip
+REFUEL_GASZIP_AMOUNT = [0.0001, 0.0002]             # сумма рефьюла через Gas.Zip
+REFUEL_GASZIP_FEE = [0.000025, 0.00005]             # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
