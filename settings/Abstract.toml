@@ -9,13 +9,15 @@ ABSTRACT_LINK_TWITTER = true # привязывать аккаунт Twitter к 
 
 #-------------------------------------------------------Moonshot--------------------------------------------------------
 
-ABSTRACT_MOONSHOT_COUNT = [2, 4] # количество полных свапов на https://dexscreener.com/abstract/ (свап туда-обратно)
+ABSTRACT_MOONSHOT_COUNT = [3, 6] # количество полных свапов на https://dexscreener.com/abstract/ (свап туда-обратно)
 ABSTRACT_MOONSHOT_SLEEP = [2, 3] # сон после покупки/продаже токенов на https://dexscreener.com/abstract/
 ABSTRACT_MOONSHOT_CURVE_PROGRESS = 50 # максимальный прогрес токена до миграции с MoonShot
 ABSTRACT_MOONSHOT_AMOUNT = ['5', '10'] # сумма ETH для покупки токенов, обратный свап на 100%
 
 ABSTRACT_MOONSHOT_ADDRESSES = [ # контракты токенов с https://dexscreener.com/abstract/ для рандомного минта
-    "0xaa768eb64e5e158490a7c6610fcf684e08911995",
+#    "0xaa768eb64e5e158490a7c6610fcf684e08911995",
+#    "0x903E1c5afc16638cDe01B66390e1f6CEFA0d6bdB",
+#    "0x302ea2fCcad9E78672d6080212BA7f4DB4C708Fd",
 ]
 
 #-------------------------------------------------------NFTs2Me---------------------------------------------------------
