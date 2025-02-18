@@ -9,7 +9,8 @@ ABSTRACT_LINK_TWITTER = true # привязывать аккаунт Twitter к 
 
 #-------------------------------------------------------Moonshot--------------------------------------------------------
 
-ABSTRACT_MOONSHOT_COUNT = [3, 6] # количество полных свапов на https://dexscreener.com/abstract/ (свап туда-обратно)
+ABSTRACT_MOONSHOT_AUTO_REFUEL = false # автоматический рефьюл если баланс меньше 0.0011 ETH (минималка под свап 0.001 на сайте)
+ABSTRACT_MOONSHOT_COUNT = [6, 12] # количество полных свапов на https://dexscreener.com/abstract/ (свап туда-обратно)
 ABSTRACT_MOONSHOT_SLEEP = [2, 3] # сон после покупки/продаже токенов на https://dexscreener.com/abstract/
 ABSTRACT_MOONSHOT_CURVE_PROGRESS = 50 # максимальный прогрес токена до миграции с MoonShot
 ABSTRACT_MOONSHOT_AMOUNT = ['5', '10'] # сумма ETH для покупки токенов, обратный свап на 100%
