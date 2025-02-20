@@ -1,0 +1,14 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 2]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ['eclipse_swap_eth_to_usdc_lifinity'],
+        ['eclipse_swap_usdc_to_eth_lifinity']
+    ],
+    [
+        ['eclipse_swap_eth_to_usdc_lifinity'],
+        ['eclipse_swap_usdc_to_sol_lifinity'],
+        ['eclipse_swap_sol_to_usdc_lifinity'],
+        ['eclipse_swap_usdc_to_eth_lifinity'],
+    ],
+]

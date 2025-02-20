@@ -1,6 +1,11 @@
 #---------------------------------------------------MODULES SETTINGS----------------------------------------------------
 
 # Все настройки пояснены в коментарии при положении frue(включить), false(выключить)
+
+GALXE_AUTO_REFUEL = true # при нехватки $G токенов в Gravity чейне, во время клейма поинтов, софт автоматически запустит рефьюл по настройкам ниже
+GALXE_G_WITHDRAW_AMOUNT = [10, 20] # сумма G для вывода в сеть Gravity из биржи. CEX_USING в settings.toml для указания с какой биржи воркать
+GALXE_MIN_G_BALANCE = 10 # минимальный баланс, ниже которого софт запусти вывод с биржи
+
 SHUFFLE_CAMPAIGNS = true                    # перемешать ветку, перед выполнением
 
 CLAIM_NFT_REWARDS = true                    # выполнять задания для получения NFT и клеймить её
@@ -8,7 +13,11 @@ CLAIM_DISCORD_ROLE_REWARDS = true           # выполнять задания 
 CLAIM_ONCHAIN_POINTS_REWARDS = true         # клеймить ончейн поинты за выполненные задания
 
 PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = true  # будет проходить кампании до конца, пока не заклеймит все награды
-PROCESS_MANUAL_VERIFY_QUEST = true         # делать квесты с ручной проверкой, некоторые квесты засчитывает без проверок
+PROCESS_MANUAL_VERIFY_QUEST = true          # делать квесты с ручной проверкой, некоторые квесты засчитывает без проверок
+
+GALXE_BREAK_PROCESS_FAILED = false          # прекращает выполнение кампании, если группа заданий будет не выполнена
+GALXE_PROCESS_PASSPORT_CRED = false         # проходить задание на проверку наличия Galxe паспорта
+GALXE_PROCESS_SUBSCRIPTION_CRED = false     # проходить задание на проверку наличия Galxe подписки
 
 CLEAR_RESERVES_IF_OVER = true               # чистит файлов резервов до первоначального состояния, чтобы раскодники брались по кругу
 CHANGE_WRONG_SOCIAL_ACCOUNT = true          # отвязывать ли Twitter/Discord при несоответствии привязанного аккаунта к Galxe и текущего

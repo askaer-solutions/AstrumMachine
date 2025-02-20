@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ["soneium_process_all_campaigns"],
+]
