@@ -2,4 +2,8 @@ SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
 
 SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']
 
-SONEIUM_BRIDGE_LIMITER = [0.0005, 0.0006]       # количество в ETH, которое нужно оставить при бридже из Soneium (работает и для учета комиссии)
+SONEIUM_BRIDGE_LIMITER = [0.00005, 0.00006]       # количество в ETH, которое нужно оставить при бридже из Soneium (работает и для учета комиссии)
+
+SONEIUM_CREDENTIAL_TO_SKIP = [
+    514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
+]
