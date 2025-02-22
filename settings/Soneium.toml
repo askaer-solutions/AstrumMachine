@@ -3,4 +3,5 @@ SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']
 
 SONEIUM_CREDENTIAL_TO_SKIP = [
     514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
+    513985145116557312,  # https://app.galxe.com/quest/credential/513985145116557312
 ]
