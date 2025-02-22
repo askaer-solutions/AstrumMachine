@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["story_unleash_faucet_usdt"],
-    ["story_unleash_loop_supply_usdt"]
-]

@@ -1,5 +1,0 @@
-XTERIO_CEX_FOR_CLAIM = 2 # 2 - Bybit, 4 - Bitget
-
-CLASSIC_ROUTES_MODULES_USING = [
-    ['xterio_claim_to_cex']
-]

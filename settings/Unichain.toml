@@ -1,6 +1,4 @@
-UNICHAIN_CEX_USING = 1                       # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
-UNICHAIN_CEX_NETWORKS = [2, 3]               # какие сети использовать для вывода с биржи (2 - Arbitrum, 3 - Optimism)
-UNICHAIN_CEX_AMOUNT = [0.0011, 0.0012]       # сумма вывода ETH в сеть Arbitrum или Optimism. Можно указывать % или кол-во
+#---------------------------------------------------UNICHAIN CONTROL----------------------------------------------------
 
 UNICHAIN_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2(Arbitrum или Optimism) в Sepolia (минимум, максимум) (% или кол-во)
 UNICHAIN_BRIDGG_AMOUNT = ["4", "5"]          # сумма бриджа на Bridgg из Unichain в Sepolia (минимум, максимум) (% или кол-во)

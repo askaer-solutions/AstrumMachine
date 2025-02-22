@@ -1,5 +1,7 @@
+#----------------------------------------------------GALXE CONTROL------------------------------------------------------
+
 GALXE_CUSTOM_CAMPAIGNS_EVM = [
-    'GCNDYtp2Rb',
+    'GCDjjtpGA6',
 ]
 
 GALXE_CUSTOM_CAMPAIGNS_APTOS = [
@@ -14,10 +16,7 @@ GALXE_QUIZ_ANSWERS_BY_CREDENTIAL_ID = [
     ["433653260763623427", "Zalupa", "2", "2", "dick"],     # [QUIZ CREDITANTIONAL ID, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER]
 ]
 
-GALXE_AUTO_REFUEL = true # при нехватки $G токенов в Gravity чейне, во время клейма поинтов, софт автоматически запустит рефьюл по настройкам ниже
-GALXE_G_WITHDRAW_AMOUNT = [10, 20] # сумма G для вывода в сеть Gravity из биржи. CEX_USING в settings.toml для указания с какой биржи воркать
-GALXE_MIN_G_BALANCE = 10 # минимальный баланс, ниже которого софт запусти рефьюл через GazZip
-
-GALXE_BREAK_PROCESS_FAILED = false          # прекращает выполнение кампании, если группа заданий будет не выполнена
-GALXE_PROCESS_PASSPORT_CRED = false         # проходить задание на проверку наличия Galxe паспорта
-GALXE_PROCESS_SUBSCRIPTION_CRED = false     # проходить задание на проверку наличия Galxe подписки
+# задания которые не надо делать, указавайте цифры задания как в примере снизу
+GALXE_CREDENTIAL_TO_SKIP = [
+        514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
+]

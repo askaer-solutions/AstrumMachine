@@ -1,25 +1,22 @@
-ECLIPSE_CEX_USING = 1                        # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
-ECLIPSE_AUTO_REFUEL = true                    # делать автоматический рефьюл для пополнения сети Eclipse
+#----------------------------------------------------REFUEL CONTROLE----------------------------------------------------
 
-# При работе с Bitget, лимит на вывод из Arbitrum 0.01, поэтому удалите Arbitrum из ECLIPSE_CEX_NETWORKS
-ECLIPSE_CEX_AMOUNT = ['100', '100']          # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
-ECLIPSE_USENEXUS_AMOUNT = ['100', '100']     # сумма SOL для бриджей между Solana и Eclipse. Можно указывать % или кол-во
-
-ECLIPSE_CEX_ETH_L2_WITHDRAW = true           # включает предварительный вывод с биржи перед рефьюлом
-ECLIPSE_CEX_NETWORKS = [2, 3]                # какие сети использовать для вывода с биржи под рефьюел (2-Arbitrum, 3-Optimism, 6-Base)
-
+ECLIPSE_AUTO_REFUEL = true                    # делать автоматический рефьюл для пополнения сети Eclipse при нехватке нативки во время бриджей
 ECLIPSE_GASZIP_NETWORKS = ['Arbitrum', 'Optimism'] # сети, в которых искать ETH для рефьюла через Gazzip
 ECLIPSE_GASZIP_AMOUNT = [0.00145, 0.00155]   # сумма вывода ETH с биржи в ECLIPSE_CEX_NETWORKS, для рефьюла через Gazzip.
 ECLIPSE_GASZIP_FEE_SUPPORT = [0.000025, 0.000025] # сумма нативки удержания нативки под комиссию для реьюла через GasZip
 
+#----------------------------------------------------AMOUNT CONTROLE----------------------------------------------------
+
 ECLIPSE_WETH_BRIDGE_AMOUNT = ['100', '100'] # сумма WETH для бриджа через https://app.eclipse.xyz/mint-teth
-ECLIPSE_WETH_FEE_LIMITER = [0.005, 0.005]   # сумма ETH для использования под комиссию на бридж. Софт будет вычитать ее из суммы под врап  ETH
+ECLIPSE_WETH_FEE_LIMITER = [0.005, 0.005]   # сумма ETH для использования под комиссию на бридж. Софт будет вычитать ее из суммы под врап ETH
 ECLIPSE_WETH_SKIP_WRAP = false              # пропускать ли врап ETH, включайте, если у вас уже есть балансы в WETH
 
+ECLIPSE_USENEXUS_AMOUNT = ['100', '100']     # сумма SOL для бриджей между Solana и Eclipse. Можно указывать % или кол-во
 ECLIPSE_SOLAR_SWAP_AMOUNT = ['100', '100']  # сумма для свапов на платформе https://eclipse.solarstudios.co/
 ECLIPSE_ORCA_SWAP_AMOUNT = ['100', '100']   # сумма для свапов на платформе https://www.orca.so/
 ECLIPSE_LIFINITY_SWAP_AMOUNT = ['100', '100']  # сумма для свапов на платформе https://eclipse.lifinity.io/
 ECLIPSE_TETH_SWAP_AMOUNT = ['100', '100'] # сумма для свапов из tETH на платформе https://www.orca.so/
 ECLIPSE_SWAP_FEE_SUPPORT = [0.00082, 0.00095] # сколько оставлять ETH под комиссию для свапов
+ECLIPSE_LANDING_AMOUNT = ['10', '20']   # Применяется для депозитов на лендинг, вывод на 100%
 
 ECLIPSE_RANDOM_SEND_AMOUNT = [0.0000001, 0.0000002] # сумма ETH для трансферов на рандомные адреса

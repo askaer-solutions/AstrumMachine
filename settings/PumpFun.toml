@@ -1,3 +1,5 @@
+#----------------------------------------------------PUMPFUN CONTROL----------------------------------------------------
+
 PUMPFUN_CEX_USING = 1                         # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
 PUMPFUN_CEX_AMOUNT = ['100', '100']           # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
 PUMPFUN_CEX_SOL_LIMITER = [0.3, 0.4]          # количество SOL в $, которое нужно оставить на аккаунте при депозите на Биржу
@@ -33,9 +35,9 @@ PUMPFUN_MAX_SNIPERS_COUNT = 1000                # максимальное ко�
 #----------------------------------------------------TOKEN CREATION-----------------------------------------------------
 
 PUMPFUN_TOKER_NAME = [
-    ['Zalupa', 'ZLP', 'This token is too good for buy'],
-    ['GigaZalupa', 'GZLP', 'This token is too good for buy'],
-    ['FullZalupa', 'FZLP', 'This token is too good for buy']
+    ['ZalupaCoin', 'ZLP', 'This token is too good for buy, cuz zalupa is too big'],
+#    ['GigaZalupa', 'GZLP', 'This token is too good for buy'],
+#    ['FullZalupa', 'FZLP', 'This token is too good for buy']
 ] # Название токена, Название тикера, Описание токена
 
 #-------------------------------------------------------REPLIES---------------------------------------------------------

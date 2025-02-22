@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["story_mint_trade_faucet"],
-]
-
-WITHOUT_GALXY_UNLINKING = true

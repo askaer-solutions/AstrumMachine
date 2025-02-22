@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["story_storyhunt_create_token"],
-    ["story_storyhunt_create_liquidity_pool"],
-    ["story_storyhunt_add_liquidity_to_created_token"],
-]

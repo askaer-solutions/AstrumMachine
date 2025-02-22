@@ -1,6 +1,0 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
-
-CLASSIC_ROUTES_MODULES_USING = [
-        ["story_color_mint"],
-        ["story_color_register_nft"],
-]
