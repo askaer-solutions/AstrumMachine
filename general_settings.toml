@@ -80,7 +80,7 @@ SSL_IMAP = true                 # включение SSL сертификата 
 
 #---------------------------------------------------TELEGRAM CONTROL----------------------------------------------------
 
-TELEGRAM_NOTIFICATIONS = true  # Включает уведомления в Telegram
+TELEGRAM_NOTIFICATIONS = false  # Включает уведомления в Telegram
 TELEGRAM_BOT_TOKEN = ""  # https://t.me/BotFather
 TELEGRAM_USER_ID = ""    # https://t.me/getmyid_bot
 
