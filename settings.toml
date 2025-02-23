@@ -31,7 +31,7 @@ CHANGE_TWITTER_TOKEN = true                 # разрешено ли софту
 #-------------------------------------------------------DISCORD---------------------------------------------------------
 
 SKIP_DISCORD_ACTION = false                  # не выполнять действий через Discord, софт просто попробует заклеймить поинты
-VERIFY_BOT_ON_GUILD = true                   # проходить каптча ботов на Discord серверах (Pandez, Sledgehammer)
+VERIFY_BOT_ON_GUILD = false                  # проходить каптча ботов на Discord серверах (Pandez, Sledgehammer)
 
 CHANGE_DISCORD_TOKEN = true                  # разрешено ли софту менять Discord токен при любых ошибках
 CHANGE_DISCORD_TOKEN_GUILD_BANNED = true     # менять Discord токен при ошибке бана на сервере. Чтобы попробывать сменить прокси укажите false
