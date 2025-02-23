@@ -4,6 +4,7 @@
 
 SHUFFLE_CAMPAIGNS = true                    # перемешать ветку, перед выполнением
 CLEAR_RESERVES_IF_OVER = true               # чистит файлов резервов до первоначального состояния, чтобы раскодники брались по кругу
+CHANGE_WRONG_SOCIAL_ACCOUNT = true          # отвязывает уже привязаный к Galxe аккаунт и линкует новый
 PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = true  # будет проходить кампании до конца, пока не заклеймит все награды
 
 SOLVE_TWITTER_TASKS = true                  # решать Galxe задания с Twitter
