@@ -1,6 +1,11 @@
 SONEIUM_WANTED_TX_COUNT = [45, 50]      # необходимое количество транзакций
 SONEIUM_WANT_BALANCE = [0.005, 0.006]   # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
 
+SONEIUM_MIN_USDC_COLLETCOR = 0.1        # минимальное кол-во USDC для сбора в ETH
+SONEIUM_MIN_WETH_COLLETCOR = 0.0001     # минимальное кол-во WETH для сбора в ETH
+SONEIUM_MIN_SAKE_COLLETCOR = 0.0001     # минимальное кол-во LP токенов для сбора в ETH
+SONEIUM_MIN_IONIC_COLLETCOR = 0.0001    # минимальное кол-во LP токенов для сбора в ETH
+
 SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']  # сумма для врапа, применяется для ETH, обратно 100%
 SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']    # сумма для свапа, применяется для ETH, обратно 100%
 
