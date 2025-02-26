@@ -1,13 +1,13 @@
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
 
-MONAD_WANTED_TX_COUNT = [20, 25]  # необходимое количество транзакций
-MONAD_WANT_BALANCE = [1.0, 2.0] # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
-MONAD_FAUCET_KEY = '6LdTQOEqAAAAAFj6UAU3Jd_0bInJYWnxYM_TZoSr'
+MONAD_WANTED_TX_COUNT = [5, 10]  # необходимое количество транзакций
+MONAD_WANT_BALANCE = [0.01, 2.0] # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
+MONAD_FAUCET_KEY = '6Lcwt-IqAAAAAFRPmCa63N5IEc5SKzSCjtZ1vjzn'
 
 #----------------------------------------------------REFUEL CONTROL-----------------------------------------------------
 
 REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
 REFUEL_GASZIP_L2_NETWORK = ['Arbitrum'] # сети, которые используются для бриджа через рефьюла через Gas.Zip
-REFUEL_GASZIP_AMOUNT = [0.0002, 0.00024] # сумма рефьюла через Gas.Zip
+REFUEL_GASZIP_AMOUNT = [0.0003, 0.0004] # сумма рефьюла через Gas.Zip
 REFUEL_GASZIP_FEE = [0.000015, 0.00003] # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
 

@@ -1,7 +1,10 @@
-SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
-SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']
+SONEIUM_WANTED_TX_COUNT = [45, 50]      # необходимое количество транзакций
+SONEIUM_WANT_BALANCE = [0.005, 0.006]   # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
+
+SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']  # сумма для врапа, применяется для ETH, обратно 100%
+SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']    # сумма для свапа, применяется для ETH, обратно 100%
 
 SONEIUM_CREDENTIAL_TO_SKIP = [
     514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
-    513985145116557312,  # https://app.galxe.com/quest/credential/513985145116557312
+    513985145116557312,  # https://app.galxe.com/quest/credential/514433168942563328
 ]
