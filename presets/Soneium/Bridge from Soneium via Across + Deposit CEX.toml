@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["soneium_bridge_across_from"],
+    ["soneium_cex_deposit_eth"],
+]
