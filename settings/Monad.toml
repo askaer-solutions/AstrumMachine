@@ -7,11 +7,16 @@ MONAD_FAUCET_KEY = '6LcItOMqAAAAAF9ANohQEN4jGOjHRxU8f5MNJZHu'
 
 #----------------------------------------------------REFUEL CONTROL-----------------------------------------------------
 
-REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
+REFUEL_AUTO_ENABLE = true # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
 REFUEL_GASZIP_L2_NETWORK = ['Arbitrum', "Optimism", "Base"] # сети, которые используются для бриджа через рефьюла через Gas.Zip
 REFUEL_GASZIP_AMOUNT = [0.0003, 0.0004] # сумма рефьюла через Gas.Zip
 REFUEL_GASZIP_FEE = [0.000015, 0.00003] # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
 
+#----------------------------------------------------SEPOLIA CONTROL----------------------------------------------------
+
+MONAD_MIN_MON_BALANCE = 1.0 # минимальный баланс MIN для запуска процесса пополнения сети через маршрут Sepolia -> Obriter -> Swap
+
 MONAD_TESTNET_BRIDGE_MIN_AMOUNT = 1 # минимальное количество ETH в сети Sepolia, чтобы софт запустил бридж в Monad, иначе будет додеп в Sepolia
 MONAD_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2(Arbitrum или Optimism) в Sepolia (минимум, максимум) (% или кол-во)
 MONAD_BRIDGE_AMOUNT = ['100', '100'] # сумма бриджа ETH Sepolia -> ETH Monad
+MONAD_SWAP_DAPPS = ['Ambient'] # дапки для свапов ETH -> MON, если убрать все дапки, то свапать не будет
