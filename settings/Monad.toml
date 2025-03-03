@@ -1,9 +1,20 @@
-#----------------------------------------------------MONAD CONTROL------------------------------------------------------
+#-----------------------------------------------MONAD AUTO-PRESET CONTROL-----------------------------------------------
 
-MONAD_WANTED_TX_COUNT = [110, 115]  # необходимое количество транзакций на аккаунте
+# monad_refuel_from_sepolia_eth
+MONAD_MIN_MON_BALANCE = 1.0 # необходимый баланс MON, чтобы софт пропускал аккаунт при запуске функции monad_refuel_from_sepolia_eth
+
+# monad_process_onchain_activity
+MONAD_WANTED_TX_COUNT = [45, 65]  # необходимое количество транзакций на аккаунте
 MONAD_WANTED_TX_COUNT_SESSION = [10, 15]  # необходимое количество транзакций за 1 запуск софта при отработке MONAD_WANTED_TX_COUNT
 MONAD_WANT_BALANCE = [0.03, 2.0] # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
+
+# какие модули нужны в автоматическом подборе при запуске функции monad_process_onchain_activity
+MONAD_AUTO_MODULES = ['Swaps', 'Stakes', 'Mints', 'Domains'] # доступны следующие модули: Swaps, Stakes, Mints, Domains
+
+#----------------------------------------------------MONAD CONTROL------------------------------------------------------
+
 MONAD_SWAPS_AMOUNT = ['55', '60'] # количество MON для свапов, обратно в MON применяется 100%
+MONAD_STAKE_AMOUNT = [0.001, 0.005] # сумма для стейка MON (минимум, максимум) (% или кол-во)
 MONAD_TRANSFERS_AMOUNT = ['100', '100'] # количество MON для трансфера на EVM Deposit Address
 MONAD_FAUCET_KEY = '6LcItOMqAAAAAF9ANohQEN4jGOjHRxU8f5MNJZHu'
 
@@ -14,15 +25,53 @@ REFUEL_GASZIP_L2_NETWORK = ['Arbitrum', "Optimism", "Base"] # сети, кото
 REFUEL_GASZIP_AMOUNT = [0.00015, 0.0002] # сумма рефьюла через Gas.Zip
 REFUEL_GASZIP_FEE = [0.000015, 0.00003] # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
 
-#----------------------------------------------------SEPOLIA CONTROL----------------------------------------------------
+#---------------------------------------------------BRIDGE MON CONTROL--------------------------------------------------
 
-MONAD_MIN_MON_BALANCE = 1.0 # минимальный баланс MIN для запуска процесса пополнения сети через маршрут Sepolia -> Obriter -> Swap
-
-MONAD_TESTNET_BRIDGE_MIN_AMOUNT = 1 # минимальное количество ETH в сети Sepolia, чтобы софт запустил бридж в Monad, иначе будет додеп в Sepolia
+# monad_testnet_bridge_to_sepolia
+MONAD_TESTNET_BRIDGE_MIN_AMOUNT = 1 # необходимый баланс ETH в сети Sepolia, чтобы софт НЕ запускал бридж из L2 в Sepolia
 MONAD_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2(Arbitrum или Optimism) в Sepolia (минимум, максимум) (% или кол-во)
-MONAD_BRIDGE_AMOUNT = ['100', '100'] # сумма бриджа ETH Sepolia -> ETH Monad
-MONAD_SWAP_DAPPS = ['Ambient'] # дапки для свапов ETH -> MON, если убрать все дапки, то свапать не будет
 
-#-----------------------------------------------------MODULES CONTROL---------------------------------------------------
+# monad_orbiter_bridge_to_monad
+MONAD_BRIDGE_AMOUNT = ['100', '100'] # сумма бриджа ETH Sepolia -> ETH Monad через Orbiter
 
-MONAD_STAKE_AMOUNT = [0.001, 0.005] # сумма для стейка MON (минимум, максимум) (% или кол-во)
+# monad_smart_swap_eth_mon
+MONAD_SWAP_DAPPS = ['Ambient'] # дапки для свапов ETH -> MON, если убрать все дапки, то свапать не будет. Доступны: Ambient, Izumi, Uniswap
+
+#---------------------------------------------------MODULES CONTROL-----------------------------------------------------
+
+# monad_mint_me_terminal
+MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного минта NFT с https://magiceden.io/mint-terminal/monad-testnet
+   "0x002c8fd766605b609d31cc9764e27289daf033e9", # FREE
+   "0xb2ea0ff3ad4134367fb7dc75d48b3493e5a09c81", # FREE
+   "0x0fa3da91d4469dfd8c7a0cb13c47d90c8e88d5bd", # FREE
+   "0x471af5eb201adc7851f4abec99ba1c78e51de0ce", # FREE
+   "0x63300257926af6f2a1bf2d4efb4240d8d8f250d6", # FREE
+   "0x9e313cbd57a35661072c1b96684454cebd09acdc", # FREE
+   "0x913bf9751fe18762b0fd6771edd512c7137e42bb", # FREE
+   "0x690cfacdc08dc7da79736906cd506890d6ca224a", # FREE
+   "0xf1cc46f22baf38d682635fc89ec448b6d0b366e4", # FREE
+]
+
+#--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
+
+#  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
+
+#  monad_process_onchain_activity         # Выполнение модулей в автоматическом режиме по настройкам MONAD AUTO-PRESET CONTROL
+#  monad_refuel_from_sepolia_eth          # Пополение баланса MON через маршрут: TestnetBridge --> Obriter --> Swap ETH -> MON
+
+#  monad_testnet_bridge_to_sepolia        # Бридж ETH L2 -> ETH Sepolia через TestnetBridge, сумма под бридж MONAD_TESTNET_BRIDGE_AMOUNT
+#  monad_orbiter_bridge_to_monad          # Бридж ETH Sepolia -> ETH Monad через Orbiter, сумма под бридж MONAD_BRIDGE_AMOUNT
+#  monad_smart_swap_eth_mon               # Свапы ETH Monad -> MON Monad через дапки в настройке MONAD_SWAP_DAPPS
+
+#  monad_mint_me_terminal                 # Mint NFT на MagicEden через Mint Terminal по настройке MONAD_MAGICEDEN_NFT_CONTRACTS
+#  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
+
+#  monad_stake_mon_apriori                # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT
+#  monad_stake_mon_magma                  # Стейк MON на http://magmastaking.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
+#  monad_stake_mon_kintsu                 # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT (минималка 0.01 MON)
+
+#  monad_wrap_native                      # Wrap + Unwrap MON, настройка автоматическая
+#  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, Uniswap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, ограничение в 5 MON, во избежания слипаджа
+
+#  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
+#  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address

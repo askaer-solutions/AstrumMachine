@@ -1,0 +1,36 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [8, 9]
+
+CLASSIC_ROUTES_MODULES_USING = [
+#    ["monad_claim_faucet"],
+    ["monad_testnet_bridge_to_sepolia"],
+    ["monad_orbiter_bridge_to_monad"],
+    ["monad_smart_swap_eth_mon"],
+    [
+        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
+    ],
+    [
+        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
+    ],
+    [
+        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
+    ],
+    [
+        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
+    ],
+    [
+        ["monad_mint_nad_domain"]
+    ],
+    [
+        ["monad_stake_mon_kintsu", "monad_stake_mon_apriori", "monad_stake_mon_magma"]
+    ],
+    [
+        ["monad_stake_mon_kintsu", "monad_stake_mon_apriori", "monad_stake_mon_magma"]
+    ],
+    [
+        ["monad_stake_mon_kintsu", "monad_stake_mon_apriori", "monad_stake_mon_magma"]
+    ],
+    [
+        ["monad_stake_mon_kintsu", "monad_stake_mon_apriori", "monad_stake_mon_magma"]
+    ],
+    ["monad_collect_mon"],
+]
