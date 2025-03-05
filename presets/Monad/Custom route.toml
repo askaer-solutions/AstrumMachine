@@ -9,13 +9,13 @@ CLASSIC_ROUTES_MODULES_USING = [
         ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
     ],
     [
-        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
+        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_swap_nadfun"]
     ],
     [
         ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
     ],
     [
-        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_wrap_native"]
+        ["monad_mint_me_terminal", "monad_smart_swaps", "monad_swap_nadfun"]
     ],
     [
         ["monad_mint_nad_domain"]

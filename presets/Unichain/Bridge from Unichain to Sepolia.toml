@@ -1,7 +1,4 @@
-UNICHAIN_BRIDGG_AMOUNT = ["1", "2"]  # (минимум, максимум) (% или кол-во)
-UNICHAIN_SUPER_BRIDGE_AMOUNT = ["1", "2"]  # (минимум, максимум) (% или кол-во)
-
-CLASSIC_ROUTES_BLOCKS_COUNT = [1, 2]
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
 
 CLASSIC_ROUTES_MODULES_USING = [
     [["unichain_bridge_bridgg_out"]],
