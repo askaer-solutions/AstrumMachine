@@ -18,7 +18,6 @@ MONAD_FAUCET_WAIT_TIME = [240, 360] # время сна при ошибках н
 MONAD_SWAPS_AMOUNT = ['55', '60'] # количество MON для свапов, обратно в MON применяется 100%
 MONAD_STAKE_AMOUNT = [0.001, 0.005] # сумма для стейка MON (минимум, максимум) (% или кол-во)
 MONAD_TRANSFERS_AMOUNT = ['100', '100'] # количество MON для трансфера на EVM Deposit Address
-MONAD_FAUCET_KEY = '6LcItOMqAAAAAF9ANohQEN4jGOjHRxU8f5MNJZHu'
 
 #----------------------------------------------------REFUEL CONTROL-----------------------------------------------------
 
