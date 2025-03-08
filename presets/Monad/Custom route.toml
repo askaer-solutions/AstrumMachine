@@ -1,7 +1,7 @@
 CLASSIC_ROUTES_BLOCKS_COUNT = [8, 9]
 
 CLASSIC_ROUTES_MODULES_USING = [
-#    ["monad_claim_faucet"],
+    ["monad_claim_faucet"],
     ["monad_testnet_bridge_to_sepolia"],
     ["monad_orbiter_bridge_to_monad"],
     ["monad_smart_swap_eth_mon"],

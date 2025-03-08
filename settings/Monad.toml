@@ -77,6 +77,10 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
 #  monad_stake_and_commit_shmonad         # Стейк MON на https://www.shmonad.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
 #  monad_uncommit_and_redeem_shmonad      # Анстейк MON на https://www.shmonad.xyz/. выводит 100%
 
+#  monad_request_unstake_mon_kintsu       # Запрос на вывод из KintSu, софт сделает запрос на вывод, который разблокируется через 14 дней
+#  monad_request_unstake_mon_apriori      # Запрос на вывод из Apriori, софт сделает запрос на вывод и будет ждат 10 мин для его завершения
+#  monad_request_unstake_mon_magma        # Запрос на вывод из Magma, софт сделает мгновенный вывод
+
 #  monad_wrap_native                      # Wrap + Unwrap MON, настройка автоматическая
 #  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, Uniswap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, ограничение в 5 MON, во избежания слипаджа
 #  monad_swap_nadfun                      # Свапы на Nad.Fun. Покупка и продажа рандомных щитков на сумму MONAD_NUDFUN_SWAP_AMOUNT
