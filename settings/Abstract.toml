@@ -3,6 +3,8 @@
 ABSTRACT_SWAP_COUNT = [5, 10] #  количество полных свапов на https://www.abs.xyz/trade (свап туда-обратно)
 ABSTRACT_SWAP_AMOUNT = ['1', '2'] # сумма свапов на https://www.abs.xyz/trade. Применяется только к ETH, обратно 100%
 
+ABSTRACT_PENGU_TIP_AMOUNT = [1, 5] # количество PENGU для типов (донатов) стримерам. [min, max] - указывать в токенах
+
 ABSTRACT_WANT_BALANCE = [0.001, 0.002] # сумма ETH на балансе в Abstract, при не хватке, софт запустит процесс вывода + бриджа в сеть
 ABSTRACT_MIN_TO_BRIDGE = 0.001 # минимальная разница между желаемой и фактической суммой для запуска умного бриджа
 
