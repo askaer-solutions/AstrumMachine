@@ -13,6 +13,10 @@ MONAD_AUTO_MODULES = ['Swaps', 'Stakes', 'Mints', 'Domains'] # доступны 
 
 #---------------------------------------------------TALENTUM CONTROL----------------------------------------------------
 
+MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
+MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
+MONAD_TALENTUM_PROCESS_TWITTER = true # делать ли задания с твиттерами.
+
 MONAD_TALENTUM_LINK_TWITTER = true # привязывать твиттер к профилю, если задание этого требует
 
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
