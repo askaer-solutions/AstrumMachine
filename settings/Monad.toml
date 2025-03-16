@@ -11,8 +11,13 @@ MONAD_WANT_BALANCE = [0.03, 2.0] # сумма MON на балансе в Monad, 
 # какие модули нужны в автоматическом подборе при запуске функции monad_process_onchain_activity
 MONAD_AUTO_MODULES = ['Swaps', 'Stakes', 'Mints', 'Domains'] # доступны следующие модули: Swaps, Stakes, Mints, Domains
 
+#---------------------------------------------------TALENTUM CONTROL----------------------------------------------------
+
+MONAD_TALENTUM_LINK_TWITTER = true # привязывать твиттер к профилю, если задание этого требует
+
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
 
+MONAD_FAUCET_URL = 'https://faucet-claim.monadinfra.com/' # ссылка на клейм MON через https://testnet.monad.xyz/
 MONAD_FAUCET_CLAIMED_COUNT = 2      # количество попыток заклеймить кран при сообщении "Faucet was already claimed"
 MONAD_FAUCET_WAIT_TIME = [240, 360] # время сна при ошибках на кране, чтобы проверить баланс, на случай если кран смог выдать токены
 
