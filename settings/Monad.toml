@@ -13,6 +13,7 @@ MONAD_AUTO_MODULES = ['Swaps', 'Stakes', 'Mints', 'Domains'] # доступны 
 
 #---------------------------------------------------TALENTUM CONTROL----------------------------------------------------
 
+MONAD_TALENTUM_TOTAL_QUESTS = [50, 70] # количество квестов к выполнению на аккаунт за 1 запуск модуля
 MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_TWITTER = true # делать ли задания с твиттерами.
@@ -69,6 +70,9 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
+
+#  monad_process_talentum_quests          # Запуск отработки Talentum квестов
+#  monad_process_daily_activity           # Выполнение дейликов на Talentum (клейм крана + MON streak)
 
 #  monad_process_onchain_activity         # Выполнение модулей в автоматическом режиме по настройкам MONAD AUTO-PRESET CONTROL
 #  monad_refuel_from_sepolia_eth          # Пополение баланса MON через маршрут: TestnetBridge --> Obriter --> Swap ETH -> MON
