@@ -1,0 +1,14 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [3, 3]
+
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["soneium_process_sonus_badge"],
+    ],
+    [
+        ["soneium_process_quick_swap_badge"],
+    ],
+    [
+        ["soneium_process_untitled_bank_badge"],
+    ],
+]
