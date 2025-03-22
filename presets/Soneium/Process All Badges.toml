@@ -1,7 +1,10 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [3, 3]
+CLASSIC_ROUTES_BLOCKS_COUNT = [4, 4]
 
 
 CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["soneium_process_owlto_badge"]
+    ],
     [
         ["soneium_process_sonus_badge"],
     ],

@@ -13,3 +13,7 @@ SONEIUM_CREDENTIAL_TO_SKIP = [
     514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
     513985145116557312,  # https://app.galxe.com/quest/credential/514433168942563328
 ]
+
+# Диапазон сумм для свапа на Owlto (в ETH). 
+# Для получения бейджа необходимо выполнить обмен на сумму больше 0.005 ETH.
+SONEIUM_OWLTO_BADGE_SWAP_AMOUNT = [0.0051, 0.0061]

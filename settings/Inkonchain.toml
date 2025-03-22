@@ -1,5 +1,16 @@
 #--------------------------------------------------INKONCHAIN CONTROL---------------------------------------------------
 
-INK_RESERVOIR_SWAP_AMOUNT = ['80', '90']    # % ETH, которое будет использовано для свапов на swap.reservoir.tools
-INK_VELODROME_SWAP_AMOUNT = ['80', '90']    # % ETH, которое будет использовано для свапов на velodrome.finance
+INK_RESERVOIR_SWAP_AMOUNT = ['3', '7']      # % ETH, которое будет использовано для свапов на swap.reservoir.tools
+INK_VELODROME_SWAP_AMOUNT = ['3', '7']      # % ETH, которое будет использовано для свапов на velodrome.finance
 INK_ETH_WRAP_AMOUNT = ['80', '90']          # % ETH, которое будет использовано для врапа в WETH
+INK_STAKE_AMOUNT = ['0.5', '1']             # % ETH, которое будет использовано для стейка
+
+#---------------------------------------------AVAILABLE MODULES FOR GUILD-----------------------------------------------
+
+#  ink_mint_ink_the_future_nft              # Минтит статью Ink The Future в сети Optimism. Цена: 0.000777 ETH
+#  ink_mint_superchain_nft                  # Минтит Superchain NFT на Zora в сети Optimism. Цена: +-0.000192 ETH
+#  ink_mint_domain_zns                      # Минтит рандомный домен на https://zns.bio. Цена: +-0.00232 ETH
+#  ink_stake_dinero                         # Стейк ETH на https://ink.dinero.xyz. См. INK_STAKE_AMOUNT
+#  ink_process_wrap_task                    # Делает врап от 0.00035 до 0.0007 ETH для соответствующего задания (0.0003+ WETH)
+#  ink_process_twitter_tasks                # Делает необходимые таски в твиттере, нужно заполнить столбец твиттер токенов
+#  ink_deposit_usdc_the_deep                # Делает депозит USDC.e в пул на https://app.thedeep.ink, перед этим нужно отдельно сделать свап
