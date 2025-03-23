@@ -30,6 +30,11 @@ MONAD_SWAPS_AMOUNT = ['55', '60'] # количество MON для свапов
 MONAD_STAKE_AMOUNT = [0.001, 0.005] # сумма для стейка MON (минимум, максимум) (% или кол-во)
 MONAD_TRANSFERS_AMOUNT = ['100', '100'] # количество MON для трансфера на EVM Deposit Address
 
+#-------------------------------------------------GASZIP FAUCET CONTROL-------------------------------------------------
+
+MONAD_GASZIP_TX_WANTED = [10, 15] # количество желаемых транзакций для крана на https://www.gas.zip/faucet/monad
+MONAD_GASZIP_AMOUNT = [0.00066, 0.00087] # сумма рефьюла через Gas.Zip
+
 #----------------------------------------------------REFUEL CONTROL-----------------------------------------------------
 
 REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Monad
@@ -55,16 +60,16 @@ MONAD_NUDFUN_SWAP_AMOUNT = [0.05, 0.1] # сумма свапов на https://te
 
 # monad_mint_me_terminal
 MONAD_MAGICEDEN_MINT_ALL = false  # поставьте true, чтобы софт заминтил кажду из NFT в списке MONAD_MAGICEDEN_NFT_CONTRACTS, предварительно перемешав их
+MONAD_MAGICEDEN_MINT_LIMIT = true # минтить NFT только 1 раз или нет
 MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного минта NFT с https://magiceden.io/mint-terminal/monad-testnet
-   "0x002c8fd766605b609d31cc9764e27289daf033e9", # FREE
-   "0xb2ea0ff3ad4134367fb7dc75d48b3493e5a09c81", # FREE
-   "0x0fa3da91d4469dfd8c7a0cb13c47d90c8e88d5bd", # FREE
-   "0x471af5eb201adc7851f4abec99ba1c78e51de0ce", # FREE
-   "0x63300257926af6f2a1bf2d4efb4240d8d8f250d6", # FREE
-   "0x9e313cbd57a35661072c1b96684454cebd09acdc", # FREE
-   "0x913bf9751fe18762b0fd6771edd512c7137e42bb", # FREE
-   "0x690cfacdc08dc7da79736906cd506890d6ca224a", # FREE
-   "0xf1cc46f22baf38d682635fc89ec448b6d0b366e4", # FREE
+   "0xc8cfc763702c87ff14183c76a44cce602447c9e3", # FREE
+   "0xd3026d7111b34faf30a2c7389a3c111e2656bfed", # FREE
+   "0xde81390a761deb3708b8ce5e7ec99a880a392eb6", # FREE
+   "0x47ce0e7e05e3fea9767265e077bc7c0531de3bbf", # FREE
+   "0xcbfda8ade65c843289c1fd89778fe3d6f95a1777", # FREE
+   "0x4e21dbdcb17e7ead0e2dc4e83e6b48cdb8e8c449", # FREE
+   "0x2a22e1dcc3f6b46465260388f4fdb677d1eb5f7d", # FREE
+   "0x21fd600fb5322f1a15d9f9607ee28a60355b6fae", # FREE
 ]
 
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
@@ -94,6 +99,9 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
 #  monad_request_unstake_mon_kintsu       # Запрос на вывод из KintSu, софт сделает запрос на вывод, который разблокируется через 14 дней
 #  monad_request_unstake_mon_apriori      # Запрос на вывод из Apriori, софт сделает запрос на вывод и будет ждат 10 мин для его завершения
 #  monad_request_unstake_mon_magma        # Запрос на вывод из Magma, софт сделает мгновенный вывод
+
+#  monad_claim_gaszip_faucet              # Клейм $MON на кране Gas.Zip
+#  monad_smart_gaszip_refuels             # Рефьюлы на Gas.Zip для набития кол-ва транз по настройке MONAD_GASZIP_TX_WANTED, суммы и сети по старым настройкам из REFUEL CONTROL
 
 #  monad_wrap_native                      # Wrap + Unwrap MON, настройка автоматическая
 #  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, Uniswap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, ограничение в 5 MON, во избежания слипаджа

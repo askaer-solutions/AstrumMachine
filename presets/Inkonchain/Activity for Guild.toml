@@ -8,7 +8,7 @@ CLASSIC_ROUTES_MODULES_USING = [
     ["ink_process_wrap_task"],
     ["ink_process_twitter_tasks"],
     [
-        ["ink_velodrome_swap_eth_to_usdc", "ink_reservoir_swap_eth_to_usdc"],
+        ["ink_velodrome_swap_eth_to_usdc"],
         ["ink_deposit_usdc_the_deep"],
     ],
 ]
