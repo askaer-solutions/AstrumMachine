@@ -1,7 +1,10 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [5, 5]
+CLASSIC_ROUTES_BLOCKS_COUNT = [6, 6]
 
 
 CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["soneium_process_wavex_badge"],
+    ],
     [
         ["soneium_process_orbiter_badge"],
     ],
