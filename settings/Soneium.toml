@@ -21,3 +21,6 @@ SONEIUM_OWLTO_BADGE_SWAP_AMOUNT = [0.0051, 0.0061]
 # Диапазон сумм для депозита в WaveX Earn. 
 # Софт для получения бейджа делает 10+ депозитов. Есть небольшой слипедж
 SONEIUM_WAVE_X_BADGE_DEP_AMOUNT = ["5", "10"]
+
+# Диапазон суммы для покупки SONUS для последущего лока 6 раз по 101-105 токенов. 
+SONEIUM_SONUS_BADGE_BUY_SONUS_AMOUNT = [0.0009, 0.001]
