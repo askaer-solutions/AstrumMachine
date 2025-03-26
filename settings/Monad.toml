@@ -76,6 +76,7 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
+#  monad_smart_bridge_mwdao_in            # бриджи через https://bridge.mwdao.xyz/, работает по MONAD_WANT_BALANCE и MONAD_MIN_TO_BRIDGE
 
 #  monad_process_talentum_quests          # Запуск отработки Talentum квестов
 #  monad_process_daily_activity           # Выполнение дейликов на Talentum (клейм крана + MON streak)
