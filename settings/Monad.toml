@@ -17,13 +17,13 @@ MONAD_AUTO_MODULES = ["Swaps", "Stakes", "Mints", "Domains"] # доступны 
 MONAD_TALENTUM_TOTAL_QUESTS = [50, 70] # количество квестов к выполнению на аккаунт за 1 запуск модуля
 MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
-MONAD_TALENTUM_PROCESS_TWITTER = true # делать ли задания с твиттерами.
+MONAD_TALENTUM_PROCESS_TWITTER = false # делать ли задания с твиттерами.
 
 MONAD_TALENTUM_LINK_TWITTER = true # привязывать твиттер к профилю, если задание этого требует
 
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
 
-MONAD_FAUCET_URL = "https://faucet-claim.monadinfra.com/" # ссылка на клейм MON через https://testnet.monad.xyz/
+MONAD_FAUCET_URL = "https://faucet-claim-2.monadinfra.com/" # ссылка на клейм MON через https://testnet.monad.xyz/
 MONAD_FAUCET_CLAIMED_COUNT = 2      # количество попыток заклеймить кран при сообщении "Faucet was already claimed"
 MONAD_FAUCET_WAIT_TIME = [240, 360] # время сна при ошибках на кране, чтобы проверить баланс, на случай если кран смог выдать токены
 
@@ -73,6 +73,8 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
    "0x21fd600fb5322f1a15d9f9607ee28a60355b6fae", # FREE
 ]
 
+MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество ставок на https://app.levr.bet/march-madness
+
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
@@ -91,6 +93,7 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
 #  monad_mint_me_terminal                 # Mint NFT на MagicEden через Mint Terminal по настройке MONAD_MAGICEDEN_NFT_CONTRACTS
 #  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
 #  monad_make_predict_castora             # Делает рандомный предикт цены в одном из пулов на https://castora.xyz/. Стоимость 0.2 MON
+#  monad_smart_mm_bets_levr               # Делает ставки на https://app.levr.bet/march-madness/ по настройке MONAD_LEVR_MM_BETS_COUNT
 
 #  monad_stake_mon_apriori                # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT
 #  monad_stake_mon_magma                  # Стейк MON на http://magmastaking.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
