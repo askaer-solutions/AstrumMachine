@@ -44,6 +44,8 @@ REFUEL_GASZIP_AMOUNT = [0.00015, 0.0002] # сумма рефьюла через 
 REFUEL_GASZIP_FEE = [0.000015, 0.00003] # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
 
 #---------------------------------------------------BRIDGE MON CONTROL--------------------------------------------------
+# monad_bridge_mwdao_in
+MONAD_MWDAO_BRIDGE_AMOUNT = ['100', '100'] # сумма ETH для бриджа через https://bridge.mwdao.xyz/
 
 # monad_testnet_bridge_to_sepolia
 MONAD_TESTNET_BRIDGE_MIN_AMOUNT = 1 # необходимый баланс ETH в сети Sepolia, чтобы софт НЕ запускал бридж из L2 в Sepolia
@@ -78,7 +80,8 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
-#  monad_smart_bridge_mwdao_in            # бриджи через https://bridge.mwdao.xyz/, работает по MONAD_WANT_BALANCE и MONAD_MIN_TO_BRIDGE
+#  monad_bridge_mwdao_in                  # бридж через https://bridge.mwdao.xyz/, работает по MONAD_MWDAO_BRIDGE_AMOUNT
+#  monad_smart_bridge_mwdao_in            # умный бридж через https://bridge.mwdao.xyz/, работает по MONAD_WANT_BALANCE и MONAD_MIN_TO_BRIDGE
 
 #  monad_process_talentum_quests          # Запуск отработки Talentum квестов
 #  monad_process_daily_activity           # Выполнение дейликов на Talentum (клейм крана + MON streak)
