@@ -44,8 +44,10 @@ REFUEL_GASZIP_AMOUNT = [0.00015, 0.0002] # сумма рефьюла через 
 REFUEL_GASZIP_FEE = [0.000015, 0.00003] # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
 
 #---------------------------------------------------BRIDGE MON CONTROL--------------------------------------------------
+
 # monad_bridge_mwdao_in
 MONAD_MWDAO_BRIDGE_AMOUNT = ['100', '100'] # сумма ETH для бриджа через https://bridge.mwdao.xyz/
+MONAD_MWDAO_BRIDGE_NETWORKS = ["Arbitrum", "Optimism", "Base"] # сети, которые используются для бриджа через https://bridge.mwdao.xyz/
 
 # monad_testnet_bridge_to_sepolia
 MONAD_TESTNET_BRIDGE_MIN_AMOUNT = 1 # необходимый баланс ETH в сети Sepolia, чтобы софт НЕ запускал бридж из L2 в Sepolia
@@ -59,6 +61,11 @@ MONAD_SWAP_DAPPS = ["Ambient"] # дапки для свапов ETH -> MON, ес
 
 #---------------------------------------------------MODULES CONTROL-----------------------------------------------------
 
+# monad_buy_blink_tokens
+MONAD_BLINK_TOKENS = ['DAK', 'YAKI', 'CHOG'] # токены для свапов на https://testnet.monad.xyz/. Доступны: CHOG, YAKI, DAK
+MONAD_BLINK_AMOUNT = ['0.1', '0.2'] # сумма свапов на https://testnet.monad.xyz/
+
+# monad_swap_nadfun
 MONAD_NUDFUN_SWAP_AMOUNT = [0.05, 0.1] # сумма свапов на https://testnet.nad.fun/, применяется для MON, обратно 100%
 
 # monad_mint_me_terminal
@@ -80,7 +87,7 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
-#  monad_bridge_mwdao_in                  # бридж через https://bridge.mwdao.xyz/, работает по MONAD_MWDAO_BRIDGE_AMOUNT
+#  monad_bridge_mwdao_in                  # бридж через https://bridge.mwdao.xyz/, работает по MONAD_MWDAO_BRIDGE_AMOUNT и MONAD_MWDAO_BRIDGE_NETWORKS
 #  monad_smart_bridge_mwdao_in            # умный бридж через https://bridge.mwdao.xyz/, работает по MONAD_WANT_BALANCE и MONAD_MIN_TO_BRIDGE
 
 #  monad_process_talentum_quests          # Запуск отработки Talentum квестов
@@ -114,6 +121,7 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_wrap_native                      # Wrap + Unwrap MON, настройка автоматическая
 #  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, Uniswap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, ограничение в 5 MON, во избежания слипаджа
 #  monad_swap_nadfun                      # Свапы на Nad.Fun. Покупка и продажа рандомных щитков на сумму MONAD_NUDFUN_SWAP_AMOUNT
+#  monad_buy_blink_tokens                 # Свапы на https://testnet.monad.xyz/, работает по MONAD_BLINK_TOKENS и MONAD_BLINK_AMOUNT
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address
