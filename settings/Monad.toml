@@ -122,6 +122,7 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, Uniswap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, ограничение в 5 MON, во избежания слипаджа
 #  monad_swap_nadfun                      # Свапы на Nad.Fun. Покупка и продажа рандомных щитков на сумму MONAD_NUDFUN_SWAP_AMOUNT
 #  monad_buy_blink_tokens                 # Свапы на https://testnet.monad.xyz/, работает по MONAD_BLINK_TOKENS и MONAD_BLINK_AMOUNT
+#  monad_smart_buy_blink_tokens           # Свапы с проверкой баланса (покупает 3 токена в рандомном продке, если нету баланса токена) на https://testnet.monad.xyz/, работает по MONAD_BLINK_AMOUNT
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address
