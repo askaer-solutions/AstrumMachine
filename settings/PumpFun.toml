@@ -1,11 +1,11 @@
 #----------------------------------------------------PUMPFUN CONTROL----------------------------------------------------
 
 PUMPFUN_CEX_USING = 1                         # какую биржу использовать для работы: 1 - OKX, 4 - Bitget
-PUMPFUN_CEX_AMOUNT = ['100', '100']           # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
+PUMPFUN_CEX_AMOUNT = ["100", "100"]           # сумма вывода SOL в сеть SOL. Можно указывать % или кол-во
 PUMPFUN_CEX_SOL_LIMITER = [0.3, 0.4]          # количество SOL в $, которое нужно оставить на аккаунте при депозите на Биржу
 
 PUMPFUN_SLEEP_TIME_SELL = [0, 0]              # время сна между покупкой и продажей токенов (мин, макс)
-PUMPFUN_SWAP_AMOUNT = ['10', '20']            # сумма SOL для свапов SOL -> SHITCOIN (обратно 100%)
+PUMPFUN_SWAP_AMOUNT = ["10", "20"]            # сумма SOL для свапов SOL -> SHITCOIN (обратно 100%)
 
 PUMPFUN_SHITCOIN_CONTRACTS = [                # контракты шиткойнов для покупки на pump.fun
     'C1nYn2Bfq4fw3hcYB69xjquUguLqtRPcn5nTqtZcpump',
@@ -43,7 +43,16 @@ PUMPFUN_TOKER_NAME = [
 #-------------------------------------------------------REPLIES---------------------------------------------------------
 
 PUMPFUN_REPLIES_LIST = [
-    'PUMP IT',
-    'PUMPPPPPP IT',
-    'GOOOOOOD TOKEN',
+    "PUMP IT",
+    "PUMPPPPPP IT",
+    "GOOOOOOD TOKEN"
 ] # любой текст прописывайте через запятую и софт будет выбирать рандомный
+
+#------------------------------------------------------PUMPSWAP---------------------------------------------------------
+
+PUMPFUN_PUMPSWAP_SWAP_AMOUNT = ['10', '20'] # сумма SOL для свапов на https://swap.pump.fun/ (обратно 100%)
+PUMPFUN_PUMPSWAP_CUSTOM_TOKENS = [ # адреса токенов для свапа на https://swap.pump.fun/ (используя pumpfun_pumpswap_custom_swap)
+#    "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+#    "6ogzHhzdrQr9Pgv6hZ2MNze7UrzBMAFyBBWUYp1Fhitx",
+#    "3E2z4KX7y457xJqK9RQeJhA29oPdoUvAAD3Ea3zQyuG3",
+]
