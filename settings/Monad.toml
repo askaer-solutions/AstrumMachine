@@ -23,7 +23,7 @@ MONAD_TALENTUM_LINK_TWITTER = true # привязывать твиттер к п
 
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
 
-MONAD_FAUCET_URL = "https://faucet-claim-2.monadinfra.com/" # ссылка на клейм MON через https://testnet.monad.xyz/
+MONAD_FAUCET_URL = "https://faucet-claim.molandak.org/" # ссылка на клейм MON через https://testnet.monad.xyz/
 MONAD_FAUCET_CLAIMED_COUNT = 2      # количество попыток заклеймить кран при сообщении "Faucet was already claimed"
 MONAD_FAUCET_WAIT_TIME = [240, 360] # время сна при ошибках на кране, чтобы проверить баланс, на случай если кран смог выдать токены
 
@@ -81,6 +81,7 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
    "0x2a22e1dcc3f6b46465260388f4fdb677d1eb5f7d", # FREE
    "0x21fd600fb5322f1a15d9f9607ee28a60355b6fae", # FREE
 ]
+
 
 MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество ставок на https://app.levr.bet/march-madness
 
