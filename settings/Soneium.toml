@@ -26,7 +26,6 @@ SONEIUM_SONUS_BADGE_BUY_SONUS_AMOUNT = [0.0009, 0.001]
 # Пример: [0.01, 0.011] - оставит от 0.01 до 0.011 ETH в сети отправки
 # Исходная сеть для бриджа выбирается автоматически - берётся сеть с максимальным балансом
 # из списка BRIDGE_RELAY_L2_NETWORK в settings.toml
-
 # Если баланс в сети ниже указанного диапазона, будет использован весь доступный баланс
 SONEIUM_ORBITER_BADGE_LIMITER = [0.0, 0.0]
 
@@ -36,3 +35,4 @@ SONEIUM_VELODROME_BADGE_SWAP_AMOUNT = [0.0064, 0.0074]
 
 # Диапазон количества свапов на Velodrome. 
 SONEIUM_VELODROME_BADGE_SWAP_COUNT = [11, 13]
+
