@@ -2,12 +2,12 @@
 
 # monad_refuel_from_sepolia_eth
 MONAD_MIN_MON_BALANCE = 1.0 # необходимый баланс MON, чтобы софт пропускал аккаунт при запуске функции monad_refuel_from_sepolia_eth
+MONAD_MIN_TO_BRIDGE = 1.0 # минимальное количество MON для бриджа через MWDAO, при запуске monad_bridge_mwdao
 
 # monad_process_onchain_activity
 MONAD_WANTED_TX_COUNT = [45, 65]  # необходимое количество транзакций на аккаунте
 MONAD_WANTED_TX_COUNT_SESSION = [10, 15]  # необходимое количество транзакций за 1 запуск софта при отработке MONAD_WANTED_TX_COUNT
 MONAD_WANT_BALANCE = [15, 20] # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
-MONAD_MIN_TO_BRIDGE = 1.0 # минимальное количество MON для бриджа через MWDAO, при запуске monad_bridge_mwdao
 
 # какие модули нужны в автоматическом подборе при запуске функции monad_process_onchain_activity
 MONAD_AUTO_MODULES = ["Swaps", "Stakes", "Mints", "Domains"] # доступны следующие модули: Swaps, Stakes, Mints, Domains
@@ -59,6 +59,15 @@ MONAD_BRIDGE_AMOUNT = ["100", "100"] # сумма бриджа ETH Sepolia -> ET
 
 # monad_smart_swap_eth_mon
 MONAD_SWAP_DAPPS = ["Ambient"] # дапки для свапов ETH -> MON, если убрать все дапки, то свапать не будет. Доступны: Ambient, Izumi, Uniswap
+
+#--------------------------------------------------DISPERSE MON CONTROL-------------------------------------------------
+
+MONAD_AMBIENT_DISPERSE_MAPPING = [ # настройки для раскидки токенов на адреса Bitcoin Deposit Address. Формат: ["x", "y", "z"],
+   ["Main 1", "1", "10"],          # где x - имя аккаунта, с которого будут отправлены токены, y - стартовый номер адреса из Bitcoin Deposit Address,
+   ["Main 2", "11", "30"]          # z - конечный номер адреса из Bitcoin Deposit Address (включительно). Будет взят весь диапазон.
+]
+MONAD_AMBIENT_DEPOSIT_AMOUNT = [100, 120] # сумма депозита на https://monad.ambient.finance/ (минимум, максимум) (% или кол-во)
+MONAD_AMBIENT_TRANSFER_AMOUNT = [3, 5] # сумма трансфера на https://monad.ambient.finance/ (минимум, максимум) (% или кол-во)
 
 #---------------------------------------------------MODULES CONTROL-----------------------------------------------------
 
@@ -125,6 +134,10 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_swap_nadfun                      # Свапы на Nad.Fun. Покупка и продажа рандомных щитков на сумму MONAD_NUDFUN_SWAP_AMOUNT
 #  monad_buy_blink_tokens                 # Свапы на https://testnet.monad.xyz/, работает по MONAD_BLINK_TOKENS и MONAD_BLINK_AMOUNT
 #  monad_smart_buy_blink_tokens           # Свапы с проверкой баланса (покупает 3 токена в рандомном продке, если нету баланса токена) на https://testnet.monad.xyz/, работает по MONAD_BLINK_AMOUNT
+
+# monad_deposit_mon_ambient               # депозит MON на https://monad.ambient.finance/ (см DISPERSE MON CONTROL)
+# monad_withdraw_mon_ambient              # вывод MON с https://monad.ambient.finance/
+# monad_disperse_mon_ambient              # раскидка MON используя https://monad.ambient.finance/
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address
