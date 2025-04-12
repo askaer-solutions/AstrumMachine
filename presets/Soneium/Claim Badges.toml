@@ -1,4 +1,4 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [3, 3]
+CLASSIC_ROUTES_BLOCKS_COUNT = [4, 4]
 
 CLASSIC_ROUTES_MODULES_USING = [
     [
@@ -9,5 +9,8 @@ CLASSIC_ROUTES_MODULES_USING = [
     ],
     [
         ["soneium_owlto_claim_badge"]
+    ],
+    [   
+        ["soneium_wavex_claim_badge"]
     ],
 ]
