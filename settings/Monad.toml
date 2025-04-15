@@ -100,6 +100,7 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
 #  monad_bridge_mwdao_in                  # бридж через https://bridge.mwdao.xyz/, работает по MONAD_MWDAO_BRIDGE_AMOUNT и MONAD_MWDAO_BRIDGE_NETWORKS
 #  monad_smart_bridge_mwdao_in            # умный бридж через https://bridge.mwdao.xyz/, работает по MONAD_WANT_BALANCE и MONAD_MIN_TO_BRIDGE
+#  monad_smart_refuel_monad               # умный рефьюл через Gas.Zip, работает по REFUEL CONTROL
 
 #  monad_process_talentum_quests          # Запуск отработки Talentum квестов
 #  monad_process_daily_activity           # Выполнение дейликов на Talentum (клейм крана + MON streak)
@@ -135,9 +136,9 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_buy_blink_tokens                 # Свапы на https://testnet.monad.xyz/, работает по MONAD_BLINK_TOKENS и MONAD_BLINK_AMOUNT
 #  monad_smart_buy_blink_tokens           # Свапы с проверкой баланса (покупает 3 токена в рандомном продке, если нету баланса токена) на https://testnet.monad.xyz/, работает по MONAD_BLINK_AMOUNT
 
-# monad_deposit_mon_ambient               # депозит MON на https://monad.ambient.finance/ (см DISPERSE MON CONTROL)
-# monad_withdraw_mon_ambient              # вывод MON с https://monad.ambient.finance/
-# monad_disperse_mon_ambient              # раскидка MON используя https://monad.ambient.finance/
+#  monad_deposit_mon_ambient               # депозит MON на https://monad.ambient.finance/ (см DISPERSE MON CONTROL)
+#  monad_withdraw_mon_ambient              # вывод MON с https://monad.ambient.finance/
+#  monad_disperse_mon_ambient              # раскидка MON используя https://monad.ambient.finance/
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address
