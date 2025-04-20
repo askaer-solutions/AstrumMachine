@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["abstract_complete_all_tasks_gacha"],
+#    ["abstract_daily_check_in_gacha"],
+]

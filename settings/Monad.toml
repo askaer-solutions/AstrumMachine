@@ -79,6 +79,14 @@ MONAD_BLINK_AMOUNT = ['0.1', '0.2'] # сумма свапов на https://testn
 # monad_swap_nadfun
 MONAD_NUDFUN_SWAP_AMOUNT = [0.05, 0.1] # сумма свапов на https://testnet.nad.fun/, применяется для MON, обратно 100%
 
+# monad_create_token_nadfun
+MONAD_NUDFUN_INITIAL_BUY_AMOUNT = [0.1, 0.2] # сумма для обязательной изначальной покупки созданного токена на https://testnet.nad.fun/
+MONAD_NUDFUN_TOKER_NAME = [
+    ['ZalupaCoin', 'ZLP', 'This token is too good for buy, cuz zalupa is too big'],
+#    ['GigaZalupa', 'GZLP', 'This token is too good for buy'],
+#    ['FullZalupa', 'FZLP', 'This token is too good for buy']
+] # Название токена, Название тикера, Описание токена
+
 # monad_mint_me_terminal
 MONAD_MAGICEDEN_MINT_ALL = false  # поставьте true, чтобы софт заминтил кажду из NFT в списке MONAD_MAGICEDEN_NFT_CONTRACTS, предварительно перемешав их
 MONAD_MAGICEDEN_MINT_LIMIT = true # минтить NFT только 1 раз или нет
@@ -140,6 +148,9 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_deposit_mon_ambient               # депозит MON на https://monad.ambient.finance/ (см DISPERSE MON CONTROL)
 #  monad_withdraw_mon_ambient              # вывод MON с https://monad.ambient.finance/
 #  monad_disperse_mon_ambient              # раскидка MON используя https://monad.ambient.finance/
+
+# monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_NUDFUN_TOKER_NAME)
+# monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address

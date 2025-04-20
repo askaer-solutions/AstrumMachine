@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["monad_swap_nadfun"],
+    ["monad_create_token_nadfun"],
+    ["monad_complete_all_missions_nadfun"],
+]
