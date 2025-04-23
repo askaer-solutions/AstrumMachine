@@ -1,8 +1,7 @@
 #-------------------------------------------------------GENERAL---------------------------------------------------------
 
-UNISAT_BITCOIN_MNEMONIC = true              # Работа с мнемоническими фразами для сети BRC/Fractal
 UNISAT_TAPROOT_ADDRESS = true               # True - работа с Taproot (P2TR) адресами | False - работа с Native Segwit (P2WPKH) адресами
-UNISAT_HEX_PRIVATE_KEY = false              # True - работа с приватными ключами в формате hex
+UNISAT_HEX_PRIVATE_KEY = true              # True - работа с приватными ключами в формате hex
 
 UNISAT_FEE_PRICE = 3                        # Выбор предлагаемого газа (1 - Дешево, но долго, 2 - Оптимально, 3 - Дорого, но быстро)
 UNISAT_MAXIMUM_FEE = 5                      # Максимальный sats/vB для работы запуска модуля в сети BRC
@@ -53,7 +52,7 @@ UNISAT_PIZZA_SWAP_LIQUIDITY_AMOUNT = ["98", "98"]         # Сумма для д
 
 UNISAT_PIZZA_SWAP_SLIPPAGE = 5                            # Максимальное проскальзывание в процентах
 
-UNISAT_PIZZA_SWAP_DEPOSIT_TOKENS = ["sFB"]             # Токены для которых будет сделан депозит (будет выбран случайный)
+UNISAT_PIZZA_SWAP_DEPOSIT_TOKENS = ["FB"]             # Токены для которых будет сделан депозит (будет выбран случайный)
 UNISAT_PIZZA_SWAP_WITHDRAW_TOKENS = ["sBTC"]           # Токены для которых будет сделан вывод (будет выбран случайный)
 
 UNISAT_PIZZA_SWAP_FEE_TOKEN = "sFB"                    # Токен в котором будет происходить оплата комиссий (поддерживаются bFB, sFB, bSATS, sSATS)
@@ -140,9 +139,16 @@ UNISAT_DELIST_RUNES_FRACTAL = [            # Аналогично DELIST_RUNES, 
 
 UNISAT_MINT_RUNES_POINTS_FRACTAL = 2      # Количество получаемых поинтов при минте рун: 1 - минтит 50 раз | 2 - минтит 100 раз
 
+UNISAT_DEPOSIT_AMOUNT = [1.0, 2.0]  # сумма для депозита FB/BTC на https://fractal.unisat.io/swap?tab=deposit
 UNISAT_FB_SFB_BRIDGE_AMOUNT = [1.1, 1.1]            # бридж BTC <-> sBTC в сети BRC
 UNISAT_BTC_SBTC_BRIDGE_AMOUNT = [0.001, 0.002]  # бридж FB <-> sFB в сети Fractal
 UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true           # Если True, будет ждать получения средств во входящей сети после бриджа
+
+#--------------------------------------------------------OTHERS---------------------------------------------------------
+
+CUSTOM_SLEEP_1 = [10, 20]    # Количество секунд (от, до) для сна внутри модуля custom_sleep1
+CUSTOM_SLEEP_2 = [30, 60]    # Количество секунд (от, до) для сна внутри модуля custom_sleep2
+CUSTOM_SLEEP_3 = [150, 200]  # Количество секунд (от, до) для сна внутри модуля custom_sleep3
 
 #-------------------------------------------------CLASSIC-ROUTES CONTROL-------------------------------------------------
 
@@ -194,6 +200,7 @@ UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true           # Если True, будет жд
 #    unisat_pizzaswap_stake_liquidity        # стейкинг ликвидности на https://fractal.unisat.io/swap/lp_rewards
 #    unisat_pizzaswap_unstake_liquidity      # анстейкинг ликвидности на https://fractal.unisat.io/swap/lp_rewards
 #    unisat_pizzaswap_claim_stake_rewards    # клейм ревардов за предоставление ликвидности на https://fractal.unisat.io/swap/lp_rewards
+#    unisat_claim_all_titles                 # клейм тайтлов на https://fractal.unisat.io/address/my_title
 #------------------------------------------------------------------------------------------------------------------------
 #
 #    Выберите необходимые модули для взаимодействия
