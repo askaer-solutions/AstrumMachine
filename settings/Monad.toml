@@ -12,6 +12,11 @@ MONAD_WANT_BALANCE = [15, 20] # сумма MON на балансе в Monad, п�
 # какие модули нужны в автоматическом подборе при запуске функции monad_process_onchain_activity
 MONAD_AUTO_MODULES = ["Swaps", "Stakes", "Mints", "Domains"] # доступны следующие модули: Swaps, Stakes, Mints, Domains
 
+# monad_smart_swaps
+# monad_smart_swap_eth_mon
+MONAD_SWAP_DAPPS = ["zkSwap"] # дапки для свапов, если убрать все дапки, то свапать не будет. Доступны: Bean, Izumi, Ambient, zkSwap
+MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов, обратно в MON применяется 100%
+
 #---------------------------------------------------TALENTUM CONTROL----------------------------------------------------
 
 MONAD_TALENTUM_CHECKER = true # проверять статистику при запуске чекера
@@ -29,7 +34,6 @@ MONAD_FAUCET_URL = "https://faucet-claim.molandak.org/" # ссылка на кл
 MONAD_FAUCET_CLAIMED_COUNT = 2      # количество попыток заклеймить кран при сообщении "Faucet was already claimed"
 MONAD_FAUCET_WAIT_TIME = [240, 360] # время сна при ошибках на кране, чтобы проверить баланс, на случай если кран смог выдать токены
 
-MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов, обратно в MON применяется 100%
 MONAD_STAKE_AMOUNT = [0.001, 0.005] # сумма для стейка MON (минимум, максимум) (% или кол-во)
 MONAD_TRANSFERS_AMOUNT = ["100", "100"] # количество MON для трансфера на EVM Deposit Address
 
@@ -57,9 +61,6 @@ MONAD_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2
 
 # monad_orbiter_bridge_to_monad
 MONAD_BRIDGE_AMOUNT = ["100", "100"] # сумма бриджа ETH Sepolia -> ETH Monad через Orbiter
-
-# monad_smart_swap_eth_mon
-MONAD_SWAP_DAPPS = ["Ambient"] # дапки для свапов ETH -> MON, если убрать все дапки, то свапать не будет. Доступны: Ambient, Izumi, Uniswap
 
 #--------------------------------------------------DISPERSE MON CONTROL-------------------------------------------------
 
@@ -101,8 +102,11 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
    "0x21fd600fb5322f1a15d9f9607ee28a60355b6fae", # FREE
 ]
 
-
+# monad_smart_mm_bets_levr
 MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество ставок на https://app.levr.bet/march-madness
+
+# monad_claim_atlantis_nft
+MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое аккаунт должен заминтить, каждый минт требует делать по 20 свапов
 
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
@@ -140,7 +144,7 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_smart_gaszip_refuels             # Рефьюлы на Gas.Zip для набития кол-ва транз по настройке MONAD_GASZIP_TX_WANTED, суммы и сети по старым настройкам из REFUEL CONTROL
 
 #  monad_wrap_native                      # Wrap + Unwrap MON, настройка автоматическая
-#  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, Uniswap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, ограничение в 5 MON, во избежания слипаджа
+#  monad_smart_swaps                      # Умные двойные свапы, работают на Ambient, Izumi, zkSwap, Bear, сумма свапов по MONAD_SWAPS_AMOUNT, дапки по MONAD_SWAP_DAPPS, ограничение в 5 MON, во избежания слипаджа
 #  monad_swap_nadfun                      # Свапы на Nad.Fun. Покупка и продажа рандомных щитков на сумму MONAD_NUDFUN_SWAP_AMOUNT
 #  monad_buy_blink_tokens                 # Свапы на https://testnet.monad.xyz/, работает по MONAD_BLINK_TOKENS и MONAD_BLINK_AMOUNT
 #  monad_smart_buy_blink_tokens           # Свапы с проверкой баланса (покупает 3 токена в рандомном продке, если нету баланса токена) на https://testnet.monad.xyz/, работает по MONAD_BLINK_AMOUNT
@@ -149,8 +153,8 @@ MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество
 #  monad_withdraw_mon_ambient              # вывод MON с https://monad.ambient.finance/
 #  monad_disperse_mon_ambient              # раскидка MON используя https://monad.ambient.finance/
 
-# monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_NUDFUN_TOKER_NAME)
-# monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
+#  monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_NUDFUN_TOKER_NAME)
+#  monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address

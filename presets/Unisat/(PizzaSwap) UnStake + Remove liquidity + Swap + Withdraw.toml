@@ -1,11 +1,8 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ['unisat_pizzaswap_unstake_liquidity'],
-    ['unisat_pizzaswap_remove_liquidity'],
-    ['unisat_pizzaswap_swap'],
+#    ['unisat_pizzaswap_unstake_liquidity'],
+#    ['unisat_pizzaswap_remove_liquidity'],
+#    ['unisat_pizzaswap_swap'],
     ['unisat_pizzaswap_withdraw'],
-    ['unisat_make_inscription_transferable_fractal'],
-    ['custom_sleep3'],
-    ['unisat_bridge_sfb_to_fb_fractal'],
 ]
 
 UNISAT_PIZZA_SWAP_TOKENS_FROM = ["sBTC"]               # Токены из которых будет сделан свап (будет выбран случайный)
@@ -17,11 +14,7 @@ UNISAT_PIZZA_SWAP_LIQUIDITY_AMOUNT = ["98", "98"]      # Сумма для до�
 
 UNISAT_PIZZA_SWAP_SLIPPAGE = 5                         # Максимальное проскальзывание в процентах
 
-UNISAT_PIZZA_SWAP_DEPOSIT_TOKENS = ["sFB"]             # Токены для которых будет сделан депозит (будет выбран случайный)
+UNISAT_PIZZA_SWAP_DEPOSIT_TOKENS = ["FB"]             # Токены для которых будет сделан депозит (будет выбран случайный)
 UNISAT_PIZZA_SWAP_WITHDRAW_TOKENS = ["sFB"]            # Токены для которых будет сделан вывод (будет выбран случайный)
 
 UNISAT_PIZZA_SWAP_FEE_TOKEN = "sFB"                    # Токен в котором будет происходить оплата комиссий (поддерживаются bFB, sFB, bSATS, sSATS)
-
-UNISAT_TRANSFERABLE_INSCRIPTIONS_FRACTAL = [           # Аналогично TRANSFERABLE_INSCRIPTIONS, только для сети Fractal
-    "sFB",
-]
