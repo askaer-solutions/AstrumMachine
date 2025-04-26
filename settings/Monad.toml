@@ -21,12 +21,19 @@ MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов
 
 MONAD_TALENTUM_CHECKER = true # проверять статистику при запуске чекера
 MONAD_TALENTUM_TOTAL_QUESTS = [50, 70] # количество квестов к выполнению на аккаунт за 1 запуск модуля
+
 MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_TWITTER = false # делать ли задания с твиттерами.
-MONAD_TALENTUM_LINK_TWITTER = true # привязывать твиттер к профилю, если задание этого требует
+MONAD_TALENTUM_PROCESS_SPECIAL = false # делать ли специальные задания (реализованные отдельным модулем, часто затраты на них больше)
 
+MONAD_TALENTUM_LINK_TWITTER = false # привязывать твиттер к профилю, если задание этого требует
 MONAD_TALENTUM_ID_PROCESS_SOCIAL = false # пытаться ли заклеймить поинты за социалки для минта Talentum ID (true если не хватает поинтов за ончейн)
+MONAD_TALENTUM_SPECIFIC_QUESTS = [ # id квестов для выполнения, будут перемешаны (monad_process_talentum_specific_quests)
+   4680,
+   # 228
+   # 1337
+]
 
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
 
@@ -61,6 +68,9 @@ MONAD_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2
 
 # monad_orbiter_bridge_to_monad
 MONAD_BRIDGE_AMOUNT = ["100", "100"] # сумма бриджа ETH Sepolia -> ETH Monad через Orbiter
+
+# monad_smart_monadbridge
+MONAD_MONADBRIDGE_AMOUNT = ['100', '100'] # сумма бриджа ETH Sepolia -> wWETH Monad через MonadBridge
 
 #--------------------------------------------------DISPERSE MON CONTROL-------------------------------------------------
 
@@ -112,10 +122,12 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
 #  monad_bridge_mwdao_in                  # бридж через https://bridge.mwdao.xyz/, работает по MONAD_MWDAO_BRIDGE_AMOUNT и MONAD_MWDAO_BRIDGE_NETWORKS
+#  monad_smart_monadbridge                # бридж ETH -> wWETH через https://monadbridge.com/ + свап на Ambient, работает по MONAD_MONADBRIDGE_AMOUNT
 #  monad_smart_bridge_mwdao_in            # умный бридж через https://bridge.mwdao.xyz/, работает по MONAD_WANT_BALANCE и MONAD_MIN_TO_BRIDGE
 #  monad_smart_refuel_monad               # умный рефьюл через Gas.Zip, работает по REFUEL CONTROL
 
 #  monad_process_talentum_quests          # Запуск отработки Talentum квестов
+#  monad_process_talentum_specific_quests # Запуск отработки выбранных Talentum квестов (MONAD_TALENTUM_SPECIFIC_QUESTS)
 #  monad_process_daily_activity           # Выполнение дейликов на Talentum (клейм крана + MON streak)
 
 #  monad_process_onchain_activity         # Выполнение модулей в автоматическом режиме по настройкам MONAD AUTO-PRESET CONTROL
@@ -152,6 +164,8 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 #  monad_deposit_mon_ambient               # депозит MON на https://monad.ambient.finance/ (см DISPERSE MON CONTROL)
 #  monad_withdraw_mon_ambient              # вывод MON с https://monad.ambient.finance/
 #  monad_disperse_mon_ambient              # раскидка MON используя https://monad.ambient.finance/
+
+#  monad_claim_atlantis_nft                # минт NFT за 20 свапов, на https://app.atlantisdex.xyz/mint-nft, работает по MONAD_ATLANTIS_MAX_NFT_COUNT
 
 #  monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_NUDFUN_TOKER_NAME)
 #  monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
