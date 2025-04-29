@@ -116,8 +116,9 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
    "0x21fd600fb5322f1a15d9f9607ee28a60355b6fae", # FREE
 ]
 
-# monad_smart_mm_bets_levr
-MONAD_LEVR_MM_BETS_COUNT = [5, 7]  # необходимое количество ставок на https://app.levr.bet/march-madness
+# monad_smart_bets_levr
+MONAD_LEVR_BETS_COUNT = [5, 7]  # необходимое количество ставок на https://app.levr.bet/march-madness
+MONAD_LEVR_MAXIMUM_BETS_AMOUNT = [50, 100] # сумма ставки, которую софт не будет превышать, но берется рандомно не из этого диапазона
 
 # monad_claim_atlantis_nft
 MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое аккаунт должен заминтить, каждый минт требует делать по 20 свапов
@@ -144,7 +145,7 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 #  monad_mint_me_terminal                 # Mint NFT на MagicEden через Mint Terminal по настройке MONAD_MAGICEDEN_NFT_CONTRACTS
 #  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
 #  monad_make_predict_castora             # Делает рандомный предикт цены в одном из пулов на https://castora.xyz/. Стоимость 0.2 MON
-#  monad_smart_mm_bets_levr               # Делает ставки на https://app.levr.bet/march-madness/ по настройке MONAD_LEVR_MM_BETS_COUNT
+#  monad_smart_bets_levr                  # Делает ставки на https://app.levr.bet по настройкам MONAD_LEVR_BETS_COUNT и MONAD_LEVR_MAXIMUM_BETS_AMOUNT
 
 #  monad_stake_mon_apriori                # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT
 #  monad_stake_mon_magma                  # Стейк MON на http://magmastaking.xyz/. сумма стейка по MONAD_STAKE_AMOUNT

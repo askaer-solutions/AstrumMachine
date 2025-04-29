@@ -1,0 +1,5 @@
+SOMNIA_AUTO_LINK_SOCIALS = true
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ["somnia_link_socials"],
+]
