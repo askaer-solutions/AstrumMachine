@@ -1,0 +1,6 @@
+SOMNIA_LINK_TWITTER = false
+SOMNIA_LINK_DISCORD = false
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ["somnia_daily_login"],
+]

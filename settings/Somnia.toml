@@ -1,7 +1,7 @@
 SOMNIA_FAUCET_WAIT_TIME = [181, 240] # Время ожидания (в секундах) после запроса к Somnia Faucet для проверки изменения баланса STT
 
-SOMNIA_LINK_TWITTER = true # Автоматически проверяет и привязывает Twitter при авторизации (quest.somnia.network)
-SOMNIA_LINK_DISCORD = true # Автоматически проверяет и привязывает Discord при авторизации (quest.somnia.network)
+SOMNIA_LINK_TWITTER = true # Автоматически проверяет и привязывает Twitter при авторизации (quest.somnia.network) + включает выполнение Twitter квестов
+SOMNIA_LINK_DISCORD = true # Автоматически проверяет и привязывает Discord при авторизации (quest.somnia.network) + включает выполнение Discord квестов
 
 #----------------------------------------------------Sharing is Caring-----------------------------------------------------
 # https://quest.somnia.network/campaigns/7

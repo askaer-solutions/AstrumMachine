@@ -1,4 +1,36 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [10, 10]
+
+
 CLASSIC_ROUTES_MODULES_USING = [
     ["somnia_claim_faucet"],
-    ["somnia_complete_sharing_campaign"],
+    [
+        ["somnia_sharing_campaign"],
+    ],
+    [
+        ["somnia_darktable_campaign"],
+    ],
+    [
+        ["somnia_demons_campaign"],
+    ],
+    [
+        ["somnia_gaming_frenzy_campaign"],
+    ],
+    [
+        ["somnia_gaming_room_campaign"],
+    ],
+    [
+        ["somnia_mulletcop_campaign"],
+    ],
+    [
+        ["somnia_intersection_campaign"],
+    ],
+    [
+        ["somnia_masks_campaign"],
+    ],
+    [
+        ["somnia_socialfi_campaign"],
+    ],
+    [
+        ["somnia_qrusader_campaign"],
+    ],
 ]
