@@ -36,7 +36,6 @@ MONAD_TALENTUM_SPECIFIC_QUESTS = [ # id квестов для выполнени
 
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
 
-MONAD_FAUCET_URL = "https://faucet-claim.molandak.org/" # ссылка на клейм MON через https://testnet.monad.xyz/
 MONAD_FAUCET_CLAIMED_COUNT = 2      # количество попыток заклеймить кран при сообщении "Faucet was already claimed"
 MONAD_FAUCET_WAIT_TIME = [240, 360] # время сна при ошибках на кране, чтобы проверить баланс, на случай если кран смог выдать токены
 
@@ -132,6 +131,7 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 #  monad_smart_refuel_monad               # умный рефьюл через Gas.Zip, работает по REFUEL CONTROL
 
 #  monad_process_talentum_quests          # Запуск отработки Talentum квестов
+#  monad_mint_id_talentum                 # Запуск клейма Talentum ID NFT на https://monad.talentum.id/verification
 #  monad_process_talentum_specific_quests # Запуск отработки выбранных Talentum квестов (MONAD_TALENTUM_SPECIFIC_QUESTS)
 #  monad_process_daily_activity           # Выполнение дейликов на Talentum (клейм крана + MON streak)
 
@@ -146,6 +146,7 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 #  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
 #  monad_make_predict_castora             # Делает рандомный предикт цены в одном из пулов на https://castora.xyz/. Стоимость 0.2 MON
 #  monad_smart_bets_levr                  # Делает ставки на https://app.levr.bet по настройкам MONAD_LEVR_BETS_COUNT и MONAD_LEVR_MAXIMUM_BETS_AMOUNT
+#  monad_play_fantasy                     # Делает регистрацию по Твиттеру и записывает данные в файл (data/services/privy_wallets.json), клеймит начальную колоду, клеймит токены, регистрируется на бронз и сильвер турниры
 
 #  monad_stake_mon_apriori                # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT
 #  monad_stake_mon_magma                  # Стейк MON на http://magmastaking.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
