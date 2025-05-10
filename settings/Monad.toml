@@ -94,7 +94,7 @@ MONAD_NUDFUN_SWAP_AMOUNT = [0.05, 0.1] # сумма свапов на https://te
 # monad_create_token_nadfun
 MONAD_NUDFUN_INITIAL_BUY_AMOUNT = [0.1, 0.2] # сумма для обязательной изначальной покупки созданного токена на https://testnet.nad.fun/
 
-# monad_deploy_me_terminal
+# monad_deploy_me_token
 # monad_create_token_nadfun
 MONAD_TOKENS_METADATA = [
     ['Zalupa', 'ZLP', 'Too big to handle'],
@@ -165,7 +165,7 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 #  monad_orbiter_bridge_to_monad          # Бридж ETH Sepolia -> ETH Monad через Orbiter, сумма под бридж MONAD_BRIDGE_AMOUNT
 #  monad_smart_swap_eth_mon               # Свапы ETH Monad -> MON Monad через дапки в настройке MONAD_SWAP_DAPPS
 
-#  monad_deploy_me_terminal               # Deploy NFT на MagicEden через Mint Terminal по настройке MONAD_TOKENS_METADATA
+#  monad_deploy_me_token               # Deploy NFT на MagicEden через Mint Terminal по настройке MONAD_TOKENS_METADATA
 #  monad_mint_me_terminal                 # Mint NFT на MagicEden через Mint Terminal по настройке MONAD_MAGICEDEN_NFT_CONTRACTS
 #  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
 #  monad_make_predict_castora             # Делает рандомный предикт цены в одном из пулов на https://castora.xyz/. Стоимость 0.2 MON
