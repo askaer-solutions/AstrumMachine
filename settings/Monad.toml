@@ -30,8 +30,6 @@ MONAD_TALENTUM_LINK_TWITTER = false # привязывать твиттер к �
 MONAD_TALENTUM_ID_PROCESS_SOCIAL = false # пытаться ли заклеймить поинты за социалки для минта Talentum ID (true если не хватает поинтов за ончейн)
 MONAD_TALENTUM_SPECIFIC_QUESTS = [ # id квестов для выполнения, будут перемешаны (monad_process_talentum_specific_quests)
    4680,
-   # 228
-   # 1337
 ]
 
 #----------------------------------------------------MONAD CONTROL------------------------------------------------------
@@ -95,11 +93,36 @@ MONAD_NUDFUN_SWAP_AMOUNT = [0.05, 0.1] # сумма свапов на https://te
 
 # monad_create_token_nadfun
 MONAD_NUDFUN_INITIAL_BUY_AMOUNT = [0.1, 0.2] # сумма для обязательной изначальной покупки созданного токена на https://testnet.nad.fun/
-MONAD_NUDFUN_TOKER_NAME = [
-    ['ZalupaCoin', 'ZLP', 'This token is too good for buy, cuz zalupa is too big'],
-#    ['GigaZalupa', 'GZLP', 'This token is too good for buy'],
-#    ['FullZalupa', 'FZLP', 'This token is too good for buy']
-] # Название токена, Название тикера, Описание токена
+
+# monad_deploy_me_terminal
+# monad_create_token_nadfun
+MONAD_TOKENS_METADATA = [
+    ['Zalupa', 'ZLP', 'Too big to handle'],
+    ['GigaZlp', 'GZLP', 'Only for true degens'],
+    ['FullZlp', 'FZLP', 'Maxed out degen vibes'],
+    ['RugPro', 'RUG', 'Exit fast, cry faster'],
+    ['Insdr', 'INS', 'Alpha so good, you lose'],
+    ['PumpX', 'PMP', 'Pump now, regret forever'],
+    ['DgnDAO', 'DGN', 'Run by finest apes'],
+    ['ScamX', 'SCM', 'Best scam on chain'],
+    ['ZUtil', 'ZERO', 'Zero utility, max hype'],
+    ['FomoInu', 'FMI', 'Buy high, never sell'],
+    ['YoloX', 'YOX', 'All in, no way out'],
+    ['MoonBoi', 'MNB', 'To the floor, fast'],
+    ['ExitX', 'EXT', 'Exit before you blink'],
+    ['SimpTok', 'SMP', 'For ultimate bagholders'],
+    ['Hopium', 'HPM', 'Keep dreaming, forever broke'],
+    ['Dusty', 'DST', 'Leftover bags forever'],
+    ['RektX', 'REK', 'Instant rekt experience'],
+    ['DumpIt', 'DMP', 'Sell now, thank me later'],
+    ['Bagz', 'BGZ', 'Heaviest bags in town'],
+    ['WenMoon', 'WEN', 'Soon™ and never'],
+    ['CryNow', 'CRY', 'Perfect for salty tears'],
+    ['FlipIt', 'FLP', 'Buy, flip, disappear'],
+    ['TopBuy', 'TOP', 'Buy at absolute top'],
+    ['HodlX', 'HDX', 'Hold forever, regret daily'],
+    ['ApeIn', 'APE', 'No think, just buy']
+]
 
 # monad_mint_me_terminal
 MONAD_MAGICEDEN_MINT_ALL = false  # поставьте true, чтобы софт заминтил кажду из NFT в списке MONAD_MAGICEDEN_NFT_CONTRACTS, предварительно перемешав их
@@ -142,6 +165,7 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 #  monad_orbiter_bridge_to_monad          # Бридж ETH Sepolia -> ETH Monad через Orbiter, сумма под бридж MONAD_BRIDGE_AMOUNT
 #  monad_smart_swap_eth_mon               # Свапы ETH Monad -> MON Monad через дапки в настройке MONAD_SWAP_DAPPS
 
+#  monad_deploy_me_terminal               # Deploy NFT на MagicEden через Mint Terminal по настройке MONAD_TOKENS_METADATA
 #  monad_mint_me_terminal                 # Mint NFT на MagicEden через Mint Terminal по настройке MONAD_MAGICEDEN_NFT_CONTRACTS
 #  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
 #  monad_make_predict_castora             # Делает рандомный предикт цены в одном из пулов на https://castora.xyz/. Стоимость 0.2 MON
@@ -173,7 +197,7 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 
 #  monad_claim_atlantis_nft                # минт NFT за 20 свапов, на https://app.atlantisdex.xyz/mint-nft, работает по MONAD_ATLANTIS_MAX_NFT_COUNT
 
-#  monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_NUDFUN_TOKER_NAME)
+#  monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_TOKENS_METADATA)
 #  monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
