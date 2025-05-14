@@ -1,0 +1,10 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [2, 2]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["soneium_untitled_bank_withdraw"]
+    ],
+    [
+        ["soneium_wavex_withdraw"]
+    ],
+]
