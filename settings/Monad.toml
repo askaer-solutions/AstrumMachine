@@ -145,6 +145,9 @@ MONAD_LEVR_MAXIMUM_BETS_AMOUNT = [50, 100] # сумма ставки, котор
 # monad_claim_atlantis_nft
 MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое аккаунт должен заминтить, каждый минт требует делать по 20 свапов
 
+# monad_mint_mubond
+MONAD_MINT_MUBOND_AMOUNT = [0.5, 1.2] # количество MON, которое изпользуется на минт $muBOND
+
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
@@ -199,6 +202,8 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 
 #  monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_TOKENS_METADATA)
 #  monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
+
+# monad_mint_mubond                         # минтит $muBOND на https://testnet.mudigital.net/ (смю MONAD_MINT_MUBOND_AMOUNT)
 
 #  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
 #  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address
