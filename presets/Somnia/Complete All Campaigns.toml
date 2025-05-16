@@ -8,5 +8,8 @@ CLASSIC_ROUTES_MODULES_USING = [
     ],
     [
         ["somnia_foru_campaign"]
+    ],
+    [
+        ["somnia_yappers_campaign"]
     ]
 ]
