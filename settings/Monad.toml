@@ -148,6 +148,20 @@ MONAD_ATLANTIS_MAX_NFT_COUNT = [1, 1] # количество NFT которое 
 # monad_mint_mubond
 MONAD_MINT_MUBOND_AMOUNT = [0.5, 1.2] # количество MON, которое изпользуется на минт $muBOND
 
+# monad_play_2048
+
+# Включить оптимизированную стратегию (поиск лучшего хода).
+# false — случайные ходы. true — лучше играет, но может нагружать систему и ход подбирается достаточно долго.
+MONAD_2048_OPTIMIZED_STRATEGY = true
+
+# Диапазон задержки между ходами (в секундах) для имитации поведения игрока.
+# Пример: [0.0, 0.0] — без задержек. [0.5, 1.5] — паузы от 0.5 до 1.5 сек.
+MONAD_2048_STEP_SLEEP = [0.0, 0.0]
+
+# Диапазон суммы депозита (в MON), отправляемой на embedded-кошелёк перед стартом игры.
+# Значение выбирается случайно из указанного диапазона.
+MONAD_2048_EMBEDDED_WALLET_DEPOSIT = [0.85, 1.1]
+
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
 #  monad_claim_faucet                     # Клейм MON на оф. кране https://testnet.monad.xyz/
@@ -168,7 +182,7 @@ MONAD_MINT_MUBOND_AMOUNT = [0.5, 1.2] # количество MON, которое
 #  monad_orbiter_bridge_to_monad          # Бридж ETH Sepolia -> ETH Monad через Orbiter, сумма под бридж MONAD_BRIDGE_AMOUNT
 #  monad_smart_swap_eth_mon               # Свапы ETH Monad -> MON Monad через дапки в настройке MONAD_SWAP_DAPPS
 
-#  monad_deploy_me_token               # Deploy NFT на MagicEden через Mint Terminal по настройке MONAD_TOKENS_METADATA
+#  monad_deploy_me_token                  # Deploy NFT на MagicEden через Mint Terminal по настройке MONAD_TOKENS_METADATA
 #  monad_mint_me_terminal                 # Mint NFT на MagicEden через Mint Terminal по настройке MONAD_MAGICEDEN_NFT_CONTRACTS
 #  monad_mint_nad_domain                  # регистрация .nad домена на https://app.nad.domains/. Стоимость 0.1 MON
 #  monad_make_predict_castora             # Делает рандомный предикт цены в одном из пулов на https://castora.xyz/. Стоимость 0.2 MON
