@@ -1,8 +1,12 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
+CLASSIC_ROUTES_BLOCKS_COUNT = [2, 2]
+
 
 CLASSIC_ROUTES_MODULES_USING = [
     ["somnia_claim_faucet"],
     [
         ["somnia_yappers_campaign"]
+    ],
+    [
+        ["somnia_gamers_campaign"]
     ]
 ]
