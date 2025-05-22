@@ -1,2 +1,3 @@
 CAMP_PROCESS_TWITTER = true # включает выполнение Twitter квестов
 CAMP_PROCESS_DISCORD = false # включает выполнение Discord квестов
+CAMP_PROCESS_ONCHAIN = true # включает выполнение On-Chain квестов
