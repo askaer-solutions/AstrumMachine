@@ -11,6 +11,5 @@ ECLIPSE_WETH_FEE_LIMITER = [0.004, 0.004]   # сумма ETH для исполь
 ECLIPSE_WETH_BRIDGE_AMOUNT = ['100', '100'] # сумма WETH для бриджа через https://app.eclipse.xyz/mint-teth
 ECLIPSE_WETH_SKIP_WRAP = false              # пропускать ли врап ETH, включайте, если у вас уже есть балансы в WETH
 
-BRIDGE_RELAY_L2_NETWORK = ['Arbitrum', 'Optimism', 'Base'] # сети, которые используются для бриджа через Relay
-BRIDGE_RELAY_AMOUNT = ['100', '100']         # сумма бриджа нативки между сетями через Relay
-BRIDGE_RELAY_MAX_IMPACT = 7.0              # максимальная разница в % исходящей и входящей суммы, софт будет ждать данную разницу
+BRIDGE_L2_NETWORK = ['Arbitrum', 'Optimism', 'Base'] # сети, которые используются для бриджа через Relay
+BRIDGE_AMOUNT = ['100', '100']         # сумма бриджа нативки между сетями через Relay
