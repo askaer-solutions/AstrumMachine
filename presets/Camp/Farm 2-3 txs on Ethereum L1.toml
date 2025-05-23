@@ -1,0 +1,14 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 2]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ['withdraw_cex'],
+    ['transfer_eth_to_myself', 'transfer_eth_to_random'],
+    [
+        ["wrap_eth"],
+        ["unwrap_eth"],
+    ],
+    [
+        ['random_approve']
+    ],
+    ['transfer_eth_to_deposit']
+]
