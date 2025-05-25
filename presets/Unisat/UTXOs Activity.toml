@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ['unisat_unlock_utxos'],
+    ['unisat_merge_utxos'],
+    ['unisat_consolidate_utxos'],
+]
