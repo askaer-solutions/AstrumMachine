@@ -12,12 +12,8 @@ UNISAT_FEE_PRICE_CUSTOM_FRACTAL = [0, 0]    # Аналогично FEE_PRICE_CUS
 
 UNISAT_FF_REF_CODE = 'pp832nmb'             # Рефка при использовании https://ff.io/user/affiliate. Если пустая, то выключена
 
-UNISAT_NEED_BRC_BALANCE = true              # Если True, то проверяет баланс на кошельке в сети BRC. Нужен для получения адреса
-UNISAT_NEED_BRC_POINTS = true               # Если True, то проверяет поинты на кошельке в сети BRC
 UNISAT_NEED_BRC_LISTINGS = true             # Если True, то проверяет ордеры на продажу инскрипций\рун
 UNISAT_NEED_FRACTAL_BALANCE = true          # Если True, то проверяет баланс на кошельке в сети Fractal
-UNISAT_NEED_FRACTAL_TESTNET_POINTS = false  # Если True, то проверяет поинты на кошельке в сети Fractal Testnet
-UNISAT_NEED_FRACTAL_MAINNET_POINTS = false  # Если True, то проверяет поинты на кошельке в сети Fractal Mainnet
 UNISAT_NEED_FRACTAL_DROP = false            # Если True, то проверяет дроп $FB
 UNISAT_NEED_FRACTAL_LISTINGS = true         # Если True, то проверяет ордеры на продажу инскрипций\рун Fractal
 
@@ -74,8 +70,8 @@ UNISAT_MINT_INSCRIPTIONS_REQUIRED = [              # Случайная инск
 ]
 
 UNISAT_MINT_INSCRIPTIONS_REQUIRED_FRACTAL = [      # Аналогично MINT_INSCRIPTIONS_REQUIRED, только для сети Fractal
-    "MakerDAO",                             # Длина 6-12 символов для !!!
-    "Solana",
+#    "foundation",                             # Длина 6-12 символов для !!!
+#    "Solana",
 ]
 
 UNISAT_TRANSFERABLE_INSCRIPTIONS = [               # Инскрипции которые нужно сделать продаваемыми (софт возьмет случайную)
@@ -144,6 +140,11 @@ UNISAT_FB_SFB_BRIDGE_AMOUNT = [1.1, 1.1]            # бридж BTC <-> sBTC в
 UNISAT_BTC_SBTC_BRIDGE_AMOUNT = [0.001, 0.002]  # бридж FB <-> sFB в сети Fractal
 UNISAT_WAIT_FOR_RECEIPT_BRIDGE = true           # Если True, будет ждать получения средств во входящей сети после бриджа
 
+#---------------------------------------------------------UTXO----------------------------------------------------------
+
+UNISAT_UNLOCK_COUNT = [500, 500]  # максимальный лимит utxo для unlock на https://unisat.io/utxo
+UNISAT_MERGE_COUNT = [500, 500]   # максимальный лимит utxo для merge на https://unisat.io/utxo
+
 #--------------------------------------------------------OTHERS---------------------------------------------------------
 
 CUSTOM_SLEEP_1 = [10, 20]    # Количество секунд (от, до) для сна внутри модуля custom_sleep1
@@ -172,6 +173,9 @@ CUSTOM_SLEEP_3 = [150, 200]  # Количество секунд (от, до) д
 #    unisat_deploy_and_inscribe_brc20_5byte  # деплой и минт 5 байтной инскрипции. см. INSCRIPTIONS
 #    unisat_bridge_btc_to_sbtc               # бридж BTC -> sBTC в сети BRC. см. BTC_SBTC_BRIDGE_AMOUNT
 #    unisat_bridge_sbtc_to_btc               # бридж sBTC -> BTC в сети BRC. см. BTC_SBTC_BRIDGE_AMOUNT
+#    unisat_unlock_utxos                     # unlock на https://unisat.io/utxo
+#    unisat_merge_utxos                      # merge на https://unisat.io/utxo
+#    unisat_consolidate_utxos                # consolidate на https://unisat.io/utxo
 #
 #--------------------------------------------------------FRACTAL---------------------------------------------------------
 #    unisat_custom_transfer                  # трансфер токенов на адрес, указанный в поле 'OKX BTC address'. см. CUSTOM_TRANSFER_DATA
