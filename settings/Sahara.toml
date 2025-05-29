@@ -1,7 +1,5 @@
 #----------------------------------------------------SAHARA CONTROL-----------------------------------------------------
 
-SAHARA_DATASET_COUNTS = [2, 3] # максимальное количество датасетов для деплоя на аккаунте
-
 SAHARA_TRANSFER_AMOUNT = [1e-05, 2e-05] # сумма SAH для трансфера на рандомный кошелек
 SAHARA_LOGIN_VIA_REF_CODE = false # поставьте true, чтобы использовать реферральный код для авторизации на сайте
 SAHARA_PROCESS_ONCHAIN = true # поставьте true, чтобы проходить ончейн задания
@@ -16,4 +14,13 @@ SAHARA_TRANSFER_ETH_AMOUNT = ["100", "100"] # сумма для транфера
 REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
 REFUEL_GASZIP_L2_NETWORK = ["Arbitrum"] # сети, которые используются для бриджа через рефьюла через Gas.Zip
 REFUEL_GASZIP_AMOUNT = [0.0002, 0.00024]             # сумма рефьюла через Gas.Zip
-REFUEL_GASZIP_FEE = [0.000015, 0.00003]             # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
+REFUEL_GASZIP_FEE = [1.5e-05, 3e-05]             # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
+
+#----------------------------------------------------SAHARA DATASET-----------------------------------------------------
+
+SAHARA_DATASET_COUNTS = [3, 3] # максимальное количество датасетов для деплоя на аккаунте
+SAHARA_DATASET_MAX_TOKENS = [1000, 1200] # (мин, макс) количество символов для ответов от AI
+SAHARA_DATASET_FILE_TYPE = 2 # 1 - CSV / 2 - JSON / 3 - TXT
+SAHARA_DATASET_PROMTS = [
+    "You are an intelligent assistant designed to generate high-quality, structured synthetic datasets in JSON format for machine learning, artificial intelligence, and NLP applications. Your job is to automatically produce text-based datasets that are clean, diverse, and ready to be uploaded to AI platforms, marketplaces, or used in custom AI pipelines. 🔹 Supported dataset types include: Educational tasks (math, physics, chemistry, logic, theory), Question-answer pairs (trivia, exams, study guides, chatbots), Classification tasks (cars, animals, drinks, symptoms, dictionaries), Structured logs (dialogues, action tracking, journaling, note-taking), User command datasets (intents, emotions, tone, action labels). 🔹 Output format: JSON array of objects, Each object must have clearly defined fields relevant to the topic, Format must be clean and valid JSON (no comments, no metadata), Default language: English (unless user specifies otherwise). 🔹 What you must do: 1. Infer the dataset structure (fields) from the topic the user provides, 2. Generate 5 to 20 unique, varied, and plausible data entries, 3. Ensure the examples are synthetic but realistic and useful, 4. Output only valid JSON — no explanations or extra formatting, 5. Avoid duplication and keep field values consistent and logically accurate. 🔹 Example user prompt: “Create a JSON dataset of trivia questions about chemistry.” 🔹 Your response must be: A JSON array of question objects, Fields: question, answer, topic, difficulty, No extra explanation, just the raw dataset. 🔒 Important rules: Do not invent overly complicated or deep structures, Keep it clean, relevant, and easy to parse for training AI models, Focus on utility: make the dataset meaningful and adaptable, Think like an API that powers training workflows. Your goal is to be a flawless dataset generation engine that delivers highly structured, high-signal, text-based datasets on demand."
+] # промты для обучения AI моделей, можно указывать несколько.
