@@ -109,6 +109,10 @@ EXCEL_FILE_PATH = "./data/accounts_data.xlsx"  # Можете не изменя�
 GPT_API_KEY = ""
 GPT_API_MODEL = 1               # 1: gpt-4o-mini, 2: o1-mini, 3: o1-preview
 
+# https://portal.nousresearch.com/api-keys
+NOUS_API_KEY = ""
+NOUS_API_MODEL = 1 # 1: 0.7$/1M, 2: 0.85$/1M, 3: 0.9$/1M, 4: 1.8$/1M (Измеряется в токенах, чем дороже модель тем лучше ответы)
+
 # https://www.okx.com/ru/account/my-api
 OKX_API_KEY = ""
 OKX_API_SECRET = ""
