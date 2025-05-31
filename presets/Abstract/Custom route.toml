@@ -1,0 +1,10 @@
+CLASSIC_ROUTES_BLOCKS_COUNT = [1, 2]
+
+CLASSIC_ROUTES_MODULES_USING = [
+    [
+        ["abstract_mint_me_terminal"]
+    ],
+    [
+        ["abstract_deploy_me_token"]
+    ],
+]

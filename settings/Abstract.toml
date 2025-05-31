@@ -69,3 +69,41 @@ ABSTRACT_ZOOFUN_SLEEP = [20, 30] # задержка между каждым св
 #-------------------------------------------------------Roach-----------------------------------------------------------
 
 ABSTRACT_WANTED_TRAX_BALANCE = [10, 10] # желаемый баланс TRAX (мин, макс) (abstract_buy_trax_roach)
+
+#------------------------------------------------------MagicEden--------------------------------------------------------
+
+# abstract_deploy_me_token
+ABSTRACT_TOKENS_METADATA = [
+    ['Zalupa', 'ZLP', 'Too big to handle'],
+    ['GigaZlp', 'GZLP', 'Only for true degens'],
+    ['FullZlp', 'FZLP', 'Maxed out degen vibes'],
+    ['RugPro', 'RUG', 'Exit fast, cry faster'],
+    ['Insdr', 'INS', 'Alpha so good, you lose'],
+    ['PumpX', 'PMP', 'Pump now, regret forever'],
+    ['DgnDAO', 'DGN', 'Run by finest apes'],
+    ['ScamX', 'SCM', 'Best scam on chain'],
+    ['ZUtil', 'ZERO', 'Zero utility, max hype'],
+    ['FomoInu', 'FMI', 'Buy high, never sell'],
+    ['YoloX', 'YOX', 'All in, no way out'],
+    ['MoonBoi', 'MNB', 'To the floor, fast'],
+    ['ExitX', 'EXT', 'Exit before you blink'],
+    ['SimpTok', 'SMP', 'For ultimate bagholders'],
+    ['Hopium', 'HPM', 'Keep dreaming, forever broke'],
+    ['Dusty', 'DST', 'Leftover bags forever'],
+    ['RektX', 'REK', 'Instant rekt experience'],
+    ['DumpIt', 'DMP', 'Sell now, thank me later'],
+    ['Bagz', 'BGZ', 'Heaviest bags in town'],
+    ['WenMoon', 'WEN', 'Soon™ and never'],
+    ['CryNow', 'CRY', 'Perfect for salty tears'],
+    ['FlipIt', 'FLP', 'Buy, flip, disappear'],
+    ['TopBuy', 'TOP', 'Buy at absolute top'],
+    ['HodlX', 'HDX', 'Hold forever, regret daily'],
+    ['ApeIn', 'APE', 'No think, just buy']
+]
+
+# abstract_mint_me_terminal
+ABSTRACT_MAGICEDEN_MINT_ALL = false  # поставьте true, чтобы софт заминтил кажду из NFT в списке ABSTRACT_MAGICEDEN_NFT_CONTRACTS, предварительно перемешав их
+ABSTRACT_MAGICEDEN_MINT_LIMIT = true # минтить NFT только 1 раз или нет
+ABSTRACT_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного минта NFT с https://magiceden.io/mint-terminal/abstract
+   "0xa22f3f9154b0f0e6b3266661e86645d00633ec2d", # 0.00006 ETH
+]
