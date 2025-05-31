@@ -7,4 +7,7 @@ CLASSIC_ROUTES_MODULES_USING = [
     [
         ["abstract_deploy_me_token"]
     ],
+#    [
+#        ["abstract_buy_me_nft"]
+#    ],
 ]

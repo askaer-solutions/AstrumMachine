@@ -105,5 +105,13 @@ ABSTRACT_TOKENS_METADATA = [
 ABSTRACT_MAGICEDEN_MINT_ALL = false  # поставьте true, чтобы софт заминтил кажду из NFT в списке ABSTRACT_MAGICEDEN_NFT_CONTRACTS, предварительно перемешав их
 ABSTRACT_MAGICEDEN_MINT_LIMIT = true # минтить NFT только 1 раз или нет
 ABSTRACT_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного минта NFT с https://magiceden.io/mint-terminal/abstract
+#   "0x561646473cbd6f7134a33175f67c018b4ec2d661", # FREE
+#   "0xebc038368dad99934ddf229c8da4dd48502c0605", # FREE
+#   "0x7f95f671f4ca6b4a37673946acf28078906dcea0", # FREE
+   "0x453c8e26e5c6277d8b8b7864a5d98d299d634289", # FREE
+]
+
+# abstract_buy_me_nft
+ABSTRACT_MAGICEDEN_NFT_CONTRACTS_COLLECTION = [ # адреса для рандомного минта NFT с https://magiceden.io/collections/abstract
    "0xa22f3f9154b0f0e6b3266661e86645d00633ec2d", # 0.00006 ETH
 ]
