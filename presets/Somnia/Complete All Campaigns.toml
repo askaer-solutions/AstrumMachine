@@ -4,9 +4,9 @@ CLASSIC_ROUTES_BLOCKS_COUNT = [2, 2]
 CLASSIC_ROUTES_MODULES_USING = [
     ["somnia_claim_faucet"],
     [
-        ["somnia_feed_the_dragon_campaign"]
+        ["somnia_onebillion_campaign"]
     ],
     [
-        ["somnia_gamers_campaign"]
+        ["somnia_rubyscore_campaign"]
     ]
 ]
