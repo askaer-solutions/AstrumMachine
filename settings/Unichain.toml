@@ -1,7 +1,0 @@
-#---------------------------------------------------UNICHAIN CONTROL----------------------------------------------------
-
-UNICHAIN_TESTNET_BRIDGE_AMOUNT = [0.0001, 0.0002] # сумма бриджа из L2(Arbitrum или Optimism) в Sepolia (минимум, максимум) (% или кол-во)
-UNICHAIN_BRIDGG_AMOUNT = ["100", "100"]          # сумма бриджа на Bridgg из Unichain в Sepolia (минимум, максимум) (% или кол-во)
-UNICHAIN_SUPER_BRIDGE_AMOUNT = ["100", "100"]    # сумма бриджа на SuperBridge Unichain в Sepolia (минимум, максимум) (% или кол-во)
-UNICHAIN_UNISWAP_AMOUNT = ["7", "10"]       # сумма свапов на Uniswap (минимум, максимум) (% или кол-во)
-UNICHAIN_SEPOLIA_NETWORKS = ["Arbitrum", "Optimism"] # сети в которых искать балансы для бриджа в Sepolia

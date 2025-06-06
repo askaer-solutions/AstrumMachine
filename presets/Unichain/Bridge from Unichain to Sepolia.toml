@@ -1,6 +1,0 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]
-
-CLASSIC_ROUTES_MODULES_USING = [
-    [["unichain_bridge_bridgg_out"]],
-    [["unichain_bridge_superbridge_out"]],
-]

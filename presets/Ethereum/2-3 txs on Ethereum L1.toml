@@ -1,7 +1,8 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [1, 2]
+CLASSIC_ROUTES_BLOCKS_COUNT = [3, 3]
 
 CLASSIC_ROUTES_MODULES_USING = [
-    ['ethereum_withdraw_cex'],
+    ['withdraw_cex'],
+    ['ethereum_bridge_relay_into'],
     ['ethereum_transfer_eth_to_myself', 'ethereum_transfer_eth_to_random'],
     [
         ["ethereum_wrap_eth"],
@@ -9,6 +10,9 @@ CLASSIC_ROUTES_MODULES_USING = [
     ],
     [
         ['ethereum_random_approve']
+    ],
+    [
+        ['ethereum_bridge_relay_dust']
     ],
     ['ethereum_transfer_eth_to_deposit']
 ]
