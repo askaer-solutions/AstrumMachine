@@ -21,7 +21,7 @@ MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов
 MONAD_TALENTUM_CHECKER = true # проверять статистику при запуске чекера
 MONAD_TALENTUM_TOTAL_QUESTS = [50, 70] # количество квестов к выполнению на аккаунт за 1 запуск модуля
 
-MONAD_TALENTUM_PROCESS_DAILY = true # делать ли daily задания (кран и стрик)
+MONAD_TALENTUM_PROCESS_FAUCET = true # пытаться ли прожать кран по время авторизации
 MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_TWITTER = false # делать ли задания с твиттерами.
