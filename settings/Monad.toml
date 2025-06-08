@@ -21,6 +21,7 @@ MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов
 MONAD_TALENTUM_CHECKER = true # проверять статистику при запуске чекера
 MONAD_TALENTUM_TOTAL_QUESTS = [50, 70] # количество квестов к выполнению на аккаунт за 1 запуск модуля
 
+MONAD_TALENTUM_PROCESS_DAILY = true # делать ли daily задания (кран и стрик)
 MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_TWITTER = false # делать ли задания с твиттерами.
@@ -215,10 +216,10 @@ MONAD_2048_EMBEDDED_WALLET_NEW_DEPOSITS = false # делать новые деп
 
 #  monad_claim_atlantis_nft                # минт NFT за 20 свапов, на https://app.atlantisdex.xyz/mint-nft, работает по MONAD_ATLANTIS_MAX_NFT_COUNT
 
-#  monad_create_token_nadfun                # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_TOKENS_METADATA)
-#  monad_complete_all_missions_nadfun       # протыкивает все миссии на https://testnet.nad.fun/
+#  monad_create_token_nadfun               # создание токена на https://testnet.nad.fun/ (см. MONAD_NUDFUN_INITIAL_BUY_AMOUNT и MONAD_TOKENS_METADATA)
+#  monad_complete_all_missions_nadfun      # протыкивает все миссии на https://testnet.nad.fun/
 
-# monad_mint_mubond                         # минтит $muBOND на https://testnet.mudigital.net/ (смю MONAD_MINT_MUBOND_AMOUNT)
+#  monad_mint_mubond                       # минтит $muBOND на https://testnet.mudigital.net/ (смю MONAD_MINT_MUBOND_AMOUNT)
 
-#  monad_collect_mon                      # Сбор всех токенов в MON, свапает на рандомном дексе
-#  monad_transfer_mon                     # Трансфер MON на адрес EVM Deposit Address
+#  monad_collect_mon                       # Сбор всех токенов в MON, свапает на рандомном дексе
+#  monad_transfer_mon                      # Трансфер MON на адрес EVM Deposit Address
