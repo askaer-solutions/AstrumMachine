@@ -19,8 +19,9 @@ REFUEL_MIN_BALANCE = 0.1 # минимальный порог $SAH, для зап
 
 #----------------------------------------------------SAHARA DATASET-----------------------------------------------------
 
-SAHARA_DATASET_AI_TYPE = 1 # 1 - Nous AI, 2 - ChatGPT
-SAHARA_DATASET_COUNTS = [3, 3] # максимальное количество датасетов для деплоя на аккаунте
+SAHARA_DATASET_GWEI = [1.3, 2.0] # GWEI для отправки транзакций внутри сети
+SAHARA_DATASET_AI_TYPE = 2 # 1 - Nous AI, 2 - ChatGPT
+SAHARA_DATASET_COUNTS = [20, 30] # максимальное количество датасетов для деплоя на аккаунте
 SAHARA_DATASET_MAX_TOKENS = [100, 120] # (мин, макс) количество символов для ответов от AI
 SAHARA_DATASET_FILE_TYPE = 2 # 1 - CSV / 2 - JSON / 3 - TXT
 SAHARA_DATASET_PROMTS = [
