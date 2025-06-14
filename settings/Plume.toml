@@ -1,0 +1,33 @@
+#-----------------------------------------------------PLUME CONTROL-----------------------------------------------------
+
+PLUME_MINT_AMOUNT = [4.0, 4.5] # сумма USDC для минта pUSD на https://pusd.plume.org/
+PLUME_STAKE_AMOUNT = [1.2, 1.3] # сумма PLUME для стейка рандомному валидатору на https://staking.plume.org/
+
+PLUME_SWAP_AMOUNT = ['20', '25'] # сумма PLUME для свапов на https://portal.plume.org/swap
+PLUME_SWAP_COUNT = [2, 5] # кол-во свапов на https://portal.plume.org/swap
+
+PLUME_WANT_BALANCE = [100, 150] # сумма PLUME на балансе в Plume, при не хватке, софт запустит процесс вывода + бриджа в сеть
+PLUME_MIN_TO_BRIDGE = 20 # минимальная разница между желаемой и фактической суммой для запуска умного бриджа
+
+PLUME_LINK_TWITTER = true # привязывать аккаунт Twitter к профилю при логине на https://portal.plume.org/profile/me
+PLUME_LINK_DISCORD = true # привязывать аккаунт Discord к профилю при логине на https://portal.plume.org/profile/me
+
+#--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
+
+# plume_bridge_in           # Бридж в Plume из BRIDGE_L2_NETWORK на сумму BRIDGE_AMOUNT, учитывая BRIDGE_LIMITER
+# plume_bridge_out          # Вывод из Plume в BRIDGE_L2_NETWORK на сумму BRIDGE_AMOUNT, учитывая BRIDGE_LIMITER
+# plume_smart_bridge_in     # Умный бридж (при необходимости вывод с биржи) в Plume (авторасчет по PLUME_WANT_BALANCE, учитывая PLUME_MIN_TO_BRIDGE)
+
+# plume_collector           # Сбор всех токенов в $PLUME через https://www.rooster-protocol.xyz/?chain=98866
+
+# plume_process_quests      # Прохождение всех доступных квестов через https://portal.plume.org/level-up
+# plume_process_spin        # Запуск ежедневного спина (гемблинг) через https://portal.plume.org/apps/daily_spin
+# plume_process_stake       # Стейк PLUME на сумму PLUME_STAKE_AMOUNT через https://staking.plume.org/
+# plume_process_swaps       # Умные двойные свапы по PLUME_SWAP_AMOUNT и PLUME_SWAP_COUNT через https://portal.plume.org/swap
+# plume_process_mint        # Минт pUSD за USDC на сумму PLUME_MINT_AMOUNT через https://pusd.plume.org/
+
+# plume_ambient_swaps       # Умный двойной свап на сумму PLUME_SWAP_AMOUNT через https://plume.ambient.finance/
+# plume_rooster_swaps       # Умный двойной свап на сумму PLUME_SWAP_AMOUNT через https://www.rooster-protocol.xyz/?chain=98866
+# plume_stake_nalpha        # Стейк nALPHA на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-alpha-vault
+# plume_stake_ncredit       # Стейк nCREDIT на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-credit-vault
+# plume_stake_ntbill        # Стейк nTBILL на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-treasury-vault

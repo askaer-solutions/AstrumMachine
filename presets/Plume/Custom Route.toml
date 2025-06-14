@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['plume_process_spin'],
+    ['plume_process_swaps'],
+]

@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_MODULES_USING = [
+#    ['plume_smart_bridge_in'],
+#    ['plume_process_quests'],
+#    ['plume_collector'],
+    ['plume_bridge_out'],
+    ['deposit_cex'],
+]
