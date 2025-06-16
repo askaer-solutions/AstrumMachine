@@ -9,17 +9,8 @@ SAHARA_SELF_TRANSFERS = false # поставьте true, делать транс
 SAHARA_TRANSFER_SAH_AMOUNT = [0.005, 0.006] # сумма для транфера SAH в сети Sahara на кошелек из EVM Deposit Address
 SAHARA_TRANSFER_ETH_AMOUNT = ["100", "100"] # сумма для транфера ETH в сети Ethereum на кошелек из EVM Deposit Address
 
-#----------------------------------------------------REFUEL CONTROL-----------------------------------------------------
-
-REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Sahara
-REFUEL_GASZIP_L2_NETWORK = ["Arbitrum"] # сети, которые используются для бриджа через рефьюла через Gas.Zip
-REFUEL_GASZIP_AMOUNT = [0.0002, 0.00024]             # сумма рефьюла через Gas.Zip
-REFUEL_GASZIP_FEE = [1.5e-05, 3e-05]             # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
-REFUEL_MIN_BALANCE = 0.1 # минимальный порог $SAH, для запуска рефьюла
-
 #----------------------------------------------------SAHARA DATASET-----------------------------------------------------
 
-SAHARA_DATASET_GWEI = [1.3, 2.0] # GWEI для отправки транзакций внутри сети
 SAHARA_DATASET_AI_TYPE = 2 # 1 - Nous AI, 2 - ChatGPT
 SAHARA_DATASET_COUNTS = [20, 30] # максимальное количество датасетов для деплоя на аккаунте
 SAHARA_DATASET_MAX_TOKENS = [100, 120] # (мин, макс) количество символов для ответов от AI

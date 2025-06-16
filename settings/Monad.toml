@@ -21,7 +21,7 @@ MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов
 MONAD_TALENTUM_CHECKER = true # проверять статистику при запуске чекера
 MONAD_TALENTUM_TOTAL_QUESTS = [50, 70] # количество квестов к выполнению на аккаунт за 1 запуск модуля
 
-MONAD_TALENTUM_PROCESS_FAUCET = true # пытаться ли прожать кран по время авторизации
+MONAD_TALENTUM_PROCESS_FAUCET = true # клеймить ли токены при логине на кране Talentum
 MONAD_TALENTUM_PROCESS_STAKE = true # делать ли задания со стейком. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_MINT = true # делать ли задания с минтами NFT. Стоимость 0.1 MON
 MONAD_TALENTUM_PROCESS_TWITTER = false # делать ли задания с твиттерами.
@@ -45,13 +45,6 @@ MONAD_TRANSFERS_AMOUNT = ["100", "100"] # количество MON для тра
 
 MONAD_GASZIP_TX_WANTED = [10, 15] # количество желаемых транзакций для крана на https://www.gas.zip/faucet/monad
 MONAD_GASZIP_AMOUNT = [0.00066, 0.00087] # сумма рефьюла через Gas.Zip
-
-#----------------------------------------------------REFUEL CONTROL-----------------------------------------------------
-
-REFUEL_AUTO_ENABLE = false # включать рефьюл через Gas.Zip при отсутствии баланса в сети Monad
-REFUEL_GASZIP_L2_NETWORK = ["Arbitrum", "Optimism", "Base"] # сети, которые используются для бриджа через рефьюла через Gas.Zip
-REFUEL_GASZIP_AMOUNT = [0.00015, 0.0002] # сумма рефьюла через Gas.Zip
-REFUEL_GASZIP_FEE = [0.000015, 0.00003] # сумма для удержания на балансе для комиссии при рефьюле через Gas.Zip
 
 #---------------------------------------------------BRIDGE MON CONTROL--------------------------------------------------
 
