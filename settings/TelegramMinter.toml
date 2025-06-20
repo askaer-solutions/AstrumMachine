@@ -1,0 +1,5 @@
+#----------------------------------------------------GALXE CONTROL------------------------------------------------------
+
+TELEGRAM_STICKERS_SLEEP_TIME_MONITOR = [1, 2]
+TELEGRAM_STICKERS_AMOUNT = [2, 2] # количество стикер паков для покупки за один раз
+TELEGRAM_STICKERS_WORDS = ['BAYC', 'Bored Ape Yacht', 'Yacht Club' , 'Ape Yacht']
