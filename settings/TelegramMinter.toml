@@ -1,5 +1,5 @@
 #----------------------------------------------------GALXE CONTROL------------------------------------------------------
 
-TELEGRAM_STICKERS_SLEEP_TIME_MONITOR = [1, 2]
+TELEGRAM_STICKERS_SLEEP_TIME_MONITOR = [0.1, 0.5] # количество секунд сна перед очередной проверкой на наличии стикер пака
 TELEGRAM_STICKERS_AMOUNT = [2, 2] # количество стикер паков для покупки за один раз
-TELEGRAM_STICKERS_WORDS = ['BAYC', 'Bored Ape Yacht', 'Yacht Club' , 'Ape Yacht']
+TELEGRAM_STICKERS_WORDS = ['BAYC', 'Bored Ape Yacht', 'Yacht Club' , 'Ape Yacht', 'Bored Stickers'] # ключевые слова, по которым делать поиск очередного стикер пака
