@@ -1,6 +1,0 @@
-WITHOUT_GALXY_UNLINKING = true
-
-CLASSIC_ROUTES_MODULES_USING = [
-        ["reddio_compelete_tasks"]
-]
-        

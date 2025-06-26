@@ -132,6 +132,11 @@ MONAD_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного м�
    "0x21fd600fb5322f1a15d9f9607ee28a60355b6fae", # FREE
 ]
 
+# monad_buy_me_nft
+MONAD_MAGICEDEN_NFT_CONTRACTS_COLLECTION = [ # адреса для рандомного минта NFT с https://magiceden.io/collections/monad-testnet
+   "0x740815de1fa583cfb39ac26c0e34f109d2fb3b5b", # 0.088 MON
+]
+
 # monad_smart_bets_levr
 MONAD_LEVR_BETS_COUNT = [5, 7]  # необходимое количество ставок на https://app.levr.bet/march-madness
 MONAD_LEVR_MAXIMUM_BETS_AMOUNT = [50, 100] # сумма ставки, которую софт не будет превышать, но берется рандомно не из этого диапазона
