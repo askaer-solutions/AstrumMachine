@@ -5,3 +5,5 @@
 
 MONAD_KIZZY_BETS_PER_RUN = [2, 4]            # Диапазон количества ставок за один запуск
 MONAD_KIZZY_BET_AMOUNTS = [15.1, 20.0]       # Диапазон суммы каждой ставки (в KESO)
+
+MONAD_KIZZY_DEPOSIT_AMOUNT = [0.1, 0.2]      # Диапазон объёма депозита на Kizzy в MON

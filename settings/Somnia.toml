@@ -1,6 +1,6 @@
 SOMNIA_FAUCET_WAIT_TIME = [181, 240] # Время ожидания (в секундах) после запроса к Somnia Faucet для проверки изменения баланса STT
 
-SOMNIA_LINK_TWITTER = true # Автоматически проверяет и привязывает Twitter при авторизации (quest.somnia.network) + включает выполнение Twitter квестов
+SOMNIA_LINK_TWITTER = false # Автоматически проверяет и привязывает Twitter при авторизации (quest.somnia.network) + включает выполнение Twitter квестов
 SOMNIA_LINK_DISCORD = false # Автоматически проверяет и привязывает Discord при авторизации (quest.somnia.network) + включает выполнение Discord квестов
 
 SOMNIA_STT_SWAP_AMOUNT = ["1", "3"] # сумма STT для свапов
@@ -11,3 +11,10 @@ SOMNIA_MINT_LIQUIDITY_USDC_AMOUNT = ["80", "95"] # сумма USDC.e для вн
 # https://quest.somnia.network/campaigns/7
 
 SOMNIA_STT_TRANSFER_AMOUNT = ["10", "30"] # сумма STT для трансфера самому себе
+
+#---------------------------------------------------Bigint Onchain Hunt----------------------------------------------------
+#https://quest.somnia.network/campaigns/57
+
+# Если выключить (false), то софт минтит все бейджи подряд — но есть шанс «колодца», если бейдж недоступен.
+# Если оставить включённым (true), то будет проверяться возраст кошелька и количество транзакций — но часть бейджей может не пройти проверку.
+SOMNIA_BIG_INT_CHECK_STATS = true
