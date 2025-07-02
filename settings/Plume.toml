@@ -25,6 +25,6 @@ PLUME_LINK_DISCORD = true # привязывать аккаунт Discord к п�
 
 # plume_ambient_swaps       # Умный двойной свап на сумму PLUME_SWAP_AMOUNT через https://plume.ambient.finance/
 # plume_rooster_swaps       # Умный двойной свап на сумму PLUME_SWAP_AMOUNT через https://www.rooster-protocol.xyz/?chain=98866
-# plume_stake_nalpha        # Стейк nALPHA на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-alpha-vault
+# plume_stake_nalpha        # Стек nALPHA на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-alpha-vault
 # plume_stake_ncredit       # Стейк nCREDIT на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-credit-vault
 # plume_stake_ntbill        # Стейк nTBILL на сумму PLUME_STAKE_AMOUNT через https://app.nest.credit/nest-treasury-vault
