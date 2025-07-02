@@ -13,7 +13,7 @@ PLUME_LINK_DISCORD = true # привязывать аккаунт Discord к п�
 
 # plume_bridge_in           # Бридж в Plume из BRIDGE_L2_NETWORK на сумму BRIDGE_AMOUNT, учитывая BRIDGE_LIMITER
 # plume_bridge_out          # Вывод из Plume в BRIDGE_L2_NETWORK на сумму BRIDGE_AMOUNT, учитывая BRIDGE_LIMITER
-# plume_smart_bridge_in     # Умный бридж (при необходимости вывод с биржи) в Plume (авторасчет по PLUME_WANT_BALANCE, учитывая PLUME_MIN_TO_BRIDGE)
+# plume_smart_bridge_in     # Умный бридж (при необходимости вывод с биржи) в Plume (авторасчет по BRIDGE_WANT_BALANCE, учитывая BRIDGE_MIN_DIFF)
 
 # plume_collector           # Сбор всех токенов в $PLUME через https://www.rooster-protocol.xyz/?chain=98866
 
