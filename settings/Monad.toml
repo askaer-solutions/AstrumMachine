@@ -13,7 +13,7 @@ MONAD_AUTO_MODULES = ["Swaps", "Stakes", "Mints", "Domains"] # доступны 
 
 # monad_smart_swaps
 # monad_smart_swap_eth_mon
-MONAD_SWAP_DAPPS = ["zkSwap"] # дапки для свапов, если убрать все дапки, то свапать не будет. Доступны: Bean, Izumi, Ambient, zkSwap
+MONAD_SWAP_DAPPS = ["Bean", "Izumi", "Ambient", "zkSwap"] # дапки для свапов, если убрать все дапки, то свапать не будет. Доступны: Bean, Izumi, Ambient, zkSwap
 MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов, обратно в MON применяется 100%
 
 #---------------------------------------------------TALENTUM CONTROL----------------------------------------------------
