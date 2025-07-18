@@ -1,0 +1,12 @@
+IRYS_CAMPAIGNS_TO_SKIP = [            # Какие кампании пропустить и не пытаться клеймить
+    "GC9PLtfbkT",
+]
+
+#"Irys Resources"                     : "GCVVCtmFyM",
+#"Claim Testnet Tokens"               : "GCxxCtmLMP",
+#"Follow Irys"                        : "GC17CtmBrm",
+#"Play a Game on The Irys Arcade"     : "GC1mCtmb1N",
+#"Irys Arcade Achievement Quests"     : "GCAHHtfmaV",
+#"Play SpriteType 5 times (daily)"    : "GCLjLtf7zj",
+#"Play Irys Arcade 5 times (daily)"   : "GCLVHtf1NL",
+#"SpriteType Achievement Quests"      : "GCFtLtfrJH",

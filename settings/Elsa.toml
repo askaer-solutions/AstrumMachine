@@ -20,3 +20,7 @@ ELSA_ENABLE_BRIDGE = true
 
 # Использовать только свапы обычно дешевле, но более сибильно
 # Даже если один из параметров отключен, свапы и бриджи всё равно могут выполняться как вспомогательные транзакции (например, для подготовки к задаче).
+
+
+ELSA_ENABLE_SWAP_BASE = true # Выполнять ли задание "Swap It Up" (Do a swap worth $10+ on Base)
+ELSA_ENABLE_BRIDGE_BASE = true  # Выполнять ли задание "Bridge Builder" (Bridge $20+ to Base using Elsa)

@@ -1,0 +1,3 @@
+IRYS_SPRITETYPE_GAMES_PER_RUN = [101, 120]       # Сколько игр за одну сессию
+IRYS_SPRITETYPE_DURATIONS = [15, 30, 60]         # Какую длительность одной игры задавать. Доступно - 15, 30, 60, 120
+IRYS_SPRITETYPE_SLEEP_BETWEEN = [11, 22]         # Время сна между играми
