@@ -4,6 +4,8 @@ ELSA_SWAP_AMOUNT = ["75", "95"]
 # Процент от доступного баланса ETH для одного бриджа
 ELSA_BRIDGE_AMOUNT = ["75", "95"]
 
+ELSA_USD_AMOUNT = false            # Можно выставить true и указать AMOUNT в $. Например ELSA_SWAP_AMOUNT = [13.0, 20.0]
+
 # Целевой объём транзакций (в USD) для выполнения квестов по объёму
 # Варианты:
 #   50  → открывает квест 'Mini Mover'
@@ -22,5 +24,13 @@ ELSA_ENABLE_BRIDGE = true
 # Даже если один из параметров отключен, свапы и бриджи всё равно могут выполняться как вспомогательные транзакции (например, для подготовки к задаче).
 
 
-ELSA_ENABLE_SWAP_BASE = true # Выполнять ли задание "Swap It Up" (Do a swap worth $10+ on Base)
-ELSA_ENABLE_BRIDGE_BASE = true  # Выполнять ли задание "Bridge Builder" (Bridge $20+ to Base using Elsa)
+ELSA_ENABLE_SWAP_BASE = true        # Выполнять ли задание "Swap It Up" (Do a swap worth $10+ on Base)
+ELSA_ENABLE_BRIDGE_BASE = true      # Выполнять ли задание "Bridge Builder" (Bridge $20+ to Base using Elsa)
+
+
+# Попыток для квестов "Swap It Up" и "Bridge Builder".
+# Если каждая попытка падает из‑за недостатка суммы (< $11 / < $21),
+# квест убирается из списка.
+ELSA_TRIES_TO_DO_QUEST = 5
+
+ELSA_MAX_STEPS = 20                # Сколько сделать попыток на выполнение всех квестов
