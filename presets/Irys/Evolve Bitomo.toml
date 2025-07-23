@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['irys_claim_faucet'],
+    ['irys_evolve_bitomo'],
+]
