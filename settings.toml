@@ -13,6 +13,8 @@ CLEAR_RESERVES_IF_OVER = true               # чистит файлов резе
 CHANGE_WRONG_SOCIAL_ACCOUNT = true          # отвязывает уже привязаный к Galxe аккаунт и линкует новый
 PROCESS_NOT_FULL_FINISHED_CAMPAIGNS = true  # будет проходить кампании до конца, пока не заклеймит все награды
 
+CLAIM_NOT_FULL_FINISHED_CAMPAIGNS = false   # клеймить ли кампанию если она не пройдена до конца
+
 CLAIM_NFT_REWARDS = true                    # выполнять задания для получения NFT
 CLAIM_DISCORD_ROLE_REWARDS = true           # выполнять задания для получения Discord Role
 CLAIM_ONCHAIN_POINTS_REWARDS = true         # клеймить ончейн поинты за выполненные задания
