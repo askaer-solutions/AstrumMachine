@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['limitless_swap_eth_to_usdc'],
+    ['limitless_place_bets'],
+]

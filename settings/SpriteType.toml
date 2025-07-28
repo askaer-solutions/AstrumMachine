@@ -3,4 +3,5 @@ IRYS_SPRITETYPE_DURATIONS = [15, 30, 60]             # Какую длитель
 IRYS_SPRITETYPE_SLEEP_BETWEEN = [11, 22]         # Время сна между играми
 
 
-IRYS_SPRITETYPE_TOTAL_GAMES =  [1010, 1060]       # Сколько всего игр набить на аккаунте
+IRYS_SPRITETYPE_CHECK_TOTAL_GAMES = false  # Включить проверку общего количества сыгранных игр на аккаунте; если достигнут лимит, выполнение остановится
+IRYS_SPRITETYPE_TOTAL_GAMES = [1010, 1060]  # Целевой диапазон общего количества игр на аккаунте (нижняя и верхняя границы)
