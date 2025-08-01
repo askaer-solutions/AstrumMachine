@@ -1,6 +1,0 @@
-CLASSIC_ROUTES_BLOCKS_COUNT = [1, 2]
-
-CLASSIC_ROUTES_MODULES_USING = [
-    ['eclipse_swap_eth_to_teth_orca'],
-    ['eclipse_swap_teth_to_eth_orca']
-]

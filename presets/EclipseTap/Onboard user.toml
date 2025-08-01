@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['eclipse_tap_onboard'],
-]
-
-WITHOUT_GALXY_UNLINKING = true

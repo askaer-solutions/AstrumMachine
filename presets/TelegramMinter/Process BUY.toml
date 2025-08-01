@@ -1,3 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["telegram_process_buy_stickers"],
-]

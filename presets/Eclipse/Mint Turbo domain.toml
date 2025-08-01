@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['eclipse_mint_domain'],
-]
-
-WITHOUT_GALXY_UNLINKING = true
