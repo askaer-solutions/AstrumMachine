@@ -34,3 +34,8 @@ ELSA_ENABLE_BRIDGE_BASE = true      # Выполнять ли задание "Br
 ELSA_TRIES_TO_DO_QUEST = 5
 
 ELSA_MAX_STEPS = 20                # Сколько сделать попыток на выполнение всех квестов
+
+ELSA_ODOS_COLLECTOR_ETH = false    # Собирает все токены в ETH через Odos (если false — через Elsa).
+                                   # При включённых ELSA_ENABLE_BRIDGE_BASE или ELSA_ENABLE_BRIDGE 
+                                   # дополнительно проверяются токены в сетях Base, Arbitrum и Optimism. 
+                                   # Если оба параметра выключены — проверяются только токены в сети Base.
