@@ -33,3 +33,5 @@ SOMNIA_RUBYSCORE_ENABLED = false
 # - CEX_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
 
 SOMNIA_RUBYSCORE_SMART_REFUEL = false
+
+SOMNIA_ONLY_VERIFY = false # если поставить true, то софт будет пытаться только заверифать квест, без его выполнения
