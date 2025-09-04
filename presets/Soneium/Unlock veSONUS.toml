@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["soneium_sonus_unlock_vesonus"],
-    ["soneium_sonus_swap_sonus_to_eth"],
-]

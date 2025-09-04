@@ -6,33 +6,22 @@ SONEIUM_MIN_WETH_COLLETCOR = 0.0001     # минимальное кол-во WET
 SONEIUM_MIN_SAKE_COLLETCOR = 0.0001     # минимальное кол-во LP токенов для сбора в ETH
 SONEIUM_MIN_IONIC_COLLETCOR = 0.0001    # минимальное кол-во LP токенов для сбора в ETH
 
-SONEIUM_ETH_WRAP_AMOUNT = ["80", "90"]  # сумма для врапа, применяется для ETH, обратно 100%
-SONEIUM_ETH_SWAP_AMOUNT = ["1", "5"]    # сумма для свапа, применяется для ETH, обратно 100%
+SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']  # сумма для врапа, применяется для ETH, обратно 100%
+SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']    # сумма для свапа, применяется для ETH, обратно 100%
 
-SONEIUM_CREDENTIAL_TO_SKIP = [514433168942563328, 513985145116557312]
+SONEIUM_CREDENTIAL_TO_SKIP = [
+    514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
+    513985145116557312,  # https://app.galxe.com/quest/credential/514433168942563328
+]
 
-# Диапазон сумм для свапа на Owlto (в ETH). 
-# Для получения бейджа необходимо выполнить обмен на сумму больше 0.005 ETH.
-SONEIUM_OWLTO_BADGE_SWAP_AMOUNT = [0.0051, 0.0061]
+# Нужно ли выполнять задание минтом Somnia - RubyScore ID (0.0015 ETH в Base)
+SONEIUM_RUBYSCORE_ENABLED = true
 
-# Диапазон сумм для депозита в WaveX Earn. 
-# Софт для получения бейджа делает 10+ депозитов. Есть небольшой слипедж
-SONEIUM_WAVE_X_BADGE_DEP_AMOUNT = ["5", "10"]
+# Попробовать автоматически докинуть газ через smart refuel, если его не хватает в Base (true — да, false — просто выдать ошибку)
+# Если true, то обязательно настрой:
+# - BRIDGE_L2_NETWORKS — список сетей, откуда брать газ (например: ["Arbitrum", "Optimism"])
+# - BRIDGE_AMOUNT — примерный объём газа, который нужно перекинуть ~ 0.0015 ETH
+# - REFUEL_DAPP — 1 (GasZip. MeMeBridge не поддерживается для этого роута)
+# - CEX_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
 
-# Диапазон суммы для покупки SONUS для последущего лока 6 раз по 101-105 токенов. 
-SONEIUM_SONUS_BADGE_BUY_SONUS_AMOUNT = [0.0009, 0.001]
-
-# Диапазон [от, до] суммы ETH, которую нужно оставить в L2-сети после бриджа через Orbiter
-# Пример: [0.01, 0.011] - оставит от 0.01 до 0.011 ETH в сети отправки
-# Исходная сеть для бриджа выбирается автоматически - берётся сеть с максимальным балансом
-# из списка BRIDGE_L2_NETWORK в settings.toml
-# Если баланс в сети ниже указанного диапазона, будет использован весь доступный баланс
-SONEIUM_ORBITER_BADGE_LIMITER = [0.0, 0.0]
-
-# Для получения бейджа Velodrome необходимо набить 10+ транзакций с общим объемом 100$+.
-# Диапазон сумм для свапа на Velodrome. 
-SONEIUM_VELODROME_BADGE_SWAP_AMOUNT = [0.0064, 0.0074]
-
-# Диапазон количества свапов на Velodrome. 
-SONEIUM_VELODROME_BADGE_SWAP_COUNT = [11, 13]
-
+SONEIUM_RUBYSCORE_SMART_REFUEL = true
