@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["somnia_claim_faucet"],
-    ["somnia_complete_campaigns"]
-]

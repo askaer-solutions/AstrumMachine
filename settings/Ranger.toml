@@ -1,0 +1,3 @@
+RANGER_SWAP_AMOUNT = ['55', '60'] # сумма покупки токенов на споте за $SOL
+
+RANGER_WAIT_REFCODE = true # ждать заполнения реф. кодов в accounts_data.xsls

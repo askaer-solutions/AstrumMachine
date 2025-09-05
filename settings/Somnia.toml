@@ -1,37 +1,22 @@
-SOMNIA_FAUCET_WAIT_TIME = [181, 240] # Время ожидания (в секундах) после запроса к Somnia Faucet для проверки изменения баланса STT
-
-SOMNIA_LINK_TWITTER = false # Автоматически проверяет и привязывает Twitter при авторизации (quest.somnia.network) + включает выполнение Twitter квестов
-SOMNIA_LINK_DISCORD = false # Автоматически проверяет и привязывает Discord при авторизации (quest.somnia.network) + включает выполнение Discord квестов
-
-SOMNIA_STT_SWAP_AMOUNT = ["1", "3"] # сумма STT для свапов
-
-SOMNIA_MINT_LIQUIDITY_USDC_AMOUNT = ["80", "95"] # сумма USDC.e для внесения ликвидности
-
-#----------------------------------------------------Sharing is Caring-----------------------------------------------------
-# https://quest.somnia.network/campaigns/7
-
-SOMNIA_STT_TRANSFER_AMOUNT = ["10", "30"] # сумма STT для трансфера самому себе
-
-#---------------------------------------------------Bigint Onchain Hunt----------------------------------------------------
-#https://quest.somnia.network/campaigns/57
-
-# Если выключить (false), то софт минтит все бейджи подряд — но есть шанс «колодца», если бейдж недоступен.
-# Если оставить включённым (true), то будет проверяться возраст кошелька и количество транзакций — но часть бейджей может не пройти проверку.
-SOMNIA_BIG_INT_CHECK_STATS = true
-
-#-------------------------------------------------Get Your Shannonland ID--------------------------------------------------
-# https://quest.somnia.network/campaigns/45
-
-# Нужно ли выполнять задание минтом Somnia - RubyScore ID (0.0015 ETH в Base)
-SOMNIA_RUBYSCORE_ENABLED = false
-
 # Попробовать автоматически докинуть газ через smart refuel, если его не хватает в Base (true — да, false — просто выдать ошибку)
 # Если true, то обязательно настрой:
 # - BRIDGE_L2_NETWORKS — список сетей, откуда брать газ (например: ["Arbitrum", "Optimism"])
 # - BRIDGE_AMOUNT — примерный объём газа, который нужно перекинуть ~ 0.0015 ETH
 # - REFUEL_DAPP — 1 (GasZip. MeMeBridge не поддерживается для этого роута)
 # - CEX_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
-
-SOMNIA_RUBYSCORE_SMART_REFUEL = false
+SOMNIA_SMART_REFUEL = true # запускать рефьел $SOMI из L2, если нехватает нативки в чейне
 
 SOMNIA_ONLY_VERIFY = false # если поставить true, то софт будет пытаться только заверифать квест, без его выполнения
+
+SOMNIA_MEME_TOKENS = [
+    "0x07e4ff8b9bba0f9f9aebed2fc5e8a773fb1e03ea",
+    "0x3352cc522daea6c2b26139240130568803f34b0b",
+    "0x4163c19558875501e5d872b522d41f598367913b",
+    "0xce93cfd14228ac08265e3d2a7307efe2e46a7798",
+    "0xeb296155a3cd17b5653ee088ba5917442e576b65",
+    "0xdb6a8afa240fcb67ffe7a8fd3fcbdf2eee08f152",
+    "0xcd2208fc9dac4006a93cff6a74ff713df9535794",
+    "0xbe97cc43442ed205390d9d8b75ac77b85225bc39",
+] # токены для покупки на https://somnia.meme
+
+SOMNIA_SWAP_AMOUNT = [0.000001, 0.000002] # сумма свапов на https://somnia.meme
