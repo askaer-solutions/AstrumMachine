@@ -126,3 +126,7 @@ BITGET_API_PASSPHRAS = ""
 # BINANCE API KEYS https://www.binance.com/ru/my/settings/api-management
 BINANCE_API_KEY = ""
 BINANCE_API_SECRET = ""
+
+#---------------------------------------------------ICLOUD CONTROL------------------------------------------------------
+
+GLOBAL_EMAIL = "login@gmail.com:password"
