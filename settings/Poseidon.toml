@@ -4,10 +4,15 @@
 POSEIDON_WANTED_LANGUAGES = ['Russian', 'German', 'French']
 
 # Количество уникальных языков для 1 аккаунта
-POSEIDON_WANTED_LANGUAGES_COUNT = [1, 3]
+POSEIDON_WANTED_LANGUAGES_COUNT = [2, 3]
+
+# Устанавливает диапазон в процентах (от 1 до 100),
+# на который будет сокращен текст перед озвучиванием.
+# Например, [40, 50] означает, что будет взято от 40% до 50% слов из оригинального текста.
+POSEIDON_VOICE_RECORD_LENGTHS = [100, 100]
 
 # Количество квестов для выполнения за один запуск модуля
-POSEIDON_QUEST_PRE_RUN = [4, 5]
+POSEIDON_QUEST_PRE_RUN = [5, 7]
 
 # Если установлено true, браузер будет запускаться в фоновом режиме (без графического интерфейса)
 POSEIDON_HEADLESS_MODE = false
