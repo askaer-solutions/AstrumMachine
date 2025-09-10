@@ -19,8 +19,7 @@ POSEIDON_HEADLESS_MODE = false
 
 #-----------------------------------------------------ELEVEN LABS-------------------------------------------------------
 
-# API-ключ для сервиса Eleven Labs: https://elevenlabs.io/app/developers/api-keys
-POSEIDON_ELEVEN_API_KEY = ""
+# API-ключ для сервиса Eleven Labs получать тут -> https://elevenlabs.io/app/developers/api-keys
 
 # Режим работы API Eleven Labs:
 # 1 - использовать Eleven V3
