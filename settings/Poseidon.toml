@@ -11,8 +11,8 @@ POSEIDON_WANTED_LANGUAGES_COUNT = [2, 3]
 # Например, [40, 50] означает, что будет взято от 40% до 50% слов из оригинального текста.
 POSEIDON_VOICE_RECORDINGS_LENGTH = [100, 100]
 
-# Количество квестов для выполнения за один запуск модуля
-POSEIDON_QUEST_PER_RUN = [5, 7]
+# Необходимое количество поинтов на аккаунте (от, до)
+POSEIDON_WANTED_POINTS_COUNT = [2000, 2500]
 
 # Если установлено true, браузер будет запускаться в фоновом режиме (без графического интерфейса)
 POSEIDON_HEADLESS_MODE = false
@@ -30,3 +30,6 @@ POSEIDON_ELEVEN_API_MODE = 1 # 1 - Eleven V3, 2 - Eleven V2.5 Turbo
 # 1 - personal: голос, созданный вами на сайте (100%). Ссылка для создания: https://elevenlabs.io/app/voice-lab?action=create
 # 2 - default: готовый голос из публичной библиотеки Eleven (30-50%)
 POSEIDON_ELEVEN_VOICE_TYPE = 1 # 1 - personal, 2 - default
+
+# Минимальное колличество кредитов на API-ключе, ниже которого софт работать не будет
+POSEIDON_ELEVEN_MIN_CREDITS_BALANCE = 1000
