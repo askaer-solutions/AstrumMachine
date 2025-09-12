@@ -19,3 +19,6 @@ SOMNIA_MEME_TOKENS = [
 ] # токены для покупки на https://somnia.meme
 
 SOMNIA_SWAP_AMOUNT = ['10', '15'] # сумма свапов на любых дапках
+
+# Нужно ли проходить необязательные квесты?
+SOMNIA_PROCESS_NONMANDATORY_QUESTS = false
