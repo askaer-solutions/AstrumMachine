@@ -9,7 +9,6 @@ SOMNIA_SMART_REFUEL = true # запускать рефьел $SOMI из L2, ес
 SOMNIA_ONLY_VERIFY = false # если поставить true, то софт будет пытаться только заверифать квест, без его выполнения
 
 SOMNIA_MEME_TOKENS = [
-    "0x07e4ff8b9bba0f9f9aebed2fc5e8a773fb1e03ea",
     "0x3352cc522daea6c2b26139240130568803f34b0b",
     "0x4163c19558875501e5d872b522d41f598367913b",
     "0xce93cfd14228ac08265e3d2a7307efe2e46a7798",
@@ -19,4 +18,4 @@ SOMNIA_MEME_TOKENS = [
     "0xbe97cc43442ed205390d9d8b75ac77b85225bc39",
 ] # токены для покупки на https://somnia.meme
 
-SOMNIA_SWAP_AMOUNT = [0.000001, 0.000002] # сумма свапов на https://somnia.meme
+SOMNIA_SWAP_AMOUNT = ['10', '15'] # сумма свапов на любых дапках

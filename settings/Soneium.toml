@@ -25,3 +25,6 @@ SONEIUM_RUBYSCORE_ENABLED = true
 # - CEX_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
 
 SONEIUM_RUBYSCORE_SMART_REFUEL = true
+
+# Сумма свапов на Uniswap (применяется к ETH) (можно в % или в количестве)
+SONEIUM_UNISWAP_AMOUNT = ['55', '60']
