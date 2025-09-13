@@ -21,7 +21,8 @@ GALXE_CREDENTIAL_TO_SKIP = [
         514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
 ]
 
+
 # Определяет, будет ли использоваться реферальный код при выполнении кампании.  
 # Реферальный код указывается в колонке "Referral Code" таблицы аккаунтов.  
 # Пример реферального кода: GRFr2JJubCmuAj3tJtqbZCTs2gq_uXg0TOSLG7fWVx373VT  
-GALXE_USE_REFERRAL_CODE = false
+GALXE_USE_REFERRAL_CODE = false  

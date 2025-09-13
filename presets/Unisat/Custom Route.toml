@@ -2,9 +2,15 @@ CLASSIC_ROUTES_BLOCKS_COUNT = [1, 1]  # Количество блоков к р�
 
 CLASSIC_ROUTES_MODULES_USING = [
     # при наличии блоков (круглые скобки для маршрута), софт будет их мешать для каждого аккаунта
-    ['unisat_mint_rune'],
-    ['unisat_inscribe_brc_20'],
-    ['unisat_deploy_brc_20'],
-    ['unisat_mint_rune'],
-    ['unisat_deploy_rune'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
+    ['unisat_inscribe_brc_20_fractal'],
 ]

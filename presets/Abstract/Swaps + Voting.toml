@@ -16,4 +16,10 @@ CLASSIC_ROUTES_MODULES_USING = [
     [
         ["abstract_vote_random_app"]
     ],
+    [
+        ["abstract_vote_random_app"]
+    ],
+    [
+        ["abstract_vote_random_app"]
+    ],
 ]

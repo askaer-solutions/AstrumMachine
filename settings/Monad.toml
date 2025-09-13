@@ -13,7 +13,7 @@ MONAD_AUTO_MODULES = ["Swaps", "Stakes", "Mints", "Domains"] # доступны 
 
 # monad_smart_swaps
 # monad_smart_swap_eth_mon
-MONAD_SWAP_DAPPS = ["Bean", "Izumi", "Ambient", "zkSwap"] # дапки для свапов, если убрать все дапки, то свапать не будет. Доступны: Bean, Izumi, Ambient, zkSwap
+MONAD_SWAP_DAPPS = ["Bean", "Izumi", "Ambient", "zkSwap", "Kuru"] # дапки для свапов, если убрать все дапки, то свапать не будет. Доступны: Bean, Izumi, Ambient, zkSwap, Kuru
 MONAD_SWAPS_AMOUNT = ["55", "60"] # количество MON для свапов, обратно в MON применяется 100%
 
 #---------------------------------------------------TALENTUM CONTROL----------------------------------------------------
@@ -193,8 +193,8 @@ MONAD_2048_EMBEDDED_WALLET_NEW_DEPOSITS = false # делать новые деп
 #  monad_stake_mon_apriori                # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT
 #  monad_stake_mon_magma                  # Стейк MON на http://magmastaking.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
 #  monad_stake_mon_kintsu                 # Стейк MON на https://stake.apr.io/. сумма стейка по MONAD_STAKE_AMOUNT (минималка 0.01 MON)
-#  monad_stake_and_commit_shmonad         # Стейк MON на https://www.shmonad.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
-#  monad_uncommit_and_redeem_shmonad      # Анстейк MON на https://www.shmonad.xyz/. выводит 100%
+#  monad_stake_shmonad                    # Стейк MON на https://www.shmonad.xyz/. сумма стейка по MONAD_STAKE_AMOUNT
+#  monad_redeem_shmonad                   # Анстейк MON на https://www.shmonad.xyz/. выводит 100%
 
 #  monad_request_unstake_mon_kintsu       # Запрос на вывод из KintSu, софт сделает запрос на вывод, который разблокируется через 14 дней
 #  monad_request_unstake_mon_apriori      # Запрос на вывод из Apriori, софт сделает запрос на вывод и будет ждат 10 мин для его завершения

@@ -1,3 +1,3 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ['eclipse_collector_eth'],
+    ['transfer_myx'],
 ]
