@@ -19,7 +19,7 @@ SOMNIA_MEME_TOKENS = [
 ] # токены для покупки на https://somnia.meme
 
 SOMNIA_SWAP_AMOUNT = ['10', '15'] # сумма свапов на любых дапках
-SOMNIA_MINT_LIQUIDITY_USDC_AMOUNT = [3, 4] # сумма $SOMI для добавления в пул ликвидности (х2 для общей позиции)
+SOMNIA_MINT_LIQUIDITY_USDC_AMOUNT = ["100", "100"] # сумма $SOMI для добавления в пул ликвидности (х2 для общей позиции)
 
 # Нужно ли проходить необязательные квесты?
 SOMNIA_PROCESS_NONMANDATORY_QUESTS = false

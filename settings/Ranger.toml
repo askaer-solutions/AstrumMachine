@@ -1,3 +1,88 @@
-RANGER_SWAP_AMOUNT = ['55', '60'] # сумма покупки токенов на споте за $SOL
+#-------------------------------------------------------GENERAL---------------------------------------------------------
 
-RANGER_WAIT_REFCODE = true # ждать заполнения реф. кодов в accounts_data.xsls
+# Ждать заполнения реф. кодов в accounts_data.xlsx
+RANGER_WAIT_REFCODE = true
+
+# Пауза между трейдами в секундах [мин, макс] сек.
+RANGER_TRADE_SLEEP = [300.0, 600.0]
+
+#---------------------------------------------------------SPOT----------------------------------------------------------
+
+# Диапазон суммы для первой покупки токенов на споте за SOL или USDC.
+# Можно указать как в % так и в конкретном значении токена
+RANGER_FIRST_SWAP_AMOUNT = ["85", "95"]
+
+# Диапазон процентов для последующих свапов в цикле (smart swaps).
+# Указывается в процентах, чтобы можно было обменивать не 100% токена.
+# Для меньшей сибильности можно обменивать не весь объём — так процесс выглядит естественнее.
+# После завершения цикла свапов автоматически запускается коллектор в SOL/USDC.
+RANGER_SWAP_AMOUNT = ["80", "90"]
+
+# Количество свапов в цикле smart swaps. Рандомное значение из диапазона.
+RANGER_SMART_SWAPS_COUNT = [3, 6]
+
+# Доступные для свапов токены внутри Ranger
+# Чем можно дополнить список: "TRUMP", "JUP", "PENGU", "WIF", "WBTC", "JLP", "Fartcoin", "RAY", "cbBTC", "JITOSOL"
+RANGER_AVAILABLE_TOKENS = ["USDC", "USDT", "TRUMP", "Fartcoin"]
+
+# Максимальное проскальзывание в процентах для свапов
+RANGER_SLIPPAGE = 0.5
+
+# Каких провайдеров котировок разрешать
+# Допустимые значения: "Jupiter", "OKX DEX", "DFlow", "Pyth"
+RANGER_QUOTE_PROVIDERS = ["Jupiter", "DFlow"]
+
+# Целевой токен для сбора после свапов. Допустимо: "SOL" или "USDC"
+RANGER_COLLECT_TO = "USDC"
+
+# Выполнять сбор токенов в целевой перед началом smart swaps
+RANGER_COLLECT_BEFORE = true
+
+# Минимальная USD стоимость токена для smart swap и коллектора
+# Токены с балансом меньше этого значения будут игнорироваться при выборе для свапа
+RANGER_MIN_USD_FOR_SWAP = 0.5
+
+#--------------------------------------------------------BRIDGE---------------------------------------------------------
+
+# Диапазон сумм USDC для бриджа через Relay
+RANGER_BRIDGE_USDC_AMOUNT = ["100", "100"]
+
+# Диапазон сумм ETH для бриджа через Relay
+RANGER_BRIDGE_ETH_AMOUNT = [0.001, 0.002]
+
+# Сколько оставить токена на кошельке при бридже из Solana обратно в L2 сети
+RANGER_BRIDGE_OUT_LIMITTER = [0.0, 0.0]
+
+#---------------------------------------------------------CEX-----------------------------------------------------------
+
+# Диапазон сумм USDC для вывода с CEX
+RANGER_CEX_WITHDRAW_USDC_AMOUNT = [100.0, 300.0]
+
+# Диапазон сумм ETH для вывода с CEX
+RANGER_CEX_WITHDRAW_ETH_AMOUNT = [0.0022, 0.0032]
+
+# Диапазон сумм USDC для депозита на CEX
+RANGER_CEX_DEPOSIT_USDC_AMOUNT = ["100", "100"]
+
+# Диапазон сумм ETH для депозита на CEX
+RANGER_CEX_DEPOSIT_ETH_AMOUNT = ["100", "100"]
+
+# Сколько оставить на балансе в сети при депозите USDC на CEX
+RANGER_CEX_DEPOSIT_USDC_LIMITER = [0.0, 0.0]
+
+# Сколько оставить на балансе в сети при депозите ETH на CEX
+RANGER_CEX_DEPOSIT_ETH_LIMITER = [0.0, 0.0]
+
+#--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
+
+#  ranger_smart_swaps              # Умные свапы на Ranger Spot. Работает по настройкам SPOT
+
+#  ranger_bridge_usdc_in           # Бридж USDC из L2 сетей в Solana через Relay. Сумма по RANGER_BRIDGE_USDC_AMOUNT
+#  ranger_bridge_usdc_out          # Бридж USDC из Solana обратно в L2 сети через Relay. Сумма по RANGER_BRIDGE_USDC_AMOUNT
+#  ranger_bridge_eth_in            # Бридж ETH из L2 сетей в Solana через Relay. Сумма по RANGER_BRIDGE_ETH_AMOUNT
+#  ranger_bridge_eth_out           # Бридж ETH из Solana обратно в L2 сети через Relay. Сумма по RANGER_BRIDGE_ETH_AMOUNT
+
+#  ranger_cex_withdraw_usdc        # Вывод USDC с CEX на кошельки. Сумма по RANGER_CEX_WITHDRAW_USDC_AMOUNT
+#  ranger_cex_withdraw_eth         # Вывод ETH с CEX на кошельки. Сумма по RANGER_CEX_WITHDRAW_ETH_AMOUNT
+#  ranger_cex_deposit_usdc         # Депозит USDC с кошельков на CEX. Сумма по RANGER_CEX_DEPOSIT_USDC_AMOUNT
+#  ranger_cex_deposit_eth          # Депозит ETH с кошельков на CEX. Сумма по RANGER_CEX_DEPOSIT_ETH_AMOUNT
