@@ -1,27 +1,27 @@
 #-------------------------------------------------------POSEIDON--------------------------------------------------------
 
 # Список языков для выполнения заданий (поддерживается любой язык из приложения)
-POSEIDON_WANTED_LANGUAGES = ['Russian', 'German', 'French', 'Portuguese', 'Spanish']
+POSEIDON_WANTED_LANGUAGES = ['Russian', 'German', 'French', 'Portuguese', 'Spanish', "Turkish", "Vietnamese", "Hindi", "Indonesian"]
 
 # Количество уникальных языков для 1 аккаунта
-POSEIDON_WANTED_LANGUAGES_COUNT = [2, 3]
+POSEIDON_WANTED_LANGUAGES_COUNT = [4, 8]
 
 # Устанавливает диапазон в процентах (от 1 до 100),
 # на который будет сокращен текст перед озвучиванием.
 # Например, [40, 50] означает, что будет взято от 40% до 50% слов из оригинального текста.
-POSEIDON_VOICE_RECORDINGS_LENGTH = [100, 100]
+POSEIDON_VOICE_RECORDINGS_LENGTH = [50, 60]
 
 # Количество квестов, которое будет выполнено за один запуск модуля (за одну сессию).
 # Задается в виде диапазона [min, max].
 # Например, если указано [5, 10], то при каждом запуске программа выполнит
 # от 5 до 10 квестов, после чего остановится
-POSEIDON_QUESTS_PER_RUN = [10, 15]
+POSEIDON_QUESTS_PER_RUN = [20, 25]
 
 # Необходимое количество поинтов на аккаунте (от, до)
-POSEIDON_WANTED_POINTS_COUNT = [2000, 2500]
+POSEIDON_WANTED_POINTS_COUNT = [4000, 8500]
 
 # Если установлено true, браузер будет запускаться в фоновом режиме (без графического интерфейса)
-POSEIDON_HEADLESS_MODE = false
+POSEIDON_HEADLESS_MODE = true
 
 #-----------------------------------------------------ELEVEN LABS-------------------------------------------------------
 
