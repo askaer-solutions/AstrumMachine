@@ -23,3 +23,6 @@ SOMNIA_MINT_LIQUIDITY_USDC_AMOUNT = ["100", "100"] # сумма $SOMI для д�
 
 # Нужно ли проходить необязательные квесты?
 SOMNIA_PROCESS_NONMANDATORY_QUESTS = false
+
+# полный путь до вашего chromium, устанавливать через patchright install chromium
+SOMNIA_CHROMIUM_PATH = ""
