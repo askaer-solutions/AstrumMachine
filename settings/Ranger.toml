@@ -19,7 +19,7 @@ RANGER_FIRST_SWAP_AMOUNT = ["85", "95"]
 RANGER_SWAP_AMOUNT = ["80", "90"]
 
 # Количество свапов в цикле smart swaps. Рандомное значение из диапазона.
-RANGER_SMART_SWAPS_COUNT = [3, 6]
+RANGER_SMART_SWAPS_COUNT = [45, 50]
 
 # Доступные для свапов токены внутри Ranger
 # Чем можно дополнить список: "TRUMP", "JUP", "PENGU", "WIF", "WBTC", "JLP", "Fartcoin", "RAY", "cbBTC", "JITOSOL"
@@ -56,7 +56,7 @@ RANGER_BRIDGE_OUT_LIMITTER = [0.0, 0.0]
 #---------------------------------------------------------CEX-----------------------------------------------------------
 
 # Диапазон сумм USDC для вывода с CEX
-RANGER_CEX_WITHDRAW_USDC_AMOUNT = [100.0, 300.0]
+RANGER_CEX_WITHDRAW_USDC_AMOUNT = [200.0, 300.0]
 
 # Диапазон сумм ETH для вывода с CEX
 RANGER_CEX_WITHDRAW_ETH_AMOUNT = [0.0022, 0.0032]

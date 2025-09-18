@@ -6,9 +6,6 @@ SONEIUM_MIN_WETH_COLLETCOR = 0.0001     # минимальное кол-во WET
 SONEIUM_MIN_SAKE_COLLETCOR = 0.0001     # минимальное кол-во LP токенов для сбора в ETH
 SONEIUM_MIN_IONIC_COLLETCOR = 0.0001    # минимальное кол-во LP токенов для сбора в ETH
 
-SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']  # сумма для врапа, применяется для ETH, обратно 100%
-SONEIUM_ETH_SWAP_AMOUNT = ['1', '5']    # сумма для свапа, применяется для ETH, обратно 100%
-
 SONEIUM_CREDENTIAL_TO_SKIP = [
     514433168942563328,  # https://app.galxe.com/quest/credential/514433168942563328
     513985145116557312,  # https://app.galxe.com/quest/credential/514433168942563328
@@ -26,5 +23,11 @@ SONEIUM_RUBYSCORE_ENABLED = true
 
 SONEIUM_RUBYSCORE_SMART_REFUEL = true
 
-# Сумма свапов на Uniswap (применяется к ETH) (можно в % или в количестве)
-SONEIUM_UNISWAP_AMOUNT = ['55', '60']
+# Сумма свапов на всех дапках (применяется к ETH) (можно в % или в количестве)
+SONEIUM_SWAP_AMOUNT = ['55', '60']
+
+# Сумма депозита на AAVE (применяется к ETH) (можно в % или в количестве)
+SONEIUM_LANDING_AMOUNT = ["10", "20"]
+
+# сумма для врапа, применяется для ETH, обратно 100%
+SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
