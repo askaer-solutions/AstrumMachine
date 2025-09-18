@@ -23,7 +23,7 @@ RANGER_SMART_SWAPS_COUNT = [3, 6]
 
 # Доступные для свапов токены внутри Ranger
 # Чем можно дополнить список: "TRUMP", "JUP", "PENGU", "WIF", "WBTC", "JLP", "Fartcoin", "RAY", "cbBTC", "JITOSOL"
-RANGER_AVAILABLE_TOKENS = ["USDC", "USDT", "TRUMP"]
+RANGER_AVAILABLE_TOKENS = ["USDC", "USDT"]
 
 # Максимальное проскальзывание в процентах для свапов
 RANGER_SLIPPAGE = 1.0
