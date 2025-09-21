@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["somnia_process_spot_somnex"],
+    ["somnia_process_perp_somnex"],
+]

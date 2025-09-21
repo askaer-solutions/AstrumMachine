@@ -8,7 +8,7 @@ GALXE_CUSTOM_CAMPAIGNS_APTOS = [
     'GC4WntonDN',
 ]
 
-# A-1, B-2, C-3, D-4, E-5, F-6 и так далее. Ответы словами не поддерживаются.
+# A-0, B-1, C-2, D-3, E-4, F-5 и так далее. Ответы словами не поддерживаются.
 GALXE_QUIZ_ANSWERS_BY_CREDENTIAL_ID = [
     ["433653260763623424", "3", "2", "2", "0"],             # [QUIZ CREDITANTIONAL ID, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER]
     ["433653260763623425", "Zalupa", "is", "not", "dick"],  # [QUIZ CREDITANTIONAL ID, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER, QUIZ ANSWER]
