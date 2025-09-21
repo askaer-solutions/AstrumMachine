@@ -31,3 +31,6 @@ SONEIUM_LANDING_AMOUNT = ["10", "20"]
 
 # сумма для врапа, применяется для ETH, обратно 100%
 SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
+
+# проходить ли optIn при запуске бонусных кампаний на портале
+SONEIUM_PROCESS_OPTIN = true
