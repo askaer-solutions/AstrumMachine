@@ -26,7 +26,7 @@ RANGER_SMART_SWAPS_COUNT = [45, 50]
 RANGER_AVAILABLE_TOKENS = ["USDC", "USDT"]
 
 # Максимальное проскальзывание в процентах для свапов
-RANGER_SLIPPAGE = 1.0
+RANGER_SLIPPAGE = 0.05
 
 # Каких провайдеров котировок разрешать
 # Допустимые значения: "Jupiter", "OKX DEX", "DFlow", "Pyth"
