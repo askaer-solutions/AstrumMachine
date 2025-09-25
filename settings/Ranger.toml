@@ -32,6 +32,9 @@ RANGER_SLIPPAGE = 0.05
 # Допустимые значения: "Jupiter", "OKX DEX", "DFlow", "Pyth"
 RANGER_QUOTE_PROVIDERS = ["Jupiter", "DFlow"]
 
+# Токены из которых нужно сделать первый свап для инициализации круговых свапов между RANGER_AVAILABLE_TOKENS
+RANGER_INITIAL_TOKENS = ["SOL", "USDC"]
+
 # Целевой токен для сбора после свапов. Допустимо: "SOL" или "USDC"
 RANGER_COLLECT_TO = "USDC"
 
