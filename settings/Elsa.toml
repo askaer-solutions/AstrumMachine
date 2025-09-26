@@ -35,6 +35,8 @@ ELSA_TRIES_TO_DO_QUEST = 5
 
 ELSA_MAX_STEPS = 20                # Сколько сделать попыток на выполнение всех квестов
 
+ELSA_COLLECTOR_MIN_USD = 0.5      # Минимальное количество токенов в USD, чтобы инициировать свап в ETH
+
 ELSA_ODOS_COLLECTOR_ETH = false    # Собирает все токены в ETH через Odos (если false — через Elsa).
                                    # При включённых ELSA_ENABLE_BRIDGE_BASE или ELSA_ENABLE_BRIDGE 
                                    # дополнительно проверяются токены в сетях Base, Arbitrum и Optimism. 
