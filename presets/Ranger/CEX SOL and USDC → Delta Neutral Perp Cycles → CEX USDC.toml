@@ -1,0 +1,6 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["ranger_perp_cex_withdraw_sol"],
+    ["ranger_perp_cex_withdraw_usdc"],
+    ["ranger_perp_delta_neutral"],
+    ["ranger_perp_cex_deposit_usdc"],
+]

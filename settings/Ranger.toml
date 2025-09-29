@@ -59,10 +59,13 @@ RANGER_BRIDGE_OUT_LIMITTER = [0.0, 0.0]
 #---------------------------------------------------------CEX-----------------------------------------------------------
 
 # Диапазон сумм USDC для вывода с CEX
-RANGER_CEX_WITHDRAW_USDC_AMOUNT = [200.0, 300.0]
+RANGER_CEX_WITHDRAW_USDC_AMOUNT = [500, 1000]
 
 # Диапазон сумм ETH для вывода с CEX
 RANGER_CEX_WITHDRAW_ETH_AMOUNT = [0.0022, 0.0032]
+
+# Диапазон сумм SOL для вывода с CEX
+RANGER_CEX_WITHDRAW_SOL_AMOUNT = [0.05, 0.1]
 
 # Диапазон сумм USDC для депозита на CEX
 RANGER_CEX_DEPOSIT_USDC_AMOUNT = ["100", "100"]
@@ -70,11 +73,17 @@ RANGER_CEX_DEPOSIT_USDC_AMOUNT = ["100", "100"]
 # Диапазон сумм ETH для депозита на CEX
 RANGER_CEX_DEPOSIT_ETH_AMOUNT = ["100", "100"]
 
+# Диапазон сумм SOL для депозита на CEX
+RANGER_CEX_DEPOSIT_SOL_AMOUNT = ["100", "100"]
+
 # Сколько оставить на балансе в сети при депозите USDC на CEX
 RANGER_CEX_DEPOSIT_USDC_LIMITER = [0.0, 0.0]
 
 # Сколько оставить на балансе в сети при депозите ETH на CEX
 RANGER_CEX_DEPOSIT_ETH_LIMITER = [0.0, 0.0]
+
+# Сколько оставить SOL на балансе при депозите на CEX
+RANGER_CEX_DEPOSIT_SOL_LIMITER = [0.0, 0.0]
 
 #---------------------------------------------------------PERP----------------------------------------------------------
 
@@ -106,6 +115,9 @@ RANGER_DN_CYCLES_COUNT = [5, 10]
 
 #  ranger_smart_swaps              # Умные свапы на Ranger Spot. Работает по настройкам SPOT
 
+#  ranger_perp_delta_neutral       # Delta-Neutral стратегия на Perp (работает с 3 аккаунтами)
+#  ranger_perp_close_positions     # Принудительное закрытие всех позиций на Perp (работает с 3 аккаунтами)
+
 #  ranger_bridge_usdc_in           # Бридж USDC из L2 сетей в Solana через Relay. Сумма по RANGER_BRIDGE_USDC_AMOUNT
 #  ranger_bridge_usdc_out          # Бридж USDC из Solana обратно в L2 сети через Relay. Сумма по RANGER_BRIDGE_USDC_AMOUNT
 #  ranger_bridge_eth_in            # Бридж ETH из L2 сетей в Solana через Relay. Сумма по RANGER_BRIDGE_ETH_AMOUNT
@@ -115,3 +127,8 @@ RANGER_DN_CYCLES_COUNT = [5, 10]
 #  ranger_cex_withdraw_eth         # Вывод ETH с CEX на кошельки. Сумма по RANGER_CEX_WITHDRAW_ETH_AMOUNT
 #  ranger_cex_deposit_usdc         # Депозит USDC с кошельков на CEX. Сумма по RANGER_CEX_DEPOSIT_USDC_AMOUNT
 #  ranger_cex_deposit_eth          # Депозит ETH с кошельков на CEX. Сумма по RANGER_CEX_DEPOSIT_ETH_AMOUNT
+
+#  ranger_perp_cex_withdraw_sol    # Вывод SOL с CEX для Perp операций. Сумма по RANGER_CEX_WITHDRAW_SOL_AMOUNT
+#  ranger_perp_cex_withdraw_usdc   # Вывод USDC с CEX для Perp операций. Сумма по RANGER_CEX_WITHDRAW_USDC_AMOUNT
+#  ranger_perp_cex_deposit_sol     # Депозит SOL на CEX после Perp операций. Сумма по RANGER_CEX_DEPOSIT_AMOUNT_SOL
+#  ranger_perp_cex_deposit_usdc    # Депозит USDC на CEX после Perp операций. Сумма по RANGER_CEX_DEPOSIT_AMOUNT_USDC
