@@ -99,7 +99,7 @@ RANGER_DN_HOLD_TIME = [300, 600]
 RANGER_DN_CYCLE_SLEEP_TIME = [1000, 2000]
 
 # Доступные рынки для delta-neutral стратегии
-# Поддерживаются: "BTC", "ETH", "SOL"
+# Поддерживаются: "BTC", "ETH"
 RANGER_DN_MARKETS = ["BTC", "ETH"]
 
 # Диапазон кредитного плеча для позиций [мин, макс]
