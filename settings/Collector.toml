@@ -1,0 +1,36 @@
+#-------------------------------------------------------COLLECTOR-------------------------------------------------------
+
+# Целевая сеть, в которую будут собраны все токены
+COLLECTOR_TARGET_CHAIN = "Arbitrum"
+
+# Целевой токен в финальной сети (ETH, USDC, USDT и т.д.)
+COLLECTOR_TARGET_TOKEN = "ETH"
+
+# Собирать токены в нативный токен каждой сети перед бриджем
+# true  - будет собирать: Polygon → POL, Avalanche → AVAX, Base → ETH, затем все бриджить в target_chain
+# false - будет собирать все в COLLECTOR_TARGET_TOKEN в каждой сети, затем бриджить
+COLLECTOR_USE_NATIVE_TOKENS = true
+
+# Минимальный баланс токена в USD для сбора при свапах (токены дешевле будут пропущены)
+COLLECTOR_MIN_BALANCE_USD = 0.05
+
+# Минимальный баланс токена в USD для сбора при биджах (токены дешевле будут пропущены)
+COLLECTOR_MIN_BRIDGE_BALANCE_USD = 0.1
+
+# Минимальный баланс нативного токена (ETH, POL, AVAX и т.д.) для выполнения свапа
+# Если баланса недостаточно для оплаты газа - токен будет пропущен
+COLLECTOR_MIN_NATIVE_BALANCE = 0.0001
+
+# Исключать спам токены из баланса
+COLLECTOR_EXCLUDE_SPAM = true
+
+# Список токенов, которые нужно исключить из сбора (например, ["SHIB", "PEPE"])
+COLLECTOR_EXCLUDED_TOKENS = []
+
+# Список сетей, которые нужно исключить из сбора (например, ["Ethereum", "Polygon"])
+COLLECTOR_EXCLUDED_CHAINS = []
+
+# Список сетей, которые используются для CEX (софт не будет их трогать при бридже)
+COLLECTOR_CEX_CHAINS = ["Ethereum", "Base", "Arbitrum", "Optimism"]
+
+#    collector_balances              # Собрать все токены со всех сетей в COLLECTOR_TARGET_TOKEN в сети COLLECTOR_TARGET_CHAIN
