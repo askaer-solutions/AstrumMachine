@@ -1,3 +1,4 @@
 CLASSIC_ROUTES_MODULES_USING = [
     ['irys_arcade_run'],
+    ['irys_process_galxe_campaings'],
 ]
