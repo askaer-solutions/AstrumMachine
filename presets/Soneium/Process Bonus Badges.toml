@@ -1,3 +1,5 @@
 CLASSIC_ROUTES_MODULES_USING = [
-   ["soneium_process_bonus_badges"],
+    ["soneium_cex_withdraw_eth"],
+    ["soneium_bridge_relay_into"],
+    ["soneium_process_bonus_badges"],
 ]
