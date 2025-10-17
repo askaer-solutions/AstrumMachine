@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['nexus_complete_quests'],
+    ['nexus_mint_badges'],
+]

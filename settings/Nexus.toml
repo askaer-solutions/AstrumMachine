@@ -1,0 +1,7 @@
+# Настройка активных квестов. 
+# true = квест включен, false = квест пропускается
+[NEXUS_ENABLED_QUESTS]
+follow = true      # Подписка в Twitter
+retweet = true     # Ретвит постов
+comment = true     # Комментарии под постами
+daily = false       # Ежедневное задание
