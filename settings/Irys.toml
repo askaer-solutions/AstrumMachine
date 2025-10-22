@@ -13,8 +13,8 @@ IRYS_CAMPAIGNS_TO_SKIP = [            # Какие кампании пропус
 
 [[IRYS_ARCADE_GAMES]]                # Конфигурация игр Irys Arcade
 name = "snake"                       # Название игры
-games_min = 1                        # Минимальное количество игр за сессию
-games_max = 3                        # Максимальное количество игр за сессию
+games_min = 2                        # Минимальное количество игр за сессию
+games_max = 4                        # Максимальное количество игр за сессию
 score_min = 260                      # Минимальный целевой счёт
 score_max = 550                      # Максимальный целевой счёт
 duration_min = 300                   # Минимальная длительность игры (секунды)
@@ -22,8 +22,8 @@ duration_max = 600                   # Максимальная длительн
 
 [[IRYS_ARCADE_GAMES]]
 name = "missile-command"
-games_min = 1
-games_max = 3
+games_min = 2
+games_max = 4
 score_min = 110000
 score_max = 450000
 duration_min = 300
@@ -31,17 +31,17 @@ duration_max = 600
 
 [[IRYS_ARCADE_GAMES]]
 name = "hex-shooter"
-games_min = 1
-games_max = 3
-score_min = 16000
+games_min = 2
+games_max = 4
+score_min = 34000
 score_max = 50000
 duration_min = 300
 duration_max = 600
 
 [[IRYS_ARCADE_GAMES]]
 name = "asteroids"
-games_min = 1
-games_max = 3
+games_min = 2
+games_max = 4
 score_min = 51000
 score_max = 210000
 duration_min = 300
