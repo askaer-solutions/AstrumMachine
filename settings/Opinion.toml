@@ -1,0 +1,10 @@
+# Кол-во циклов покупки продажи через лимитные ордера по одной из ставок ref. OPINION_ORDERS_URL
+OPINION_CIRCLE_COUNT = [10, 20]
+
+# Надбавка к цене продажи. Пример: Покупка по цене 80$, при OPINION_MIN_MARGIN_PRICE = 0.1, продажа по 80.1$
+OPINION_MIN_MARGIN_PRICE = 0.1
+
+# Ссылка и исход на событие
+OPINION_ORDERS_URL = [
+    ["https://app.opinion.trade/detail?topicId=792", "NO"]
+]
