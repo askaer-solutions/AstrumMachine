@@ -1,4 +1,4 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ["soneium_mint_season1_nft"]
+    ["soneium_mint_season1_nft"],
     ["soneium_mint_season2_nft"]
 ]
