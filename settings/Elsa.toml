@@ -33,11 +33,49 @@ ELSA_ENABLE_BRIDGE_BASE = true      # Выполнять ли задание "Br
 # квест убирается из списка.
 ELSA_TRIES_TO_DO_QUEST = 5
 
-ELSA_MAX_STEPS = 20                # Сколько сделать попыток на выполнение всех квестов
+ELSA_MAX_STEPS = 20                    # Сколько сделать попыток на выполнение всех квестов
 
-ELSA_COLLECTOR_MIN_USD = 0.5      # Минимальное количество токенов в USD, чтобы инициировать свап в ETH
-
-ELSA_ODOS_COLLECTOR_ETH = false    # Собирает все токены в ETH через Odos (если false — через Elsa).
+ELSA_COLLECT_TO_ETH = true             # Собирать ли все токены в ETH после выполнения квестов
+                                       # true - в конце работы все токены будут конвертированы в ETH
+                                       # false - токены останутся как есть
                                    # При включённых ELSA_ENABLE_BRIDGE_BASE или ELSA_ENABLE_BRIDGE 
-                                   # дополнительно проверяются токены в сетях Base, Arbitrum и Optimism. 
-                                   # Если оба параметра выключены — проверяются только токены в сети Base.
+                                       # проверяются токены в ELSA_TOKENS_PER_CHAIN
+                                       # Если оба выключены — только в Base
+                                   
+ELSA_ODOS_COLLECTOR_ETH = false        # Собирает все токены в ETH через Odos (если false — через Elsa).
+
+ELSA_COLLECTOR_MIN_USD = 0.01          # Минимальная стоимость токенов в USD для инициации свапа в ETH
+                                       # Если баланс токена меньше этой суммы, он будет пропущен
+
+ELSA_PROCESS_SOCIAL_QUESTS = false      # Выполнять ли социальные квесты (Twitter, Discord) через баг
+                                       # true - автоматически подключит социальные сети
+                                       # false - социальные квесты будут пропущены
+
+ELSA_RELAY_INTERMEDIATE_BRIDGE = false  # Использовать ли Relay для промежуточного бриджа
+                                       # Применяется когда нужно сделать бридж в Base для квеста,
+                                       # но весь баланс находится уже в Base
+                                       # true - промежуточный бридж через Relay
+                                       # false - промежуточный бридж через Elsa
+
+# Конфигурация токенов для каждой сети
+# enabled - включена ли сеть (Base не может быть выключена)
+# tokens - список токенов для свапа (ETH добавляется автоматически)
+# 
+# Важно: 
+# - Base обязательна и не может быть отключена
+# - Для каждой включённой сети должен быть указан хотя бы один токен
+# - Если включен бридж (ELSA_ENABLE_BRIDGE или ELSA_ENABLE_BRIDGE_BASE), должна быть включена минимум ещё одна сеть
+# - Доступные токены: Base (USDC, cbBTC, WBTC) | Arbitrum (USDC, USDT, WBTC) | Optimism (USDC, USDT, WBTC)
+
+[ELSA_TOKENS_PER_CHAIN]
+[ELSA_TOKENS_PER_CHAIN.Base]
+enabled = true
+tokens = ["USDC", "cbBTC", "WBTC"]
+
+[ELSA_TOKENS_PER_CHAIN.Arbitrum]
+enabled = true
+tokens = ["USDC", "USDT", "WBTC"]
+
+[ELSA_TOKENS_PER_CHAIN.Optimism]
+enabled = true
+tokens = ["USDC", "USDT", "WBTC"]
