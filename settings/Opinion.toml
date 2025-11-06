@@ -9,7 +9,7 @@ OPINION_MIN_MARGIN_PRICE = 0.1
 
 # Ссылка и исход на событие
 OPINION_ORDERS_URL = [
-    ["https://app.opinion.trade/detail?topicId=793", "NO"]
+    ["https://app.opinion.trade/detail?topicId=1274", "NO"]
 ]
 
 # Флаг для выбора стратегии продажи
@@ -20,7 +20,7 @@ OPINION_USE_LOWEST_SELL_PRICE = false
 # Стоп-лосс в пунктах (центах)
 # Например, 0.5 означает, что если цена упадет на 0.5¢, позиция будет закрыта по маркету
 # None - стоп-лосс отключен
-OPINION_STOP_LOSS_POINTS = 0.5
+OPINION_PRICE_STOP_LOSS = 0.5
 
 # Таймаут в секундах для перехода на маркет ордер
 # Если ордер на продажу не исполнится за это время, будет выполнен маркет ордер
