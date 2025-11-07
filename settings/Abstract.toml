@@ -112,3 +112,5 @@ ABSTRACT_MAGICEDEN_NFT_CONTRACTS = [ # адреса для рандомного 
 ABSTRACT_MAGICEDEN_NFT_CONTRACTS_COLLECTION = [ # адреса для рандомного минта NFT с https://magiceden.io/collections/abstract
    "0xa22f3f9154b0f0e6b3266661e86645d00633ec2d", # 0.00006 ETH
 ]
+
+ABSTRACT_ABOREAN_DEPOSIT_AMOUNT = [0.00001, 0.00003] # Cумма для депозита ETH в Aborean
