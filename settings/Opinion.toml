@@ -1,15 +1,18 @@
+#----------------------------------------------------OPINION ORDERS-----------------------------------------------------
+
 # Кол-во циклов покупки продажи через лимитные ордера по одной из ставок ref. OPINION_ORDERS_URL
 OPINION_CIRCLE_COUNT = [10, 20]
 
 # Интервал проверки состояния открытого ордера (актуальная цена в стакане/заполнение)
-OPINION_MONITOR_SLEEP = 20
+OPINION_MONITOR_SLEEP = 60
 
 # Надбавка к цене продажи. Пример: Покупка по цене 80$, при OPINION_MIN_MARGIN_PRICE = 0.1, продажа по 80.1$
 OPINION_MIN_MARGIN_PRICE = 0.1
 
-# Ссылка и исход на событие
+# Ссылка, исход и название ставки на событие. Если исход один, название можно указать - ""
 OPINION_ORDERS_URL = [
-    ["https://app.opinion.trade/detail?topicId=1274", "NO"]
+    ["https://app.opinion.trade/detail?topicId=71&type=multi", "YES", "November 30"],
+#    ["https://app.opinion.trade/detail?topicId=1463", "NO", ""]
 ]
 
 # Флаг для выбора стратегии продажи
@@ -26,3 +29,31 @@ OPINION_PRICE_STOP_LOSS = 0.5
 # Если ордер на продажу не исполнится за это время, будет выполнен маркет ордер
 # None - таймаут отключен
 OPINION_MARKET_ORDER_TIMEOUT = 300  # 5 минут
+
+#---------------------------------------------------OPINION DEPOSIT-----------------------------------------------------
+
+# Минимальный баланс для запуска депозита, если будет больше - софт пропустит депозит
+OPINION_MIN_BALANCE = 100
+
+# Диапозон сумм для депозита на Opinion с основного кошелька
+OPINION_USDT_DEPOSIT_AMOUNT = ["100", "100"]
+
+#---------------------------------------------------------CEX-----------------------------------------------------------
+
+# Диапазон сумм USDT для вывода с CEX
+OPINION_CEX_WITHDRAW_USDT_AMOUNT = [150, 180]
+
+# Диапазон сумм BNB для вывода с CEX
+OPINION_CEX_WITHDRAW_BNB_AMOUNT = [0.011, 0.013]
+
+# Диапазон сумм USDT для депозита на CEX
+OPINION_CEX_DEPOSIT_BNB_AMOUNT = ["100", "100"]
+
+# Диапазон сумм BNB для депозита на CEX
+METAMASK_CEX_DEPOSIT_ETH_AMOUNT = ["100", "100"]
+
+# Сколько оставить на балансе в сети при депозите USDT на CEX
+OPINION_CEX_DEPOSIT_USDT_LIMITER = [0.0, 0.0]
+
+# Сколько оставить на балансе в сети при депозите BNB на CEX
+OPINION_CEX_DEPOSIT_BNB_LIMITER = [0.0, 0.0]

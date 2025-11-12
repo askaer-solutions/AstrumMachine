@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['opinion_cex_withdraw_bnb'],
+    ['opinion_cex_withdraw_usdt'],
+    ['opinion_process_positions'],
+]
