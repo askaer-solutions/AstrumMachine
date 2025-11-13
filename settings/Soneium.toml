@@ -19,7 +19,7 @@ SONEIUM_RUBYSCORE_ENABLED = true
 # - BRIDGE_L2_NETWORKS — список сетей, откуда брать газ (например: ["Arbitrum", "Optimism"])
 # - BRIDGE_AMOUNT — примерный объём газа, который нужно перекинуть ~ 0.0015 ETH
 # - REFUEL_DAPP — 1 (GasZip. MeMeBridge не поддерживается для этого роута)
-# - CEX_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
+# - CEX_WITHDRAW_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
 
 SONEIUM_RUBYSCORE_SMART_REFUEL = true
 
