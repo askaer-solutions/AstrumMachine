@@ -12,7 +12,7 @@ OPINION_MIN_MARGIN_PRICE = 0.1
 # Ссылка, исход и название ставки на событие. Если исход один, название можно указать - ""
 OPINION_ORDERS_URL = [
     ["https://app.opinion.trade/detail?topicId=71&type=multi", "YES", "November 30"],
-#    ["https://app.opinion.trade/detail?topicId=1463", "NO", ""]
+#    ["https://app.opinion.trade/detail?topicId=1274", "NO", ""]
 ]
 
 # Флаг для выбора стратегии продажи
@@ -29,6 +29,11 @@ OPINION_PRICE_STOP_LOSS = 0.5
 # Если ордер на продажу не исполнится за это время, будет выполнен маркет ордер
 # 0 - таймаут отключен
 OPINION_MARKET_ORDER_TIMEOUT = 0
+
+# Минимальный процент от ожидаемых SHARES для считывания ордера частично выполненным
+# Например, 50 означает что при получении 50% от ожидаемых SHARES ордер считается выполненным
+# 100 - требуется получить все ожидаемые SHARES
+OPINION_BUY_ORDER_FILL_PERCENTAGE = 50
 
 #---------------------------------------------------OPINION DEPOSIT-----------------------------------------------------
 
