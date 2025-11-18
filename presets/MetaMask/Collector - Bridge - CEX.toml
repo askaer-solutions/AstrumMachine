@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['metamask_linea_collector'],
+    ['metamask_bridge_eth_out'],
+    ['metamask_cex_deposit_eth'],
+]
