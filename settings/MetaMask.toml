@@ -10,7 +10,7 @@ METAMASK_SWAP_AMOUNT = ["100", "100"]
 
 # Доступные для свапов токены к ETH внутри MetaMask
 # Чем можно дополнить список: "mUSD", "USDC", "USDT"
-METAMASK_AVAILABLE_TOKENS = ["USDT"]
+METAMASK_AVAILABLE_TOKENS = ["mUSD"]
 
 # Максимальное проскальзывание в процентах для свапов (в %)
 METAMASK_SLIPPAGE = 0.5
