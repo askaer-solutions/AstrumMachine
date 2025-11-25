@@ -1,7 +1,7 @@
 #----------------------------------------------------OPINION ORDERS-----------------------------------------------------
 
 # Кол-во циклов покупки продажи через лимитные ордера по одной из ставок ref. OPINION_ORDERS_URL
-OPINION_CIRCLE_COUNT = [10, 20]
+OPINION_CIRCLE_COUNT = [150, 200]
 
 # Интервал проверки состояния открытого ордера (актуальная цена в стакане/заполнение)
 OPINION_MONITOR_SLEEP = 60
@@ -11,8 +11,8 @@ OPINION_MIN_MARGIN_PRICE = 0.1
 
 # Ссылка, исход и название ставки на событие. Если исход один, название можно указать - ""
 OPINION_ORDERS_URL = [
-    ["https://app.opinion.trade/detail?topicId=71&type=multi", "YES", "November 30"],
-#    ["https://app.opinion.trade/detail?topicId=1274", "NO", ""]
+#    ["https://app.opinion.trade/detail?topicId=71&type=multi", "YES", "November 30"],
+    ["https://app.opinion.trade/detail?topicId=1463", "NO", ""]
 ]
 
 # Флаг для выбора стратегии продажи
@@ -23,7 +23,7 @@ OPINION_USE_LOWEST_SELL_PRICE = false
 # Стоп-лосс в пунктах (центах)
 # Например, 0.5 означает, что если цена упадет на 0.5¢, позиция будет закрыта по маркету
 # 0 - стоп-лосс отключен
-OPINION_PRICE_STOP_LOSS = 0.5
+OPINION_PRICE_STOP_LOSS = 0
 
 # Таймаут в секундах для перехода на маркет ордер
 # Если ордер на продажу не исполнится за это время, будет выполнен маркет ордер
