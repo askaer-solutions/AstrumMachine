@@ -1,0 +1,59 @@
+#----------------------------------------------------POLYMARKET VOLUME-----------------------------------------------------
+
+# Кол-во циклов покупки продажи через лимитные ордера
+POLYMARKET_CIRCLE_COUNT = [5, 10]
+
+# Интервал проверки состояния открытого ордера (актуальная цена в стакане/заполнение)
+POLYMARKET_MONITOR_SLEEP = 10
+
+# Надбавка к цене продажи в центах. Пример: Покупка по 0.50$, MIN_PROFIT_CENTS = 5 → продажа по 0.55$
+POLYMARKET_MIN_PROFIT_CENTS = 0.1
+
+# Стоп-лосс в центах. Если цена упадет на эту величину от цены покупки - маркет продажа. 0 = отключен
+POLYMARKET_STOP_LOSS_CENTS = 20
+
+# Минимальный процент заполнения BUY ордера для считывания выполненным (50 = 50%)
+POLYMARKET_BUY_ORDER_FILL_PERCENTAGE = 50
+
+# Порог очереди для реордера. 0.5 = реордер если очередь > 50% от нашего размера
+POLYMARKET_REORDER_SIZE_THRESHOLD = 0.5
+
+# Диапазон сумм для размещения ордеров (USDC)
+POLYMARKET_ORDER_AMOUNT = ["100", "100"]
+
+# Таймаут на покупку (секунды)
+POLYMARKET_BUY_TIMEOUT = 300000
+
+# Таймаут на продажу (секунды)
+POLYMARKET_SELL_TIMEOUT = 300000
+
+# Таймаут ожидания подтверждения трейдов на чейне (секунды)
+POLYMARKET_TRADE_CONFIRM_TIMEOUT = 120
+
+# Таймаут ожидания Safe транзакции (секунды)
+POLYMARKET_TX_WAIT_TIMEOUT = 180
+
+# Таймаут бриджа для deposit/withdraw (секунды)
+POLYMARKET_BRIDGE_TIMEOUT = 600
+
+# Ссылки на маркеты для крутки волюма
+# Формат: Список списков [URL, ИСХОД]
+# Также можно указать в столбце SUI таблицы accounts_data.xlsx
+# Формат для SUI столбца: url1,YES,url2,NO
+POLYMARKET_ORDERS_URL = [
+#    ["https://polymarket.com/event/aztec-public-sale-total-commitments/over-20000-eth-committed-to-the-aztec-public-sale?tid=1764772955715", "YES"],
+    ["https://polymarket.com/event/honduras-presidential-election/will-nasry-juan-asfura-zablah-win-the-2025-honduras-presidential-election?tid=1764954706991", "YES"],
+]
+
+#---------------------------------------------------POLYMARKET WITHDRAW----------------------------------------------------
+
+POLYMARKET_WITHDRAW_CHAIN = "Base"
+POLYMARKET_WITHDRAW_TOKEN = "ETH"
+POLYMARKET_WITHDRAW_AMOUNT = ["100", "100"]
+POLYMARKET_WITHDRAW_KEEP_AMOUNT = 1.0
+
+#----------------------------------------------------POLYMARKET DEPOSIT----------------------------------------------------
+
+POLYMARKET_DEPOSIT_CHAINS = ["Base", "Arbitrum", "Optimism"]
+POLYMARKET_DEPOSIT_TOKEN = "ETH"
+POLYMARKET_DEPOSIT_AMOUNT = ["100", "100"]
