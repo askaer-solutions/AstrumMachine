@@ -1,3 +1,4 @@
 CLASSIC_ROUTES_MODULES_USING = [
     ['polymarket_withdraw_balance'],
+    ["deposit_cex"]
 ]

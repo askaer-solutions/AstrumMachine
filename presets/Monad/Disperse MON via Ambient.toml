@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-#    ["monad_deposit_mon_ambient"],
-    ["monad_disperse_mon_ambient"],
-#    ["monad_withdraw_mon_ambient"],
-]

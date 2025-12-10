@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['eclipse_claim_es'],
-    ['eclipse_send_es'],
-    ['eclipse_send_eth'],
-]

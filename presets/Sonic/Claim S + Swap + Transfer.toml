@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-   ["sonic_claim_s"],
-   ["sonic_swap_fnft_to_s"],
-   ["sonic_transfer_sonic"],
-]

@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['eclipse_deposit_save'],
-    ['eclipse_withdraw_save']
-]
