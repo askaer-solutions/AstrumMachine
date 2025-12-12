@@ -9,7 +9,7 @@ METAMASK_USE_REFERRAL_CODE = true
 METAMASK_SWAP_AMOUNT = ["100", "100"]
 
 # Доступные для свапов токены к ETH внутри MetaMask
-# Чем можно дополнить список: "mUSD", "USDC", "USDT"
+# Чем можно дополнить список: "mUSD", "USDC", "USDT", "LINEA"
 METAMASK_AVAILABLE_TOKENS = ["mUSD"]
 
 # Максимальное проскальзывание в процентах для свапов (в %)

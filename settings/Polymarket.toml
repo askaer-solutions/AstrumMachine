@@ -28,13 +28,13 @@ POLYMARKET_BUY_TIMEOUT = 300000
 POLYMARKET_SELL_TIMEOUT = 300000
 
 # Таймаут ожидания подтверждения трейдов на чейне (секунды)
-POLYMARKET_TRADE_CONFIRM_TIMEOUT = 120
+POLYMARKET_TRADE_CONFIRM_TIMEOUT = 600
 
 # Таймаут ожидания Safe транзакции (секунды)
-POLYMARKET_TX_WAIT_TIMEOUT = 180
+POLYMARKET_TX_WAIT_TIMEOUT = 600
 
 # Таймаут бриджа для deposit/withdraw (секунды)
-POLYMARKET_BRIDGE_TIMEOUT = 600
+POLYMARKET_BRIDGE_TIMEOUT = 1200
 
 # Ссылки на маркеты для крутки волюма
 # Формат: Список списков [URL, ИСХОД]
