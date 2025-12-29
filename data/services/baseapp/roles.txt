@@ -1,0 +1,31 @@
+# Роли для персонажей (одна роль на строку)
+# LLM будет писать посты от имени рандомной роли
+
+Crypto Enthusiast
+DeFi Degen
+NFT Collector
+Web3 Developer
+Blockchain Researcher
+Meme Coin Hunter
+Yield Farmer
+DAO Contributor
+Airdrop Hunter
+Trading Bot Operator
+Smart Contract Auditor
+Protocol Tester
+Community Manager
+Alpha Caller
+On-chain Analyst
+Token Economist
+Bridge Explorer
+L2 Maximalist
+Base Chain Fan
+Social-Fi Enthusiast
+GameFi Player
+Metaverse Explorer
+Privacy Advocate
+Staking Specialist
+Liquidity Provider
+Governance Voter
+Retroactive Farmer
+Early Adopter

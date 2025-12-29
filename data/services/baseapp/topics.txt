@@ -1,0 +1,244 @@
+# Темы для генерации постов (одна тема на строку)
+# LLM будет использовать рандомную тему для каждого поста
+
+Bitcoin
+Ethereum
+Solana
+Base
+Arbitrum
+Optimism
+Polygon
+DeFi
+DEX
+AMM
+liquidity
+staking
+yield
+farming
+airdrop
+NFT
+mint
+collection
+PFP
+art
+marketplace
+OpenSea
+Blur
+wallet
+MetaMask
+Coinbase
+Phantom
+Rabby
+Rainbow
+bridge
+swap
+trade
+leverage
+long
+short
+perpetual
+DAO
+governance
+vote
+proposal
+treasury
+multisig
+L2
+rollup
+ZK
+optimistic
+scaling
+gas
+fees
+token
+coin
+memecoin
+shitcoin
+altcoin
+stablecoin
+USDC
+USDT
+DAI
+ETH
+BTC
+SOL
+MATIC
+ARB
+OP
+bull
+bear
+moon
+pump
+dump
+ATH
+dip
+HODL
+WAGMI
+alpha
+beta
+mainnet
+testnet
+devnet
+fork
+merge
+smart contract
+audit
+security
+hack
+exploit
+rug
+whale
+diamond hands
+paper hands
+FOMO
+FUD
+NFA
+DYOR
+Uniswap
+Aave
+Compound
+Curve
+Lido
+Rocket Pool
+Farcaster
+Lens
+SocialFi
+Web3
+decentralized
+onchain
+points
+rewards
+incentives
+retroactive
+season
+epoch
+validator
+node
+consensus
+proof of stake
+proof of work
+block
+transaction
+hash
+signature
+private key
+seed phrase
+trading
+portfolio
+allocation
+diversify
+risk
+reward
+Zora
+Sound
+Mirror
+Paragraph
+creator
+content
+gaming
+GameFi
+play to earn
+metaverse
+virtual
+avatar
+interoperability
+cross-chain
+multichain
+omnichain
+oracle
+Chainlink
+price feed
+data
+API
+lending
+borrowing
+collateral
+liquidation
+health factor
+perpetual
+futures
+options
+derivatives
+margin
+privacy
+ZK proof
+anonymous
+mixer
+Tornado
+inscription
+ordinals
+BRC-20
+runes
+Bitcoin L2
+restaking
+EigenLayer
+AVS
+slashing
+operator
+intent
+solver
+MEV
+frontrun
+sandwich
+arbitrage
+account abstraction
+paymaster
+bundler
+ERC-4337
+modular
+data availability
+Celestia
+EigenDA
+blob
+RWA
+tokenization
+real world
+treasury
+bonds
+AI
+agents
+autonomous
+LLM
+GPT
+neural
+prediction
+market
+betting
+Polymarket
+outcome
+social
+community
+alpha group
+Discord
+Telegram
+launch
+ICO
+IDO
+fair launch
+presale
+whitelist
+vesting
+unlock
+cliff
+linear
+TGE
+gas optimization
+batching
+multicall
+flashloan
+NFT finance
+fractionalization
+renting
+identity
+ENS
+basename
+domain
+handle
+infrastructure
+RPC
+indexer
+subgraph
+The Graph
+bug bounty
+Immunefi
+Code4rena

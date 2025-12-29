@@ -1,0 +1,983 @@
+{
+  "devices": [
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S928B",
+      "product": "e3q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S928U",
+      "product": "e3q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S926B",
+      "product": "e2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S926U",
+      "product": "e2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S921B",
+      "product": "e1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S921U",
+      "product": "e1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S918B",
+      "product": "dm3q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S918U",
+      "product": "dm3q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S916B",
+      "product": "dm2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S916U",
+      "product": "dm2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S911B",
+      "product": "dm1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S911U",
+      "product": "dm1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S908B",
+      "product": "b0q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S908U",
+      "product": "b0q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S906B",
+      "product": "g0q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-S901B",
+      "product": "r0q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-G998B",
+      "product": "o1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-G998U",
+      "product": "o1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-G996B",
+      "product": "t2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-G996U",
+      "product": "t2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-G991B",
+      "product": "r0q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-G991U",
+      "product": "r0q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A556B",
+      "product": "a55x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A556U",
+      "product": "a55x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A546B",
+      "product": "a54x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A546U",
+      "product": "a54x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A536B",
+      "product": "a53x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A536U",
+      "product": "a53x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A346B",
+      "product": "a34x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A256B",
+      "product": "a25x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-A156B",
+      "product": "a15x",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-F956B",
+      "product": "q6q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-F946B",
+      "product": "q5q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-F936B",
+      "product": "q4q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-F731B",
+      "product": "b5q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-F721B",
+      "product": "b4q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-N986B",
+      "product": "c2q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "samsung",
+      "manufacturer": "samsung",
+      "model": "SM-N981B",
+      "product": "c1q",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 9 Pro XL",
+      "product": "komodo",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 9 Pro",
+      "product": "caiman",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 9",
+      "product": "tokay",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 9 Pro Fold",
+      "product": "comet",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 8 Pro",
+      "product": "husky",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 8",
+      "product": "shiba",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 8a",
+      "product": "akita",
+      "os_version": "15",
+      "sdk": "35"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 7 Pro",
+      "product": "cheetah",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 7",
+      "product": "panther",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 7a",
+      "product": "lynx",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 6 Pro",
+      "product": "raven",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 6",
+      "product": "oriole",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel 6a",
+      "product": "bluejay",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Google",
+      "manufacturer": "Google",
+      "model": "Pixel Fold",
+      "product": "felix",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "CPH2607",
+      "product": "OP5D40L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "CPH2581",
+      "product": "OP5961L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "CPH2551",
+      "product": "OP5958L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "NE2215",
+      "product": "OnePlus10Pro",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "NE2213",
+      "product": "OnePlus10Pro",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "LE2125",
+      "product": "OnePlus9Pro",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "LE2123",
+      "product": "OnePlus9Pro",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "LE2115",
+      "product": "OnePlus9",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "CPH2449",
+      "product": "OP594DL1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "PHB110",
+      "product": "OnePlus12",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OnePlus",
+      "manufacturer": "OnePlus",
+      "model": "CPH2573",
+      "product": "OP5D1BL1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "2304FPN6DG",
+      "product": "houji",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "2311DRK48G",
+      "product": "shennong",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "2211133C",
+      "product": "nuwa",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "2210132G",
+      "product": "cupid",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "22101316G",
+      "product": "xaga",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "23127PN0CG",
+      "product": "aurora",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "2312DRA50G",
+      "product": "manet",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Xiaomi",
+      "manufacturer": "Xiaomi",
+      "model": "23113RKC6G",
+      "product": "vermeer",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "POCO",
+      "manufacturer": "Xiaomi",
+      "model": "23113PCD1G",
+      "product": "vermeer",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "POCO",
+      "manufacturer": "Xiaomi",
+      "model": "22101320G",
+      "product": "marble",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OPPO",
+      "manufacturer": "OPPO",
+      "model": "CPH2617",
+      "product": "OP5D5BL1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OPPO",
+      "manufacturer": "OPPO",
+      "model": "CPH2581",
+      "product": "OP5961L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OPPO",
+      "manufacturer": "OPPO",
+      "model": "CPH2525",
+      "product": "OP5931L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OPPO",
+      "manufacturer": "OPPO",
+      "model": "CPH2551",
+      "product": "OP5958L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "OPPO",
+      "manufacturer": "OPPO",
+      "model": "CPH2449",
+      "product": "OP594DL1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "vivo",
+      "manufacturer": "vivo",
+      "model": "V2324",
+      "product": "PD2324",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "vivo",
+      "manufacturer": "vivo",
+      "model": "V2309",
+      "product": "PD2309",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "vivo",
+      "manufacturer": "vivo",
+      "model": "V2254",
+      "product": "PD2254",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "vivo",
+      "manufacturer": "vivo",
+      "model": "V2241A",
+      "product": "PD2241A",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "vivo",
+      "manufacturer": "vivo",
+      "model": "V2227",
+      "product": "PD2227",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "realme",
+      "manufacturer": "realme",
+      "model": "RMX3931",
+      "product": "RE5C3AL1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "realme",
+      "manufacturer": "realme",
+      "model": "RMX3771",
+      "product": "RE58B7L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "realme",
+      "manufacturer": "realme",
+      "model": "RMX3700",
+      "product": "RE58C2L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "realme",
+      "manufacturer": "realme",
+      "model": "RMX3630",
+      "product": "RE5889L1",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Sony",
+      "manufacturer": "Sony",
+      "model": "XQ-DQ72",
+      "product": "pdx237",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Sony",
+      "manufacturer": "Sony",
+      "model": "XQ-DQ62",
+      "product": "pdx235",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Sony",
+      "manufacturer": "Sony",
+      "model": "XQ-CT72",
+      "product": "pdx225",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Sony",
+      "manufacturer": "Sony",
+      "model": "XQ-CT54",
+      "product": "pdx223",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Sony",
+      "manufacturer": "Sony",
+      "model": "XQ-BC72",
+      "product": "pdx215",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "ASUS",
+      "manufacturer": "asus",
+      "model": "ASUS_AI2401",
+      "product": "WW_AI2401",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "ASUS",
+      "manufacturer": "asus",
+      "model": "ASUS_AI2302",
+      "product": "WW_AI2302",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "ASUS",
+      "manufacturer": "asus",
+      "model": "ASUS_AI2205",
+      "product": "WW_AI2205",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Motorola",
+      "manufacturer": "motorola",
+      "model": "motorola edge 50 ultra",
+      "product": "rtwo_t",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Motorola",
+      "manufacturer": "motorola",
+      "model": "motorola edge 50 pro",
+      "product": "rtwo",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Motorola",
+      "manufacturer": "motorola",
+      "model": "motorola edge 40 pro",
+      "product": "rtwo",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Motorola",
+      "manufacturer": "motorola",
+      "model": "motorola razr 40 ultra",
+      "product": "zeekr",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Nothing",
+      "manufacturer": "Nothing",
+      "model": "A065",
+      "product": "Pong",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Nothing",
+      "manufacturer": "Nothing",
+      "model": "A063",
+      "product": "Pacman",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Nothing",
+      "manufacturer": "Nothing",
+      "model": "A142",
+      "product": "Asteroids",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Huawei",
+      "manufacturer": "HUAWEI",
+      "model": "NOH-NX9",
+      "product": "NOH",
+      "os_version": "12",
+      "sdk": "32"
+    },
+    {
+      "brand": "Huawei",
+      "manufacturer": "HUAWEI",
+      "model": "ELS-NX9",
+      "product": "ELS",
+      "os_version": "12",
+      "sdk": "32"
+    },
+    {
+      "brand": "Honor",
+      "manufacturer": "HONOR",
+      "model": "PGT-N19",
+      "product": "HNPGT",
+      "os_version": "14",
+      "sdk": "34"
+    },
+    {
+      "brand": "Honor",
+      "manufacturer": "HONOR",
+      "model": "REP-NX9",
+      "product": "HNREP",
+      "os_version": "14",
+      "sdk": "34"
+    }
+  ],
+  "timezones": [
+    {
+      "offset": "-18000",
+      "name": "America/New_York"
+    },
+    {
+      "offset": "-21600",
+      "name": "America/Chicago"
+    },
+    {
+      "offset": "-25200",
+      "name": "America/Denver"
+    },
+    {
+      "offset": "-28800",
+      "name": "America/Los_Angeles"
+    },
+    {
+      "offset": "-14400",
+      "name": "America/Toronto"
+    },
+    {
+      "offset": "0",
+      "name": "Europe/London"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Paris"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Berlin"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Amsterdam"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Rome"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Madrid"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Brussels"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Vienna"
+    },
+    {
+      "offset": "3600",
+      "name": "Europe/Zurich"
+    },
+    {
+      "offset": "7200",
+      "name": "Europe/Helsinki"
+    },
+    {
+      "offset": "7200",
+      "name": "Europe/Athens"
+    },
+    {
+      "offset": "7200",
+      "name": "Europe/Bucharest"
+    },
+    {
+      "offset": "28800",
+      "name": "Asia/Singapore"
+    },
+    {
+      "offset": "28800",
+      "name": "Asia/Hong_Kong"
+    },
+    {
+      "offset": "32400",
+      "name": "Asia/Tokyo"
+    },
+    {
+      "offset": "32400",
+      "name": "Asia/Seoul"
+    },
+    {
+      "offset": "39600",
+      "name": "Australia/Sydney"
+    },
+    {
+      "offset": "43200",
+      "name": "Pacific/Auckland"
+    },
+    {
+      "offset": "14400",
+      "name": "Asia/Dubai"
+    },
+    {
+      "offset": "-10800",
+      "name": "America/Sao_Paulo"
+    },
+    {
+      "offset": "-18000",
+      "name": "America/Lima"
+    },
+    {
+      "offset": "-21600",
+      "name": "America/Mexico_City"
+    }
+  ],
+  "locales": [
+    "en-US",
+    "en-GB",
+    "en-AU",
+    "en-CA",
+    "de-DE",
+    "de-AT",
+    "de-CH",
+    "fr-FR",
+    "fr-CA",
+    "fr-BE",
+    "es-ES",
+    "es-MX",
+    "it-IT",
+    "pt-BR",
+    "pt-PT",
+    "nl-NL",
+    "nl-BE",
+    "ja-JP",
+    "ko-KR"
+  ]
+}
