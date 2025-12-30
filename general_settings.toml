@@ -95,7 +95,15 @@ GPT_API_MODEL = 1               # 1: gpt-4o-mini, 2: o1-mini, 3: o1-preview
 
 # https://portal.nousresearch.com/api-keys
 NOUS_API_KEY = ""
-NOUS_API_MODEL = 1 # 1: 0.7$/1M, 2: 0.85$/1M, 3: 0.9$/1M, 4: 1.8$/1M (Измеряется в токенах, чем дороже модель тем лучше ответы)
+# Модели Nous Research (portal.nousresearch.com/models):
+# 1 - Hermes-4.3-36B - дешёвая, быстрая
+# 2 - Hermes-4-70B - баланс
+# 3 - Hermes-4-405B - мощная
+# 4 - Hermes-3-Llama-3.1-70B
+# 5 - DeepHermes-3-Llama-3-8B-Preview
+# 6 - DeepHermes-3-Mistral-24B-Preview
+# 7 - Hermes-3-Llama-3.1-4051
+NOUS_API_MODEL = 1
 
 # https://www.okx.com/ru/account/my-api
 OKX_API_KEY = ""
