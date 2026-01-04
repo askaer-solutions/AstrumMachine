@@ -1,0 +1,3 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['opinion_close_and_sell_all_positions_limit'],
+]

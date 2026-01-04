@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['opinion_process_market_buy'],
+    ['opinion_process_market_sell'],
+]

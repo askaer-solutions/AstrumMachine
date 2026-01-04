@@ -11,8 +11,7 @@ OPINION_MIN_MARGIN_PRICE = 0.1
 
 # Ссылка, исход и название ставки на событие. Если исход один, название можно указать - ""
 OPINION_ORDERS_URL = [
-#    ["https://app.opinion.trade/detail?topicId=71&type=multi", "YES", "November 30"],
-    ["https://app.opinion.trade/detail?topicId=88&type=multi", "YES", ">$2B"]
+    ["https://app.opinion.trade/detail?topicId=3359", "NO", ""],
 ]
 
 # Флаг для выбора стратегии продажи
