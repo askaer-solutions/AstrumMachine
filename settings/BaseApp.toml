@@ -55,6 +55,30 @@ user_source = "feed"
 # - data/services/baseapp_roles.txt - роли персонажей
 # - data/services/baseapp_donors.txt - донорские аккаунты
 
+#------------------------------------------------------PROMPTS----------------------------------------------------------
+
+# Кастомные промпты для LLM генерации контента
+# Если оставить пустым "" - используется дефолтный промпт
+#
+# Доступные переменные:
+#   {role}          - роль персонажа (из baseapp_roles.txt)
+#   {topic}         - тема поста (из baseapp_topics.txt)
+#   {max_symbols}   - максимум символов
+#
+# Примеры:
+#   comment = "You are a {role}. Write a short comment. Max {max_symbols} chars."
+#   post = "You are a {role}. Write about {topic}. Max {max_symbols} chars."
+
+[BASEAPP_PROMPTS]
+# Промпт для комментариев (user prompt будет содержать текст поста)
+comment = ""
+
+# Промпт для постов (user prompt будет содержать тему)
+post = ""
+
+# Промпт для coin постов
+coin_post = ""
+
 #--------------------------------------------------------SWAP-----------------------------------------------------------
 
 [BASEAPP_SWAP]
