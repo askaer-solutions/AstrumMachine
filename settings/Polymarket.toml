@@ -25,10 +25,10 @@ POLYMARKET_REORDER_SIZE_THRESHOLD = 0.5
 POLYMARKET_ORDER_AMOUNT = ["100", "100"]
 
 # Таймаут на покупку (секунды)
-POLYMARKET_BUY_TIMEOUT = 300000
+POLYMARKET_BUY_TIMEOUT = 36000000 # 10000 часов
 
 # Таймаут на продажу (секунды)
-POLYMARKET_SELL_TIMEOUT = 300000
+POLYMARKET_SELL_TIMEOUT = 36000000 # 10000 часов
 
 # Таймаут ожидания подтверждения трейдов на чейне (секунды)
 POLYMARKET_TRADE_CONFIRM_TIMEOUT = 600
@@ -44,8 +44,7 @@ POLYMARKET_BRIDGE_TIMEOUT = 1200
 # Также можно указать в столбце SUI таблицы accounts_data.xlsx
 # Формат для SUI столбца: url1,YES,url2,NO
 POLYMARKET_ORDERS_URL = [
-#    ["https://polymarket.com/event/aztec-public-sale-total-commitments/over-20000-eth-committed-to-the-aztec-public-sale?tid=1764772955715", "YES"],
-    ["https://polymarket.com/event/honduras-presidential-election/will-nasry-juan-asfura-zablah-win-the-2025-honduras-presidential-election?tid=1764954706991", "YES"],
+    ["https://polymarket.com/event/bitcoin-above-on-january-5?tid=1767546267267", "YES"],
 ]
 
 #---------------------------------------------------POLYMARKET WITHDRAW----------------------------------------------------
