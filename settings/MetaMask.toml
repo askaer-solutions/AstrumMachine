@@ -8,6 +8,9 @@ METAMASK_USE_REFERRAL_CODE = true
 # Для меньшей сибильности можно обменивать не весь объём — так процесс выглядит естественнее.
 METAMASK_SWAP_AMOUNT = ["100", "100"]
 
+# Сколько ETH нужно оставить на обратный свап
+METAMASK_SWAP_FEE_SUPPORT = [0.0003, 0.0004]
+
 # Доступные для свапов токены к ETH внутри MetaMask
 # Чем можно дополнить список: "mUSD", "USDC", "USDT", "LINEA"
 METAMASK_AVAILABLE_TOKENS = ["mUSD"]
