@@ -68,11 +68,11 @@ OPINION_CEX_WITHDRAW_USDT_AMOUNT = [150, 180]
 # Диапазон сумм BNB для вывода с CEX
 OPINION_CEX_WITHDRAW_BNB_AMOUNT = [0.011, 0.013]
 
-# Диапазон сумм USDT для депозита на CEX
+# Диапазон сумм BNB для депозита на CEX
 OPINION_CEX_DEPOSIT_BNB_AMOUNT = ["100", "100"]
 
-# Диапазон сумм BNB для депозита на CEX
-METAMASK_CEX_DEPOSIT_ETH_AMOUNT = ["100", "100"]
+# Диапазон сумм USDT для депозита на CEX
+OPINION_CEX_DEPOSIT_USDT_AMOUNT = ["100", "100"]
 
 # Сколько оставить на балансе в сети при депозите USDT на CEX
 OPINION_CEX_DEPOSIT_USDT_LIMITER = [0.0, 0.0]
