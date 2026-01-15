@@ -87,11 +87,12 @@ ASTRUMSOLVER_API_KEY = ""
 
 EXCEL_FILE_PATH = "./data/accounts_data.xlsx"  # Можете не изменять, если устраивает дефолтное расположение таблицы
 
-#---------------------------------------------------SECURE API KEYS-----------------------------------------------------
-
-# https://platform.openai.com/account/api-keys
-GPT_API_KEY = ""
-GPT_API_MODEL = 1               # 1: gpt-4o-mini, 2: o1-mini, 3: o1-preview
+#----------------------------------------------------LLM PROVIDER-----------------------------------------------------
+# Выбор LLM провайдера для генерации контента (посты, комментарии, коины)
+# 1 = Nous Research (дешевле)
+# 2 = Claude / Anthropic (качественнее)
+# 3 = OpenAI / ChatGPT
+LLM_PROVIDER = 1
 
 # https://portal.nousresearch.com/api-keys
 NOUS_API_KEY = ""
@@ -102,8 +103,30 @@ NOUS_API_KEY = ""
 # 4 - Hermes-3-Llama-3.1-70B
 # 5 - DeepHermes-3-Llama-3-8B-Preview
 # 6 - DeepHermes-3-Mistral-24B-Preview
-# 7 - Hermes-3-Llama-3.1-4051
+# 7 - Hermes-3-Llama-3.1-405B
 NOUS_API_MODEL = 1
+
+# https://console.anthropic.com/settings/keys
+CLAUDE_API_KEY = ""
+# Модели Claude (Anthropic):
+# 1 - claude-3-5-haiku - быстрая, дешёвая
+# 2 - claude-sonnet-4.5 - баланс
+# 3 - claude-opus-4.5 - самая мощная
+CLAUDE_API_MODEL = 1
+
+# https://platform.openai.com/account/api-keys
+GPT_API_KEY = ""
+# Модели OpenAI (ChatGPT):
+# 1 - gpt-4.1-nano - самая дешёвая
+# 2 - gpt-4.1-mini - быстрая, дешёвая
+# 3 - gpt-4.1 - для дообучения
+# 4 - gpt-5-mini - быстрая флагманская
+# 5 - gpt-5.2 - лучшая для кода/агентов
+# 6 - gpt-5.2-pro - самая умная
+# 7 - o4-mini - reasoning модель
+GPT_API_MODEL = 2
+
+#---------------------------------------------------SECURE API KEYS-----------------------------------------------------
 
 # https://www.okx.com/ru/account/my-api
 OKX_API_KEY = ""
