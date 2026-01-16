@@ -15,7 +15,16 @@
 #     - Пример: abc123def456...,def789ghi012...,jkl345mno678...,...
 #     - Нужно для имитации 10 адресов HD-кошелька (1 реальный + 9 фейковых)
 #
+
 BASEAPP_FLOW_TYPE = "private_key"
+
+#------------------------------------------------------BASENAME---------------------------------------------------------
+
+# Режим получения basename:
+# "table" - из таблицы accounts_data (колонка Nickname), прямое соответствие по номеру строки
+# "file" - из файла data/services/baseapp/basenames.txt, случайный выбор из списка
+# "auto" - автоматическая генерация
+BASEAPP_BASENAME_MODE = "table"
 
 #---------------------------------------------------------CEX-----------------------------------------------------------
 
@@ -119,3 +128,4 @@ amount = ["1", "2"]
 #  baseapp_create_coin_post     # Создание поста с Zora коином (требуется LLM)
 #  baseapp_swap_eth_to_token    # Свап ETH в случайный токен из BASEAPP_SWAP.token_contracts
 #  baseapp_cex_withdraw_eth     # Вывод ETH с CEX на SCW кошелек. Сумма по BASEAPP_WITHDRAW_ETH_AMOUNT
+#  baseapp_change_display_name  # Смена display name. Берёт имя из колонки Cosmos
