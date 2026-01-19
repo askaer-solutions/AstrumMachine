@@ -30,7 +30,7 @@ FIGHTAPP_TRANSFER_AMOUNT = ["100", "100"]
 #                          # 3. Привязка email с OTP верификацией
 #                          # 4. Повторная авторизация с email
 #                          # 5. Включение уведомлений (push + email)
-#                          # 6. Привязка Solana кошелька (если указан solana_secret)
+#                          # 6. Привязка Solana кошелька
 #                          #
 #                          # Требования:
 #                          # - Email обязателен (колонка Email таблицы accounts_data)
