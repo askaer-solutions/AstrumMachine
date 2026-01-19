@@ -18,39 +18,38 @@ FIGHTAPP_REF_MODE = true
 
 # Доступные модули FightApp:
 #
-#  fightapp_register       # Полная регистрация аккаунта (6 шагов):
-#                          # 1. Авторизация через EVM кошелек (BNB Chain)
-#                          # 2. Claim FightID (username)
-#                          # 3. Привязка email с OTP верификацией
-#                          # 4. Повторная авторизация с email
-#                          # 5. Включение уведомлений (push + email)
-#                          # 6. Привязка Solana кошелька
-#                          #
-#                          # Требования:
-#                          # - Email обязателен (колонка Email таблицы accounts_data)
-#                          # - Токены кешируются на 2 часа в data/services/fightapp/tokens.json
+#  fightapp_register         # Полная регистрация аккаунта (6 шагов):
+#                            # 1. Авторизация через EVM кошелек (BNB Chain)
+#                            # 2. Claim FightID (username)
+#                            # 3. Привязка email с OTP верификацией
+#                            # 4. Повторная авторизация с email
+#                            # 5. Включение уведомлений (push + email)
+#                            # 6. Привязка Solana кошелька
+#                            #
+#                            # Требования:
+#                            # - Email обязателен (колонка Email таблицы accounts_data)
+#                            # - Токены кешируются на 2 часа в data/services/fightapp/tokens.json
 #
-#  fightapp_daily          # Ежедневные квесты и игры:
-#                          # - Punching bag daily game (игра с грушей)
-#                          # - Ear bag daily game (игра с ухом)
-#                          #
-#                          # Игры проходятся автоматически:
-#                          # - Генерируется 15-25 случайных тапов
-#                          # - Интервал между тапами 100-150ms
-#                          # - Финальный счёт рассчитывается на сервере
+#  fightapp_daily            # Ежедневные квесты и игры:
+#                            # - Punching bag daily game (игра с грушей)
+#                            # - Ear bag daily game (игра с ухом)
+#                            #
+#                            # Игры проходятся автоматически:
+#                            # - Генерируется 15-25 случайных тапов
+#                            # - Интервал между тапами 100-150ms
+#                            # - Финальный счёт рассчитывается на сервере
 #
-#  fightapp_claim_rewards   # Claim season токенов:
-#                           # - Проверяет доступный баланс для claim
-#                           # - Минтит токены через смарт-контракт (BNB Chain)
-#                           # - Требуется BNB для газа на кошельке
+#  fightapp_claim_rewards    # Claim season токенов:
+#                            # - Проверяет доступный баланс для claim
+#                            # - Минтит токены через смарт-контракт (BNB Chain)
+#                            # - Требуется BNB для газа на кошельке
 #
-#  fightapp_transfer_to_cex # Трансфер BNB на биржу:
-#                           # - Переводит BNB на адрес депозита согласно TRANSFER_AMOUNT (settings.toml)
-#                           # - Поддерживает проценты от баланса или фиксированную сумму
-#                           # - Автоматически вычитает комиссию за газ из суммы трансфера
-#                           # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
-#                           # - Минимальный баланс для трансфера: 0.00001 BNB
-#                           # - Работает только с BNB Chain
+#  fightapp_transfer_bnb     # Трансфер BNB на EVM Deposit Address:
+#                            # - Переводит BNB на адрес депозита согласно TRANSFER_AMOUNT (settings.toml)
+#                            # - Автоматически вычитает комиссию за газ из суммы трансфера
+#                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
+#                            # - Минимальный баланс для трансфера: 0.00001 BNB
+#                            # - Работает только с BNB Chain
 #
 #  fightapp_bridge_bnb_in   # Бридж ETH из BRIDGE_L2_NETWORKS сетей в BNB BEP20 через Relay (settings.toml)
 #                           # - Использует BRIDGE_AMOUNT для определения суммы
@@ -60,11 +59,13 @@ FIGHTAPP_REF_MODE = true
 #                           # - BRIDGE_LIMITER задаёт минимальный остаток в BNB Chain
 #
 #  withdraw_cex              # Вывод с CEX на кошелек (settings.toml)
+#                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
 #                            # - Использует CEX_WITHDRAW_USING для выбора биржи
 #                            # - Сети для вывода указаны в CEX_WITHDRAW_NETWORKS
 #                            # - Суммы для вывода указаны в CEX_WITHDRAW_AMOUNT
 #
 #  deposit_cex               # Вывод с CEX на кошелек (settings.toml)
+#                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
 #                            # - Использует CEX_DEPOSIT_USING для выбора биржи
 #                            # - Сети для вывода указаны в CEX_DEPOSIT_NETWORKS
 #                            # - Суммы для вывода указаны в CEX_DEPOSIT_AMOUNT
