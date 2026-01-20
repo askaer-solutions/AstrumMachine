@@ -1,6 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["withdraw_cex"],
-    ["elsa_daily_quests"],
-    ["elsa_deposit_cex"],
-
-]
