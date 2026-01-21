@@ -1,4 +1,3 @@
-
 #------------------------------------------------------USERNAME---------------------------------------------------------
 
 # Режим получения FightID (username):
@@ -41,8 +40,8 @@ FIGHTAPP_REF_MODE = true
 #
 #  fightapp_claim_rewards    # Claim season токенов:
 #                            # - Проверяет доступный баланс для claim
-#                            # - Минтит токены через смарт-контракт (BNB Chain)
-#                            # - Требуется BNB для газа на кошельке
+#                            # - Минтит поинты через смарт-контракт (BNB Chain)
+#                            # - Требуется 0.000005 BNB для газа на кошельке
 #
 #  fightapp_transfer_bnb     # Трансфер BNB на EVM Deposit Address:
 #                            # - Переводит BNB на адрес депозита согласно TRANSFER_AMOUNT (settings.toml)
@@ -51,22 +50,21 @@ FIGHTAPP_REF_MODE = true
 #                            # - Минимальный баланс для трансфера: 0.00001 BNB
 #                            # - Работает только с BNB Chain
 #
-#  fightapp_bridge_bnb_in   # Бридж ETH из BRIDGE_L2_NETWORKS сетей в BNB BEP20 через Relay (settings.toml)
-#                           # - Использует BRIDGE_AMOUNT для определения суммы
+#  fightapp_bridge_in        # Refuel ETH через Gas.Zip (L2 -> BNB Chain):
+#                            # - Refuel ETH из сетей L2 в BNB Chain
+#                            # - Использует Gas.Zip v2 API с guaranteed quotes и tracking статуса
+#                            # - Автоматически ищет L2 с наибольшим балансом ETH
+#                            # - Использует общие настройки BRIDGE_* из settings.toml
 #
-#  fightapp_bridge_bnb_out  # Бридж BNB BEP20 в BRIDGE_L2_NETWORKS сети через Relay (settings.toml)
-#                           # - Использует BRIDGE_AMOUNT для определения суммы
-#                           # - BRIDGE_LIMITER задаёт минимальный остаток в BNB Chain
+#  fightapp_bridge_out       # Refuel BNB через Gas.Zip (BNB Chain -> L2):
+#                            # - Refuel BNB из BNB Chain в случайную L2 сеть
+#                            # - Целевая сеть выбирается случайно из BRIDGE_L2_NETWORKS
+#                            # - Использует общие настройки BRIDGE_* из settings.toml
 #
 #  withdraw_cex              # Вывод с CEX на кошелек (settings.toml)
 #                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
-#                            # - Использует CEX_WITHDRAW_USING для выбора биржи
-#                            # - Сети для вывода указаны в CEX_WITHDRAW_NETWORKS
-#                            # - Суммы для вывода указаны в CEX_WITHDRAW_AMOUNT
+#                            # - Использует общие настройки CEX_WITHDRAW_* из settings.toml
 #
 #  deposit_cex               # Вывод с CEX на кошелек (settings.toml)
 #                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
-#                            # - Использует CEX_DEPOSIT_USING для выбора биржи
-#                            # - Сети для вывода указаны в CEX_DEPOSIT_NETWORKS
-#                            # - Суммы для вывода указаны в CEX_DEPOSIT_AMOUNT
-#
+#                            # - Использует общие настройки CEX_DEPOSIT_* из settings.toml

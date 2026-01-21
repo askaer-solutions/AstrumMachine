@@ -32,6 +32,14 @@ BASEAPP_BASENAME_MODE = "table"
 # Можно указать проценты от баланса CEX: ["10", "20"] = 10-20%
 BASEAPP_WITHDRAW_ETH_AMOUNT = [0.001, 0.004]
 
+#------------------------------------------------------PERSONA----------------------------------------------------------
+
+[BASEAPP_PERSONA]
+# Количество особенностей письма для каждой персоны (мин, макс)
+# Особенности берутся из data/services/baseapp/writing_traits.txt
+# При первом запуске для кошелька выбираются случайные особенности и сохраняются
+traits_count = [2, 4]
+
 #------------------------------------------------------ACTIVITY---------------------------------------------------------
 
 [BASEAPP_ACTIVITY]
@@ -79,9 +87,10 @@ coin_post_max_symbols = 100
 user_source = "feed"
 
 # Файлы для LLM генерации (можно редактировать):
-# - data/services/baseapp_topics.txt - темы для постов
-# - data/services/baseapp_roles.txt - роли персонажей
-# - data/services/baseapp_donors.txt - донорские аккаунты
+# - data/services/baseapp/topics.txt - темы для постов
+# - data/services/baseapp/roles.txt - роли персонажей
+# - data/services/baseapp/donors.txt - донорские аккаунты
+# - data/services/baseapp/writing_traits.txt - особенности стиля написания
 
 #------------------------------------------------------PROMPTS----------------------------------------------------------
 
@@ -89,22 +98,28 @@ user_source = "feed"
 # Если оставить пустым "" - используется дефолтный промпт
 #
 # Доступные переменные:
-#   {role}          - роль персонажа (из baseapp_roles.txt)
-#   {topic}         - тема поста (из baseapp_topics.txt)
+#   {role}          - роль персонажа (из roles.txt)
+#   {topic}         - тема поста (из topics.txt)
 #   {max_symbols}   - максимум символов
+#   {traits}        - особенности написания персоны (из writing_traits.txt, выбираются случайно)
+#
+# ВАЖНО: Если используете кастомный промпт, добавьте {traits} чтобы учитывались особенности персоны!
 #
 # Примеры:
-#   comment = "You are a {role}. Write a short comment. Max {max_symbols} chars."
-#   post = "You are a {role}. Write about {topic}. Max {max_symbols} chars."
+#   comment = "You are a {role}. Write a short comment. Max {max_symbols} chars. {traits}"
+#   post = "You are a {role}. Write about {topic}. Max {max_symbols} chars. {traits}"
 
 [BASEAPP_PROMPTS]
 # Промпт для комментариев (user prompt будет содержать текст поста)
+# Если пустой - используется дефолтный. Не забудьте добавить {traits} в конце!
 comment = ""
 
 # Промпт для постов (user prompt будет содержать тему)
+# Если пустой - используется дефолтный. Не забудьте добавить {traits} в конце!
 post = ""
 
-# Промпт для coin постов
+# Промпт для coin постов (создание Zora коина)
+# Если пустой - используется дефолтный. Не забудьте добавить {traits} в конце!
 coin_post = ""
 
 #--------------------------------------------------------SWAP-----------------------------------------------------------
