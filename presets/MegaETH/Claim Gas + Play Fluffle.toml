@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['megaeth_claim_gas'],
+    ['megaeth_play_fluffle'],
+]

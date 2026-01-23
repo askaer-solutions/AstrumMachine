@@ -1,7 +1,6 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ['metamask_cex_withdraw_eth'],
-    ['metamask_bridge_eth_in'],
-    ['metamask_process_swaps'],
-    ['metamask_bridge_eth_out'],
+#    ['cex_withdraw'],
+#    ['metamask_process_swaps'],
+#    ['metamask_bridge_eth_out'],
     ['metamask_cex_deposit_eth'],
 ]

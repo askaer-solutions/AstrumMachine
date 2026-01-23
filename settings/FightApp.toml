@@ -61,10 +61,17 @@ FIGHTAPP_REF_MODE = true
 #                            # - Целевая сеть выбирается случайно из BRIDGE_L2_NETWORKS
 #                            # - Использует общие настройки BRIDGE_* из settings.toml
 #
-#  withdraw_cex              # Вывод с CEX на кошелек (settings.toml)
-#                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
+#  cex_withdraw              # Вывод с CEX на кошелек (settings.toml)
 #                            # - Использует общие настройки CEX_WITHDRAW_* из settings.toml
 #
-#  deposit_cex               # Вывод с CEX на кошелек (settings.toml)
-#                            # - Адрес берётся из колонки EVM Deposit Address таблицы accounts_data
+#  cex_deposit               # Депозит на CEX с кошелька (settings.toml)
 #                            # - Использует общие настройки CEX_DEPOSIT_* из settings.toml
+#
+#  bridge_in                 # Бридж ETH из L2 в целевую сеть через Relay (settings.toml):
+#                            # - Ищет баланс в сетях BRIDGE_L2_NETWORKS
+#                            # - Бриджит в сеть BRIDGE_DST_NETWORK
+#                            # - Сумма: BRIDGE_AMOUNT
+#
+#  bridge_out                # Бридж ETH из целевой сети обратно в L2 через Relay (settings.toml):
+#                            # - Бриджит из BRIDGE_DST_NETWORK в случайную L2
+#                            # - Оставляет BRIDGE_LIMITER на исходном кошельке

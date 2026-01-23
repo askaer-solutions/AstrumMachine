@@ -1,7 +1,7 @@
 CLASSIC_ROUTES_BLOCKS_COUNT = [3, 3]
 
 CLASSIC_ROUTES_MODULES_USING = [
-    ['withdraw_cex'],
+    ['cex_withdraw'],
     ['ethereum_bridge_relay_into'],
     ['ethereum_transfer_eth_to_myself', 'ethereum_transfer_eth_to_random'],
     [

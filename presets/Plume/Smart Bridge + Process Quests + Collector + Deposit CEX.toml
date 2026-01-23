@@ -3,5 +3,5 @@ CLASSIC_ROUTES_MODULES_USING = [
     ['plume_process_quests'],
     ['plume_collector'],
     ['plume_bridge_out'],
-    ['deposit_cex'],
+    ['cex_deposit'],
 ]

@@ -1,5 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['unisat_bridge_btc_to_sbtc'],
-    ['unisat_bridge_sbtc_to_btc'],
-    ['unisat_transfer']
-]

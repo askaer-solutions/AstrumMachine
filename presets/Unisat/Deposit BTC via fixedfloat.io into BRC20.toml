@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['withdraw_eth_to_l2'],
-    ['unisat_create_order_on_ff'],
-]

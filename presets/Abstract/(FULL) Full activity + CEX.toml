@@ -12,5 +12,5 @@ CLASSIC_ROUTES_MODULES_USING = [
     ],
     ["abstract_claim_badges"],
     ['abstract_bridge_eth_jumper_out'],
-    ['deposit_cex']
+    ['cex_deposit']
 ]
