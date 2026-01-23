@@ -1,0 +1,6 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['refuel_in'],
+    ['megaeth_bridge_in'],
+    ['megaeth_play_fluffle'],
+    ['megaeth_play_dino'],
+]
