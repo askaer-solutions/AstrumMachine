@@ -48,6 +48,16 @@ TRANSFER_AMOUNT = [0.000001, 0.00001]         # применяется для т
 WRAP_AMOUNT = [0.0001, 0.0002]                # применяется для врапов нативных монет, анврап на 100%
 
 #----------------------------------------------------BRIDGE/REFUEL------------------------------------------------------
+#
+# Доступные сети для Relay Bridge:
+#   EVM:    "Ethereum", "Arbitrum", "Optimism", "Base", "Linea", "Scroll", "zkSync",
+#           "Zora", "Polygon", "Avalanche", "BNB Chain", "Ink", "Abstract", "Soneium", "Plume"
+#   Non-EVM: "Solana", "Eclipse"
+#
+# Доступные сети для GasZip Refuel:
+#   "Ethereum", "Arbitrum", "Optimism", "Base", "Linea", "Scroll", "zkSync",
+#   "Zora", "Polygon", "Avalanche", "BNB Chain", "Abstract", "Soneium", "Plume", "Ink"
+#
 
 BRIDGE_L2_NETWORKS = ["Arbitrum", "Optimism", "Base"]        # сети-источники для бриджа (откуда бриджим)
 BRIDGE_DST_NETWORK = "Ethereum"                                 # сеть назначения для модулей bridge_in/bridge_out
