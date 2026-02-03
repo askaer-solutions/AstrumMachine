@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ['metamask_refuel_to_apechain'],
+    ['metamask_mint_apechain_fox'],
+    ['metamask_list_fox_opensea'],
+]
