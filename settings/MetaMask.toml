@@ -35,7 +35,7 @@ METAMASK_BRIDGE_OUT_LIMITTER = [0.0, 0.0]
 METAMASK_CEX_WITHDRAW_USDC_AMOUNT = [200, 300]
 
 # Диапазон сумм ETH для вывода с CEX
-METAMASK_CEX_WITHDRAW_ETH_AMOUNT = [0.052, 0.054]
+METAMASK_CEX_WITHDRAW_ETH_AMOUNT = [0.06, 0.08]
 
 # Диапазон сумм USDC для депозита на CEX
 METAMASK_CEX_DEPOSIT_USDC_AMOUNT = ["100", "100"]
@@ -48,3 +48,8 @@ METAMASK_CEX_DEPOSIT_USDC_LIMITER = [0.0, 0.0]
 
 # Сколько оставить на балансе в сети при депозите ETH на CEX
 METAMASK_CEX_DEPOSIT_ETH_LIMITER = [0.0, 0.0]
+
+#-------------------------------------------------------APECHAIN--------------------------------------------------------
+
+# Диапазон сумм ETH для рефуела в ApeChain через GasZip
+METAMASK_APE_REFUEL_AMOUNT = [0.000085, 0.0001]
