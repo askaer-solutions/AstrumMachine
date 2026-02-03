@@ -52,4 +52,4 @@ METAMASK_CEX_DEPOSIT_ETH_LIMITER = [0.0, 0.0]
 #-------------------------------------------------------APECHAIN--------------------------------------------------------
 
 # Диапазон сумм ETH для рефуела в ApeChain через GasZip
-METAMASK_APE_REFUEL_AMOUNT = [0.000085, 0.0001]
+METAMASK_APE_REFUEL_AMOUNT = [0.00002, 0.00003]
