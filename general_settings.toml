@@ -43,8 +43,7 @@ SLEEP_TIME_RETRY = [5, 10]             # (минимум, максимум) се
 #-----------------------------------------------------GAS CONTROL-------------------------------------------------------
 
 GAS_CONTROL = true              # Включает контроль газа
-GAS_CHAIN_NAME = "Ethereum"     # Название блокчейна в котором нужно проверять газ. Используйте официальные полные названия чейнов
-GAS_MAXIMUM_GWEI = 10           # Максимальный GWEI для работы софта, изменять во время работы софта в maximum_gwei.json
+GAS_MAXIMUM_GWEI = 0.03         # Максимальный GWEI для работы софта
 
 # работает вне зависимости от GAS_CONTROL и определяет параметры газа для транзакций
 GAS_PRICE_MULTIPLIER = 1.2      # Множитель цены газа для транзакций. Повышайте, если транзакции не проходят
@@ -146,3 +145,22 @@ BINANCE_API_SECRET = ""
 #---------------------------------------------------ICLOUD CONTROL------------------------------------------------------
 
 GLOBAL_EMAIL = ""
+
+#----------------------------------------------------CUSTOM RPC--------------------------------------------------------
+# Вариант 1: Один ANKR ключ — автоматически покрывает 20+ сетей
+# Формат ANKR_RPC_KEY: 7c8ca91f4....986468d96
+# Получить ключ: https://www.ankr.com/rpc/
+ANKR_RPC_KEY = "123abc123"
+
+# Вариант 2: Ручное указание кастомных нод по сетям
+# Кастомные ноды ЗАМЕНЯЮТ дефолтные для указанной сети
+# Если указан ANKR_RPC_KEY — CUSTOM_RPC имеет приоритет для конкретной сети
+# Названия сетей: Ethereum, Arbitrum, Base, Optimism, Polygon, Avalanche, BNB Chain,
+#                 Linea, Scroll, zkSync, Sonic, Abstract, Soneium, Plume, MegaETH, Solana
+[CUSTOM_RPC]
+#Ethereum = ["https://eth.llamarpc.com", "https://eth.llamarpc.com"]
+#Arbitrum = ["https://arbitrum.drpc.org", "https://arbitrum.drpc.org"]
+#Optimism = ["https://optimism.drpc.org"]
+#Base = ["https://base.llamarpc.com"]
+#Solana = ["https://mainnet.helius-rpc.com/?api-key=123"]
+
