@@ -1,9 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["ranger_cex_withdraw_eth"],
-    ["ranger_cex_withdraw_usdc"],
-    ["ranger_bridge_eth_in"],
-    ["ranger_bridge_usdc_in"],
-    ["ranger_smart_swaps"],
-    ["ranger_bridge_usdc_out"],
-    ["ranger_cex_deposit_usdc"],
-]

@@ -1,7 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['cex_withdraw'],
-    ['refuel_in'],
-    ['megaeth_bridge_in'],
-    ['megaeth_play_fluffle'],
-    ['megaeth_play_dino'],
-]

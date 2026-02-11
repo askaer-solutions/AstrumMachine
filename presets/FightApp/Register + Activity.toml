@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ['fightapp_register'],
-    ['fightapp_daily'],
-]
