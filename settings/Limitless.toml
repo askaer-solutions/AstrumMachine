@@ -1,8 +1,8 @@
 #--------------------------------------------------- BETS FILTER -----------------------------------------------------
-LIMITLESS_MARKET_MIN_VOLUME = 3000        # Минимальный объем ставки за всю историю
+LIMITLESS_MARKET_MIN_VOLUME = 10000        # Минимальный объем ставки за всю историю
 LIMITLESS_MIN_OUTCOME_PRICE = 80           # Минимальная цена дорогого исхода на ставке в ¢
 LIMITLESS_MAX_OUTCOME_PRICE = 95           # Максимальная цена дорогого исхода на ставке в ¢
-LIMITLESS_MAX_SPREAD_CENTS  = 3            # Максимальный спред на ставке в ¢
+LIMITLESS_MAX_SPREAD_CENTS  = 2            # Максимальный спред на ставке в ¢
 
 #--------------------------------------------------- BETS SETTINGS ---------------------------------------------------
 LIMITLESS_BET_AMOUNT                  = ["90", "100"]  # Сумма ставки USDC
@@ -10,13 +10,18 @@ LIMITLESS_ALLOW_CLOSE_NON_HEDGED_BETS = true           # Закрывать ли
 
 #--------------------------------------------------- CEX SETTINGS ----------------------------------------------------
 # Аналогично с настройками CEX в settings.toml
-LIMITLESS_WITHDRAW_CEX_ETH_AMOUNT     = [0.01, 0.015]
+LIMITLESS_WITHDRAW_CEX_ETH_AMOUNT     = [0.004, 0.005]
 
 LIMITLESS_CEX_DEPOSIT_AMOUNT_ETH      = ["100", "100"]
 LIMITLESS_CEX_DEPOSIT_LIMITER_ETH     = [0.0, 0.0]
 
 #--------------------------------------------------- SWAP SETTINGS ---------------------------------------------------
 LIMITLESS_ETH_SWAP_AMOUNT             = ["90", "95"]
+
+#--------------------------------------------------- AUTO REFUEL SETTINGS ---------------------------------------------
+# Автоматический рефьюл ETH в Base при недостатке газа (для claim_drop и других модулей)
+# Использует BRIDGE_L2_NETWORKS и BRIDGE_AMOUNT из settings.toml
+LIMITLESS_AUTO_REFUEL                 = true                                    # Включить авто-рефьюл при недостатке газа
 
 #--------------------------------------------------- RUNTIME SETTINGS ------------------------------------------------
 LIMITLESS_SLEEP_TIME_ACCOUNTS         = [20, 30]       # Сколько спать между действиями аккаунтов (сек)
