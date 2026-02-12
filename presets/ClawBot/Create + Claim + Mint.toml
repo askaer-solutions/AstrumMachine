@@ -1,5 +1,4 @@
 CLASSIC_ROUTES_MODULES_USING = [
-    ['clawbot_create_agent'],
-    ['clawbot_claim_agent'],
+    ['clawbot_create_and_claim_agent'],
     ['clawbot_auto_mint'],
 ]
