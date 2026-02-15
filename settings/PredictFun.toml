@@ -1,0 +1,74 @@
+#------------------------------------------------PREDICT.FUN ORDERS-----------------------------------------------------
+
+# Интервал проверки состояния открытого ордера (секунды)
+PREDICTFUN_MONITOR_SLEEP = 30
+
+# Минимальная надбавка к цене продажи (в центах)
+# Пример: Покупка по 80¢, при PREDICTFUN_MIN_PROFIT_CENTS = 0.5, продажа по 80.5¢
+PREDICTFUN_MIN_PROFIT_CENTS = 0.1
+
+# Ссылка и исход ставки на событие
+# Формат: ["URL маркета", "YES/NO"]
+# Для обычного маркета (с числовым ID в URL):
+#   ["https://predict.fun/market/6121", "YES"]
+# Для категории (несколько суб-маркетов) — указать название суб-маркета третьим элементом:
+#   ["https://predict.fun/market/what-price-will-bitcoin-hit-before-march-2026", "NO", "$110,000"]
+PREDICTFUN_ORDERS_URL = [
+    ["https://predict.fun/market/what-price-will-bitcoin-hit-before-march-2026", "NO", "$110,000"],
+]
+#SELL | OPEN | Price: 53.1¢, best: 52.8¢ | filled: 0.0/150.00 (0.0%) shares
+# Максимальная цена покупки, выше которой софт не будет открывать ордера
+# Например: 0.95 означает что ордера не будут открываться при цене > 95¢
+PREDICTFUN_MAX_BUY_PRICE = 0.995
+
+# Стоп-лосс в центах (0 - отключен)
+# Например: 2 означает что если цена упадёт на 2¢ от текущей, позиция закроется по маркету
+PREDICTFUN_STOP_LOSS_CENTS = 0
+
+# Минимальный процент заполнения BUY ордера для считывания его выполненным
+# 50 = при получении 50% от ожидаемых shares ордер считается выполненным
+PREDICTFUN_BUY_ORDER_FILL_PERCENTAGE = 50
+
+# Таймаут ожидания заполнения BUY ордера (секунды, 0 - бесконечно)
+PREDICTFUN_BUY_TIMEOUT = 0
+
+# Таймаут ожидания заполнения SELL ордера (секунды, 0 - бесконечно)
+PREDICTFUN_SELL_TIMEOUT = 0
+
+# Порог размера ордера конкурента для repricing (от 0.0 до 1.0)
+# Используется в Process Positions для решения о repricing
+# 1.0 = reprice только если конкурент выставил ордер >= 100% от нашего размера
+# 0.5 = reprice если конкурент >= 50% от нашего размера
+# 0.0 = reprice при любом undercut
+# Пример: наш ордер $50, threshold 0.5 → reprice только если конкурент >= $25
+PREDICTFUN_REORDER_SIZE_THRESHOLD = 0.5
+
+#----------------------------------------------PREDICT.FUN SELL / HOLD POSITIONS----------------------------------------
+
+# Тип ордера для продажи: "MARKET" (мгновенная продажа) или "LIMIT" (по лучшей цене в стакане)
+# Используется в Sell All Positions
+# LIMIT: выставляет лимитку по best ask с repricing, при SELL_TIMEOUT > 0 fallback на маркет
+# MARKET: мгновенная продажа по best bid
+PREDICTFUN_SELL_ORDER_TYPE = "MARKET"
+
+# Тип ордера для покупки: "MARKET" (мгновенная покупка) или "LIMIT" (по лучшей цене в стакане)
+# Hold Positions использует PREDICTFUN_ORDERS_URL, PREDICTFUN_ORDER_AMOUNT и PREDICTFUN_MAX_BUY_PRICE из секции ORDERS
+PREDICTFUN_HOLD_ORDER_TYPE = "MARKET"
+
+#-------------------------------------------------PREDICT.FUN DEPOSIT---------------------------------------------------
+
+# Минимальный баланс Smart Wallet для запуска автоматического депозита
+PREDICTFUN_MIN_BALANCE = 10
+
+# Диапазон сумм для депозита на predict.fun Smart Wallet
+PREDICTFUN_DEPOSIT_AMOUNT = ["100", "100"]
+
+# Диапазон сумм для размещения ордеров
+# Строки = проценты от баланса: ["90", "90"] → 90% баланса
+# Числа = фиксированная сумма в USD: [10, 15] → случайно от $10 до $15
+PREDICTFUN_ORDER_AMOUNT = [10, 10]
+
+#-------------------------------------------------PREDICT.FUN WITHDRAW--------------------------------------------------
+
+# Сколько USDT оставить на балансе Smart Wallet при выводе
+PREDICTFUN_WITHDRAW_KEEP_AMOUNT = 0.0
