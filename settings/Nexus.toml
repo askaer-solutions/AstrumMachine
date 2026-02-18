@@ -1,6 +1,18 @@
-# Настройка активных квестов. 
+# Фильтр контрактов для минта бейджей/глифов.
+# Указывайте ключевые слова из названий контрактов. Минтятся только контракты, содержащие хотя бы одно слово.
+# Пустой список [] = минтить ВСЕ контракты (все сезоны).
+#
+# Доступные контракты:
+# Season 2: "Node Rush: Week 1", "Node Rush: Week 2", ...
+# Season 1: "Gridcrews Finale", "Beta Genesis Collection", "Alpha Genesis", "Epsilon Genesis",
+#            "Zeta Genesis Collection", "Delta Genesis Collection", "Gamma Genesis Collection"
+NEXUS_MINT_CONTRACTS_FILTER = ["Node Rush"]
+
+# Настройка активных квестов.
 # true = квест включен, false = квест пропускается
 [NEXUS_ENABLED_QUESTS]
 follow = true      # Подписка в Twitter
-retweet = false     # Ретвит постов
-comment = false     # Комментарии под постами
+retweet = true     # Ретвит постов
+comment = true     # Комментарии под постами
+link_click = true  # Клейм квестов по ссылке (Get Ready for 3/17 и т.п.)
+daily = true       # Ежедневное задание
