@@ -71,7 +71,7 @@ TELEGRAM_USER_ID = 0    # https://t.me/getmyid_bot
 
 #----------------------------------------------------CAPTCHA CONTROL----------------------------------------------------
 
-CAPTCHA_SOLVER_TYPE = 4         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha, 4-AstrumSolver
+CAPTCHA_SOLVER_TYPE = 5         # Сервис, через который будет решаться капча: 1-capmonster, 2-capsolver, 3-2captcha, 4-AstrumSolver, 5-Onyx
 
 # https://2captcha.com/enterpage
 TWO_CAPTCHA_API_KEY = ""
@@ -81,6 +81,8 @@ CAPSOLVER_API_KEY = ""
 CAPMONSTER_API_KEY = ""
 # https://t.me/astrumsolutionsbot
 ASTRUMSOLVER_API_KEY = ""
+# https://onyxsolver.io
+ONYX_API_KEY = ""
 
 #----------------------------------------------------EXCEL CONTROL------------------------------------------------------
 

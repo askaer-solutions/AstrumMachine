@@ -1,4 +1,4 @@
-SONEIUM_WANTED_TX_COUNT = [450, 500]      # необходимое количество транзакций
+SONEIUM_WANTED_TX_COUNT = [45, 50]      # необходимое количество транзакций
 SONEIUM_WANT_BALANCE = [0.005, 0.006]   # сумма MON на балансе в Monad, при не хватке, софт запустит процесс вывода + рефьюла в сеть
 
 SONEIUM_MIN_USDC_COLLETCOR = 0.1        # минимальное кол-во USDC для сбора в ETH
@@ -19,7 +19,7 @@ SONEIUM_RUBYSCORE_ENABLED = true
 # - BRIDGE_L2_NETWORKS — список сетей, откуда брать газ (например: ["Arbitrum", "Optimism"])
 # - BRIDGE_AMOUNT — примерный объём газа, который нужно перекинуть ~ 0.0015 ETH
 # - REFUEL_DAPP — 1 (GasZip. MeMeBridge не поддерживается для этого роута)
-# - CEX_WITHDRAW_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
+# - CEX_USING — ID биржи, если будет задействован вывод, при недостаточном балансе
 
 SONEIUM_RUBYSCORE_SMART_REFUEL = true
 
