@@ -10,6 +10,8 @@ OPINION_MONITOR_SLEEP = 60
 OPINION_MIN_MARGIN_PRICE = 0.1
 
 # Ссылка, исход и название ставки на событие. Если исход один, название можно указать - ""
+# Также можно указать в столбце Solana таблицы accounts_data.xlsx
+# Формат для Solana столбца: url1;Yes;5,000@url2;No;topic2
 OPINION_ORDERS_URL = [
     ["https://app.opinion.trade/detail?topicId=339&type=multi","Yes","5,000"],
 ]

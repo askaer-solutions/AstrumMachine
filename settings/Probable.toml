@@ -13,6 +13,8 @@ PROBABLE_MIN_PROFIT_CENTS = 0.1
 #   ["https://probable.markets/event/slug?market=1325", "YES"]
 # Для категории (несколько суб-маркетов) — указать название суб-маркета третьим элементом:
 #   ["https://probable.markets/event/what-price-will-ethereum-hit-in-february-2026", "NO", "Will ETH hit $3000?"]
+# Также можно указать в столбце Solana таблицы accounts_data.xlsx
+# Формат для Solana столбца: url1;YES@url2;NO;Will ETH hit $3000?
 PROBABLE_ORDERS_URL = [
     ["https://probable.markets/event/what-price-will-ethereum-hit-in-february-2026?market=1325", "NO"],
 ]

@@ -22,7 +22,7 @@ POLYMARKET_BUY_ORDER_FILL_PERCENTAGE = 50
 POLYMARKET_REORDER_SIZE_THRESHOLD = 0.5
 
 # Диапазон сумм для размещения ордеров (USDC)
-POLYMARKET_ORDER_AMOUNT = [10, 10]
+POLYMARKET_ORDER_AMOUNT = ["100", "100"]
 
 # Таймаут на покупку (секунды)
 POLYMARKET_BUY_TIMEOUT = 2600000 # 1месяц+
@@ -41,8 +41,8 @@ POLYMARKET_BRIDGE_TIMEOUT = 1200
 
 # Ссылки на маркеты для крутки волюма
 # Формат: Список списков [URL, ИСХОД]
-# Также можно указать в столбце SUI таблицы accounts_data.xlsx
-# Формат для SUI столбца: url1,YES,url2,NO
+# Также можно указать в столбце Solana таблицы accounts_data.xlsx
+# Формат для Solana столбца: url1;YES@url2;NO
 POLYMARKET_ORDERS_URL = [
     ["https://polymarket.com/event/what-price-will-bitcoin-hit-in-february-2026/will-bitcoin-reach-120k-in-february-2026", "NO"],
     ["https://polymarket.com/event/what-price-will-ethereum-hit-in-february-2026/will-ethereum-reach-3800-in-february-2026", "NO"],

@@ -13,13 +13,15 @@ PREDICTFUN_MIN_PROFIT_CENTS = 0.1
 #   ["https://predict.fun/market/6121", "YES"]
 # Для категории (несколько суб-маркетов) — указать название суб-маркета третьим элементом:
 #   ["https://predict.fun/market/what-price-will-bitcoin-hit-before-march-2026", "NO", "$110,000"]
+# Также можно указать в столбце Solana таблицы accounts_data.xlsx
+# Формат для Solana столбца: url1;YES@url2;NO;$110,000
 PREDICTFUN_ORDERS_URL = [
-    ["https://predict.fun/market/what-price-will-bitcoin-hit-before-march-2026", "NO", "$110,000"],
+    ["https://predict.fun/market/what-price-will-eth-hit-before-march-2026", "NO", "$3,400"],
 ]
 #SELL | OPEN | Price: 53.1¢, best: 52.8¢ | filled: 0.0/150.00 (0.0%) shares
 # Максимальная цена покупки, выше которой софт не будет открывать ордера
 # Например: 0.95 означает что ордера не будут открываться при цене > 95¢
-PREDICTFUN_MAX_BUY_PRICE = 0.995
+PREDICTFUN_MAX_BUY_PRICE = 0.998
 
 # Стоп-лосс в центах (0 - отключен)
 # Например: 2 означает что если цена упадёт на 2¢ от текущей, позиция закроется по маркету
@@ -66,7 +68,7 @@ PREDICTFUN_DEPOSIT_AMOUNT = ["100", "100"]
 # Диапазон сумм для размещения ордеров
 # Строки = проценты от баланса: ["90", "90"] → 90% баланса
 # Числа = фиксированная сумма в USD: [10, 15] → случайно от $10 до $15
-PREDICTFUN_ORDER_AMOUNT = [10, 10]
+PREDICTFUN_ORDER_AMOUNT = ["100", "100"]
 
 #-------------------------------------------------PREDICT.FUN WITHDRAW--------------------------------------------------
 
