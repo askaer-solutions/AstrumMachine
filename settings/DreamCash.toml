@@ -1,0 +1,45 @@
+#----------------------------------------------------CEX WITHDRAW-------------------------------------------------------
+
+# Сумма USDC для вывода с биржи на каждый embedded wallet [мин, макс]
+DREAMCASH_CEX_WITHDRAW_USDC_AMOUNT = [100, 120]
+
+#---------------------------------------------------DELTA NEUTRAL-------------------------------------------------------
+
+# Время удержания позиций [мин, макс] секунд
+DREAMCASH_DN_HOLD_TIME = [3600, 7200]
+
+# Задержка между ордерами [мин, макс] секунд
+# Чем меньше — тем меньше спред по цене между аккаунтами, но палевнее
+DREAMCASH_DN_ORDER_DELAY = [30, 60]
+
+# Отклонение total LONG vs total SHORT [мин, макс] % — антидетект дисбаланс
+# [0, 0] — полностью сбалансированная позиция (total LONG = total SHORT)
+DREAMCASH_DN_SIZE_VARIANCE = [0.05, 0.15]
+
+# Плечо [мин, макс] (одинаковое для всех активов, максимум 20x)
+DREAMCASH_DN_LEVERAGE = [5, 10]
+
+# Активы для торговли (случайный выбор из списка каждый цикл)
+# Доступные: USA500, TSLA, NVDA, HOOD, GOOGL, INTC, AMZN, MSFT, META, GOLD, SILVER
+DREAMCASH_DN_ASSETS = ["USA500", "SILVER", "GOLD"]
+
+# Режим работы: "cycles" — по числу циклов, "volume" — по целевому объёму ($)
+DREAMCASH_DN_MODE = "cycles"
+
+# Задержка между циклами [мин, макс] секунд
+DREAMCASH_DN_CYCLE_DELAY = [60, 120]
+
+# Число циклов [мин, макс] (для mode = "cycles")
+DREAMCASH_DN_CYCLES = [2, 3]
+
+# Целевой суммарный объём $ [мин, макс] (для mode = "volume")
+# Объём = сумма (size × price) всех ордеров всех аккаунтов (open + close)
+DREAMCASH_DN_TARGET_VOLUME = [10000, 20000]
+
+#--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
+
+#  dreamcash_dn_register            # Регистрация всех DN аккаунтов (main + extra из Solana Secret)
+#  dreamcash_dn_trade               # Дельта-нейтральный трейд: N аккаунтов, LONG/SHORT на одном активе
+#  dreamcash_dn_withdraw_cex        # Вывод USDC с биржи на embedded wallets всех DN аккаунтов
+#  dreamcash_dn_deposit             # Депозит USDC с embedded wallets в Hyperliquid (gasless bridge)
+#  dreamcash_dn_close_positions     # Закрытие всех позиций на всех DN аккаунтах (аварийное)
