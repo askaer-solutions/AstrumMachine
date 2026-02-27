@@ -14,5 +14,6 @@ NEXUS_MINT_CONTRACTS_FILTER = ["Node Rush"]
 follow = true      # Подписка в Twitter
 retweet = true     # Ретвит постов
 comment = true     # Комментарии под постами
+new_tweet = true   # Публикация нового твита с хэштегом (#nexusUSDX и т.п.)
 link_click = true  # Клейм квестов по ссылке (Get Ready for 3/17 и т.п.)
 daily = true       # Ежедневное задание
