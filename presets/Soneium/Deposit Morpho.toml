@@ -1,4 +1,0 @@
-CLASSIC_ROUTES_MODULES_USING = [
-    ["soneium_wrap_native"],
-    ["soneium_morpho_deposit"],
-]
