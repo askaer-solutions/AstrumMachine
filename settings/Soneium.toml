@@ -34,3 +34,6 @@ SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
 
 # проходить ли optIn при запуске бонусных кампаний на портале
 SONEIUM_PROCESS_OPTIN = true
+
+# Galxe кампании Startale (ID кампании из URL: https://app.galxe.com/quest/Startale/{ID})
+SONEIUM_GALXE_CAMPAIGNS = ['GCpq5tYXus']

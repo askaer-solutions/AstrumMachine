@@ -40,7 +40,10 @@ POLYMARKET_TX_WAIT_TIMEOUT = 600
 POLYMARKET_BRIDGE_TIMEOUT = 1200
 
 # Ссылки на маркеты для крутки волюма
-# Формат: Список списков [URL, ИСХОД]
+# Формат: [URL, ИСХОД] или [URL, ИСХОД, MAX_BUY_PRICE]
+#   - Без 3-го параметра → используется глобальный POLYMARKET_MAX_BUY_PRICE
+#   - С 3-м параметром (0.0-1.0) → свой лимит цены для этого события
+#   - 0 → отключить проверку максимальной цены для этого события
 # Также можно указать в столбце Solana таблицы accounts_data.xlsx
 # Формат для Solana столбца: url1;YES@url2;NO
 POLYMARKET_ORDERS_URL = [
