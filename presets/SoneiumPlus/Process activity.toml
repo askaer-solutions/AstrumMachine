@@ -1,0 +1,7 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["soneium_portal_opt_in"],
+    ["soneium_startale_gm"],
+    ["soneium_galxe_startale"],
+    ["soneium_startale_passkey"],
+#    ["soneium_startale_delete_passkey"],
+]
