@@ -86,3 +86,11 @@ OPINION_CEX_DEPOSIT_BNB_LIMITER = [0.0, 0.0]
 
 # Сколько USDT оставить на балансе Opinion при выводе
 OPINION_WITHDRAW_KEEP_AMOUNT = 0.0
+
+#---------------------------------------------------OPINION OPN SELL----------------------------------------------------
+
+# Токен для продажи OPN (ETH или USDT)
+OPINION_OPN_SELL_TOKEN = "USDT"
+
+# Сеть назначения для продажи OPN через Relay (Arbitrum, Base, Optimism, BNB Chain и т.д.)
+OPINION_OPN_SELL_CHAIN = "BNB Chain"
