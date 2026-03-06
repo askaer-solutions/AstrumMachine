@@ -1,0 +1,10 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["soneium_sake_relay_swap_eth_to_usdc"],
+    ["soneium_sake_mint_and_supply"],
+    ["soneium_sake_borrow_usdc"],
+    ["soneium_sake_repay_usdc"],
+    ["soneium_sake_withdraw_ssuperusd"],
+    ["soneium_sake_redeem_ssuperusd"],
+    ["soneium_sake_relay_swap_usdc_to_eth"],
+#    ["transfer_to_deposit"],
+]
