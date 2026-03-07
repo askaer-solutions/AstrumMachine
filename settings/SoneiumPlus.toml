@@ -1,0 +1,21 @@
+# Сумма свапов на всех дапках (применяется к ETH) (можно в % или в количестве)
+SONEIUM_SWAP_AMOUNT = ['55', '60']
+
+# Сумма депозита на AAVE (применяется к ETH) (можно в % или в количестве)
+SONEIUM_LANDING_AMOUNT = ["10", "20"]
+
+# сумма для врапа, применяется для ETH, обратно 100%
+SONEIUM_ETH_WRAP_AMOUNT = ['80', '90']
+
+# проходить ли optIn при запуске бонусных кампаний на портале
+SONEIUM_PROCESS_OPTIN = true
+
+# Galxe кампании Startale (ID кампании из URL: https://app.galxe.com/quest/Startale/{ID})
+SONEIUM_GALXE_CAMPAIGNS = ['GCpq5tYXus']
+
+# Sake sSuperUSD lending
+# Сумма свапа ETH → USDC.e через Relay (применяется к ETH балансу)
+SONEIUM_SAKE_USDC_AMOUNT = [0.0112, 0.0113]
+
+# Сумма для Borrow USDC.e из Sake (в USDC.e)
+SONEIUM_SAKE_BORROW_AMOUNT = [10, 11]
