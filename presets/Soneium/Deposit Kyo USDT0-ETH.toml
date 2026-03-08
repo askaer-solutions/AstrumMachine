@@ -1,0 +1,4 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["soneium_kyo_deposit_usdt0"],
+    ["soneium_kyo_withdraw_usdt0"],
+]

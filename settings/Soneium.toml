@@ -44,3 +44,7 @@ SONEIUM_SAKE_USDC_AMOUNT = [0.0112, 0.0113]
 
 # Сумма для Borrow USDC.e из Sake (в USDC.e)
 SONEIUM_SAKE_BORROW_AMOUNT = [10, 11]
+
+# Kyo USDT₀/ETH LP
+# Сумма ETH для депозита в USDT₀/ETH пул (применяется к ETH балансу)
+SONEIUM_KYO_LP_AMOUNT = [0.002, 0.003]
