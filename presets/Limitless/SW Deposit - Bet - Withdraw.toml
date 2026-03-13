@@ -1,0 +1,9 @@
+CLASSIC_ROUTES_MODULES_USING = [
+#    ["cex_withdraw"],
+#    ['limitless_swap_eth_to_usdc_evm'],
+    ['limitless_place_single_bet'],
+    ['limitless_close_single_bet'],
+    ['limitless_sw_withdraw'],
+#    ['limitless_swap_usdc_to_eth_evm'],
+#    ['cex_deposit'],
+]
