@@ -9,8 +9,8 @@ POLYMARKET_MONITOR_SLEEP = 10
 # Надбавка к цене продажи в центах. Пример: Покупка по 0.50$, MIN_PROFIT_CENTS = 5 → продажа по 0.55$
 POLYMARKET_MIN_PROFIT_CENTS = 0.1
 
-# Максимальная цена позиции, выше которой софт не будет открывать ордера
-POLYMARKET_MAX_BUY_PRICE = 0.998
+# Максимальная цена позиции. Покупка: не покупает выше этой цены. Продажа: если sell price >= этой цены — не продаёт (hold до экспирации)
+POLYMARKET_MAX_PRICE = 0.998
 
 # Стоп-лосс в центах. Если цена упадет на эту величину от цены покупки - маркет продажа. 0 = отключен
 POLYMARKET_STOP_LOSS_CENTS = 20
@@ -40,15 +40,15 @@ POLYMARKET_TX_WAIT_TIMEOUT = 600
 POLYMARKET_BRIDGE_TIMEOUT = 1200
 
 # Ссылки на маркеты для крутки волюма
-# Формат: [URL, ИСХОД] или [URL, ИСХОД, MAX_BUY_PRICE]
-#   - Без 3-го параметра → используется глобальный POLYMARKET_MAX_BUY_PRICE
-#   - С 3-м параметром (0.0-1.0) → свой лимит цены для этого события
+# Формат: [URL, ИСХОД] или [URL, ИСХОД, MAX_PRICE]
+#   - Без 3-го параметра → используется глобальный POLYMARKET_MAX_PRICE
+#   - С 3-м параметром (0.0-1.0) → свой лимит цены для этого события (покупка и продажа)
 #   - 0 → отключить проверку максимальной цены для этого события
 # Также можно указать в столбце Solana таблицы accounts_data.xlsx
 # Формат для Solana столбца: url1;YES@url2;NO
 POLYMARKET_ORDERS_URL = [
-    ["https://polymarket.com/event/what-price-will-bitcoin-hit-in-february-2026/will-bitcoin-reach-120k-in-february-2026", "NO"],
-    ["https://polymarket.com/event/what-price-will-ethereum-hit-in-february-2026/will-ethereum-reach-3800-in-february-2026", "NO"],
+    ["https://polymarket.com/event/what-price-will-bitcoin-hit-in-march-2026/will-bitcoin-reach-105k-in-march-2026", "NO"],
+    ["https://polymarket.com/event/what-price-will-bitcoin-hit-march-9-15/will-bitcoin-reach-84k-march-9-15", "NO"],
 ]
 
 #---------------------------------------------------POLYMARKET WITHDRAW----------------------------------------------------
