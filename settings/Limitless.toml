@@ -23,6 +23,9 @@ LIMITLESS_ETH_SWAP_AMOUNT             = ["90", "95"]
 # Использует BRIDGE_L2_NETWORKS и BRIDGE_AMOUNT из settings.toml
 LIMITLESS_AUTO_REFUEL                 = true                                    # Включить авто-рефьюл при недостатке газа
 
+#--------------------------------------------------- REFERRAL SETTINGS ------------------------------------------------
+LIMITLESS_USE_REFERRAL_CODE              = true            # Регистрировать аккаунт с реферальным кодом (из таблицы аккаунтов)
+
 #--------------------------------------------------- RUNTIME SETTINGS ------------------------------------------------
 LIMITLESS_SLEEP_TIME_ACCOUNTS         = [20, 30]       # Сколько спать между действиями аккаунтов (сек)
 
@@ -45,7 +48,6 @@ LIMITLESS_SLEEP_TIME_ACCOUNTS         = [20, 30]       # Сколько спат
 #   ["NO", "trump-tweet-today"],
 #   ["YES", "eth-above-5000"],
 
-
 LIMITLESS_BETS_LIST = [
-    ["NO", "us-national-solana-reserve-in-2025-1748943996289"],
+    ["NO", "bitcoin-all-time-high-by-march-31-1767809993576"],
 ]
