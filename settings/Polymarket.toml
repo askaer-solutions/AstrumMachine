@@ -63,3 +63,28 @@ POLYMARKET_WITHDRAW_KEEP_AMOUNT = 1.0
 POLYMARKET_DEPOSIT_CHAINS = ["Base", "Arbitrum", "Optimism"]
 POLYMARKET_DEPOSIT_TOKEN = "ETH"
 POLYMARKET_DEPOSIT_AMOUNT = ["100", "100"]
+
+#===================================================================================================================
+#                                    GRID TRADING (Торговля по сетке)
+#===================================================================================================================
+
+# URL маркета и outcome для grid trading
+# Формат: [URL, OUTCOME] — например ["https://polymarket.com/event/.../market-slug", "Yes"]
+POLYMARKET_GRID_URL = ["", "Yes"]
+
+# Количество ордеров в сетке
+# Каждый уровень получит GRID_AMOUNT / GRID_NUM_ORDERS USDC
+# Важно: каждый уровень должен быть >= $5 (минимальный ордер Polymarket)
+POLYMARKET_GRID_NUM_ORDERS = 5
+
+# Шаг сетки в центах (расстояние между уровнями покупки)
+# Level 1 = best_bid, Level 2 = best_bid - bin, Level 3 = best_bid - 2*bin, ...
+POLYMARKET_GRID_BIN_CENTS = 2.0
+
+# Минимальная наценка для SELL ордера (центы выше цены покупки)
+# При fill BUY на уровне → SELL ставится по buy_price + markup
+POLYMARKET_GRID_MARKUP_CENTS = 2.0
+
+# Общая сумма на сетку (в USDC). Делится на NUM_ORDERS уровней
+# Формат: [мин, макс] — случайное значение из диапазона
+POLYMARKET_GRID_AMOUNT = ["50", "50"]
