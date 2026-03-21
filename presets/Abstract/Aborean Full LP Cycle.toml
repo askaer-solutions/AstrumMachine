@@ -1,0 +1,5 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    ["abstract_aborean_add_lp"],
+    ["abstract_aborean_remove_lp"],
+    ["abstract_claim_badges"],
+]
