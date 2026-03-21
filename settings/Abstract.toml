@@ -114,7 +114,7 @@ ABSTRACT_MAGICEDEN_NFT_CONTRACTS_COLLECTION = [ # адреса для рандо
 ]
 
 ABSTRACT_ABOREAN_DEPOSIT_AMOUNT = [0.00001, 0.00003] # Cумма для депозита ETH в Aborean
-ABSTRACT_ABOREAN_LP_AMOUNT = ["1", "2"] # Сумма ETH для LP позиции Aborean (gtBTC/USDC.e), делится пополам на два свапа
+ABSTRACT_ABOREAN_LP_AMOUNT = [0.0001, 0.0002] # Сумма ETH для LP позиции Aborean (gtBTC/USDC.e), делится пополам на два свапа
 ABSTRACT_ABOREAN_LP_RATIO = [50, 50] # Пропорция сплита gtBTC/USDC.e в %. [50, 50] = 50/50, [40, 60] = 40% gtBTC / 60% USDC.e
 
 #------------------------------------------------------Stargate---------------------------------------------------------
