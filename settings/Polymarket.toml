@@ -1,3 +1,11 @@
+#-------------------------------------------------POLYMARKET SPONSOR REWARDS------------------------------------------------
+
+# Диапазон суммы спонсорства (USDC). Блокируется на время спонсорства
+POLYMARKET_SPONSOR_AMOUNT = ["1", "5"]
+
+# Диапазон длительности спонсорства (дни)
+POLYMARKET_SPONSOR_DAYS = [3, 7]
+
 #----------------------------------------------------POLYMARKET VOLUME-----------------------------------------------------
 
 # Кол-во циклов покупки продажи через лимитные ордера
@@ -70,7 +78,7 @@ POLYMARKET_DEPOSIT_AMOUNT = ["100", "100"]
 
 # URL маркета и outcome для grid trading
 # Формат: [URL, OUTCOME] — например ["https://polymarket.com/event/.../market-slug", "Yes"]
-POLYMARKET_GRID_URL = ["", "Yes"]
+POLYMARKET_GRID_URL = ["https://polymarket.com/event/cuban-regime-falls-in-2026", "Yes"]
 
 # Количество ордеров в сетке
 # Каждый уровень получит GRID_AMOUNT / GRID_NUM_ORDERS USDC
@@ -88,3 +96,12 @@ POLYMARKET_GRID_MARKUP_CENTS = 2.0
 # Общая сумма на сетку (в USDC). Делится на NUM_ORDERS уровней
 # Формат: [мин, макс] — случайное значение из диапазона
 POLYMARKET_GRID_AMOUNT = ["50", "50"]
+
+# Режим фиксированных диапазонов (опционально).
+# Когда оба заданы → сетка работает в фиксированных зонах вместо динамики от best_bid.
+# BUY_RANGE = [мин_центы, макс_центы] — покупки распределяются по этой зоне
+# SELL_RANGE = [мин_центы, макс_центы] — продажи распределяются по этой зоне
+# Пример: BUY_RANGE = [80, 90], SELL_RANGE = [90, 95] → покупка 80-90¢, продажа 90-95¢
+# Оставить [] для динамического режима (сетка от best_bid − BIN_CENTS, по умолчанию)
+POLYMARKET_GRID_BUY_RANGE = []
+POLYMARKET_GRID_SELL_RANGE = []
