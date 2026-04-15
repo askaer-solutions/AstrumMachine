@@ -93,7 +93,8 @@ EXCEL_FILE_PATH = "./data/accounts_data.xlsx"  # Можете не изменя�
 # 1 = Nous Research (дешевле)
 # 2 = Claude / Anthropic (качественнее)
 # 3 = OpenAI / ChatGPT
-LLM_PROVIDER = 1
+# 4 = DeepSeek (самый дешёвый)
+LLM_PROVIDER = 4
 
 # https://portal.nousresearch.com/api-keys
 NOUS_API_KEY = ""
@@ -110,9 +111,9 @@ NOUS_API_MODEL = 1
 # https://console.anthropic.com/settings/keys
 CLAUDE_API_KEY = ""
 # Модели Claude (Anthropic):
-# 1 - claude-3-5-haiku - быстрая, дешёвая
+# 1 - claude-haiku-4.5 - экономичная модель
 # 2 - claude-sonnet-4.5 - баланс
-# 3 - claude-opus-4.5 - самая мощная
+# 3 - claude-opus-4.5 - самая мощная и дорогая
 CLAUDE_API_MODEL = 1
 
 # https://platform.openai.com/account/api-keys
@@ -125,7 +126,14 @@ GPT_API_KEY = ""
 # 5 - gpt-5.2 - лучшая для кода/агентов
 # 6 - gpt-5.2-pro - самая умная
 # 7 - o4-mini - reasoning модель
-GPT_API_MODEL = 2
+GPT_API_MODEL = 4
+
+# https://platform.deepseek.com/api_keys
+DEEPSEEK_API_KEY = ""
+# Модели DeepSeek (api-docs.deepseek.com):
+# 1 - deepseek-chat - V3.2, быстрая и дешёвая
+# 2 - deepseek-reasoner - V3.2 thinking, reasoning модель
+DEEPSEEK_API_MODEL = 1
 
 #---------------------------------------------------SECURE API KEYS-----------------------------------------------------
 
