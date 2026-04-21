@@ -32,6 +32,11 @@ BASEAPP_WITHDRAW_ETH_AMOUNT = [0.001, 0.004]
 # 0 = проверка отключена
 BASEAPP_MIN_BALANCE_USD = 0.5
 
+# Автоматическая подписка на Creator Rewards при регистрации/логине
+# true - при первом входе аккаунт получит uncapped награды за посты (enroll в Base Rewards)
+# false - без подписки, работают стандартные capped-награды
+BASEAPP_AUTO_ENROLL_REWARDS = true
+
 #------------------------------------------------------PROFILE----------------------------------------------------------
 
 [BASEAPP_PROFILE]
