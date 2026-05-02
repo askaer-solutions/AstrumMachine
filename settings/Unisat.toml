@@ -1,0 +1,42 @@
+#-----------------------------------------------------WALLET FORMAT-----------------------------------------------------
+
+# Использовать Taproot-адрес (bc1p...) — true, иначе SegWit v0 (bc1q...) — false.
+# Должен соответствовать адресу, на котором лежат заблокированные UTXO в UniSat-кошельке.
+UNISAT_TAPROOT_ADDRESS = true
+
+# Если в колонке "Bitcoin" в accounts_data.xlsx указан raw hex приватного ключа (а не WIF / mnemonic) — выставите true.
+UNISAT_HEX_PRIVATE_KEY = false
+
+#-----------------------------------------------------UNLOCK UTXOs------------------------------------------------------
+
+# Сколько заблокированных UTXO забирать за один запуск [мин, макс].
+# UniSat возвращает страницу — слишком большое значение может уронить запрос.
+UNISAT_UNLOCK_COUNT = [50, 100]
+
+# Сколько свободных (unlocked) UTXO забирать для merge / consolidate [мин, макс].
+UNISAT_MERGE_COUNT = [50, 100]
+
+#-------------------------------------------------------FEE RATE--------------------------------------------------------
+
+# Какую рекомендованную комиссию использовать с UniSat:
+# 1 = hourFee (медленная, дешёвая)
+# 2 = halfHourFee (стандарт)
+# 3 = fastestFee (срочная, дорогая)
+UNISAT_FEE_PRICE = 2
+
+# Кастомная комиссия [мин, макс] sats/vB для BRC20 — если оба значения заданы, используется вместо рекомендованной.
+UNISAT_FEE_PRICE_CUSTOM = [0.0, 0.0]
+
+# То же для Fractal.
+UNISAT_FEE_PRICE_CUSTOM_FRACTAL = [0.0, 0.0]
+
+# Максимальная допустимая комиссия в sats/vB. Если рекомендованная выше — модуль ждёт пока подешевеет (gas_checker).
+UNISAT_MAXIMUM_FEE = 100.0
+UNISAT_MAXIMUM_FEE_FRACTAL = 100.0
+
+#--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
+
+#  unisat_unlock_utxos              # Разблокировать все UTXO на адресе (BRC20 / Fractal)
+#  unisat_merge_utxos               # Объединить все unlocked UTXO в один (BRC20 / Fractal)
+#  unisat_consolidate_utxos         # Превратить abandoned NFT UTXO в обычные + получить очки (BRC20 / Fractal)
+#  unisat_unlock_fb_vote            # Анстейк FB-токенов из FractalVote (только Fractal, разблокировка через 7 дней)

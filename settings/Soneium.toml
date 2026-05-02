@@ -48,3 +48,22 @@ SONEIUM_SAKE_BORROW_AMOUNT = [10, 11]
 # Kyo USDT₀/ETH LP
 # Сумма ETH для депозита в USDT₀/ETH пул (применяется к ETH балансу)
 SONEIUM_KYO_LP_AMOUNT = [0.002, 0.003]
+
+# ─────────────────── Bonus Score Quests (Apr-May 2026) ───────────────────────
+# Кампании на portal.startale.com / Bonus Score (4 dApps × +7.5 баллов).
+#
+# Quest 1 — Startale: Complete swap for ≥ 1 USDSC (через UniversalRouter)
+# Quest 2 — SoundChains: Generate and mint your music (NFT mint)
+# Quest 3 — Superstake: Play 10 rounds of the Claw Machine (3 free игры/день)
+# Quest 4 — ELHEXA - Isekai Infinite: Complete the special daily check-in (3 дня)
+
+# Сумма ETH для свапа в USDSC через Startale UniversalRouter (только цифры, не проценты).
+# Минимум по квесту: 1 USDSC. При курсе ~2275 USDSC/ETH:
+#   0.0006 ETH → ~1.36 USDSC, 0.0008 ETH → ~1.82 USDSC — с запасом на slippage и колебания курса.
+# Если ETH сильно вырастет — можно опустить значения; если упадёт — поднять.
+SONEIUM_STARTALE_SWAP_AMOUNT = [0.0006, 0.0008]
+
+# Сколько раундов Claw Machine играть за один запуск Superstake.
+# Бесплатных игр у CashOrCrash 3 в сутки — больше указывать смысла нет, но если
+# выставить меньше, можно растянуть выполнение квеста на больше дней.
+SONEIUM_SUPERSTAKE_GAMES_PER_RUN = 3

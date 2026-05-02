@@ -1,5 +1,10 @@
 CLASSIC_ROUTES_MODULES_USING = [
     ["soneium_mint_season1_nft"],
     ["soneium_mint_season2_nft"],
-    ["soneium_mint_season3_nft"]
+    ["soneium_mint_season3_nft"],
+    ["soneium_mint_season4_nft"],
+    ["soneium_mint_season5_nft"],
+    ["soneium_mint_season6_nft"],
+    ["soneium_mint_season7_nft"],
+    ["soneium_mint_season8_nft"]
 ]
