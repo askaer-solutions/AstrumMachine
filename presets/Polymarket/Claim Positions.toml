@@ -1,3 +1,5 @@
+PRESET_CATEGORY = "Positions"
+
 CLASSIC_ROUTES_MODULES_USING = [
     ['polymarket_claim_positions'],
 ]

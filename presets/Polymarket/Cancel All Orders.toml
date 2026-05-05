@@ -1,3 +1,5 @@
+PRESET_CATEGORY = "Positions"
+
 CLASSIC_ROUTES_MODULES_USING = [
     ['polymarket_cancel_all_orders'],
 ]

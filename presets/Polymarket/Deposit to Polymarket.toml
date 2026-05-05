@@ -1,4 +1,6 @@
+PRESET_CATEGORY = "Transfer"
+
 CLASSIC_ROUTES_MODULES_USING = [
-    ['cex_withdraw'],
+#    ['cex_withdraw'],
     ['polymarket_deposit_balance'],
 ]

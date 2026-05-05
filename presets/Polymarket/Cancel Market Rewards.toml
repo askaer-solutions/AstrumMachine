@@ -1,0 +1,5 @@
+PRESET_CATEGORY = "Rewards"
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ['polymarket_cancel_rewards'],
+]

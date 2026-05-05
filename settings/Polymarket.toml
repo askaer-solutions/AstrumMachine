@@ -47,6 +47,12 @@ POLYMARKET_TX_WAIT_TIMEOUT = 600
 # Таймаут бриджа для deposit/withdraw (секунды)
 POLYMARKET_BRIDGE_TIMEOUT = 1200
 
+# Автоматически включать Auto-Redeem при авторизации deposit-wallet аккаунта.
+# Выигрыши автоматически зачисляются на баланс при resolve маркета — без ручного
+# claim'а каждой позиции. Для Safe-кошельков игнорируется. Идемпотентно: при
+# повторных запусках если уже approved — пропускается без повторной транзакции.
+POLYMARKET_AUTO_ENABLE_AUTO_REDEEM = false
+
 # Ссылки на маркеты для крутки волюма
 # Формат: [URL, ИСХОД] или [URL, ИСХОД, MAX_PRICE]
 #   - Без 3-го параметра → используется глобальный POLYMARKET_MAX_PRICE
@@ -55,8 +61,8 @@ POLYMARKET_BRIDGE_TIMEOUT = 1200
 # Также можно указать в столбце Solana таблицы accounts_data.xlsx
 # Формат для Solana столбца: url1;YES@url2;NO
 POLYMARKET_ORDERS_URL = [
-    ["https://polymarket.com/event/what-price-will-bitcoin-hit-in-march-2026/will-bitcoin-reach-105k-in-march-2026", "NO"],
-    ["https://polymarket.com/event/what-price-will-bitcoin-hit-march-9-15/will-bitcoin-reach-84k-march-9-15", "NO"],
+#    ["https://polymarket.com/event/what-price-will-bitcoin-hit-in-march-2026/will-bitcoin-reach-105k-in-march-2026", "NO"],
+#    ["https://polymarket.com/event/what-price-will-bitcoin-hit-march-9-15/will-bitcoin-reach-84k-march-9-15", "NO"],
 ]
 
 #---------------------------------------------------POLYMARKET WITHDRAW----------------------------------------------------
@@ -105,3 +111,31 @@ POLYMARKET_GRID_AMOUNT = ["50", "50"]
 # Оставить [] для динамического режима (сетка от best_bid − BIN_CENTS, по умолчанию)
 POLYMARKET_GRID_BUY_RANGE = []
 POLYMARKET_GRID_SELL_RANGE = []
+
+#===================================================================================================================
+#                                    LP REWARDS (Фарминг ликвидности)
+#===================================================================================================================
+
+# Капитал для LP farming. Строки = проценты от баланса, числа = фикс USDC
+# Примеры: ["90", "95"] = 90-95% баланса, [250, 250] = ровно $250
+POLYMARKET_LP_TOTAL_AMOUNT = [100, 100]
+
+# Кол-во маркетов для авто-выбора (0 = использовать POLYMARKET_ORDERS_URL вместо авто-выбора)
+# Бот сам подберёт оптимальное кол-во уровней и размеры под бюджет
+POLYMARKET_LP_AUTO_MARKETS = 2
+
+# Фильтр категорий для авто-выбора (пусто = все). Пример: ["Sports", "Crypto"]
+POLYMARKET_LP_CATEGORIES = []
+
+# Мгновенный merge: при fill одной стороны — сразу купить другую и merge → USDC
+# Merge бесплатный ($1 за пару), быстрее возвращает капитал в работу
+POLYMARKET_LP_INSTANT_MERGE = true
+
+# Время работы. Пусто = работает бесконечно
+# Формат: "HH:MM" (до этого времени ET) или "YYYY-MM-DD HH:MM"
+POLYMARKET_LP_END_TIME = ""
+
+# URL-mode для LP: если в POLYMARKET_ORDERS_URL (см. секцию выше) задан список
+# маркетов — LP фармит ТОЛЬКО их (ротация и автодискавери отключаются).
+# Маркеты должны быть на странице rewards.polymarket.com (иметь активные LP
+# rewards), иначе они будут пропущены с предупреждением.

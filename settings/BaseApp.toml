@@ -52,12 +52,12 @@ auto_setup = true
 basename_mode = "table"
 
 # Режим получения bio:
-# "table" - из таблицы accounts_data (колонка Bitcoin), прямое соответствие по номеру строки
+# "table" - из таблицы accounts_data (колонка Solana Deposit Address), прямое соответствие по номеру строки
 # "auto" - автоматическая генерация
 bio_mode = "table"
 
 # Режим получения display name:
-# "table" - из таблицы accounts_data (колонка Cosmos), прямое соответствие по номеру строки
+# "table" - из таблицы accounts_data (колонка EVM Deposit Address), прямое соответствие по номеру строки
 # "auto" - автогенерация через LLM на основе bio + basename (требуется LLM)
 display_name_mode = "table"
 

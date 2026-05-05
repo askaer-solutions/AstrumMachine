@@ -1,0 +1,5 @@
+PRESET_CATEGORY = "LP"
+
+CLASSIC_ROUTES_MODULES_USING = [
+    ['polymarket_close_lp'],
+]
