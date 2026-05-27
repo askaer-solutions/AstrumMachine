@@ -83,3 +83,10 @@ BURROW_BASH_GAMES_COUNT = 10
 # (но при бесплатном демо это всё равно не влияет на квест — игра засчитывается
 # в любом случае при PUT complete-mission).
 BURROW_BASH_PICKS_PER_GAME = 2
+
+# Размер ставки в ETH (native Soneium ETH).
+# Тиры официального UI: 0.00002 / 0.00005 / 0.0001 / 0.0002 ETH.
+# При 10 играх 0.00002 ETH ставке за день уходит ~0.0002 ETH (~$0.70).
+# SA должен иметь этот ETH ДО запуска — модуль не свапит сам.
+# Пополнить через `soneium_collector_eth` или Relay bridge в Soneium.
+BURROW_BASH_ETH_BET_AMOUNT = "0.00002"
