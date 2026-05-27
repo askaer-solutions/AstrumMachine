@@ -67,3 +67,19 @@ SONEIUM_STARTALE_SWAP_AMOUNT = [0.0006, 0.0008]
 # Бесплатных игр у CashOrCrash 3 в сутки — больше указывать смысла нет, но если
 # выставить меньше, можно растянуть выполнение квеста на больше дней.
 SONEIUM_SUPERSTAKE_GAMES_PER_RUN = 3
+
+# Quest — Burrow Bash (Whack-a-Mole demo): Mini Apps Carnival "Play Burrow Bash"
+# и Bonus Score "Play 10 games" заполняются играми в демо-режиме (бесплатно, без
+# реальной ставки ETH).
+#
+# Сколько игр запускать за один прогон модуля.
+#   - 1 хватит для Mini Apps Carnival (нужна 1 игра)
+#   - 10 нужно для Bonus Score "Play 10 games" (накапливается между прогонами)
+# Лимит сервера: 10 hammers/день — больше 10 игр не сыграть всё равно.
+BURROW_BASH_GAMES_COUNT = 10
+
+# Сколько безопасных пиков делать в каждой игре перед cashout.
+# Чем больше пиков — тем выше шанс наступить на крота и потерять multiplier
+# (но при бесплатном демо это всё равно не влияет на квест — игра засчитывается
+# в любом случае при PUT complete-mission).
+BURROW_BASH_PICKS_PER_GAME = 2
