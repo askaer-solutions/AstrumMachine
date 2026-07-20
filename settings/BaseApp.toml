@@ -32,147 +32,15 @@ BASEAPP_WITHDRAW_ETH_AMOUNT = [0.001, 0.004]
 # 0 = проверка отключена
 BASEAPP_MIN_BALANCE_USD = 0.5
 
-# Автоматическая подписка на Creator Rewards при регистрации/логине
-# true - при первом входе аккаунт получит uncapped награды за посты (enroll в Base Rewards)
-# false - без подписки, работают стандартные capped-награды
-BASEAPP_AUTO_ENROLL_REWARDS = true
-
 #------------------------------------------------------PROFILE----------------------------------------------------------
 
 [BASEAPP_PROFILE]
-# Автоматическая настройка профиля при регистрации:
-# true - устанавливать bio и display name по настройкам ниже
-# false - минимальная регистрация без bio/display name (только basename и username)
-auto_setup = true
-
 # Режим получения basename:
 # "table" - из таблицы accounts_data (колонка Nickname), прямое соответствие по номеру строки
 # "file" - из файла data/services/baseapp/basenames.txt, случайный выбор из списка
 # "auto" - автоматическая генерация
-basename_mode = "table"
+basename_mode = "auto"
 
-# Режим получения bio:
-# "table" - из таблицы accounts_data (колонка Solana Deposit Address), прямое соответствие по номеру строки
-# "auto" - автоматическая генерация
-bio_mode = "table"
-
-# Режим получения display name:
-# "table" - из таблицы accounts_data (колонка EVM Deposit Address), прямое соответствие по номеру строки
-# "auto" - автогенерация через LLM на основе bio + basename (требуется LLM)
-display_name_mode = "table"
-
-# Режим получения аватарки:
-# "file" - из папки data/services/baseapp/avatars/, случайный выбор неиспользованной картинки
-# "auto" - автоматическая загрузка случайной картинки из интернета (Lorem Picsum)
-# "none" - не устанавливать аватарку
-avatar_mode = "file"
-
-#------------------------------------------------------PERSONA----------------------------------------------------------
-
-[BASEAPP_PERSONA]
-# Количество особенностей письма для каждой персоны (мин, макс)
-# Особенности берутся из data/services/baseapp/writing_traits.txt
-# При первом запуске для кошелька выбираются случайные особенности и сохраняются
-traits_count = [2, 4]
-
-#------------------------------------------------------ACTIVITY---------------------------------------------------------
-
-[BASEAPP_ACTIVITY]
-# Количество лайков за сессию (мин, макс)
-likes_count = [1, 2]
-
-# Количество подписок за сессию (мин, макс)
-follows_count = [1, 2]
-
-# Количество постов за сессию (мин, макс)
-# 0 = не создавать посты (требуется LLM)
-posts_count = [1, 2]
-
-# Количество комментариев за сессию (мин, макс)
-# (требуется LLM)
-comments_count = [1, 2]
-
-# Количество coin постов за сессию (мин, макс)
-# Создаёт пост с Zora коином (требуется LLM)
-coin_posts_count = [1, 2]
-
-# Количество свапов за сессию (мин, макс)
-# Свапает ETH в токены из BASEAPP_SWAP.token_contracts
-swaps_count = [0, 0]
-
-# Задержка между действиями в секундах (мин, макс)
-delay_between_actions = [180, 360]
-
-# Сколько пользователей собирать для взаимодействий
-users_to_collect = 10
-
-# Максимум символов в посте
-post_max_symbols = 250
-
-# Максимум символов в комментарии
-comment_max_symbols = 200
-
-# Максимум символов в coin посте
-coin_post_max_symbols = 100
-
-# Откуда брать пользователей для взаимодействий:
-# "feed" - из ленты
-# "donors" - из фолловеров донорских аккаунтов (data/services/baseapp_donors.txt)
-# "both" - из обоих источников
-user_source = "feed"
-
-# Файлы для LLM генерации (можно редактировать):
-# - data/services/baseapp/topics.txt - темы для постов
-# - data/services/baseapp/roles.txt - роли персонажей
-# - data/services/baseapp/donors.txt - донорские аккаунты
-# - data/services/baseapp/writing_traits.txt - особенности стиля написания
-
-#----------------------------------------------------POST IMAGES-------------------------------------------------------
-
-[BASEAPP_POST_IMAGE]
-# API ключ Pixabay для поиска картинок
-# Получить бесплатно: https://pixabay.com/api/docs/
-# Если пустой - картинки к постам отключены
-pixabay_api_key = ""
-
-# Шанс прикрепить картинку к посту (0-100%)
-# 0 = картинки отключены
-image_chance = 33
-
-# Поведение при ошибке поиска картинки:
-# "skip" - создать пост без картинки
-# "retry" - перегенерировать текст поста с новой темой и попробовать снова
-on_image_error = "retry"
-
-#------------------------------------------------------PROMPTS----------------------------------------------------------
-
-# Кастомные промпты для LLM генерации контента
-# Если оставить пустым "" - используется дефолтный промпт
-#
-# Доступные переменные:
-#   {role}          - роль персонажа (из roles.txt)
-#   {topic}         - тема поста (из topics.txt)
-#   {max_symbols}   - максимум символов
-#   {traits}        - особенности написания персоны (из writing_traits.txt, выбираются случайно)
-#
-# ВАЖНО: Если используете кастомный промпт, добавьте {traits} чтобы учитывались особенности персоны!
-#
-# Примеры:
-#   comment = "You are a {role}. Write a short comment. Max {max_symbols} chars. {traits}"
-#   post = "You are a {role}. Write about {topic}. Max {max_symbols} chars. {traits}"
-
-[BASEAPP_PROMPTS]
-# Промпт для комментариев (user prompt будет содержать текст поста)
-# Если пустой - используется дефолтный. Не забудьте добавить {traits} в конце!
-comment = ""
-
-# Промпт для постов (user prompt будет содержать тему)
-# Если пустой - используется дефолтный. Не забудьте добавить {traits} в конце!
-post = ""
-
-# Промпт для coin постов (создание Zora коина)
-# Если пустой - используется дефолтный. Не забудьте добавить {traits} в конце!
-coin_post = ""
 
 #--------------------------------------------------------SWAP-----------------------------------------------------------
 
@@ -190,11 +58,13 @@ amount = ["1", "2"]
 
 #--------------------------------------------------AVAILABLE MODULES----------------------------------------------------
 
-#  baseapp_register             # Регистрация аккаунта BaseApp (Coinbase Wallet) с Farcaster и Basename
-#  baseapp_daily_activity       # Дневная активность (лайки, подписки, посты, комментарии, свапы)
-#  baseapp_create_coin_post     # Создание поста с Zora коином (требуется LLM)
+#  baseapp_register             # Регистрация аккаунта: CDP кошелёк, Smart Wallet и basename
 #  baseapp_swap_eth_to_token    # Свап ETH в случайный токен из BASEAPP_SWAP.token_contracts
 #  baseapp_swap_token_to_eth    # Свап всех токенов из BASEAPP_SWAP.token_contracts обратно в ETH
 #  baseapp_swap_coins_to_eth    # Свап всех Zora коинов обратно в ETH (для своих резерв 10M токенов)
 #  baseapp_cex_withdraw_eth     # Вывод ETH с CEX на SCW кошелек. Сумма по BASEAPP_WITHDRAW_ETH_AMOUNT
-#  baseapp_change_display_name  # Смена display name. Берёт имя из колонки Cosmos
+#  baseapp_verify_x             # Привязка X (Twitter) к профилю Base через verify.base.dev (подпись SCW + OAuth2)
+
+# ВНИМАНИЕ: в феврале 2026 Base App убрал соц-слой на Farcaster — посты, лайки,
+# подписки и смена имени/био/аватара больше не работают на стороне сервера.
+# Соответствующие модули (daily_activity, create_coin_post, change_*) удалены.

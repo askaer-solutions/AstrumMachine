@@ -36,3 +36,11 @@ SONEIUM_STARTALE_SWAP_AMOUNT = [0.0006, 0.0008]
 # Сколько раундов Claw Machine играть за один запуск Superstake.
 # Бесплатных игр у CashOrCrash 3 в сутки.
 SONEIUM_SUPERSTAKE_GAMES_PER_RUN = 3
+
+# Quest — CardWars Hi-Lo (Bonus Quest "Start CardWars game").
+# Модуль запускает игру через startGame() (gasless UserOp, спонсор Startale).
+# Сколько угадываний (guess "Higher") сделать ПОСЛЕ старта игры за прогон:
+#   - 0 = только startGame() (минимум, как в квесте «Start Game»)
+#   - N = сыграть N угадываний (каждое — отдельный gasless UserOp; при проигрыше
+#         игра перезапускается). Лимит сервера: 100 угадываний/день.
+CARDWARS_GUESSES_PER_RUN = 2

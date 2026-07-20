@@ -1,0 +1,12 @@
+CLASSIC_ROUTES_MODULES_USING = [
+    # ── Вариант 1: Simple Mint (рекомендуется для квеста) ────────────────────
+    # Только on-chain mintMyMusic + opt-in. Без email/Composer/credits.
+    # Bonus Score квест засчитывается полностью. ~$0.01 газа, ~30 сек на аккаунт.
+    ["soneium_soundchains_simple_mint"],
+
+    # ── Вариант 2: Full Quest ────────────────────────────────────────────────
+    # Email OTP → профиль → AI music через Composer → mint → backend record.
+    # Получает все бонусные кредиты SoundChains (+10 sign-up, +5 profile, и т.д.).
+    # Требует Gmail/Outlook/Yahoo/iCloud, дольше (~3-5 мин), много точек отказа.
+#    ["soneium_soundchains_mint_music"],
+]
